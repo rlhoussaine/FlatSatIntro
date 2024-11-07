@@ -39,6 +39,7 @@ website:
           - flatsat/platform.qmd
           - flatsat/flatsat.qmd
           - flatsat/spacepackets.qmd
+          - flatsat/can.qmd
           - flatsat/yamcs.qmd
           - flatsat/swdev.qmd
       - learning-more.qmd
