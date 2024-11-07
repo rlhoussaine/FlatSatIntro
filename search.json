@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Making shareable documents with Quarto",
+    "title": "End-to-End FlatSat Service Overview",
     "section": "",
-    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nCreating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout.",
+    "text": "Welcome to the Flatsat team! These upcoming pages serve as a supplement to the various meetings you’ll attend upon joining, rather than replacing them. Here, we won’t cover the company’s overall history, broader projects, or general onboarding, but will focus specifically on the activities tied to the Flatsat team and the Flatsat-related developments.\nIn summary, we’ll start with a brief introduction to the Endurance project to set the context, then discuss the purpose of developing a flatsat and its practical implementation within the project. Finally, we’ll explore the current testing phase regarding telecommunications between ground software and the flatsat components. We’ll begin with simple, direct communication over communication channels before advancing to a more complex setup that includes radio communication.",
     "crumbs": [
       "Welcome"
     ]
@@ -12,39 +12,39 @@
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
-    "title": "Making shareable documents with Quarto",
+    "title": "End-to-End FlatSat Service Overview",
     "section": "",
-    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nCreating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout.",
+    "text": "Welcome to the Flatsat team! These upcoming pages serve as a supplement to the various meetings you’ll attend upon joining, rather than replacing them. Here, we won’t cover the company’s overall history, broader projects, or general onboarding, but will focus specifically on the activities tied to the Flatsat team and the Flatsat-related developments.\nIn summary, we’ll start with a brief introduction to the Endurance project to set the context, then discuss the purpose of developing a flatsat and its practical implementation within the project. Finally, we’ll explore the current testing phase regarding telecommunications between ground software and the flatsat components. We’ll begin with simple, direct communication over communication channels before advancing to a more complex setup that includes radio communication.",
     "crumbs": [
       "Welcome"
     ]
   },
   {
-    "objectID": "index.html#what-is-quarto",
-    "href": "index.html#what-is-quarto",
-    "title": "Making shareable documents with Quarto",
-    "section": "What is Quarto?",
-    "text": "What is Quarto?\nQuarto helps you have your ideas and your code in one place, and present it in a beautiful way.\nQuarto unifies and extends the RMarkdown ecosystem - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it’s for people who have never used RMarkdown.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto has been a common place for us to collaborate - across R and Python languages and coding expertise.",
+    "objectID": "index.html#how-to-read-this-document",
+    "href": "index.html#how-to-read-this-document",
+    "title": "End-to-End FlatSat Service Overview",
+    "section": "How to Read This Document",
+    "text": "How to Read This Document\nThe goal of this document is to start with a quick overview of the Endurance project and gradually zoom in on the Flatsat’s implementation, leading to the current activities where new team members can find their starting point. By following each page in sequence, you should gain a deeper understanding of how and why we are developing the flatsat.",
     "crumbs": [
       "Welcome"
     ]
   },
   {
-    "objectID": "index.html#what-is-this-tutorial",
-    "href": "index.html#what-is-this-tutorial",
-    "title": "Making shareable documents with Quarto",
-    "section": "What is this tutorial?",
-    "text": "What is this tutorial?\nThis is a 1-hour tutorial that can be used to teach or as self-paced learning.\nWe introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.\nWe’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don’t already have a workflow to edit files and sync to GitHub from your computer, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.\nQuarto.org is the go-to place for full documentation and more tutorials!",
+    "objectID": "index.html#whats-next",
+    "href": "index.html#whats-next",
+    "title": "End-to-End FlatSat Service Overview",
+    "section": "What’s Next?",
+    "text": "What’s Next?\nAfter reading these pages, we’ll proceed to practical work and code-related tasks. The practical aspects are grouped in a developing library called the Endurance FlatSat Library. We have started drafting usage guides for installing the necessary sub-services to manage specific parts or components of the flatsat. You can find the latest drafted documents here (non-validated): ReadTheDocs. Please use these guides as needed, but also make sure to raise tickets for any unclear or problematic steps.",
     "crumbs": [
       "Welcome"
     ]
   },
   {
-    "objectID": "index.html#example-quarto-sites",
-    "href": "index.html#example-quarto-sites",
-    "title": "Making shareable documents with Quarto",
-    "section": "Example Quarto sites",
-    "text": "Example Quarto sites\nA few Quarto websites from Openscapes - so far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.\n\nChampions Lessons Series\nOpenscapes Approach Guide\nNASA Earthdata Cloud Cookbook\n2021 NASA Cloud Hackathon\nFaylab Lab Manual\nA Quarto tip a day, by Mine Çetinkaya-Rundel",
+    "objectID": "index.html#your-contribution-to-this-document",
+    "href": "index.html#your-contribution-to-this-document",
+    "title": "End-to-End FlatSat Service Overview",
+    "section": "Your Contribution to This Document",
+    "text": "Your Contribution to This Document\nThe aim is to keep evolving this document over time, beginning with feedback on areas that need correction or addition as you settle in. Later on, you’re encouraged to clone the repository and add new content. The overall goal of this document is to provide any new team member with all the technical information needed to understand the broader purpose of our activities and the functioning of systems and subsystems.\nAdditionally, I’ve included some basic methods for collaborative work on software development projects. As the team grows, it will be necessary to update or add elements so anyone can adhere to our standards for code quality, reviews, ticketing, or broader workflows.\nThis is also an opportunity to add, in a dedicated section, implemented software elements that may be beneficial to the entire company (e.g., how to create GitHub Actions).",
     "crumbs": [
       "Welcome"
     ]
@@ -52,194 +52,236 @@
   {
     "objectID": "index.html#about",
     "href": "index.html#about",
-    "title": "Making shareable documents with Quarto",
+    "title": "End-to-End FlatSat Service Overview",
     "section": "About",
-    "text": "About\nOpenscapes is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.\nWe’re developing this tutorial to help folks with different levels of technical skills use Quarto for documentation and tutorial building. This tutorial was originally created for several different audiences: NASA-Openscapes researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We’re hoping it’s useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking “Edit this page” or “Report an issue” at the upper right side of any page.",
+    "text": "About\nThis document was created with Quarto, an open-source publishing system that allows users to generate and maintain beautifully formatted documents, websites, blogs, and presentations directly from markdown and Jupyter notebooks. Quarto’s versatility in supporting scientific and technical communication makes it an excellent choice for documenting complex projects like Flatsat. It enables you to combine text, code, and outputs seamlessly, creating a comprehensive and interactive resource for our team.\nFor more information on Quarto and how to use it to enhance your documentation projects, visit Quarto’s website.",
     "crumbs": [
       "Welcome"
     ]
   },
   {
-    "objectID": "quarto-workflows/jupyter.html",
-    "href": "quarto-workflows/jupyter.html",
-    "title": "From Jupyter",
+    "objectID": "flatsat/endurance.html",
+    "href": "flatsat/endurance.html",
+    "title": "Endurance Overview",
     "section": "",
-    "text": "You can interact with Quarto through JupyterLab or JupyterHub. Your Jupyter setup will involve .ipynb notebooks and the command line. Quarto’s JupyterLab tutorials has great instructions on getting started with JupyterLab, including computations and authoring.\nHere we will demonstrate how to work with this Quarto tutorial site in JupyterHub and add a Jupyter Notebook (.ipynb file). This example uses the NASA-Openscapes JupyterHub that already has all python environments as well as Quarto installed.",
+    "text": "Stationkeeping:\n\nService duration of up to 5 years\n\nOrbital Transfer:\n\nCapability to move the client to any GEO orbital slot or correct inclination\n\nAttitude Control:\n\nFine attitude control with an accuracy of up to 0.04 degrees\n\nEnd-of-Life (EOL) Disposal:\n\nTransfer to a GEO graveyard orbit at the end of operations\n\n\n\n\n\n\n\n\nLife Extension Start: Planned for 2026, marking Endurance as the first French company to achieve Life Extension.\nDevelopment Phases:\n\nPhase A: Successfully completed in 2022\nPhase B:\n\nSystem Requirements Review (SRR) in Q4 2023\nPreliminary Design Review (PDR) in Q1 2024\nEstablishment of Industrial Consortium\nRendezvous (RdV) tests in progress\n\nPhase C:\n\nCritical Design Review (CDR) planned for Q4 2024\nPlatform manufacture and testing\nCompletion of RdV and Docking testing\n\nPhase D:\n\nFlight Model (FM) production and integration\nAcceptance testing\n\nPhase E:\n\nLaunch and commissioning in Q1 2026\nEOR, RdV, docking, and life-extension operations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParameter\nSpecification\n\n\n\n\nMass\n310 kg (dry), 500 kg (wet)\n\n\nVolume\n1 x 1 x 1.2 m³\n\n\nLauncher Compatibility\nAriane 6 / SpaceX Falcon 9 (rideshare passenger)\n\n\nPower\nTwo tracking solar wings\n\n\nArchitecture\nDual string (core avionics)\n\n\nPropulsion (PROP)\nFour EP thrusters (Krypton propellant), eight RCS thrusters\n\n\nCommunications\nDeployable antennas\n\n\n\n\n\n\n\n\n\n\nReaction Control System (RCS): Eight thrusters for maneuvering\nStationkeeping: Two electric propulsion (EP) thrusters\nElectric Orbit Raising (EOR): Two EP thrusters\nFuel Tanks:\n\nOne Krypton tank with a capacity of 155 liters\nFour RCS tanks\n\n\n\n\n\n\nReaction Wheels: Three large reaction wheels for stabilization\nThruster Steering Mechanism: Two degrees of freedom for precise maneuvering\n\n\n\n\n\n\n\nSolar Arrays: Two wings capable of generating up to 2.2 kW\nAntenna Deployables: Two antennas for ground communication while docked\nCustomizable Docking System: Adaptable for docking with most GEO satellites\n\n\nThis outline provides a structured markdown version of your presentation content, ready to use for slides or documentation. Let me know if you need more details on any section!",
     "crumbs": [
-      "Quarto workflows",
-      "From Jupyter"
+      "Endurance Overview"
     ]
   },
   {
-    "objectID": "quarto-workflows/jupyter.html#setup",
-    "href": "quarto-workflows/jupyter.html#setup",
-    "title": "From Jupyter",
-    "section": "Setup",
-    "text": "Setup\n\nJupyterHub\nOur JupyterHub is already setup with python environments as well as Quarto (through nasa-openscapes/corn), so there is no further installation required.\n\n\nClone your repo\nYou’ll start by cloning your repository into JupyterHub. Do this by opening a terminal (File &gt; New &gt; Terminal). In the Terminal, git clone your repository and cd into it:\ngit clone https://github.com/openscapes/quarto-website-tutorial\ncd quarto-website-tutorial\n\n\nInstall Quarto\nNot needed - Quarto is already installed on the NASA-Openscapes JupyterHub! But to install elsewhere you would do so from https://quarto.org/docs/get-started/.\nQuarto is a Command Line Interface (CLI), like git. Once download is complete, follow the installation prompts on your computer like you do for other software. You won’t see an application to click on when it is installed.\nNote for Mac users: If you do not have administrative privileges, please select “Install for me only” during the Destination Selection installation step (you will first click on “Change Install Location” at the Installation Type step).\nYou can check to confirm that Quarto is installed properly from the command line:\nquarto check install\n\n\n\n\n\n\nAdditional checks\n\n\n\n\n\nYou can also run:\n\nquarto check knitr to locate R, verify we have the rmarkdown package, and do a basic render\nquarto check jupyter to locate Python, verify we have Jupyter, and do a basic render\nquarto check to run all of these checks together\n\n\n\n\n\n\n\n\n\n\nHistorical aside: Install Quarto in a docker container\n\n\n\n\n\nIn Summer 2021 some NASA Mentors trying to install quarto locally was not an option, but they were able to install it inside a container using the following Dockerfile:\n#| fold: true\n#| summary: \"Show the Dockerfile\"\n\n##############################\n# This Dockerfile installs quarto and then runs quarto serve against the\n# internal /home/quarto/to_serve.\n#\n# BUILD\n# -----\n# To build this container, run\n#\n#     docker build -t quarto_serve .\n#\n# Add the --no-cache option to force docker to build fresh and get the most\n# recent version of quarto.\n#\n#\n# RUN\n# ---\n# 1. Find the directory you want quarto to serve. Let's call this /PATH/TO/earthdata-cloud-cookbook.\n# 2. Run docker:\n#\n#     docker run --rm -it -p 4848:4848 -v /PATH/TO/earthdata-cloud-cookbook:/home/quarto/to_serve quarto_serve\n#\n# 3. Open your browser and go to http://127.0.0.1:4848/\n#\n##############################\n\nFROM ubuntu:hirsute\n\n######\n# Install some command line tools we'll need\n######\nRUN apt-get update\nRUN apt-get -y install wget\nRUN apt-get -y install gdebi-core\nRUN apt-get -y install git\n\n\n######\n# Install quarto (https://quarto.org/)\n######\n\n# This is a quick and dirty way of getting the newest version number from\n# https://github.com/quarto-dev/quarto-cli/releases/latest. What's happening is\n# we're pulling the version number out of the redirect URL. This will end up\n# with QVER set to something like 0.2.11.\nRUN QVER=`wget --max-redirect 0 https://github.com/quarto-dev/quarto-cli/releases/latest 2&gt;&1 | grep \"Location\" | sed 's/L.*tag\\/v//' | sed 's/ .*//'` \\\n    && wget -O quarto.deb \"https://github.com/quarto-dev/quarto-cli/releases/download/v$QVER/quarto-$QVER-amd64.deb\"\nRUN gdebi -n quarto.deb\n\n# Run this to make sure quarto installed correctly\nRUN quarto check install\n\n\n######\n# Create a non-root user called quarto\n######\nRUN useradd -ms /bin/bash quarto\nUSER quarto\nRUN mkdir /home/quarto/to_serve\nWORKDIR /home/quarto/to_serve\n\n\n######\n# Start quarto serve\n######\n\nCMD quarto serve --no-browse --host 0.0.0.0 --port 4848",
-    "crumbs": [
-      "Quarto workflows",
-      "From Jupyter"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/jupyter.html#quarto-preview",
-    "href": "quarto-workflows/jupyter.html#quarto-preview",
-    "title": "From Jupyter",
-    "section": "Quarto preview",
-    "text": "Quarto preview\nLet’s start off by previewing our quarto site locally. In Terminal, type quarto preview, which will provide a URL with a preview of our site!\nquarto preview\n# Preparing to preview\n# Watching files for changes\n# Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/\nCopy this URL into another browser window; and arrange them so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.\n\n\n\n\n\n\nMake a small change and preview it\nNow we’ll be able to see live changes in the preview as we edit in our .md files. Let’s try it: Change the date in index.md by opening it from the file directory. Change to today’s date, and save. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!",
-    "crumbs": [
-      "Quarto workflows",
-      "From Jupyter"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/jupyter.html#create-a-new-.ipynb-page",
-    "href": "quarto-workflows/jupyter.html#create-a-new-.ipynb-page",
-    "title": "From Jupyter",
-    "section": "Create a new .ipynb page",
-    "text": "Create a new .ipynb page\nLet’s add a new page to our site. Instead of an .md file like the others, let’s add a .ipynb file.\nFile &gt; New &gt; Notebook. Accept the default kernel by clicking Select.\n\nFirst chunk: raw yaml\nBy default, this Notebook will give us a first chunk that is code. Let’s change it to raw so that we can write our yaml at the top.\n\n\n\n\n\nIn our Raw code chunk, let’s write the title of this document. We need three dashes --- on separate lines preceding and following the title:, which you can name as you’d like.\n---\ntitle: Python Example\n---\n\n\nSecond chunk: Markdown\nLet’s add a new chunk that is Markdown so we can write some description of what this page will be.\nClick the + symbol at the top of the document, and this will add a new chunk, which by default again is a Code chunk. Change it to a Markdown Chunk following the steps we did above when switching to Raw.\nHere, write a little bit of text in Markdown. Since your title is effectively a level-1 header, avoid using level-1 headers in the rest of your document. Here is some example text I wrote:\n## Introduction\n\nThis example has some Python code that will be a part of our Quarto site.\n\n\nThird chunk: Code\nNow let’s create a new chunk with the default Code setting.\nPaste the following code (or write some of your own to test):\n#| label: fig-polar\n#| fig-cap: \"A line plot on a polar axis\"\nimport numpy as np\nimport matplotlib.pyplot as plt\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\nNow, go ahead and execute this code chunk like you normally would, by clicking the cursor in a code block and clicking the sideways “play” triangle to run the selected cells (and advance to the next cell). This code produces a plot.\nNote that the code runs as it normally would; the code options in the comments are just comments.\n\n\nSave your file\nSave your document - I’ll call mine python-example.ipynb in the main repository.",
-    "crumbs": [
-      "Quarto workflows",
-      "From Jupyter"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/jupyter.html#update-_quarto.yml",
-    "href": "quarto-workflows/jupyter.html#update-_quarto.yml",
-    "title": "From Jupyter",
-    "section": "Update _quarto.yml",
-    "text": "Update _quarto.yml\nNow we’ll add python-example.ipynb to our _quarto.yml file; this is where we register of all files to include in our site. Let’s add it after the section called “Basic Workflows”.\nOpen _quarto.yml by clicking on it from the file directory.\nScroll down to review the current contents in the sidebar: section. It’s there we see all the file arrangement that we see in the previewed site.\nAdd - python-example.ipynb to line 46, making sure that your indentation aligns with the other pages.\n\n\n\n\n\nYou’ll see that our new page shows up in our Preview, and the code is executed since we did that in the Jupyter Notebook itself. By default, Quarto will not execute code chunks since your computations will likely become more complex and you will want to control when they are executed (or “run”).\nSince Quarto is still previewing our website and the python-example.ipynb, the plot also displays in the notebook after the code is run and the file is saved, as shown below.\n\n\n\n\n\nSo, your normal workflow for creating and running code blocks in your Jupyter Notebook is the same one you’ll use as Quarto displays the preview.",
-    "crumbs": [
-      "Quarto workflows",
-      "From Jupyter"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/jupyter.html#quarto-render",
-    "href": "quarto-workflows/jupyter.html#quarto-render",
-    "title": "From Jupyter",
-    "section": "Quarto render",
-    "text": "Quarto render\nSo far we have used Quarto preview to view our website as we develop it. Quarto render will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the _quarto.yml).\nBy default, Quarto render does not execute code in a Jupyter notebook. It will never run .ipynb files unless you tell it to.\n\nRender whole notebook\nIf you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.\nOur Terminal is still busy previewing our website, so let’s open a new Terminal.\nFile &gt; New &gt; Terminal. Then type:\ncd quarto-website-tutorial\nquarto render python-example.ipynb --execute",
-    "crumbs": [
-      "Quarto workflows",
-      "From Jupyter"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/jupyter.html#authoring-tips",
-    "href": "quarto-workflows/jupyter.html#authoring-tips",
-    "title": "From Jupyter",
-    "section": "Authoring tips",
-    "text": "Authoring tips\nQuarto.org has details about authoring, including specific instructions about authoring in Jupyter: quarto.org/docs/reference/cells/cells-jupyter.",
-    "crumbs": [
-      "Quarto workflows",
-      "From Jupyter"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/jupyter.html#commit-and-push",
-    "href": "quarto-workflows/jupyter.html#commit-and-push",
-    "title": "From Jupyter",
-    "section": "Commit and push!",
-    "text": "Commit and push!\nCommitting and pushing will make the changes you see locally live on your website (using the GitHub Action we set up earlier).",
-    "crumbs": [
-      "Quarto workflows",
-      "From Jupyter"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/jupyter.html#troubleshooting",
-    "href": "quarto-workflows/jupyter.html#troubleshooting",
-    "title": "From Jupyter",
-    "section": "Troubleshooting",
-    "text": "Troubleshooting\n\nMy changes don’t show up in preview\nMake sure you’ve saved your file! There might be a slight delay depending on your JupyterHub/Lab setup.\n\n\nQuarto render hangs / does not complete\nCheck the specific notebook, are there any `—` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.\nAlso check how long the first raw cell is. Are there level-1 headers (#)? Try removing them.",
-    "crumbs": [
-      "Quarto workflows",
-      "From Jupyter"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/browser.html",
-    "href": "quarto-workflows/browser.html",
-    "title": "From the Browser",
+    "objectID": "flatsat/endurance.html#overview-of-endurance-services",
+    "href": "flatsat/endurance.html#overview-of-endurance-services",
+    "title": "Endurance Overview",
     "section": "",
-    "text": "A workflow from the browser if good for getting started (since you do not need to install additional software) and for making small contributions, but is definitely limited. Once you feel comfortable here, you can move to a different setup.\nHere’s an example of editing content on an existing page.",
+    "text": "Stationkeeping:\n\nService duration of up to 5 years\n\nOrbital Transfer:\n\nCapability to move the client to any GEO orbital slot or correct inclination\n\nAttitude Control:\n\nFine attitude control with an accuracy of up to 0.04 degrees\n\nEnd-of-Life (EOL) Disposal:\n\nTransfer to a GEO graveyard orbit at the end of operations",
     "crumbs": [
-      "Quarto workflows",
-      "From the Browser"
+      "Endurance Overview"
     ]
   },
   {
-    "objectID": "quarto-workflows/browser.html#edit-content-on-an-existing-page",
-    "href": "quarto-workflows/browser.html#edit-content-on-an-existing-page",
-    "title": "From the Browser",
-    "section": "Edit content on an existing page",
-    "text": "Edit content on an existing page\nLet’s change the date on the home page of this website.\nIn your repository, navigate to index.md. Then, click the pencil icon in the top right to edit directly.\n\n\n\n\n\nWe are now in the “Edit file” tab of the editor, where we can make modifications. Let’s change the date to today’s date. Click the “Preview” tab to see your changes. You can even check the “Show diff” box on the right side to see the changes you’ve made.\n\n\n\n\n\nWhile you’re here, see if there are additional changes to the text you’d like to make. Maybe changing the title or author at the top, or for the main text on the home page of the website.\nOur index.md file is written in Markdown, which enables you to make simple text formatting. As you go back and forth from “Edit file” to “Preview”, notice the patterns of how the Markdown text looks when it is as source (“Edit file”) and when it is formatted (“Preview”). For example, in Markdown, you can make text as a header with # symbols, bold or italic with * symbols, and hyperlinks with [](). Notice that spacing is important: for example, there are carriage returns (when you hit the “return” key) before any bullet points. You can learn the short list of Markdown rules here: https://quarto.org/docs/authoring/markdown-basics.",
-    "crumbs": [
-      "Quarto workflows",
-      "From the Browser"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/browser.html#commit-and-publish",
-    "href": "quarto-workflows/browser.html#commit-and-publish",
-    "title": "From the Browser",
-    "section": "Commit and publish",
-    "text": "Commit and publish\nCommit your changes by scrolling to the bottom of the page and writing a commit message - a note to yourself and others about what changes you made. Write your commit message and then click the green “Commit changes” button.\n\n\n\n\n\nNow, click back to the main page of your GitHub repository. You should see the orange dot confirming your website is published. You’ll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!",
-    "crumbs": [
-      "Quarto workflows",
-      "From the Browser"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/browser.html#limitations",
-    "href": "quarto-workflows/browser.html#limitations",
-    "title": "From the Browser",
-    "section": "Limitations",
-    "text": "Limitations\nWhile awesome that we can edit using GitHub directly from the browser, there are obvious limitations. One is that to see your edits show up in your book, you have to publish using the GitHub Action. This is slow. Another limitation is that we can only work on one file at a time and commit them each separately, which also is slow. Using additional software can make things much better, as we explore in subsequent chapters.",
-    "crumbs": [
-      "Quarto workflows",
-      "From the Browser"
-    ]
-  },
-  {
-    "objectID": "transition-from-rmarkdown.html",
-    "href": "transition-from-rmarkdown.html",
-    "title": "Transition from RMarkdown",
+    "objectID": "flatsat/endurance.html#project-achievements-and-future-goals",
+    "href": "flatsat/endurance.html#project-achievements-and-future-goals",
+    "title": "Endurance Overview",
     "section": "",
-    "text": "You may already have workflows in RMarkdown and are interested in transitioning to Quarto. There’s no hurry to migrate to Quarto. Keep using Rmarkdown and when you’re ready the migration will be fine.\nHere are some notes as we migrate RMarkdown sites and books.\nTODO: translating R code chunks",
+    "text": "Life Extension Start: Planned for 2026, marking Endurance as the first French company to achieve Life Extension.\nDevelopment Phases:\n\nPhase A: Successfully completed in 2022\nPhase B:\n\nSystem Requirements Review (SRR) in Q4 2023\nPreliminary Design Review (PDR) in Q1 2024\nEstablishment of Industrial Consortium\nRendezvous (RdV) tests in progress\n\nPhase C:\n\nCritical Design Review (CDR) planned for Q4 2024\nPlatform manufacture and testing\nCompletion of RdV and Docking testing\n\nPhase D:\n\nFlight Model (FM) production and integration\nAcceptance testing\n\nPhase E:\n\nLaunch and commissioning in Q1 2026\nEOR, RdV, docking, and life-extension operations",
     "crumbs": [
-      "Transition from Rmd"
+      "Endurance Overview"
     ]
   },
   {
-    "objectID": "transition-from-rmarkdown.html#bookdown-to-quarto",
-    "href": "transition-from-rmarkdown.html#bookdown-to-quarto",
-    "title": "Transition from RMarkdown",
-    "section": "Bookdown to Quarto",
-    "text": "Bookdown to Quarto\nConverting a Bookdown book to Quarto is slightly more involved than converting a website. A book has chapters whose order must be defined, and likely has citations and cross-refs. Still, conversion is not that hard.\nWe got some practice converting from Bookdown to Quarto by helping Gavin Fay convert his lab’s fantastic onboarding documentation, the Faylab Lab Manual. Here’s the GitHub view before and after.\nOur best first reference material for this was Nick Tierney’s Notes on Changing from Rmarkdown/Bookdown to Quarto. Nick shares some scripts in that post to automate some changes. In our case, the book was small enough that we made all changes manually. Quarto documentation was indispensable.\n\nExperimenting in a low-risk environment\nWe forked a copy of the Faylab Lab manual to the Openscapes organization, and worked in a branch so we could make changes relatively risk-free. We could always fork a new copy of the original if we “broke” something. (Caution: the default when making a pull request from a fork is to push changes to the original upstream repo, not your fork and it does this without warning if you have write-access to that repo.) With local previews it’s easy to test / play with settings to see what they do. We tended to make a change, Preview, then compare the look and functionality of the book to the original. It was helpful to comment out some elements of the configuration file _output.yml after their counterparts had been added to the Quarto configuration file _quarto.yml, or to confirm they were no longer needed, before making the drastic move of deleting them.\n\n\nThe conversion\nHere are the main steps to convert the Faylab Lab manual from Bookdown to Quarto.\nCreate new empty file called _quarto.yml and add book metadata there. The screenshots below\nSet project type as book.\nMove metadata out of index.qmd and into _quarto.yml. Title, author, and publication date were in index.qmd with date set using date: \"Last updated:r Sys.Date()\". Now these are in _quarto.yml with date set using date: last-modified. Note that having R code would require you to adjust code chunk options in the Quarto style (#|). This tripped us up a bit; see GitHub Actions.\nMove chapters listing out of _bookdown.yml and into _quarto.yml.\nAdd page footer to _quarto.yml.\nHere’s what ours looked like when we finished the steps above (_quarto.yml).\n\n\n\n\n\n\n\n\n\n_quarto.yml contents\n\n\n\n\n\n\n\nFaylab Lab Manual\n\n\n\n\n\nChange insertion of images from html style to Quarto style. (Note Quarto calls them “figures”, not “images”.) The following snippet will insert the GitHub octocat logo in a page:\n![](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png){fig-align=\"left\" width=\"35px\"}\nChange all filename extensions .Rmd -&gt; .qmd (you could Preview after this change and see that the book looks the same). Note that Quarto works with .Rmd files just as well as it does .qmd, so this change is not urgent. In fact, if you have a lot of R code in your .Rmds (unlike the Faylab Lab Manual), there will be additional tinkering needed to make the code chunks happy.\n\n\nCitations\nThe Faylab Lab Manual cited two papers, presenting us with an opportunity to see how easy it is to add references to a Quarto book. Briefly, in the Visual Editor, Insert &gt; Citation &gt; DOI. Pasting the DOI or its full URL, we can insert the citation. This automatically creates a references.bib file and adds the full citations at the bottom of the chapter page (watch demo). In July 2022, we had to manually add a ## References heading, but this may not be necessary in future Quarto updates.\n\n\n\n\n\n\n\n\n\nInsert citation via its DOI using RStudio Visual Editor\n\n\n\n\n\n\n\n\n\n\nPublishing notes\nIf the book’s output is strictly html, there’s no need to specify output-dir in _quarto.yml. The output directory default is _book/, which is what we’d like. If we wanted other types of output like like PDF or EPUB, etc. those single file outputs are also written to the output-dir (Quarto docs).\nIf you currently have a docs/ folder, delete it.\nUpdate .gitignore to ignore _book/. At the same time, we have it ignore caches and a .quarto file:\n/.quarto/\n*_cache/\n_book/\nOnce all is settled, delete _output.yml.\nOnce the Openscapes fork was fully reviewed, we made a pull request from that to the main branch of the book’s repo. Once that was merged, we set up GitHub Actions to render the book. (TODO: instructions for GitHub Actions)\n\n\nGitHub Actions\nThis book was mostly prose and screenshots without any R code. This made the conversion from RMarkdown to Quarto likely more straightforward than if you also needed to adjust code chunk options in the quarto style (#|). Our initial GitHub Action to render the converted Faylab Lab Manual failed because we had a piece of R code - even though the code was commented out! This was resolved when we deleted the line.",
+    "objectID": "flatsat/endurance.html#endurance-summary",
+    "href": "flatsat/endurance.html#endurance-summary",
+    "title": "Endurance Overview",
+    "section": "",
+    "text": "Parameter\nSpecification\n\n\n\n\nMass\n310 kg (dry), 500 kg (wet)\n\n\nVolume\n1 x 1 x 1.2 m³\n\n\nLauncher Compatibility\nAriane 6 / SpaceX Falcon 9 (rideshare passenger)\n\n\nPower\nTwo tracking solar wings\n\n\nArchitecture\nDual string (core avionics)\n\n\nPropulsion (PROP)\nFour EP thrusters (Krypton propellant), eight RCS thrusters\n\n\nCommunications\nDeployable antennas",
     "crumbs": [
-      "Transition from Rmd"
+      "Endurance Overview"
     ]
   },
   {
-    "objectID": "transition-from-rmarkdown.html#distill-to-quarto",
-    "href": "transition-from-rmarkdown.html#distill-to-quarto",
-    "title": "Transition from RMarkdown",
-    "section": "Distill to quarto",
-    "text": "Distill to quarto\nWe transitioned our events site from distill to quarto in May 2022 (github view before and after). We followed excellent notes and examples from Nick Tierney and Danielle Navarro.\nAfter we had changed all the files, the Build tab in the RStudio IDE still showed “Build website” rather then “Render Website” and “Preview Website”, and would error when we pushed them (because that button was expecting a distill site, not a quarto site). To fix this, we updated the .Rproj file. Clicking on the .Rproj file in the RStudio IDE will open a dialog box where you can click things you want (you can also open these in a text editor or from the GitHub website to see the actual text). To fix this situation with the Build tab: Project Options &gt; Build Tools &gt; Project Build Tools &gt; None.\nLooking at files /posts/_metadata.yml and _quarto.yml helps see where things are defined. For example, to make event post citations appear, we added citation: true to /posts/_metadata.yml and in _quarto.yml under the website key we set site-url: https://openscapes.github.io/events. We deleted footer.html used with distill because footer is now defined in quarto.yml.\n\nPublishing notes\n\nBackground: Our distill site had been set up to output to a docs folder, and had GitHub Settings &gt; Pages set to look there rather gh-pages branch. (Julie note: this was a new-to-me capability when we set up the events distill site in Spring 2021 so I had forgotten that was an option). We’ve inititally kept this same set-up for now with our events page in _quarto.yml: output-dir: docs. However, this is sub-optimal; better to not have to commit and push these files but to instead have a GitHub Action generate them upon a commit. So the following is what we did -\n\nDon’t specify output-dir in _quarto.yml. The output directory default is _site/, which is what we’d like.\nIf you currently have a docs/ folder (like we did as we were experimenting), delete it.\nUpdate .gitignore to ignore _site/. At the same time, we have it ignore caches and a .quarto file:\n/.quarto/\n*_cache/\n_site/\nPush these changes, merge into main.\nOn GitHub.com, in your repo, set up GitHub publishing\nFollow instructions from the explore and setup chapter.",
+    "objectID": "flatsat/endurance.html#detailed-system-overview",
+    "href": "flatsat/endurance.html#detailed-system-overview",
+    "title": "Endurance Overview",
+    "section": "",
+    "text": "Reaction Control System (RCS): Eight thrusters for maneuvering\nStationkeeping: Two electric propulsion (EP) thrusters\nElectric Orbit Raising (EOR): Two EP thrusters\nFuel Tanks:\n\nOne Krypton tank with a capacity of 155 liters\nFour RCS tanks\n\n\n\n\n\n\nReaction Wheels: Three large reaction wheels for stabilization\nThruster Steering Mechanism: Two degrees of freedom for precise maneuvering",
     "crumbs": [
-      "Transition from Rmd"
+      "Endurance Overview"
     ]
   },
   {
-    "objectID": "transition-from-rmarkdown.html#troubleshooting",
-    "href": "transition-from-rmarkdown.html#troubleshooting",
-    "title": "Transition from RMarkdown",
-    "section": "Troubleshooting",
-    "text": "Troubleshooting\n\nGitHub Action fails, says you need RMarkdown but you don’t have R code!\nAnd you changed all .Rmds to .qmds!\nYou likely have a few setup code chunks from RMarkdown, that look like this:\n{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = FALSE)\nYou can find them by opening each of your files and having a look, or use GitHub’s search for the keyword knitr",
+    "objectID": "flatsat/endurance.html#external-features-of-endurance",
+    "href": "flatsat/endurance.html#external-features-of-endurance",
+    "title": "Endurance Overview",
+    "section": "",
+    "text": "Solar Arrays: Two wings capable of generating up to 2.2 kW\nAntenna Deployables: Two antennas for ground communication while docked\nCustomizable Docking System: Adaptable for docking with most GEO satellites\n\n\nThis outline provides a structured markdown version of your presentation content, ready to use for slides or documentation. Let me know if you need more details on any section!",
     "crumbs": [
-      "Transition from Rmd"
+      "Endurance Overview"
+    ]
+  },
+  {
+    "objectID": "flatsat/platform.html",
+    "href": "flatsat/platform.html",
+    "title": "Rewind on Satellite platform and subsystems",
+    "section": "",
+    "text": "graph TD\n    A[**Subsystems**]:::main\n    A --&gt; B[**Payload**]\n    A --&gt; C[**Power Subsystem**]\n    A --&gt; D[**Propulsion Subsystem**]\n    A --&gt; E[**Structure Subsystem**]\n    A --&gt; F[**Thermal Subsystem**]\n    A --&gt; G[**AOCS**&lt;br&gt;**Attitude and Orbit Control System**]\n    A --&gt; H[**TM/TC Subsystem**]\n    A --&gt; I[**OBC Subsystem**]\n\n    classDef main font-size:30px, font-weight:bold, color:#ffffff;\n    classDef payload fill:#a05a87, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef power fill:#5f8b95, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef propulsion fill:#999999, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef structure fill:#4a66a1, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef thermal fill:#c49d1d, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef aocs fill:#7f4f7f, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef tmtc fill:#a69d19, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef obc fill:#3b9cc4, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n\n    class B payload;\n    class C power;\n    class D propulsion;\n    class E structure;\n    class F thermal;\n    class G aocs;\n    class H tmtc;\n    class I obc;\n\n\n\n\n\n\n\n\n\n\nComponents:\n\nSolar Panels: Generate electrical power by converting solar energy.\nBatteries: Store energy for use when the satellite is in Earth’s shadow.\n\nPurpose: Provides and regulates power for all satellite subsystems.\nPower Output: Typically between 10 and 20 kW, depending on satellite design and mission requirements.\n\n\n\n\n\n\ngraph TD\n    A[Power Subsystem] --&gt; B[Solar Panels]\n    A --&gt; C[Batteries]\n    B --&gt; D[Generate Power]\n    C --&gt; E[Store Power]\n\n\n\n\n\n\n\n\n\n\nFunctions:\n\nPositioning (Initial Orbit Insertion): Places the satellite in its intended geostationary orbit.\nStation Keeping: Maintains satellite’s position against gravitational forces.\nDeorbiting: Ensures controlled descent at the end of the mission, removing the satellite from orbit.\n\nTypes of Propulsion:\n\nChemical Propulsion: Provides high thrust for orbit changes.\nElectric Propulsion: Efficient for station-keeping maneuvers, using less fuel over time.\n\n\n\n\n\n\n\ngraph TD\n    F[Propulsion Subsystem] --&gt; G[Positioning]\n    F --&gt; H[Station Keeping]\n    F --&gt; I[Deorbiting]\n    G --&gt; J[Chemical Propulsion]\n    H --&gt; K[Electric Propulsion]\n\n\n\n\n\n\n\n\n\n\nPurpose: Provides mechanical integrity, ensuring satellite withstands the physical stresses during launch and operation.\nStress Factors:\n\nAcceleration: Up to 4.5 g during launch.\nAcoustic Pressure: Up to 140 dB due to intense launch sounds.\n\nComponents: Reinforced frame and materials designed for durability in the harsh space environment.\n\n\n\n\n\n\ngraph TD\n    L[Structure Subsystem] --&gt; M[Handles Launch Stresses]\n    M --&gt; N[Acceleration: up to 4.5 g]\n    M --&gt; O[Acoustic Pressure: up to 140 dB]\n\n\n\n\n\n\n\n\n\n\nFunction: Manages satellite temperature, preventing overheating or freezing of sensitive components.\nChallenges:\n\nSpace Temperature Variability: -120°C to +150°C.\n\nOptimal Temperature Ranges:\n\nBatteries: 0°C to +10°C.\nElectronics: 10°C to +45°C.\nAntennas: -150°C to +80°C.\n\nThermal Control Techniques:\n\nRadiators and Heat Pipes: Dissipate excess heat.\nInsulation: Protects against extreme cold.\n\n\n\n\n\n\n\ngraph TD\n    P[Thermal Subsystem] --&gt; Q[Temperature Management]\n    Q --&gt; R[Space Temperature: -120 to +150 degrees celsius]\n    Q --&gt; S[Controlled Ranges]\n    S --&gt; T[Batteries: 0  to +10 degrees celsius]\n    S --&gt; U[Electronics: 10  to +45 degrees celsius]\n    S --&gt; V[Antennas: -150 to +80 degrees celsius]\n\n\n\n\n\n\n\n\n\n\nPurpose: Maintains the satellite’s orientation and ensures it remains in its designated orbital position.\nComponents:\n\nGyroscopes: Measure orientation.\nReaction Wheels: Control attitude without expending fuel.\nThrusters: Adjust orbit as needed for station keeping.\n\nPositioning Requirements: Accuracy within a few kilometers, with specific orientations for antenna alignment and solar panel exposure.\n\n\n\n\n\n\ngraph TD\n    W[Attitude and Orbit Control System AOCS]\n    W --&gt; X[Maintains Orientation]\n    W --&gt; Y[Controls Orbital Position]\n    X --&gt; Z[Gyroscopes & Reaction Wheels]\n    Y --&gt; AA[Thrusters]\n\n\n\n\n\n\n\n\n\n\nTelemetry (TM): Continuously monitors satellite status and transmits data to ground control.\nTelecommand (TC): Receives commands from ground control to execute operational tasks.\nExample Operations: Power adjustments, orbit corrections, and data collection from sensors.\n\n\n\n\n\n\ngraph TD\n    AB[Telemetry & Telecommand Subsystem TM/TC]\n    AB --&gt; AC[Telemetry]\n    AB --&gt; AD[Telecommand]\n    AC --&gt; AE[Sends Data to Ground]\n    AD --&gt; AF[Receives Commands from Ground]\n\n\n\n\n\n\n\n\n\n\nRole: Acts as the satellite’s central processing unit, managing operations and coordinating responses to commands.\nFunctions:\n\nProcesses data from sensors and telemetry.\nExecutes control commands to other subsystems.\nStores critical mission data.\n\nExample: The OBC on ESA’s BepiColombo mission, which provides autonomous operations for deep space.\n\n\n\n\n\n\ngraph TD\n    AG[Onboard Computer OBC Subsystem]\n    AG --&gt; AH[Processes Data]\n    AG --&gt; AI[Executes Commands]\n    AG --&gt; AJ[Stores Mission Data]\n\n\n\n\n\n\n\nSource of Illustrations: Diagrams inspired by ESA and CNES for satellite subsystems and visualizations of Insat 3A, an Indian telecommunications satellite. ```\nThis expanded Markdown file provides a thorough breakdown of each subsystem, accompanied by Mermaid diagrams to illustrate their components and functions. Let me know if you would like to add further details or additional diagrams.",
+    "crumbs": [
+      "Endurance Overview",
+      "Rewind on Satellite platform and subsystems"
+    ]
+  },
+  {
+    "objectID": "flatsat/platform.html#overview",
+    "href": "flatsat/platform.html#overview",
+    "title": "Rewind on Satellite platform and subsystems",
+    "section": "",
+    "text": "graph TD\n    A[**Subsystems**]:::main\n    A --&gt; B[**Payload**]\n    A --&gt; C[**Power Subsystem**]\n    A --&gt; D[**Propulsion Subsystem**]\n    A --&gt; E[**Structure Subsystem**]\n    A --&gt; F[**Thermal Subsystem**]\n    A --&gt; G[**AOCS**&lt;br&gt;**Attitude and Orbit Control System**]\n    A --&gt; H[**TM/TC Subsystem**]\n    A --&gt; I[**OBC Subsystem**]\n\n    classDef main font-size:30px, font-weight:bold, color:#ffffff;\n    classDef payload fill:#a05a87, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef power fill:#5f8b95, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef propulsion fill:#999999, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef structure fill:#4a66a1, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef thermal fill:#c49d1d, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef aocs fill:#7f4f7f, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef tmtc fill:#a69d19, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef obc fill:#3b9cc4, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n\n    class B payload;\n    class C power;\n    class D propulsion;\n    class E structure;\n    class F thermal;\n    class G aocs;\n    class H tmtc;\n    class I obc;",
+    "crumbs": [
+      "Endurance Overview",
+      "Rewind on Satellite platform and subsystems"
+    ]
+  },
+  {
+    "objectID": "flatsat/platform.html#power-subsystem",
+    "href": "flatsat/platform.html#power-subsystem",
+    "title": "Rewind on Satellite platform and subsystems",
+    "section": "",
+    "text": "Components:\n\nSolar Panels: Generate electrical power by converting solar energy.\nBatteries: Store energy for use when the satellite is in Earth’s shadow.\n\nPurpose: Provides and regulates power for all satellite subsystems.\nPower Output: Typically between 10 and 20 kW, depending on satellite design and mission requirements.\n\n\n\n\n\n\ngraph TD\n    A[Power Subsystem] --&gt; B[Solar Panels]\n    A --&gt; C[Batteries]\n    B --&gt; D[Generate Power]\n    C --&gt; E[Store Power]",
+    "crumbs": [
+      "Endurance Overview",
+      "Rewind on Satellite platform and subsystems"
+    ]
+  },
+  {
+    "objectID": "flatsat/platform.html#propulsion-subsystem",
+    "href": "flatsat/platform.html#propulsion-subsystem",
+    "title": "Rewind on Satellite platform and subsystems",
+    "section": "",
+    "text": "Functions:\n\nPositioning (Initial Orbit Insertion): Places the satellite in its intended geostationary orbit.\nStation Keeping: Maintains satellite’s position against gravitational forces.\nDeorbiting: Ensures controlled descent at the end of the mission, removing the satellite from orbit.\n\nTypes of Propulsion:\n\nChemical Propulsion: Provides high thrust for orbit changes.\nElectric Propulsion: Efficient for station-keeping maneuvers, using less fuel over time.\n\n\n\n\n\n\n\ngraph TD\n    F[Propulsion Subsystem] --&gt; G[Positioning]\n    F --&gt; H[Station Keeping]\n    F --&gt; I[Deorbiting]\n    G --&gt; J[Chemical Propulsion]\n    H --&gt; K[Electric Propulsion]",
+    "crumbs": [
+      "Endurance Overview",
+      "Rewind on Satellite platform and subsystems"
+    ]
+  },
+  {
+    "objectID": "flatsat/platform.html#structure-subsystem",
+    "href": "flatsat/platform.html#structure-subsystem",
+    "title": "Rewind on Satellite platform and subsystems",
+    "section": "",
+    "text": "Purpose: Provides mechanical integrity, ensuring satellite withstands the physical stresses during launch and operation.\nStress Factors:\n\nAcceleration: Up to 4.5 g during launch.\nAcoustic Pressure: Up to 140 dB due to intense launch sounds.\n\nComponents: Reinforced frame and materials designed for durability in the harsh space environment.\n\n\n\n\n\n\ngraph TD\n    L[Structure Subsystem] --&gt; M[Handles Launch Stresses]\n    M --&gt; N[Acceleration: up to 4.5 g]\n    M --&gt; O[Acoustic Pressure: up to 140 dB]",
+    "crumbs": [
+      "Endurance Overview",
+      "Rewind on Satellite platform and subsystems"
+    ]
+  },
+  {
+    "objectID": "flatsat/platform.html#thermal-subsystem",
+    "href": "flatsat/platform.html#thermal-subsystem",
+    "title": "Rewind on Satellite platform and subsystems",
+    "section": "",
+    "text": "Function: Manages satellite temperature, preventing overheating or freezing of sensitive components.\nChallenges:\n\nSpace Temperature Variability: -120°C to +150°C.\n\nOptimal Temperature Ranges:\n\nBatteries: 0°C to +10°C.\nElectronics: 10°C to +45°C.\nAntennas: -150°C to +80°C.\n\nThermal Control Techniques:\n\nRadiators and Heat Pipes: Dissipate excess heat.\nInsulation: Protects against extreme cold.\n\n\n\n\n\n\n\ngraph TD\n    P[Thermal Subsystem] --&gt; Q[Temperature Management]\n    Q --&gt; R[Space Temperature: -120 to +150 degrees celsius]\n    Q --&gt; S[Controlled Ranges]\n    S --&gt; T[Batteries: 0  to +10 degrees celsius]\n    S --&gt; U[Electronics: 10  to +45 degrees celsius]\n    S --&gt; V[Antennas: -150 to +80 degrees celsius]",
+    "crumbs": [
+      "Endurance Overview",
+      "Rewind on Satellite platform and subsystems"
+    ]
+  },
+  {
+    "objectID": "flatsat/platform.html#attitude-and-orbit-control-system-aocs",
+    "href": "flatsat/platform.html#attitude-and-orbit-control-system-aocs",
+    "title": "Rewind on Satellite platform and subsystems",
+    "section": "",
+    "text": "Purpose: Maintains the satellite’s orientation and ensures it remains in its designated orbital position.\nComponents:\n\nGyroscopes: Measure orientation.\nReaction Wheels: Control attitude without expending fuel.\nThrusters: Adjust orbit as needed for station keeping.\n\nPositioning Requirements: Accuracy within a few kilometers, with specific orientations for antenna alignment and solar panel exposure.\n\n\n\n\n\n\ngraph TD\n    W[Attitude and Orbit Control System AOCS]\n    W --&gt; X[Maintains Orientation]\n    W --&gt; Y[Controls Orbital Position]\n    X --&gt; Z[Gyroscopes & Reaction Wheels]\n    Y --&gt; AA[Thrusters]",
+    "crumbs": [
+      "Endurance Overview",
+      "Rewind on Satellite platform and subsystems"
+    ]
+  },
+  {
+    "objectID": "flatsat/platform.html#telemetry-and-telecommand-tmtc-subsystem",
+    "href": "flatsat/platform.html#telemetry-and-telecommand-tmtc-subsystem",
+    "title": "Rewind on Satellite platform and subsystems",
+    "section": "",
+    "text": "Telemetry (TM): Continuously monitors satellite status and transmits data to ground control.\nTelecommand (TC): Receives commands from ground control to execute operational tasks.\nExample Operations: Power adjustments, orbit corrections, and data collection from sensors.\n\n\n\n\n\n\ngraph TD\n    AB[Telemetry & Telecommand Subsystem TM/TC]\n    AB --&gt; AC[Telemetry]\n    AB --&gt; AD[Telecommand]\n    AC --&gt; AE[Sends Data to Ground]\n    AD --&gt; AF[Receives Commands from Ground]",
+    "crumbs": [
+      "Endurance Overview",
+      "Rewind on Satellite platform and subsystems"
+    ]
+  },
+  {
+    "objectID": "flatsat/platform.html#onboard-computer-obc-subsystem",
+    "href": "flatsat/platform.html#onboard-computer-obc-subsystem",
+    "title": "Rewind on Satellite platform and subsystems",
+    "section": "",
+    "text": "Role: Acts as the satellite’s central processing unit, managing operations and coordinating responses to commands.\nFunctions:\n\nProcesses data from sensors and telemetry.\nExecutes control commands to other subsystems.\nStores critical mission data.\n\nExample: The OBC on ESA’s BepiColombo mission, which provides autonomous operations for deep space.\n\n\n\n\n\n\ngraph TD\n    AG[Onboard Computer OBC Subsystem]\n    AG --&gt; AH[Processes Data]\n    AG --&gt; AI[Executes Commands]\n    AG --&gt; AJ[Stores Mission Data]\n\n\n\n\n\n\n\nSource of Illustrations: Diagrams inspired by ESA and CNES for satellite subsystems and visualizations of Insat 3A, an Indian telecommunications satellite. ```\nThis expanded Markdown file provides a thorough breakdown of each subsystem, accompanied by Mermaid diagrams to illustrate their components and functions. Let me know if you would like to add further details or additional diagrams.",
+    "crumbs": [
+      "Endurance Overview",
+      "Rewind on Satellite platform and subsystems"
+    ]
+  },
+  {
+    "objectID": "flatsat/swdev.html",
+    "href": "flatsat/swdev.html",
+    "title": "Software development on the flatsat",
+    "section": "",
+    "text": "GitFlow is a branching strategy designed to streamline development, testing, and deployment processes in larger projects. It defines structured branches and workflows for managing features, releases, and urgent fixes in a way that maintains a stable codebase and enables continuous development.\n\n\n\nGitFlow primarily uses five branch types:\n\nMain (master): The stable branch reflecting the current production code. Only release and hotfix branches are merged into main, maintaining its stability.\nDevelop: This branch holds the latest accepted developments. New features and improvements are merged into develop, which serves as the basis for release branches.\nFeature: Created from develop to work on new features or enhancements. Feature branches are short-lived and must be integrated back into develop after completion.\nRelease: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.\nHotfix: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.\n\n\n\n\n\n\nFeature Development:\n\nStart a feature branch from develop using a clear prefix like feature/feature-name.\nImplement the feature, commit changes, and push the branch if needed.\nUpon completion, merge the feature branch back into develop and delete it.\n\nPreparing a Release:\n\nWhen develop is stable and ready for a release, create a release branch (e.g., release/1.0).\nFinalize minor adjustments and version updates on the release branch.\nOnce testing and fixes are complete, merge it into both main and develop. Tag this commit for reference.\n\nHotfixes:\n\nHotfixes are created directly from main for urgent production issues.\nAfter the fix, merge the hotfix branch into both main and develop to ensure the codebase remains consistent.\n\n\n\n\n\n\nTo optimize GitFlow usage and maintain a smooth development process, consider the following practices:\n\nFrequent Commits and Atomic Changes: Make small, focused commits to ease code reviews and bug tracking.\nClear Branch Naming Conventions: Use prefixes (feature/, release/, hotfix/) for clarity in identifying branch purposes.\nDescriptive Commit Messages: Document each change with a concise message to aid in tracking and debugging.\nAutomate Testing and CI/CD: Run automated tests on all branches to catch issues early, ensuring only stable code reaches main.\nPull Requests for Merges: Use pull requests for merging to ensure code reviews and prevent conflicts.\n\n\n\n\n\n\nImproved Collaboration: Clearly defined branches reduce merge conflicts and enhance teamwork.\nStable Main Branch: Maintains production stability, allowing hotfixes without disrupting ongoing development.\nEnhanced Version Control: Organizes commits by type (feature, fix, release), helping trace development progress.\n\n\n\n\n\nGitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.\nFor more details on GitFlow and best practices, refer to Atlassian’s GitFlow Tutorial, GitKraken’s Workflow Guide, and Stackademic’s Guide. ```",
+    "crumbs": [
+      "Endurance Overview",
+      "Software development on the flatsat"
+    ]
+  },
+  {
+    "objectID": "flatsat/swdev.html#branching-model",
+    "href": "flatsat/swdev.html#branching-model",
+    "title": "Software development on the flatsat",
+    "section": "",
+    "text": "GitFlow primarily uses five branch types:\n\nMain (master): The stable branch reflecting the current production code. Only release and hotfix branches are merged into main, maintaining its stability.\nDevelop: This branch holds the latest accepted developments. New features and improvements are merged into develop, which serves as the basis for release branches.\nFeature: Created from develop to work on new features or enhancements. Feature branches are short-lived and must be integrated back into develop after completion.\nRelease: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.\nHotfix: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.",
+    "crumbs": [
+      "Endurance Overview",
+      "Software development on the flatsat"
+    ]
+  },
+  {
+    "objectID": "flatsat/swdev.html#workflow-process",
+    "href": "flatsat/swdev.html#workflow-process",
+    "title": "Software development on the flatsat",
+    "section": "",
+    "text": "Feature Development:\n\nStart a feature branch from develop using a clear prefix like feature/feature-name.\nImplement the feature, commit changes, and push the branch if needed.\nUpon completion, merge the feature branch back into develop and delete it.\n\nPreparing a Release:\n\nWhen develop is stable and ready for a release, create a release branch (e.g., release/1.0).\nFinalize minor adjustments and version updates on the release branch.\nOnce testing and fixes are complete, merge it into both main and develop. Tag this commit for reference.\n\nHotfixes:\n\nHotfixes are created directly from main for urgent production issues.\nAfter the fix, merge the hotfix branch into both main and develop to ensure the codebase remains consistent.",
+    "crumbs": [
+      "Endurance Overview",
+      "Software development on the flatsat"
+    ]
+  },
+  {
+    "objectID": "flatsat/swdev.html#best-practices",
+    "href": "flatsat/swdev.html#best-practices",
+    "title": "Software development on the flatsat",
+    "section": "",
+    "text": "To optimize GitFlow usage and maintain a smooth development process, consider the following practices:\n\nFrequent Commits and Atomic Changes: Make small, focused commits to ease code reviews and bug tracking.\nClear Branch Naming Conventions: Use prefixes (feature/, release/, hotfix/) for clarity in identifying branch purposes.\nDescriptive Commit Messages: Document each change with a concise message to aid in tracking and debugging.\nAutomate Testing and CI/CD: Run automated tests on all branches to catch issues early, ensuring only stable code reaches main.\nPull Requests for Merges: Use pull requests for merging to ensure code reviews and prevent conflicts.",
+    "crumbs": [
+      "Endurance Overview",
+      "Software development on the flatsat"
+    ]
+  },
+  {
+    "objectID": "flatsat/swdev.html#advantages-of-gitflow",
+    "href": "flatsat/swdev.html#advantages-of-gitflow",
+    "title": "Software development on the flatsat",
+    "section": "",
+    "text": "Improved Collaboration: Clearly defined branches reduce merge conflicts and enhance teamwork.\nStable Main Branch: Maintains production stability, allowing hotfixes without disrupting ongoing development.\nEnhanced Version Control: Organizes commits by type (feature, fix, release), helping trace development progress.",
+    "crumbs": [
+      "Endurance Overview",
+      "Software development on the flatsat"
+    ]
+  },
+  {
+    "objectID": "flatsat/swdev.html#conclusion",
+    "href": "flatsat/swdev.html#conclusion",
+    "title": "Software development on the flatsat",
+    "section": "",
+    "text": "GitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.\nFor more details on GitFlow and best practices, refer to Atlassian’s GitFlow Tutorial, GitKraken’s Workflow Guide, and Stackademic’s Guide. ```",
+    "crumbs": [
+      "Endurance Overview",
+      "Software development on the flatsat"
     ]
   },
   {
@@ -263,221 +305,164 @@
     ]
   },
   {
-    "objectID": "quarto-workflows/rstudio.html",
-    "href": "quarto-workflows/rstudio.html",
-    "title": "From RStudio",
+    "objectID": "flatsat/yamcs.html",
+    "href": "flatsat/yamcs.html",
+    "title": "About Yamcs",
     "section": "",
-    "text": "The RStudio software (called an IDE, integrated development environment) is an excellent way to edit files and interface with GitHub. Plus, as it is made by the same folks who make Quarto, it has many integrated features for streamlining your workflow with Quarto, including how it previews your edits and provides debugging support for yaml! Quarto's RStudio tutorials has great instructions on getting started with RStudio, including computations and authoring.\nHere is what you’ll need to do to set up and use RStudio with Quarto.",
+    "text": "Yamcs is an open-source software for real-time mission control, providing tools for managing spacecraft and ground systems operations.\n\n\n\nTelemetry Processing: Receives and processes telemetry data in real-time.\nTelecommands: Allows sending commands to satellites or spacecraft.\nAlarms & Notifications: Generates alarms based on configurable thresholds.\nData Replay: Enables users to replay mission data.\nStandards Compliance: Supports standards like CCSDS, CFDP, and XTCE.\n\n\n\n\nTo set up Yamcs, follow the Getting Started Guide. It covers installation, configuration, and basic usage, ideal for new users.\n\n\n\nThe Python Yamcs Client allows integration with Yamcs via Python, supporting telemetry retrieval, commanding, and historical data access, making it suitable for custom mission applications.\n\n\n\nYamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training.",
     "crumbs": [
-      "Quarto workflows",
-      "From RStudio"
+      "Endurance Overview",
+      "About Yamcs"
     ]
   },
   {
-    "objectID": "quarto-workflows/rstudio.html#setup",
-    "href": "quarto-workflows/rstudio.html#setup",
-    "title": "From RStudio",
-    "section": "Setup",
-    "text": "Setup\n\nRStudio and GitHub\nFor a workflow with RStudio and GitHub on your local computer, you will need four things:\n\nR\nRStudio\nGit\nGitHub\n\nFollow the UCSB MEDS Installation Guide for detailed instructions on how to create accounts, download, install, and configure on Mac and Windows. This takes about 20 minutes. (For an even more detailed walk-through, see Allison Horst’s ESM 206 Google Doc).\n\n\nClone your repo\nYou’ll start by cloning your repository into RStudio.\nFile &gt; New Project &gt; Version Control &gt; Git &gt; paste your repository name.\nR for Excel Users: Clone your repository using RStudio has detailed instructions and screenshots of these steps.\n\n\nInstall Quarto\nNext, you’ll install Quarto: https://quarto.org/docs/get-started/. After downloading, follow the installation wizard on your computer. When it is complete, you won’t see an application or any new software, but it is now available to RStudio (as well as all other applications on your computer, including the command line).\n\n\nRStudio orientation\nNow let’s take a moment to get oriented. This is an RStudio project, which is indicated in the top-right. The bottom right pane shows all the files in your project; everything we’ve cloned from GitHub. We can open any RStudio project by opening its .Rproj file, or from RStudio File &gt; Open Project ….\n\n\n\nRStudio IDE highlighting the project name and files pane\n\n\n\n\nVisual Editor\nThe RStudio Visual Editor is quite new and has features that improve your writing experience. Working in the Visual Editor feels a bit like working in a Google Doc.\nHere’s an example showing the same file in the original Source Editor with content in markdown format and in the Visual Editor with content that looks more like it will appear in a live site. You can switch freely between these modes.\n\n\n\n\n\n\n\n\n\nRStudio IDE highlighting the Source Editor\n\n\n\n\n\n\n\nRStudio IDE highlighting the Visual Editor\n\n\n\n\n\nAlready have some content formatted in a Google Doc? You can copy-paste it into the Visual Editor and most formatting will be retained.\nThe editing bar provides familiar point and click access to text formatting options like bulleted or numbered lists.\n\n\n\nRStudio IDE highlighting the point and click editing bar\n\n\n\nKeyboard shortcuts\nThe Visual Editor also lets you use many keyboard shortcuts that might be familiar for adding boldface (command-b), italics (command-i), or headers. On a Mac, option-command-2 will make a level 2 header. Try it with option-command-1, or option-command-0 for normal text!\n\n\nInsert an image or figure\nTo insert an image (called a figure in Quarto), click the image icon. This brings up a window in which we can select the image, set its alignment, give it a caption and alt text, hyperlink it, or edit other metadata.\n\n\n\nInsert image or figure using the Visual Editor\n\n\nOnce an image is added, clicking on that image gives us editing options. We can resize it dynamically by clicking in the image and dragging a corner or side to resize. When an image is selected, its dimensions are displayed for editing. Clicking on the gray ellipsis to the right of the dimensions opens the pop-up window to access more metadata edits.\n\n\nInsert a table\nSimilar to adding an image, to insert a table, we click the Table dropdown.",
-    "crumbs": [
-      "Quarto workflows",
-      "From RStudio"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/rstudio.html#quarto-render",
-    "href": "quarto-workflows/rstudio.html#quarto-render",
-    "title": "From RStudio",
-    "section": "Quarto render",
-    "text": "Quarto render\nIn the Build tab in the top-right pane, click “Render Website”. This will build the .html files and preview your website. It’s equivalent to “knitting” in RMarkdown.\nNote that you can also click “Preview Website”. With “Render Website” in RStudio, Quarto is able to render and preview in one step.\nIf you’d ever like to stop the preview, in the bottom-left, click on the Jobs tab and then the red Stop button.\n\nMake a small change and render it\nClick on index.md. This will open this markdown file in a fourth pane; the editor pane. Make a small change, for example change to today’s date on Line 4. Then, save your file; there is a disc icon at the top of the file.\nThen, render this file: press “Render” which is to the right of the disc icon that saves the file. This will render only this single file, as opposed to rerendering the whole website like when we clicked “Render Website” in the top right pane. Checking Render on Save (between the disc icon and the Render button) is a great strategy for doing this in one step.",
-    "crumbs": [
-      "Quarto workflows",
-      "From RStudio"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/rstudio.html#create-a-new-.rmd-page",
-    "href": "quarto-workflows/rstudio.html#create-a-new-.rmd-page",
-    "title": "From RStudio",
-    "section": "Create a new .Rmd page",
-    "text": "Create a new .Rmd page\nNew &gt; RMarkdown document &gt; OK\nThe starter RMarkdown document has some R code inside: it displays a summary of the cars dataset that is pre-loaded into R (summary(cars)) and plots the pressure data that is also pre-loaded (plot(pressure)).\nSave this document as r-example.rmd.",
-    "crumbs": [
-      "Quarto workflows",
-      "From RStudio"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/rstudio.html#update-_quarto.yml",
-    "href": "quarto-workflows/rstudio.html#update-_quarto.yml",
-    "title": "From RStudio",
-    "section": "Update _quarto.yml",
-    "text": "Update _quarto.yml\nNow we’ll add r-example.rmd to our _quarto.yml file; this is where we register all files to include in our site. Let’s add it after the section called “Quarto Workflows”.\nOpen _quarto.yml by clicking on it from the file directory.\nScroll down to review the current contents in the sidebar: section under contents:. It’s there we see all the file arrangement that we see in the previewed site.\nAdd - r-example.rmd in its own line, making sure that your indentation aligns with the other pages.\nFrom the Build tab, clicking Preview Website will recreate your website!",
-    "crumbs": [
-      "Quarto workflows",
-      "From RStudio"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/rstudio.html#authoring-tips",
-    "href": "quarto-workflows/rstudio.html#authoring-tips",
-    "title": "From RStudio",
-    "section": "Authoring tips",
-    "text": "Authoring tips\nChecking “Render on Save” is really helpful when iterating quickly on a document.\nIf the document is very code-heavy, consider using freeze that will not run the code each time.\nQuarto.org has details about authoring, including specific instructions about authoring in RStudio.",
-    "crumbs": [
-      "Quarto workflows",
-      "From RStudio"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/rstudio.html#commit-and-push",
-    "href": "quarto-workflows/rstudio.html#commit-and-push",
-    "title": "From RStudio",
-    "section": "Commit and push!",
-    "text": "Commit and push!\nCommitting and pushing will make the changes you see locally live on your website (using the GitHub Action we set up earlier).",
-    "crumbs": [
-      "Quarto workflows",
-      "From RStudio"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/rstudio.html#troubleshooting",
-    "href": "quarto-workflows/rstudio.html#troubleshooting",
-    "title": "From RStudio",
-    "section": "Troubleshooting",
-    "text": "Troubleshooting\nIf you have trouble rendering your website after for example changing the extenstion of a file from .md to .qmd, refreshing your RStudio often helps. Do this by clicking the project name at the upper right of the RStudio window (in this case, quarto-website-tutorial), and underneath the “close project” section, click the same name of your project: quarto-website-tutorial. This will relaunch your whole project afresh.",
-    "crumbs": [
-      "Quarto workflows",
-      "From RStudio"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/index.html",
-    "href": "quarto-workflows/index.html",
-    "title": "Quarto workflows",
+    "objectID": "flatsat/yamcs.html#key-features",
+    "href": "flatsat/yamcs.html#key-features",
+    "title": "About Yamcs",
     "section": "",
-    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!\n\nNote: if editing from your internet browser we won’t render in Step 3. That step will not be separate, but combined with Step 5, which will only require a commit, not a push.",
+    "text": "Telemetry Processing: Receives and processes telemetry data in real-time.\nTelecommands: Allows sending commands to satellites or spacecraft.\nAlarms & Notifications: Generates alarms based on configurable thresholds.\nData Replay: Enables users to replay mission data.\nStandards Compliance: Supports standards like CCSDS, CFDP, and XTCE.",
     "crumbs": [
-      "Quarto workflows"
+      "Endurance Overview",
+      "About Yamcs"
     ]
   },
   {
-    "objectID": "quarto-workflows/index.html#basic-workflow",
-    "href": "quarto-workflows/index.html#basic-workflow",
-    "title": "Quarto workflows",
+    "objectID": "flatsat/yamcs.html#getting-started",
+    "href": "flatsat/yamcs.html#getting-started",
+    "title": "About Yamcs",
     "section": "",
-    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!\n\nNote: if editing from your internet browser we won’t render in Step 3. That step will not be separate, but combined with Step 5, which will only require a commit, not a push.",
+    "text": "To set up Yamcs, follow the Getting Started Guide. It covers installation, configuration, and basic usage, ideal for new users.",
     "crumbs": [
-      "Quarto workflows"
+      "Endurance Overview",
+      "About Yamcs"
     ]
   },
   {
-    "objectID": "quarto-workflows/index.html#authoring",
-    "href": "quarto-workflows/index.html#authoring",
-    "title": "Quarto workflows",
-    "section": "Authoring",
-    "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces markdown-basics that will get you started. Also see Mine Çetinkaya-Rundel’s A Quarto tip a day.\nEach page of our site has a similar first few lines - this YAML, like we saw in our _quarto.yml and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML.",
-    "crumbs": [
-      "Quarto workflows"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/index.html#update-_quarto.yml",
-    "href": "quarto-workflows/index.html#update-_quarto.yml",
-    "title": "Quarto workflows",
-    "section": "Update _quarto.yml",
-    "text": "Update _quarto.yml\nLet’s have a closer look at the _quarto.yml file.\nThis type of file (.yml or .yaml) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the _quarto.yml file following the patterns you see in this example.\n\n\n\n_quarto.yml and website side-by-side\n\n\nNotice that there are multiple ways in the _quarto.yml for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in _quarto.yml (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of _quarto.yml, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in _quarto.yml, but the page’s title says “First Observations & Setup” (which in our preference was too long for the sidebar).\n\n\n\n\n\n\nNote\n\n\n\nAs you modify _quarto.yml, the most important thing to know is that spacing matters. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache.",
-    "crumbs": [
-      "Quarto workflows"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/index.html#install-quarto",
-    "href": "quarto-workflows/index.html#install-quarto",
-    "title": "Quarto workflows",
-    "section": "Install Quarto",
-    "text": "Install Quarto\nhttps://quarto.org/docs/get-started/ describes how to install Quarto, which will depend on your operating system. We’ll walk through installation for each tool in the next chapters.",
-    "crumbs": [
-      "Quarto workflows"
-    ]
-  },
-  {
-    "objectID": "explore.html",
-    "href": "explore.html",
-    "title": "Explore and setup",
+    "objectID": "flatsat/yamcs.html#python-client",
+    "href": "flatsat/yamcs.html#python-client",
+    "title": "About Yamcs",
     "section": "",
-    "text": "With this tutorial, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things to do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with Quarto documentation.\nWe’ll start our exploration online looking at the website architecture and GitHub repository. Then we’ll setup a copy for ourselves so that we can modify from a working example, which is a great way to learn something new. We’ll set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter).",
+    "text": "The Python Yamcs Client allows integration with Yamcs via Python, supporting telemetry retrieval, commanding, and historical data access, making it suitable for custom mission applications.",
     "crumbs": [
-      "Explore and setup"
+      "Endurance Overview",
+      "About Yamcs"
     ]
   },
   {
-    "objectID": "explore.html#exploring-online",
-    "href": "explore.html#exploring-online",
-    "title": "Explore and setup",
-    "section": "Exploring online",
-    "text": "Exploring online\n\nThe website itself\nThis website has 5 things you can see on the left sidebar:\n\nWelcome\nExploring and setup\nQuarto workflows\nLearning more\nTransition from Rmd\n\nMost of these are pages, but you’ll see that “Quarto Workflows” has an arrow &gt;; it is a folder with additional pages inside.\n\n\nThe website’s repo\nLet’s go to this website’s GitHub repository (also called a “repo”), https://github.com/openscapes/quarto-website-tutorial. You can also click there from any page in this tutorial website by clicking the GitHub octocat icon underneath the Openscapes logo in the left navbar (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).\nHave a look at the filenames. We can recognize the names of the webpages we’ve seen above, and they have red arrows marking them in the image below. You’ll see the “quarto-workflows” folder and the rest in this site are .qmd files, which are plain text Quarto files that can combine Markdown text with code. index.qmd is the home page. If you click inside “quarto-workflows” you’ll see a mix of filetypes!\n\n\n\nquarto-website-tutorial GitHub repository with files for webpages marked with red arrows\n\n\nThe _site folder has html files with names that should be familiar: they match the .qmd files we were just exploring. This folder is where Quarto stores files to build the website.",
+    "objectID": "flatsat/yamcs.html#extensions-and-support",
+    "href": "flatsat/yamcs.html#extensions-and-support",
+    "title": "About Yamcs",
+    "section": "",
+    "text": "Yamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training.",
     "crumbs": [
-      "Explore and setup"
+      "Endurance Overview",
+      "About Yamcs"
     ]
   },
   {
-    "objectID": "explore.html#quarto.yml-intro",
-    "href": "explore.html#quarto.yml-intro",
-    "title": "Explore and setup",
-    "section": "_quarto.yml intro",
-    "text": "_quarto.yml intro\nThere is also a _quarto.yml file, which is the website’s configuration file. It is essentially metadata for the website that includes the order that the pages/chapters will be in. This is where you update the organization of your website: which page comes before another. If we compare side-by-side, you’ll see that the pages that appear on our website are listed there.\n\n\n\n_quarto.yml and website side-by-side\n\n\nWe’ll learn more about how to interact with _quarto.yml in Quarto Workflows.",
+    "objectID": "flatsat/flatsat.html",
+    "href": "flatsat/flatsat.html",
+    "title": "Flatsat Overview",
+    "section": "",
+    "text": "A FlatSat is a ground-based, test-ready version of a satellite with all its components laid out on a table rather than in a compact structure. This configuration allows for direct access to each subsystem, facilitating testing and troubleshooting in a controlled lab environment.\n\n\nFlatSats are used primarily to test satellite systems and their interoperability before launch, ensuring each component functions correctly. This setup supports end-to-end operations as if in orbit, allowing for command and telemetry testing. For CubeSats, FlatSats provide a low-cost, modular test environment suitable for educational purposes, commercial applications, and experimental payloads.\n\n\n\nA FlatSat for CubeSat might include: - On-Board Computer (OBC) - Power System - Telemetry and Radio System - Attitude and Orbit Control - Navigation Receiver\nAdditional slots are often available for custom hardware or experimental components, such as AI-based detection algorithms or radiation monitoring payloads.\n\n\n\n\nAccessibility: Subsystems are physically separated, making them accessible for individual testing and replacement.\nOperational Simulation: Commands can be sent via a simulated ground station, with telemetry received for analysis.\nFlexibility: Engineers can easily swap or modify components, an asset for educational and fast-paced commercial projects.\nTesting New Technologies: Allows for validation of new components like radiation-tolerant microcontrollers in a representative environment.\n\n\n\n\nESA, NASA, and other space organizations use FlatSats extensively to develop and validate CubeSat technologies, streamline component interoperability, and prepare hardware for space missions.\nFor more details, refer to the ESA page and NASA’s technical documentation.\n\nLet me know if you need further specifics or if there’s a particular section you’d like expanded!",
     "crumbs": [
-      "Explore and setup"
+      "Endurance Overview",
+      "Flatsat Overview"
     ]
   },
   {
-    "objectID": "explore.html#fork-to-your-account",
-    "href": "explore.html#fork-to-your-account",
-    "title": "Explore and setup",
-    "section": "Fork to your account",
-    "text": "Fork to your account\nLet’s start with an existing Quarto site and copy it into your space to edit. You’ll need a free GitHub account that you create at github.com (follow this advice about choosing your username).\nFirst, choose an existing website to copy. The simplest option is to start with this site: quarto-website-tutorial.\nOther options of potential interest:\n\n2021-Cloud-Hackathon\n2022-SWOT-Ocean-Cloud-Workshop\nOpenscapes Approach-Guide\n\nNext, follow these steps to fork and setup your repo with GitHub Actions from Gavin Fay, using the repo you chose. These instructions will take ~5 minutes.\nNow you’ve got a copy of your repo of choice in your own GitHub account, and you’re set to start making your own edits. Your GitHub repo is set up with a GitHub Action that will use Quarto to rebuild and republish your site anytime you make a commit: committing will trigger the GitHub Action to rebuild and republish the book.\nNote that the GitHub Action for this book does not include R or Python so those will need to be added if your website relies on code. See https://github.com/r-lib/actions for more details and examples.\n\nDownload instead of fork\nForking might not always be the way to go - you can’t fork into the same GitHub user account or organization so if for example you want to make a copy of 2021-Cloud-Hackathon repo within the same NASA-Openscapes GitHub Organization, you’ll need to download instead of fork. In this case, follow these steps to download and copy into a new repository, and set up the GitHub Action and the gh-pages branch for publishing, separately.\n\nDownload github repo files\nNavigate to https://github.com/openscapes/quarto-website-tutorial (or any other quarto site repo of choice). Click the green “Code” button and select “Download ZIP”. When it downloads on your computer, unzip the files.\n\n\nCreate a new GitHub repo\nNavigate to your GitHub account or organization, and create a new repository, naming it what you’d like. You’ll need a free GitHub account that you create at github.com (follow this advice about choosing your username). When you’re logged in, github.com will show a green button that says “New” which you’ll also see as you navigate to your username’s repository page.\n\n\nAdd original site files\nIf you’re comfortable cloning the new repository and copying files into it locally before committing and pushing back to GitHub, that is preferable to the GitHub file uploader, which does have limitations with complex repos. The uploader does not allow upload of folders, so some manual work would be required.\nTo use the GitHub file uploader, click the button next to the green “Code” button that says “Add file”. Add file &gt; Upload files. Then, on your computer, select all the files in unzipped folder (command-A or control-A), and drag them to the GitHub uploader page. Scroll down to write a commit message, which effectively saves your files when you’re working in the browser.",
+    "objectID": "flatsat/flatsat.html#purpose-and-use",
+    "href": "flatsat/flatsat.html#purpose-and-use",
+    "title": "Flatsat Overview",
+    "section": "",
+    "text": "FlatSats are used primarily to test satellite systems and their interoperability before launch, ensuring each component functions correctly. This setup supports end-to-end operations as if in orbit, allowing for command and telemetry testing. For CubeSats, FlatSats provide a low-cost, modular test environment suitable for educational purposes, commercial applications, and experimental payloads.",
     "crumbs": [
-      "Explore and setup"
+      "Endurance Overview",
+      "Flatsat Overview"
     ]
   },
   {
-    "objectID": "explore.html#setup-github-action",
-    "href": "explore.html#setup-github-action",
-    "title": "Explore and setup",
-    "section": "Set up GitHub publishing",
-    "text": "Set up GitHub publishing\nIf you’ve used the ‘Fork to your account approach’ above, your website is all set!\nIf you’ve set up your repo by using the ‘Download github repo files’ approach above, you’ll need to set up GitHub publishing separately. We’ll do this in a few steps: we’ll set up a GitHub Action within your repo, and create a gh-pages branch.\nFirst, the GitHub Action. Go back to your main view of your GitHub repository by clicking on the name of your repository at the top-left (the url in your browser window should say https://github.com/username/repo-name).\nNext to the green code button, click Add file &gt; Create new file. Name it exactly this: .github/workflows/quarto-publish.yml . In detail: start by typing the . with github and when you type the / it will give you a new text box to type workflows (plural!), then another /, and finally, quarto-publish.yml.\nNow you’ll have an empty new file. Paste the following in this empty file - you can click on the top-right of this box to copy all the code inside this code box:\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      # add software dependencies here\n\n      - name: Publish to GitHub Pages (and render)\n        uses: quarto-dev/quarto-actions/publish@v2\n        with:\n          target: gh-pages\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions\nCommit this to save your new quarto-publish.yml file. This is your GitHub Action.\nFinally, from your main repo page, click Settings &gt; Actions &gt; General. Under ‘Workflow permissions’, select ‘Read and write permissions’. Save.\nNext, we’ll create a new gh-pages branch. Go back to the main view of your GitHub repository. On the far left from the green “Code” button, click the button that says “main”. In the pull-down menu, type gh-pages - all lowercase, with a hyphen. Click the bold text that says “Create branch: gh-pages from main”.\nNow click on the Settings tab in the top right of your repository. On the left sidebar, click Pages. At the top of Pages under “Source”, select gh-pages root, and press Save (may already be saved by default).\nTo view your published website, at your main repository page, on the right side, click the gear-icon, select ‘Use your GitHub Pages website’.",
+    "objectID": "flatsat/flatsat.html#typical-components",
+    "href": "flatsat/flatsat.html#typical-components",
+    "title": "Flatsat Overview",
+    "section": "",
+    "text": "A FlatSat for CubeSat might include: - On-Board Computer (OBC) - Power System - Telemetry and Radio System - Attitude and Orbit Control - Navigation Receiver\nAdditional slots are often available for custom hardware or experimental components, such as AI-based detection algorithms or radiation monitoring payloads.",
     "crumbs": [
-      "Explore and setup"
+      "Endurance Overview",
+      "Flatsat Overview"
     ]
   },
   {
-    "objectID": "explore.html#confirm",
-    "href": "explore.html#confirm",
-    "title": "Explore and setup",
-    "section": "Confirm your website is published",
-    "text": "Confirm your website is published\nTo confirm that your website is published, go back to your main repository page. You’ll now see an orange dot showing that the GitHub Action is beginning to publish the page.\n\n\n\nOur repo with orange dot indicating in-progress GitHub Action build\n\n\nIf you do not see this orange dot, you can re-run the GitHub Action (on the main repo page, click Actions &gt; select the workflow you want to re-run &gt; click the ‘Re-run all jobs’ button.\nWhen your orange do becomes a green check, you can go inspect your published site at “https://username.github.io/your-repo). For example: https://openscapes.github.io/quarto-website-tutorial.\n\n\n\nOur repo with green check indicating successful GitHub Action build\n\n\nIt can take some time for the site to deploy, so don’t worry if you don’t see it right away.",
+    "objectID": "flatsat/flatsat.html#advantages",
+    "href": "flatsat/flatsat.html#advantages",
+    "title": "Flatsat Overview",
+    "section": "",
+    "text": "Accessibility: Subsystems are physically separated, making them accessible for individual testing and replacement.\nOperational Simulation: Commands can be sent via a simulated ground station, with telemetry received for analysis.\nFlexibility: Engineers can easily swap or modify components, an asset for educational and fast-paced commercial projects.\nTesting New Technologies: Allows for validation of new components like radiation-tolerant microcontrollers in a representative environment.",
     "crumbs": [
-      "Explore and setup"
+      "Endurance Overview",
+      "Flatsat Overview"
     ]
   },
   {
-    "objectID": "explore.html#renaming-your-repo",
-    "href": "explore.html#renaming-your-repo",
-    "title": "Explore and setup",
-    "section": "Renaming your repo",
-    "text": "Renaming your repo\nIf you’d like to rename your repo, go to Settings and the option to rename is on the top of the main settings page.",
+    "objectID": "flatsat/flatsat.html#applications-in-industry-and-research",
+    "href": "flatsat/flatsat.html#applications-in-industry-and-research",
+    "title": "Flatsat Overview",
+    "section": "",
+    "text": "ESA, NASA, and other space organizations use FlatSats extensively to develop and validate CubeSat technologies, streamline component interoperability, and prepare hardware for space missions.\nFor more details, refer to the ESA page and NASA’s technical documentation.\n\nLet me know if you need further specifics or if there’s a particular section you’d like expanded!",
     "crumbs": [
-      "Explore and setup"
+      "Endurance Overview",
+      "Flatsat Overview"
     ]
   },
   {
-    "objectID": "explore.html#onward",
-    "href": "explore.html#onward",
-    "title": "Explore and setup",
-    "section": "Onward!",
-    "text": "Onward!\nNow you are ready to start editing and publishing! The next chapter describes how starting off from the browser, using Markdown.",
+    "objectID": "flatsat/can.html",
+    "href": "flatsat/can.html",
+    "title": "CAN protocols",
+    "section": "",
+    "text": "# CAN-TS and CANopen Protocols for Embedded Applications\n\n## Overview\nThe CAN-TS (CAN Telemetry Standard) protocol and CANopen are two communication protocols widely used in embedded systems, particularly for systems with constrained resources. While both protocols serve communication needs, each has unique features and is suited to different application environments.\n\n---\n\n## CAN-TS Protocol\n\n### Purpose\nCAN-TS is designed specifically for applications with limited memory, such as embedded systems in aerospace. It provides a streamlined communication method, prioritizing low memory usage while still offering critical functionalities.\n\n### Key Features\n- **Lightweight Design**: Optimized for 8/16-bit architecture, minimizing memory overhead.\n- **Basic Communication Services**: Includes telemetry, telecommand, time synchronization, and bus redundancy management.\n- **Open Source**: Available for free on GitHub, facilitating easy adoption and integration.\n  \n### Advantages\n- **Memory Efficiency**: Ideal for memory-constrained systems.\n- **Robustness**: Engineered for reliability in mission-critical applications like aerospace.\n- **Low Resource Consumption**: Efficiently operates with minimal computational requirements, making it a practical choice for simple devices.\n\n---\n\n## CANopen Protocol\n\n### Purpose\nCANopen is a more comprehensive and flexible protocol, commonly used in industrial applications requiring detailed and extensive communication capabilities. \n\n### Key Features\n- **Device Profiles**: Standardized profiles for various device types (e.g., motion control, sensors).\n- **Communication Objects**: Supports multiple types of data transfer, such as PDO (Process Data Objects) and SDO (Service Data Objects).\n- **Scalability**: Suitable for both simple and complex network structures.\n  \n### Advantages\n- **Wide Applicability**: Used in many industries, including automotive and automation.\n- **Enhanced Functionality**: Offers advanced features like diagnostic services and network management.\n- **Customization**: Flexible configuration options to meet specific needs.\n\n---\n\n## Comparison\n\n| Feature                | CAN-TS                                  | CANopen                                |\n|------------------------|-----------------------------------------|----------------------------------------|\n| **Memory Usage**       | Low, optimized for constrained devices | Higher, requires more memory           |\n| **Typical Use Case**   | Aerospace, simple devices              | Industrial automation, robotics        |\n| **Complexity**         | Lower, easier to implement             | Higher, with more extensive features   |\n| **Availability**       | Open-source, free                      | Often requires licensing               |\n\n---\n\n## Conclusion\nBoth CAN-TS and CANopen serve important roles in the field of embedded systems, each fitting distinct needs. CAN-TS is ideal for memory-limited applications in aerospace, while CANopen provides extensive support for complex industrial setups.\n\nFor more detailed information, see the full document on the [ESA website](https://indico.esa.int/event/276/contributions/4535/attachments/3482/4593/W32_-_CAN-TS_protocol_for_memory_constrained_embedded_application.pdf)."
+  },
+  {
+    "objectID": "flatsat/spacepackets.html",
+    "href": "flatsat/spacepackets.html",
+    "title": "Space Packets Protocols",
+    "section": "",
+    "text": "The CCSDS standards cover space communication protocols to ensure interoperability between agencies. These documents define three main protocols: - Space Packet Protocol (SPP): for structuring and transporting space data in a generic way. - Telecommand (TC) Space Data Link Protocol: for sending commands from ground to a satellite. - Telemetry (TM) Space Data Link Protocol: for returning telemetry from a satellite to the ground.\n\n\n\nThe SPP (CCSDS 133.0-B-2) is an Application Layer protocol for structuring and transporting data in the form of “space packets.”\n\n\n\n\n\n\n\ngraph TD\n    A[Packet Primary Header]\n    B[Packet Secondary Header]\n    C[Data Field]\n\n    A --&gt;|7 bytes| B\n    B --&gt;|variable| C\n\n\n\n\n\n\n\n\n\n\nApplication Identification through the APID (Application Process Identifier) field.\nData Flexibility: variable packet sizes for increased adaptability.\nIndependence from Lower Layers: can be used with different link protocols.\n\n\n\n\n\n\nThe TC Space Data Link Protocol (CCSDS 232.0-B-4) manages command communication from ground to satellites. It operates at the Data Link Layer.\n\n\n\n\n\n\n\ngraph TD\n    A[Master Channel]\n    B1[Virtual Channel 1]\n    B2[Virtual Channel 2]\n    C1[MAP Channel 1]\n    C2[MAP Channel 2]\n    C3[MAP Channel 3]\n\n    A --&gt; B1\n    A --&gt; B2\n    B1 --&gt; C1\n    B2 --&gt; C2\n    B2 --&gt; C3\n\n\n\n\n\n\n\n\n\n\nSegmentation and Multiplexing: data is split into multiple virtual channels.\nCommunication Control: ensures reliable delivery and integrity checks for commands.\nSecurity Support (SDLS) for protecting sensitive command data.\n\n\n\n\n\n\nThe TM Space Data Link Protocol (CCSDS 132.0-B-3) is used to send telemetry data from a satellite to the ground, also operating at the Data Link Layer.\n\n\n\n\n\n\n\ngraph LR\n    A[Satellite Data Source] -- Asynchronous Transmission --&gt; B[Virtual Channel]\n    B -- Synchronous Mode --&gt; C[Ground Reception]\n\n\n\n\n\n\n\n\n\n\nSupport for Virtual Channels to differentiate telemetry data streams.\nMultiplexing/Demultiplexing of data into master and virtual channels.\nSDLS Security Option to ensure the confidentiality and integrity of telemetry data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransporting data as packets\nN/A\n\n\nTC\nData Link\nSending commands\nSDLS Support\n\n\nTM\nData Link\nSending telemetry\nSDLS Support",
     "crumbs": [
-      "Explore and setup"
+      "Endurance Overview",
+      "Space Packets Protocols"
+    ]
+  },
+  {
+    "objectID": "flatsat/spacepackets.html#space-packet-protocol-spp",
+    "href": "flatsat/spacepackets.html#space-packet-protocol-spp",
+    "title": "Space Packets Protocols",
+    "section": "",
+    "text": "The SPP (CCSDS 133.0-B-2) is an Application Layer protocol for structuring and transporting data in the form of “space packets.”\n\n\n\n\n\n\n\ngraph TD\n    A[Packet Primary Header]\n    B[Packet Secondary Header]\n    C[Data Field]\n\n    A --&gt;|7 bytes| B\n    B --&gt;|variable| C\n\n\n\n\n\n\n\n\n\n\nApplication Identification through the APID (Application Process Identifier) field.\nData Flexibility: variable packet sizes for increased adaptability.\nIndependence from Lower Layers: can be used with different link protocols.",
+    "crumbs": [
+      "Endurance Overview",
+      "Space Packets Protocols"
+    ]
+  },
+  {
+    "objectID": "flatsat/spacepackets.html#telecommand-tc-space-data-link-protocol",
+    "href": "flatsat/spacepackets.html#telecommand-tc-space-data-link-protocol",
+    "title": "Space Packets Protocols",
+    "section": "",
+    "text": "The TC Space Data Link Protocol (CCSDS 232.0-B-4) manages command communication from ground to satellites. It operates at the Data Link Layer.\n\n\n\n\n\n\n\ngraph TD\n    A[Master Channel]\n    B1[Virtual Channel 1]\n    B2[Virtual Channel 2]\n    C1[MAP Channel 1]\n    C2[MAP Channel 2]\n    C3[MAP Channel 3]\n\n    A --&gt; B1\n    A --&gt; B2\n    B1 --&gt; C1\n    B2 --&gt; C2\n    B2 --&gt; C3\n\n\n\n\n\n\n\n\n\n\nSegmentation and Multiplexing: data is split into multiple virtual channels.\nCommunication Control: ensures reliable delivery and integrity checks for commands.\nSecurity Support (SDLS) for protecting sensitive command data.",
+    "crumbs": [
+      "Endurance Overview",
+      "Space Packets Protocols"
+    ]
+  },
+  {
+    "objectID": "flatsat/spacepackets.html#telemetry-tm-space-data-link-protocol",
+    "href": "flatsat/spacepackets.html#telemetry-tm-space-data-link-protocol",
+    "title": "Space Packets Protocols",
+    "section": "",
+    "text": "The TM Space Data Link Protocol (CCSDS 132.0-B-3) is used to send telemetry data from a satellite to the ground, also operating at the Data Link Layer.\n\n\n\n\n\n\n\ngraph LR\n    A[Satellite Data Source] -- Asynchronous Transmission --&gt; B[Virtual Channel]\n    B -- Synchronous Mode --&gt; C[Ground Reception]\n\n\n\n\n\n\n\n\n\n\nSupport for Virtual Channels to differentiate telemetry data streams.\nMultiplexing/Demultiplexing of data into master and virtual channels.\nSDLS Security Option to ensure the confidentiality and integrity of telemetry data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransporting data as packets\nN/A\n\n\nTC\nData Link\nSending commands\nSDLS Support\n\n\nTM\nData Link\nSending telemetry\nSDLS Support",
+    "crumbs": [
+      "Endurance Overview",
+      "Space Packets Protocols"
     ]
   }
 ]

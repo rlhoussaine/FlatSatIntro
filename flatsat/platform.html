@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto workflows – Making sharable documents with Quarto</title>
+<title>Rewind on Satellite platform and subsystems – FlatSat Introduction Presentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -63,8 +29,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../quarto-workflows/browser.html" rel="next">
-<link href="../explore.html" rel="prev">
+<link href="../flatsat/flatsat.html" rel="next">
+<link href="../flatsat/endurance.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -103,6 +69,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -116,7 +85,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../quarto-workflows/index.html">Quarto workflows</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../flatsat/endurance.html">Endurance Overview</a></li><li class="breadcrumb-item"><a href="../flatsat/platform.html">Rewind on Satellite platform and subsystems</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -131,12 +100,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../images/bsvg.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="https://openscapes.org" title="Openscapes.org" class="quarto-navigation-tool px-1" aria-label="Openscapes.org"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/openscapes/quarto-website-tutorial" title="Quarto website tutorial" class="quarto-navigation-tool px-1" aria-label="Quarto website tutorial"><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com/openscapes" title="Openscapes Twitter" class="quarto-navigation-tool px-1" aria-label="Openscapes Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://www.infiniteorbits.io/" title="infiniteorbits.io" class="quarto-navigation-tool px-1" aria-label="infiniteorbits.io"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/infiniteorbits" title="Infinite Orbits github" class="quarto-navigation-tool px-1" aria-label="Infinite Orbits github"><i class="bi bi-github"></i></a>
+    <a href="https://www.instagram.com/infinite_orbits/?hl=en" title="IO Instagram" class="quarto-navigation-tool px-1" aria-label="IO Instagram"><i class="bi bi-instagram"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div>
@@ -153,16 +122,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../explore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Explore and setup</span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../quarto-workflows/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Quarto workflows</span></a>
+            <a href="../flatsat/endurance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Endurance Overview</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -170,20 +133,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../quarto-workflows/browser.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">From the Browser</span></a>
+  <a href="../flatsat/platform.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Rewind on Satellite platform and subsystems</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../quarto-workflows/rstudio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">From RStudio</span></a>
+  <a href="../flatsat/flatsat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Flatsat Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../quarto-workflows/jupyter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">From Jupyter</span></a>
+  <a href="../flatsat/spacepackets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Space Packets Protocols</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../flatsat/yamcs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About Yamcs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../flatsat/swdev.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Software development on the flatsat</span></a>
   </div>
 </li>
       </ul>
@@ -192,12 +167,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../learning-more.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Learning more</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../transition-from-rmarkdown.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Transition from Rmd</span></a>
   </div>
 </li>
     </ul>
@@ -210,19 +179,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#basic-workflow" id="toc-basic-workflow" class="nav-link active" data-scroll-target="#basic-workflow">Basic Workflow</a></li>
-  <li><a href="#authoring" id="toc-authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a></li>
-  <li><a href="#update-_quarto.yml" id="toc-update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">Update <code>_quarto.yml</code></a></li>
-  <li><a href="#install-quarto" id="toc-install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
+  <li><a href="#satellite-platform-and-subsystems" id="toc-satellite-platform-and-subsystems" class="nav-link active" data-scroll-target="#satellite-platform-and-subsystems">Satellite Platform and Subsystems</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#power-subsystem" id="toc-power-subsystem" class="nav-link" data-scroll-target="#power-subsystem">Power Subsystem</a></li>
+  <li><a href="#propulsion-subsystem" id="toc-propulsion-subsystem" class="nav-link" data-scroll-target="#propulsion-subsystem">Propulsion Subsystem</a></li>
+  <li><a href="#structure-subsystem" id="toc-structure-subsystem" class="nav-link" data-scroll-target="#structure-subsystem">Structure Subsystem</a></li>
+  <li><a href="#thermal-subsystem" id="toc-thermal-subsystem" class="nav-link" data-scroll-target="#thermal-subsystem">Thermal Subsystem</a></li>
+  <li><a href="#attitude-and-orbit-control-system-aocs" id="toc-attitude-and-orbit-control-system-aocs" class="nav-link" data-scroll-target="#attitude-and-orbit-control-system-aocs">Attitude and Orbit Control System (AOCS)</a></li>
+  <li><a href="#telemetry-and-telecommand-tmtc-subsystem" id="toc-telemetry-and-telecommand-tmtc-subsystem" class="nav-link" data-scroll-target="#telemetry-and-telecommand-tmtc-subsystem">Telemetry and Telecommand (TM/TC) Subsystem</a></li>
+  <li><a href="#onboard-computer-obc-subsystem" id="toc-onboard-computer-obc-subsystem" class="nav-link" data-scroll-target="#onboard-computer-obc-subsystem">Onboard Computer (OBC) Subsystem</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/quarto-workflows/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/flatsat/platform.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../flatsat/endurance.html">Endurance Overview</a></li><li class="breadcrumb-item"><a href="../flatsat/platform.html">Rewind on Satellite platform and subsystems</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Quarto workflows</h1>
+<h1 class="title">Rewind on Satellite platform and subsystems</h1>
 </div>
 
 
@@ -239,72 +215,267 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<!---
-## Why am I here?
+<section id="satellite-platform-and-subsystems" class="level1">
+<h1>Satellite Platform and Subsystems</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    A[**Subsystems**]:::main
+    A --&gt; B[**Payload**]
+    A --&gt; C[**Power Subsystem**]
+    A --&gt; D[**Propulsion Subsystem**]
+    A --&gt; E[**Structure Subsystem**]
+    A --&gt; F[**Thermal Subsystem**]
+    A --&gt; G[**AOCS**&lt;br&gt;**Attitude and Orbit Control System**]
+    A --&gt; H[**TM/TC Subsystem**]
+    A --&gt; I[**OBC Subsystem**]
 
-## Stuff from Alison Hill chat
+    classDef main font-size:30px, font-weight:bold, color:#ffffff;
+    classDef payload fill:#a05a87, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef power fill:#5f8b95, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef propulsion fill:#999999, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef structure fill:#4a66a1, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef thermal fill:#c49d1d, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef aocs fill:#7f4f7f, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef tmtc fill:#a69d19, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef obc fill:#3b9cc4, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
 
-### what do code chunks look like,
-
-### Can you open slide decks within here
-
-
-## What's Freeze?
-
-JJ: You can put it in the project root or at a a file level, OR at a directory level (if there is a _metadata.yml file in a directory then documents within it will merge that metadata -- this applies to docs in subdirectories as well). So if you have mostly frozen stuff you can set it at the project level then disable on a per-file or per-directory basis. If frozen stuff is more the exception then you can use directory or file level enablement
---->
-<section id="basic-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="basic-workflow">Basic Workflow</h2>
-<p>How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.</p>
-<ol type="1">
-<li>Authoring: write text, code, images, etc in a file. Supported files include <code>.md</code>, <code>.Rmd</code>, <code>.qmd</code>, <code>.ipynb</code>…</li>
-<li>Update <code>_quarto.yml</code> as needed (for example, if you’ve created a new file you’d like included in your site)</li>
-<li>Render individual files and/or the whole website</li>
-<li>Repeat, repeat, repeat</li>
-<li>Commit and push your website to GitHub, your updates will publish automatically!</li>
-<li>Repeat all of the above to make the website as you’d like!</li>
-</ol>
-<p>Note: if editing from your internet browser we won’t render in Step 3. That step will not be separate, but combined with Step 5, which will only require a commit, not a push.</p>
-</section>
-<section id="authoring" class="level2">
-<h2 class="anchored" data-anchor-id="authoring">Authoring</h2>
-<p>As an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces <a href="https://quarto.org/docs/authoring/markdown-basics.html">markdown-basics</a> that will get you started. Also see Mine Çetinkaya-Rundel’s <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/">A Quarto tip a day</a>.</p>
-<p>Each page of our site has a similar first few lines - this YAML, like we saw in our <code>_quarto.yml</code> and it is indicated by two sets of 3 dashes <code>---</code> :</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">title:</span> My title</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See <a href="https://quarto.org/docs/computations/execution-options.html">Quarto excecution options</a> for more information of what you can include in the YAML.</p>
-</section>
-<section id="update-_quarto.yml" class="level2">
-<h2 class="anchored" data-anchor-id="update-_quarto.yml">Update <code>_quarto.yml</code></h2>
-<p>Let’s have a closer look at the <code>_quarto.yml</code> file.</p>
-<p>This type of file (<code>.yml</code> or <code>.yaml</code>) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the <code>_quarto.yml</code> file following the patterns you see in this example.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/quarto-yml-site-side-by-side3.png" class="img-fluid figure-img" style="width:95.0%"></p>
-<figcaption><code>_quarto.yml</code> and website side-by-side</figcaption>
-</figure>
+    class B payload;
+    class C power;
+    class D propulsion;
+    class E structure;
+    class F thermal;
+    class G aocs;
+    class H tmtc;
+    class I obc;
+</pre>
 </div>
-<p>Notice that there are multiple ways in the <code>_quarto.yml</code> for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in <code>_quarto.yml</code> (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of <code>_quarto.yml</code>, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in <code>_quarto.yml</code>, but the page’s title says “First Observations &amp; Setup” (which in our preference was too long for the sidebar).</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p></p></figure><p></p>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>As you modify <code>_quarto.yml</code>, the most important thing to know is that <strong>spacing matters</strong>. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache.</p>
 </div>
 </div>
 </section>
-<section id="install-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="install-quarto">Install Quarto</h2>
-<p><strong><a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a></strong> describes how to install Quarto, which will depend on your operating system. We’ll walk through installation for each tool in the next chapters.</p>
+<section id="power-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="power-subsystem">Power Subsystem</h2>
+<ul>
+<li><strong>Components:</strong>
+<ul>
+<li><strong>Solar Panels:</strong> Generate electrical power by converting solar energy.</li>
+<li><strong>Batteries:</strong> Store energy for use when the satellite is in Earth’s shadow.</li>
+</ul></li>
+<li><strong>Purpose:</strong> Provides and regulates power for all satellite subsystems.</li>
+<li><strong>Power Output:</strong> Typically between 10 and 20 kW, depending on satellite design and mission requirements.</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    A[Power Subsystem] --&gt; B[Solar Panels]
+    A --&gt; C[Batteries]
+    B --&gt; D[Generate Power]
+    C --&gt; E[Store Power]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="propulsion-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="propulsion-subsystem">Propulsion Subsystem</h2>
+<ul>
+<li><strong>Functions:</strong>
+<ul>
+<li><strong>Positioning (Initial Orbit Insertion):</strong> Places the satellite in its intended geostationary orbit.</li>
+<li><strong>Station Keeping:</strong> Maintains satellite’s position against gravitational forces.</li>
+<li><strong>Deorbiting:</strong> Ensures controlled descent at the end of the mission, removing the satellite from orbit.</li>
+</ul></li>
+<li><strong>Types of Propulsion:</strong>
+<ul>
+<li><strong>Chemical Propulsion:</strong> Provides high thrust for orbit changes.</li>
+<li><strong>Electric Propulsion:</strong> Efficient for station-keeping maneuvers, using less fuel over time.</li>
+</ul></li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    F[Propulsion Subsystem] --&gt; G[Positioning]
+    F --&gt; H[Station Keeping]
+    F --&gt; I[Deorbiting]
+    G --&gt; J[Chemical Propulsion]
+    H --&gt; K[Electric Propulsion]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="structure-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="structure-subsystem">Structure Subsystem</h2>
+<ul>
+<li><strong>Purpose:</strong> Provides mechanical integrity, ensuring satellite withstands the physical stresses during launch and operation.</li>
+<li><strong>Stress Factors:</strong>
+<ul>
+<li><strong>Acceleration:</strong> Up to 4.5 g during launch.</li>
+<li><strong>Acoustic Pressure:</strong> Up to 140 dB due to intense launch sounds.</li>
+</ul></li>
+<li><strong>Components:</strong> Reinforced frame and materials designed for durability in the harsh space environment.</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    L[Structure Subsystem] --&gt; M[Handles Launch Stresses]
+    M --&gt; N[Acceleration: up to 4.5 g]
+    M --&gt; O[Acoustic Pressure: up to 140 dB]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="thermal-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="thermal-subsystem">Thermal Subsystem</h2>
+<ul>
+<li><strong>Function:</strong> Manages satellite temperature, preventing overheating or freezing of sensitive components.</li>
+<li><strong>Challenges:</strong>
+<ul>
+<li><strong>Space Temperature Variability:</strong> -120°C to +150°C.</li>
+</ul></li>
+<li><strong>Optimal Temperature Ranges:</strong>
+<ul>
+<li><strong>Batteries:</strong> 0°C to +10°C.</li>
+<li><strong>Electronics:</strong> 10°C to +45°C.</li>
+<li><strong>Antennas:</strong> -150°C to +80°C.</li>
+</ul></li>
+<li><strong>Thermal Control Techniques:</strong>
+<ul>
+<li><strong>Radiators and Heat Pipes:</strong> Dissipate excess heat.</li>
+<li><strong>Insulation:</strong> Protects against extreme cold.</li>
+</ul></li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    P[Thermal Subsystem] --&gt; Q[Temperature Management]
+    Q --&gt; R[Space Temperature: -120 to +150 degrees celsius]
+    Q --&gt; S[Controlled Ranges]
+    S --&gt; T[Batteries: 0  to +10 degrees celsius]
+    S --&gt; U[Electronics: 10  to +45 degrees celsius]
+    S --&gt; V[Antennas: -150 to +80 degrees celsius]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="attitude-and-orbit-control-system-aocs" class="level2">
+<h2 class="anchored" data-anchor-id="attitude-and-orbit-control-system-aocs">Attitude and Orbit Control System (AOCS)</h2>
+<ul>
+<li><strong>Purpose:</strong> Maintains the satellite’s orientation and ensures it remains in its designated orbital position.</li>
+<li><strong>Components:</strong>
+<ul>
+<li><strong>Gyroscopes:</strong> Measure orientation.</li>
+<li><strong>Reaction Wheels:</strong> Control attitude without expending fuel.</li>
+<li><strong>Thrusters:</strong> Adjust orbit as needed for station keeping.</li>
+</ul></li>
+<li><strong>Positioning Requirements:</strong> Accuracy within a few kilometers, with specific orientations for antenna alignment and solar panel exposure.</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    W[Attitude and Orbit Control System AOCS]
+    W --&gt; X[Maintains Orientation]
+    W --&gt; Y[Controls Orbital Position]
+    X --&gt; Z[Gyroscopes &amp; Reaction Wheels]
+    Y --&gt; AA[Thrusters]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="telemetry-and-telecommand-tmtc-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="telemetry-and-telecommand-tmtc-subsystem">Telemetry and Telecommand (TM/TC) Subsystem</h2>
+<ul>
+<li><strong>Telemetry (TM):</strong> Continuously monitors satellite status and transmits data to ground control.</li>
+<li><strong>Telecommand (TC):</strong> Receives commands from ground control to execute operational tasks.</li>
+<li><strong>Example Operations:</strong> Power adjustments, orbit corrections, and data collection from sensors.</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    AB[Telemetry &amp; Telecommand Subsystem TM/TC]
+    AB --&gt; AC[Telemetry]
+    AB --&gt; AD[Telecommand]
+    AC --&gt; AE[Sends Data to Ground]
+    AD --&gt; AF[Receives Commands from Ground]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="onboard-computer-obc-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="onboard-computer-obc-subsystem">Onboard Computer (OBC) Subsystem</h2>
+<ul>
+<li><strong>Role:</strong> Acts as the satellite’s central processing unit, managing operations and coordinating responses to commands.</li>
+<li><strong>Functions:</strong>
+<ul>
+<li>Processes data from sensors and telemetry.</li>
+<li>Executes control commands to other subsystems.</li>
+<li>Stores critical mission data.</li>
+</ul></li>
+<li><strong>Example:</strong> The OBC on ESA’s BepiColombo mission, which provides autonomous operations for deep space.</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    AG[Onboard Computer OBC Subsystem]
+    AG --&gt; AH[Processes Data]
+    AG --&gt; AI[Executes Commands]
+    AG --&gt; AJ[Stores Mission Data]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>Source of Illustrations:</strong> Diagrams inspired by ESA and CNES for satellite subsystems and visualizations of Insat 3A, an Indian telecommunications satellite. ```</p>
+<p>This expanded Markdown file provides a thorough breakdown of each subsystem, accompanied by Mermaid diagrams to illustrate their components and functions. Let me know if you would like to add further details or additional diagrams.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -544,7 +715,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/openscapes\.github\.io\/quarto-website-tutorial");
+      var filterRegex = new RegExp("https:\/\/rlhoussaine\.github\.io\/FlatSatIntro\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -874,13 +1045,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../explore.html" class="pagination-link" aria-label="Explore and setup">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Explore and setup</span>
+      <a href="../flatsat/endurance.html" class="pagination-link" aria-label="Endurance Overview">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Endurance Overview</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../quarto-workflows/browser.html" class="pagination-link" aria-label="From the Browser">
-        <span class="nav-page-text">From the Browser</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../flatsat/flatsat.html" class="pagination-link" aria-label="Flatsat Overview">
+        <span class="nav-page-text">Flatsat Overview</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -892,7 +1063,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/quarto-workflows/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/flatsat/platform.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

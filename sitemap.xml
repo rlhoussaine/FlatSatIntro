@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2024-11-06T15:33:39.687Z</lastmod>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/index.html</loc>
+    <lastmod>2024-11-07T10:50:24.763Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
-    <lastmod>2024-11-06T15:33:39.719Z</lastmod>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/endurance.html</loc>
+    <lastmod>2024-11-07T10:50:24.683Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/browser.html</loc>
-    <lastmod>2024-11-06T15:33:39.687Z</lastmod>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/platform.html</loc>
+    <lastmod>2024-11-07T10:50:24.715Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
-    <lastmod>2024-11-06T15:33:39.719Z</lastmod>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/swdev.html</loc>
+    <lastmod>2024-11-07T10:50:24.715Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/learning-more.html</loc>
-    <lastmod>2024-11-06T15:33:39.687Z</lastmod>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/learning-more.html</loc>
+    <lastmod>2024-11-07T10:50:24.763Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
-    <lastmod>2024-11-06T15:33:39.719Z</lastmod>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/yamcs.html</loc>
+    <lastmod>2024-11-07T10:50:24.715Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/index.html</loc>
-    <lastmod>2024-11-06T15:33:39.719Z</lastmod>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/flatsat.html</loc>
+    <lastmod>2024-11-07T10:50:24.683Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/explore.html</loc>
-    <lastmod>2024-11-06T15:33:39.643Z</lastmod>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/can.html</loc>
+    <lastmod>2024-11-07T10:50:24.683Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/spacepackets.html</loc>
+    <lastmod>2024-11-07T10:50:24.715Z</lastmod>
   </url>
 </urlset>
