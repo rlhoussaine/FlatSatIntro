@@ -1,0 +1,25 @@
+---
+title: About Yamcs
+---
+
+# Yamcs Overview
+
+[Yamcs](https://yamcs.org/) is an open-source software for real-time mission control, providing tools for managing spacecraft and ground systems operations. 
+
+## Key Features
+- **Telemetry Processing**: Receives and processes telemetry data in real-time.
+- **Telecommands**: Allows sending commands to satellites or spacecraft.
+- **Alarms & Notifications**: Generates alarms based on configurable thresholds.
+- **Data Replay**: Enables users to replay mission data.
+- **Standards Compliance**: Supports standards like CCSDS, CFDP, and XTCE.
+
+## Getting Started
+To set up Yamcs, follow the [Getting Started Guide](https://yamcs.org/getting-started). It covers installation, configuration, and basic usage, ideal for new users.
+
+## Python Client
+The [Python Yamcs Client](https://docs.yamcs.org/python-yamcs-client/) allows integration with Yamcs via Python, supporting telemetry retrieval, commanding, and historical data access, making it suitable for custom mission applications.
+
+## Extensions and Support
+Yamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training.
+
+---

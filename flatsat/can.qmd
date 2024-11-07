@@ -1,0 +1,62 @@
+---
+title: CAN protocols
+---
+
+```markdown
+# CAN-TS and CANopen Protocols for Embedded Applications
+
+## Overview
+The CAN-TS (CAN Telemetry Standard) protocol and CANopen are two communication protocols widely used in embedded systems, particularly for systems with constrained resources. While both protocols serve communication needs, each has unique features and is suited to different application environments.
+
+---
+
+## CAN-TS Protocol
+
+### Purpose
+CAN-TS is designed specifically for applications with limited memory, such as embedded systems in aerospace. It provides a streamlined communication method, prioritizing low memory usage while still offering critical functionalities.
+
+### Key Features
+- **Lightweight Design**: Optimized for 8/16-bit architecture, minimizing memory overhead.
+- **Basic Communication Services**: Includes telemetry, telecommand, time synchronization, and bus redundancy management.
+- **Open Source**: Available for free on GitHub, facilitating easy adoption and integration.
+  
+### Advantages
+- **Memory Efficiency**: Ideal for memory-constrained systems.
+- **Robustness**: Engineered for reliability in mission-critical applications like aerospace.
+- **Low Resource Consumption**: Efficiently operates with minimal computational requirements, making it a practical choice for simple devices.
+
+---
+
+## CANopen Protocol
+
+### Purpose
+CANopen is a more comprehensive and flexible protocol, commonly used in industrial applications requiring detailed and extensive communication capabilities. 
+
+### Key Features
+- **Device Profiles**: Standardized profiles for various device types (e.g., motion control, sensors).
+- **Communication Objects**: Supports multiple types of data transfer, such as PDO (Process Data Objects) and SDO (Service Data Objects).
+- **Scalability**: Suitable for both simple and complex network structures.
+  
+### Advantages
+- **Wide Applicability**: Used in many industries, including automotive and automation.
+- **Enhanced Functionality**: Offers advanced features like diagnostic services and network management.
+- **Customization**: Flexible configuration options to meet specific needs.
+
+---
+
+## Comparison
+
+| Feature                | CAN-TS                                  | CANopen                                |
+|------------------------|-----------------------------------------|----------------------------------------|
+| **Memory Usage**       | Low, optimized for constrained devices | Higher, requires more memory           |
+| **Typical Use Case**   | Aerospace, simple devices              | Industrial automation, robotics        |
+| **Complexity**         | Lower, easier to implement             | Higher, with more extensive features   |
+| **Availability**       | Open-source, free                      | Often requires licensing               |
+
+---
+
+## Conclusion
+Both CAN-TS and CANopen serve important roles in the field of embedded systems, each fitting distinct needs. CAN-TS is ideal for memory-limited applications in aerospace, while CANopen provides extensive support for complex industrial setups.
+
+For more detailed information, see the full document on the [ESA website](https://indico.esa.int/event/276/contributions/4535/attachments/3482/4593/W32_-_CAN-TS_protocol_for_memory_constrained_embedded_application.pdf).
+```

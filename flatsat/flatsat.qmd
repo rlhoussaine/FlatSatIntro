@@ -1,0 +1,39 @@
+---
+title: Flatsat Overview
+---
+
+# FlatSat Overview
+
+A **FlatSat** is a ground-based, test-ready version of a satellite with all its components laid out on a table rather than in a compact structure. This configuration allows for direct access to each subsystem, facilitating testing and troubleshooting in a controlled lab environment. 
+
+## Purpose and Use
+
+FlatSats are used primarily to test satellite systems and their interoperability before launch, ensuring each component functions correctly. This setup supports end-to-end operations as if in orbit, allowing for command and telemetry testing. For CubeSats, FlatSats provide a low-cost, modular test environment suitable for educational purposes, commercial applications, and experimental payloads.
+
+## Typical Components
+
+A FlatSat for CubeSat might include:
+- **On-Board Computer (OBC)**
+- **Power System**
+- **Telemetry and Radio System**
+- **Attitude and Orbit Control**
+- **Navigation Receiver**
+
+Additional slots are often available for custom hardware or experimental components, such as AI-based detection algorithms or radiation monitoring payloads.
+
+## Advantages
+
+1. **Accessibility**: Subsystems are physically separated, making them accessible for individual testing and replacement.
+2. **Operational Simulation**: Commands can be sent via a simulated ground station, with telemetry received for analysis.
+3. **Flexibility**: Engineers can easily swap or modify components, an asset for educational and fast-paced commercial projects.
+4. **Testing New Technologies**: Allows for validation of new components like radiation-tolerant microcontrollers in a representative environment.
+
+## Applications in Industry and Research
+
+ESA, NASA, and other space organizations use FlatSats extensively to develop and validate CubeSat technologies, streamline component interoperability, and prepare hardware for space missions.
+
+For more details, refer to the [ESA page](https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Opened-out_FlatSat_for_CubeSat_testing) and [NASA's technical documentation](https://ntrs.nasa.gov/api/citations/20080040717/downloads/20080040717.pdf).
+
+--- 
+
+Let me know if you need further specifics or if there's a particular section you'd like expanded!

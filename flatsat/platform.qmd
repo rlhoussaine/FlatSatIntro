@@ -1,0 +1,162 @@
+---
+title: Rewind on Satellite platform and subsystems
+---
+
+# Satellite Platform and Subsystems
+
+## Overview
+
+```{mermaid}
+graph TD
+    A[**Subsystems**]:::main
+    A --> B[**Payload**]
+    A --> C[**Power Subsystem**]
+    A --> D[**Propulsion Subsystem**]
+    A --> E[**Structure Subsystem**]
+    A --> F[**Thermal Subsystem**]
+    A --> G[**AOCS**<br>**Attitude and Orbit Control System**]
+    A --> H[**TM/TC Subsystem**]
+    A --> I[**OBC Subsystem**]
+
+    classDef main font-size:30px, font-weight:bold, color:#ffffff;
+    classDef payload fill:#a05a87, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef power fill:#5f8b95, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef propulsion fill:#999999, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef structure fill:#4a66a1, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef thermal fill:#c49d1d, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef aocs fill:#7f4f7f, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef tmtc fill:#a69d19, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef obc fill:#3b9cc4, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+
+    class B payload;
+    class C power;
+    class D propulsion;
+    class E structure;
+    class F thermal;
+    class G aocs;
+    class H tmtc;
+    class I obc;
+```
+
+## Power Subsystem
+- **Components:**
+  - **Solar Panels:** Generate electrical power by converting solar energy.
+  - **Batteries:** Store energy for use when the satellite is in Earth's shadow.
+- **Purpose:** Provides and regulates power for all satellite subsystems.
+- **Power Output:** Typically between 10 and 20 kW, depending on satellite design and mission requirements.
+
+```{mermaid}
+graph TD
+    A[Power Subsystem] --> B[Solar Panels]
+    A --> C[Batteries]
+    B --> D[Generate Power]
+    C --> E[Store Power]
+```
+
+## Propulsion Subsystem
+- **Functions:**
+  - **Positioning (Initial Orbit Insertion):** Places the satellite in its intended geostationary orbit.
+  - **Station Keeping:** Maintains satellite's position against gravitational forces.
+  - **Deorbiting:** Ensures controlled descent at the end of the mission, removing the satellite from orbit.
+- **Types of Propulsion:** 
+  - **Chemical Propulsion:** Provides high thrust for orbit changes.
+  - **Electric Propulsion:** Efficient for station-keeping maneuvers, using less fuel over time.
+
+```{mermaid}
+graph TD
+    F[Propulsion Subsystem] --> G[Positioning]
+    F --> H[Station Keeping]
+    F --> I[Deorbiting]
+    G --> J[Chemical Propulsion]
+    H --> K[Electric Propulsion]
+```
+
+## Structure Subsystem
+- **Purpose:** Provides mechanical integrity, ensuring satellite withstands the physical stresses during launch and operation.
+- **Stress Factors:** 
+  - **Acceleration:** Up to 4.5 g during launch.
+  - **Acoustic Pressure:** Up to 140 dB due to intense launch sounds.
+- **Components:** Reinforced frame and materials designed for durability in the harsh space environment.
+
+```{mermaid}
+graph TD
+    L[Structure Subsystem] --> M[Handles Launch Stresses]
+    M --> N[Acceleration: up to 4.5 g]
+    M --> O[Acoustic Pressure: up to 140 dB]
+```
+
+## Thermal Subsystem
+- **Function:** Manages satellite temperature, preventing overheating or freezing of sensitive components.
+- **Challenges:** 
+  - **Space Temperature Variability:** -120°C to +150°C.
+- **Optimal Temperature Ranges:** 
+  - **Batteries:** 0°C to +10°C.
+  - **Electronics:** 10°C to +45°C.
+  - **Antennas:** -150°C to +80°C.
+- **Thermal Control Techniques:**
+  - **Radiators and Heat Pipes:** Dissipate excess heat.
+  - **Insulation:** Protects against extreme cold.
+
+```{mermaid}
+graph TD
+    P[Thermal Subsystem] --> Q[Temperature Management]
+    Q --> R[Space Temperature: -120 to +150 degrees celsius]
+    Q --> S[Controlled Ranges]
+    S --> T[Batteries: 0  to +10 degrees celsius]
+    S --> U[Electronics: 10  to +45 degrees celsius]
+    S --> V[Antennas: -150 to +80 degrees celsius]
+```
+
+## Attitude and Orbit Control System (AOCS)
+- **Purpose:** Maintains the satellite’s orientation and ensures it remains in its designated orbital position.
+- **Components:**
+  - **Gyroscopes:** Measure orientation.
+  - **Reaction Wheels:** Control attitude without expending fuel.
+  - **Thrusters:** Adjust orbit as needed for station keeping.
+- **Positioning Requirements:** Accuracy within a few kilometers, with specific orientations for antenna alignment and solar panel exposure.
+
+```{mermaid}
+graph TD
+    W[Attitude and Orbit Control System AOCS]
+    W --> X[Maintains Orientation]
+    W --> Y[Controls Orbital Position]
+    X --> Z[Gyroscopes & Reaction Wheels]
+    Y --> AA[Thrusters]
+```
+
+## Telemetry and Telecommand (TM/TC) Subsystem
+- **Telemetry (TM):** Continuously monitors satellite status and transmits data to ground control.
+- **Telecommand (TC):** Receives commands from ground control to execute operational tasks.
+- **Example Operations:** Power adjustments, orbit corrections, and data collection from sensors.
+
+```{mermaid}
+graph TD
+    AB[Telemetry & Telecommand Subsystem TM/TC]
+    AB --> AC[Telemetry]
+    AB --> AD[Telecommand]
+    AC --> AE[Sends Data to Ground]
+    AD --> AF[Receives Commands from Ground]
+```
+
+## Onboard Computer (OBC) Subsystem
+- **Role:** Acts as the satellite’s central processing unit, managing operations and coordinating responses to commands.
+- **Functions:**
+  - Processes data from sensors and telemetry.
+  - Executes control commands to other subsystems.
+  - Stores critical mission data.
+- **Example:** The OBC on ESA’s BepiColombo mission, which provides autonomous operations for deep space.
+
+```{mermaid}
+graph TD
+    AG[Onboard Computer OBC Subsystem]
+    AG --> AH[Processes Data]
+    AG --> AI[Executes Commands]
+    AG --> AJ[Stores Mission Data]
+```
+
+---
+
+**Source of Illustrations:** Diagrams inspired by ESA and CNES for satellite subsystems and visualizations of Insat 3A, an Indian telecommunications satellite.
+```
+
+This expanded Markdown file provides a thorough breakdown of each subsystem, accompanied by Mermaid diagrams to illustrate their components and functions. Let me know if you would like to add further details or additional diagrams.

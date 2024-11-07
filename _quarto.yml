@@ -3,9 +3,10 @@ project:
   
 website: 
   page-navigation: true
-  title: "Making sharable documents with Quarto" 
-  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
-  repo-url: https://github.com/openscapes/quarto-website-tutorial 
+  title: "FlatSat Introduction Presentation" 
+  site-url: "https://rlhoussaine.github.io/FlatSatIntro/" 
+  
+  repo-url: https://github.com/rlhoussaine/FlatSatIntro 
   repo-actions: [edit, issue]
   
   page-footer:
@@ -13,19 +14,19 @@ website:
     left: "&copy; CC-By Openscapes, 2024"
     
   sidebar:
-    logo: "images/openscapes_hex.png"
+    logo: "images/bsvg.png"
     pinned: true
     align: center
     tools: 
       - icon: globe
-        href: https://openscapes.org
-        text: "Openscapes.org"
+        href: https://www.infiniteorbits.io/
+        text: "infiniteorbits.io"
       - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
-        text: "Quarto website tutorial"
-      - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
+        href: https://github.com/infiniteorbits
+        text: "Infinite Orbits github"
+      - icon: instagram
+        href: https://www.instagram.com/infinite_orbits/?hl=en
+        text: "IO Instagram"         
 
     style: "docked"
     search: true
@@ -33,15 +34,14 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
-      - explore.qmd
-      - section: quarto-workflows/index.qmd
+      - section: flatsat/endurance.qmd
         contents: 
-          - quarto-workflows/browser.md
-          - quarto-workflows/rstudio.qmd
-          - quarto-workflows/jupyter.md 
+          - flatsat/platform.qmd
+          - flatsat/flatsat.qmd
+          - flatsat/spacepackets.qmd
+          - flatsat/yamcs.qmd
+          - flatsat/swdev.qmd
       - learning-more.qmd
-      - href: transition-from-rmarkdown.qmd
-        text: Transition from Rmd
 
 
 format:

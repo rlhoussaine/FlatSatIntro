@@ -1,46 +1,32 @@
 ---
-title: "Making shareable documents with Quarto"
-subtitle: "Create open-source tutorials, onboarding docs, and much more"
+title: "End-to-End FlatSat Service Overview"
+subtitle: "From Comprehensive Hardware Integration to Seamless Software Validation"
 ---
 
 ## Welcome {#welcome}
 
-It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [GitHub](http://github.com). This is very new and incredibly cool. This tutorial is an example of a quarto website --- it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
+Welcome to the Flatsat team! These upcoming pages serve as a supplement to the various meetings you'll attend upon joining, rather than replacing them. Here, we won’t cover the company's overall history, broader projects, or general onboarding, but will focus specifically on the activities tied to the Flatsat team and the Flatsat-related developments.
 
-Creating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout.
+In summary, we’ll start with a brief introduction to the Endurance project to set the context, then discuss the purpose of developing a flatsat and its practical implementation within the project. Finally, we’ll explore the current testing phase regarding telecommunications between ground software and the flatsat components. We’ll begin with simple, direct communication over communication channels before advancing to a more complex setup that includes radio communication.
 
-## What is Quarto?
+## How to Read This Document
 
-Quarto helps you have your ideas and your code in one place, and present it in a beautiful way. 
+The goal of this document is to start with a quick overview of the Endurance project and gradually zoom in on the Flatsat’s implementation, leading to the current activities where new team members can find their starting point. By following each page in sequence, you should gain a deeper understanding of how and why we are developing the flatsat.
 
-**Quarto unifies and extends the RMarkdown ecosystem** - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it's for people who have never used RMarkdown. 
- 
+## What’s Next?
 
-The ability for Quarto to streamline collaboration has been so cool and important for our [NASA Openscapes](https://nasa-openscapes.github.io/) project. Quarto has been a common place for us to collaborate - across R and Python languages and coding expertise. 
+After reading these pages, we’ll proceed to practical work and code-related tasks. The practical aspects are grouped in a developing library called the **Endurance FlatSat Library**. We have started drafting usage guides for installing the necessary sub-services to manage specific parts or components of the flatsat. You can find the latest drafted documents here (non-validated): [ReadTheDocs](https://endurance-flatsat-lib.readthedocs.io/en/develop/). Please use these guides as needed, but also make sure to raise tickets for any unclear or problematic steps.
 
-## What is this tutorial?
+## Your Contribution to This Document
 
-This is a 1-hour tutorial that can be used to teach or as self-paced learning. 
+The aim is to keep evolving this document over time, beginning with feedback on areas that need correction or addition as you settle in. Later on, you’re encouraged to clone the repository and add new content. The overall goal of this document is to provide any new team member with all the technical information needed to understand the broader purpose of our activities and the functioning of systems and subsystems.
 
-We introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.
+Additionally, I’ve included some basic methods for collaborative work on software development projects. As the team grows, it will be necessary to update or add elements so anyone can adhere to our standards for code quality, reviews, ticketing, or broader workflows. 
 
-We'll start off from the browser so you don't need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don't already have a workflow to edit files and sync to GitHub from your computer, I recommend RStudio. You don't need to know R to use RStudio, and it has powerful editor features that make for happy workflows.
-
-[Quarto.org](https://quarto.org) is the go-to place for full documentation and more tutorials! 
-
-## Example Quarto sites
-
-A few Quarto websites from Openscapes - so far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.
-
--   [Champions Lessons Series](https://openscapes.github.io/series)
--   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)
--   [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/)
--   [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
--   [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/)
--   [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), by Mine Çetinkaya-Rundel
+This is also an opportunity to add, in a dedicated section, implemented software elements that may be beneficial to the entire company (e.g., how to create GitHub Actions).
 
 ## About
 
-[Openscapes](https://openscapes.org) is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.
+This document was created with **Quarto**, an open-source publishing system that allows users to generate and maintain beautifully formatted documents, websites, blogs, and presentations directly from markdown and Jupyter notebooks. Quarto’s versatility in supporting scientific and technical communication makes it an excellent choice for documenting complex projects like Flatsat. It enables you to combine text, code, and outputs seamlessly, creating a comprehensive and interactive resource for our team.
 
-We're developing this tutorial to help folks with different levels of technical skills use [Quarto](https://quarto.org) for documentation and tutorial building. This tutorial was originally created for several different audiences: [NASA-Openscapes](https://nasa-openscapes.github.io) researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We're hoping it's useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking "Edit this page" or "Report an issue" at the upper right side of any page.
+For more information on Quarto and how to use it to enhance your documentation projects, visit [Quarto’s website](https://quarto.org/).

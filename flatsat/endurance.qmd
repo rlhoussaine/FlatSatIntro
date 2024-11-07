@@ -1,0 +1,82 @@
+---
+title: Endurance Overview
+---
+
+# Endurance - Office Inauguration
+
+## 1. Overview of Endurance Services
+
+### In Geostationary Orbit (GEO):
+- **Stationkeeping**: 
+  - Service duration of up to 5 years
+- **Orbital Transfer**: 
+  - Capability to move the client to any GEO orbital slot or correct inclination
+- **Attitude Control**: 
+  - Fine attitude control with an accuracy of up to 0.04 degrees
+- **End-of-Life (EOL) Disposal**: 
+  - Transfer to a GEO graveyard orbit at the end of operations
+
+---
+
+## 2. Project Achievements and Future Goals
+
+- **Life Extension Start**: Planned for 2026, marking Endurance as the first French company to achieve Life Extension.
+- **Development Phases**:
+  - **Phase A**: Successfully completed in 2022
+  - **Phase B**:
+    - System Requirements Review (SRR) in Q4 2023
+    - Preliminary Design Review (PDR) in Q1 2024
+    - Establishment of Industrial Consortium
+    - Rendezvous (RdV) tests in progress
+  - **Phase C**: 
+    - Critical Design Review (CDR) planned for Q4 2024
+    - Platform manufacture and testing
+    - Completion of RdV and Docking testing
+  - **Phase D**: 
+    - Flight Model (FM) production and integration
+    - Acceptance testing
+  - **Phase E**: 
+    - Launch and commissioning in Q1 2026
+    - EOR, RdV, docking, and life-extension operations
+
+---
+
+## 3. Endurance Summary
+
+| Parameter               | Specification                                           |
+|-------------------------|---------------------------------------------------------|
+| **Mass**                | 310 kg (dry), 500 kg (wet)                              |
+| **Volume**              | 1 x 1 x 1.2 m³                                          |
+| **Launcher Compatibility** | Ariane 6 / SpaceX Falcon 9 (rideshare passenger) |
+| **Power**               | Two tracking solar wings                                |
+| **Architecture**        | Dual string (core avionics)                             |
+| **Propulsion (PROP)**   | Four EP thrusters (Krypton propellant), eight RCS thrusters |
+| **Communications**      | Deployable antennas                                     |
+
+---
+
+## 4. Detailed System Overview
+
+### Propulsion and Control
+- **Reaction Control System (RCS)**: Eight thrusters for maneuvering
+- **Stationkeeping**: Two electric propulsion (EP) thrusters
+- **Electric Orbit Raising (EOR)**: Two EP thrusters
+- **Fuel Tanks**: 
+  - One Krypton tank with a capacity of 155 liters
+  - Four RCS tanks
+
+### Steering and Orientation
+- **Reaction Wheels**: Three large reaction wheels for stabilization
+- **Thruster Steering Mechanism**: Two degrees of freedom for precise maneuvering
+
+---
+
+## 5. External Features of Endurance
+
+- **Solar Arrays**: Two wings capable of generating up to 2.2 kW
+- **Antenna Deployables**: Two antennas for ground communication while docked
+- **Customizable Docking System**: Adaptable for docking with most GEO satellites
+
+---
+
+This outline provides a structured markdown version of your presentation content, ready to use for slides or documentation. Let me know if you need more details on any section!
