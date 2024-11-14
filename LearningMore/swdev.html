@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Rewind on Satellite platform and subsystems – FlatSat Introduction Presentation</title>
+<title>Software development on the flatsat – FlatSat Introduction Presentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../flatsat/flatsat.html" rel="next">
-<link href="../flatsat/endurance.html" rel="prev">
+<link href="../LearningMore/egse.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,9 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -85,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../flatsat/endurance.html">Endurance Overview</a></li><li class="breadcrumb-item"><a href="../flatsat/platform.html">Rewind on Satellite platform and subsystems</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../LearningMore/platform.html">Ressources</a></li><li class="breadcrumb-item"><a href="../LearningMore/swdev.html">Git Hub workflow</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -124,57 +120,80 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../flatsat/endurance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Endurance Overview</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Flatsat</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../flatsat/platform.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Rewind on Satellite platform and subsystems</span></a>
+  <a href="../flatsat/endurance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Endurance overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../flatsat/flatsat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Flatsat Overview</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../flatsat/spacepackets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Space Packets Protocols</span></a>
+ <span class="menu-text">About the flatsat</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../flatsat/can.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">CAN protocols</span></a>
+ <span class="menu-text">Can protocols</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../flatsat/ccsdspackets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Space packets</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../flatsat/yamcs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About Yamcs</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../flatsat/swdev.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software development on the flatsat</span></a>
+ <span class="menu-text">yamcs interface and Endurance flatsat library</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Ressources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../learning-more.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Learning more</span></a>
+  <a href="../LearningMore/platform.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Satellite Platform and subsystems</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LearningMore/redundancy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Redundancy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LearningMore/egse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EGSE</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LearningMore/swdev.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Git Hub workflow</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -185,26 +204,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#satellite-platform-and-subsystems" id="toc-satellite-platform-and-subsystems" class="nav-link active" data-scroll-target="#satellite-platform-and-subsystems">Satellite Platform and Subsystems</a>
+  <li><a href="#gitflow-workflow-overview" id="toc-gitflow-workflow-overview" class="nav-link active" data-scroll-target="#gitflow-workflow-overview">GitFlow Workflow Overview</a>
   <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#power-subsystem" id="toc-power-subsystem" class="nav-link" data-scroll-target="#power-subsystem">Power Subsystem</a></li>
-  <li><a href="#propulsion-subsystem" id="toc-propulsion-subsystem" class="nav-link" data-scroll-target="#propulsion-subsystem">Propulsion Subsystem</a></li>
-  <li><a href="#structure-subsystem" id="toc-structure-subsystem" class="nav-link" data-scroll-target="#structure-subsystem">Structure Subsystem</a></li>
-  <li><a href="#thermal-subsystem" id="toc-thermal-subsystem" class="nav-link" data-scroll-target="#thermal-subsystem">Thermal Subsystem</a></li>
-  <li><a href="#attitude-and-orbit-control-system-aocs" id="toc-attitude-and-orbit-control-system-aocs" class="nav-link" data-scroll-target="#attitude-and-orbit-control-system-aocs">Attitude and Orbit Control System (AOCS)</a></li>
-  <li><a href="#telemetry-and-telecommand-tmtc-subsystem" id="toc-telemetry-and-telecommand-tmtc-subsystem" class="nav-link" data-scroll-target="#telemetry-and-telecommand-tmtc-subsystem">Telemetry and Telecommand (TM/TC) Subsystem</a></li>
-  <li><a href="#onboard-computer-obc-subsystem" id="toc-onboard-computer-obc-subsystem" class="nav-link" data-scroll-target="#onboard-computer-obc-subsystem">Onboard Computer (OBC) Subsystem</a></li>
+  <li><a href="#branching-model" id="toc-branching-model" class="nav-link" data-scroll-target="#branching-model">1. Branching Model</a></li>
+  <li><a href="#workflow-process" id="toc-workflow-process" class="nav-link" data-scroll-target="#workflow-process">2. Workflow Process</a></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">3. Best Practices</a></li>
+  <li><a href="#advantages-of-gitflow" id="toc-advantages-of-gitflow" class="nav-link" data-scroll-target="#advantages-of-gitflow">4. Advantages of GitFlow</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/flatsat/platform.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/LearningMore/swdev.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../flatsat/endurance.html">Endurance Overview</a></li><li class="breadcrumb-item"><a href="../flatsat/platform.html">Rewind on Satellite platform and subsystems</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../LearningMore/platform.html">Ressources</a></li><li class="breadcrumb-item"><a href="../LearningMore/swdev.html">Git Hub workflow</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Rewind on Satellite platform and subsystems</h1>
+<h1 class="title">Software development on the flatsat</h1>
 </div>
 
 
@@ -221,264 +237,70 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="satellite-platform-and-subsystems" class="level1">
-<h1>Satellite Platform and Subsystems</h1>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    A[**Subsystems**]:::main
-    A --&gt; B[**Payload**]
-    A --&gt; C[**Power Subsystem**]
-    A --&gt; D[**Propulsion Subsystem**]
-    A --&gt; E[**Structure Subsystem**]
-    A --&gt; F[**Thermal Subsystem**]
-    A --&gt; G[**AOCS**&lt;br&gt;**Attitude and Orbit Control System**]
-    A --&gt; H[**TM/TC Subsystem**]
-    A --&gt; I[**OBC Subsystem**]
-
-    classDef main font-size:30px, font-weight:bold, color:#ffffff;
-    classDef payload fill:#a05a87, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
-    classDef power fill:#5f8b95, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
-    classDef propulsion fill:#999999, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
-    classDef structure fill:#4a66a1, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
-    classDef thermal fill:#c49d1d, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
-    classDef aocs fill:#7f4f7f, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
-    classDef tmtc fill:#a69d19, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
-    classDef obc fill:#3b9cc4, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
-
-    class B payload;
-    class C power;
-    class D propulsion;
-    class E structure;
-    class F thermal;
-    class G aocs;
-    class H tmtc;
-    class I obc;
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="power-subsystem" class="level2">
-<h2 class="anchored" data-anchor-id="power-subsystem">Power Subsystem</h2>
-<ul>
-<li><strong>Components:</strong>
-<ul>
-<li><strong>Solar Panels:</strong> Generate electrical power by converting solar energy.</li>
-<li><strong>Batteries:</strong> Store energy for use when the satellite is in Earth’s shadow.</li>
-</ul></li>
-<li><strong>Purpose:</strong> Provides and regulates power for all satellite subsystems.</li>
-<li><strong>Power Output:</strong> Typically between 10 and 20 kW, depending on satellite design and mission requirements.</li>
-</ul>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    A[Power Subsystem] --&gt; B[Solar Panels]
-    A --&gt; C[Batteries]
-    B --&gt; D[Generate Power]
-    C --&gt; E[Store Power]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="propulsion-subsystem" class="level2">
-<h2 class="anchored" data-anchor-id="propulsion-subsystem">Propulsion Subsystem</h2>
-<ul>
-<li><strong>Functions:</strong>
-<ul>
-<li><strong>Positioning (Initial Orbit Insertion):</strong> Places the satellite in its intended geostationary orbit.</li>
-<li><strong>Station Keeping:</strong> Maintains satellite’s position against gravitational forces.</li>
-<li><strong>Deorbiting:</strong> Ensures controlled descent at the end of the mission, removing the satellite from orbit.</li>
-</ul></li>
-<li><strong>Types of Propulsion:</strong>
-<ul>
-<li><strong>Chemical Propulsion:</strong> Provides high thrust for orbit changes.</li>
-<li><strong>Electric Propulsion:</strong> Efficient for station-keeping maneuvers, using less fuel over time.</li>
-</ul></li>
-</ul>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    F[Propulsion Subsystem] --&gt; G[Positioning]
-    F --&gt; H[Station Keeping]
-    F --&gt; I[Deorbiting]
-    G --&gt; J[Chemical Propulsion]
-    H --&gt; K[Electric Propulsion]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="structure-subsystem" class="level2">
-<h2 class="anchored" data-anchor-id="structure-subsystem">Structure Subsystem</h2>
-<ul>
-<li><strong>Purpose:</strong> Provides mechanical integrity, ensuring satellite withstands the physical stresses during launch and operation.</li>
-<li><strong>Stress Factors:</strong>
-<ul>
-<li><strong>Acceleration:</strong> Up to 4.5 g during launch.</li>
-<li><strong>Acoustic Pressure:</strong> Up to 140 dB due to intense launch sounds.</li>
-</ul></li>
-<li><strong>Components:</strong> Reinforced frame and materials designed for durability in the harsh space environment.</li>
-</ul>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    L[Structure Subsystem] --&gt; M[Handles Launch Stresses]
-    M --&gt; N[Acceleration: up to 4.5 g]
-    M --&gt; O[Acoustic Pressure: up to 140 dB]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="thermal-subsystem" class="level2">
-<h2 class="anchored" data-anchor-id="thermal-subsystem">Thermal Subsystem</h2>
-<ul>
-<li><strong>Function:</strong> Manages satellite temperature, preventing overheating or freezing of sensitive components.</li>
-<li><strong>Challenges:</strong>
-<ul>
-<li><strong>Space Temperature Variability:</strong> -120°C to +150°C.</li>
-</ul></li>
-<li><strong>Optimal Temperature Ranges:</strong>
-<ul>
-<li><strong>Batteries:</strong> 0°C to +10°C.</li>
-<li><strong>Electronics:</strong> 10°C to +45°C.</li>
-<li><strong>Antennas:</strong> -150°C to +80°C.</li>
-</ul></li>
-<li><strong>Thermal Control Techniques:</strong>
-<ul>
-<li><strong>Radiators and Heat Pipes:</strong> Dissipate excess heat.</li>
-<li><strong>Insulation:</strong> Protects against extreme cold.</li>
-</ul></li>
-</ul>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    P[Thermal Subsystem] --&gt; Q[Temperature Management]
-    Q --&gt; R[Space Temperature: -120 to +150 degrees celsius]
-    Q --&gt; S[Controlled Ranges]
-    S --&gt; T[Batteries: 0  to +10 degrees celsius]
-    S --&gt; U[Electronics: 10  to +45 degrees celsius]
-    S --&gt; V[Antennas: -150 to +80 degrees celsius]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="attitude-and-orbit-control-system-aocs" class="level2">
-<h2 class="anchored" data-anchor-id="attitude-and-orbit-control-system-aocs">Attitude and Orbit Control System (AOCS)</h2>
-<ul>
-<li><strong>Purpose:</strong> Maintains the satellite’s orientation and ensures it remains in its designated orbital position.</li>
-<li><strong>Components:</strong>
-<ul>
-<li><strong>Gyroscopes:</strong> Measure orientation.</li>
-<li><strong>Reaction Wheels:</strong> Control attitude without expending fuel.</li>
-<li><strong>Thrusters:</strong> Adjust orbit as needed for station keeping.</li>
-</ul></li>
-<li><strong>Positioning Requirements:</strong> Accuracy within a few kilometers, with specific orientations for antenna alignment and solar panel exposure.</li>
-</ul>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    W[Attitude and Orbit Control System AOCS]
-    W --&gt; X[Maintains Orientation]
-    W --&gt; Y[Controls Orbital Position]
-    X --&gt; Z[Gyroscopes &amp; Reaction Wheels]
-    Y --&gt; AA[Thrusters]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="telemetry-and-telecommand-tmtc-subsystem" class="level2">
-<h2 class="anchored" data-anchor-id="telemetry-and-telecommand-tmtc-subsystem">Telemetry and Telecommand (TM/TC) Subsystem</h2>
-<ul>
-<li><strong>Telemetry (TM):</strong> Continuously monitors satellite status and transmits data to ground control.</li>
-<li><strong>Telecommand (TC):</strong> Receives commands from ground control to execute operational tasks.</li>
-<li><strong>Example Operations:</strong> Power adjustments, orbit corrections, and data collection from sensors.</li>
-</ul>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    AB[Telemetry &amp; Telecommand Subsystem TM/TC]
-    AB --&gt; AC[Telemetry]
-    AB --&gt; AD[Telecommand]
-    AC --&gt; AE[Sends Data to Ground]
-    AD --&gt; AF[Receives Commands from Ground]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="onboard-computer-obc-subsystem" class="level2">
-<h2 class="anchored" data-anchor-id="onboard-computer-obc-subsystem">Onboard Computer (OBC) Subsystem</h2>
-<ul>
-<li><strong>Role:</strong> Acts as the satellite’s central processing unit, managing operations and coordinating responses to commands.</li>
-<li><strong>Functions:</strong>
-<ul>
-<li>Processes data from sensors and telemetry.</li>
-<li>Executes control commands to other subsystems.</li>
-<li>Stores critical mission data.</li>
-</ul></li>
-<li><strong>Example:</strong> The OBC on ESA’s BepiColombo mission, which provides autonomous operations for deep space.</li>
-</ul>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    AG[Onboard Computer OBC Subsystem]
-    AG --&gt; AH[Processes Data]
-    AG --&gt; AI[Executes Commands]
-    AG --&gt; AJ[Stores Mission Data]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
+<section id="gitflow-workflow-overview" class="level1">
+<h1>GitFlow Workflow Overview</h1>
+<p>GitFlow is a branching strategy designed to streamline development, testing, and deployment processes in larger projects. It defines structured branches and workflows for managing features, releases, and urgent fixes in a way that maintains a stable codebase and enables continuous development.</p>
 <hr>
-<p><strong>Source of Illustrations:</strong> Diagrams inspired by ESA and CNES for satellite subsystems and visualizations of Insat 3A, an Indian telecommunications satellite. ```</p>
-<p>This expanded Markdown file provides a thorough breakdown of each subsystem, accompanied by Mermaid diagrams to illustrate their components and functions. Let me know if you would like to add further details or additional diagrams.</p>
+<section id="branching-model" class="level2">
+<h2 class="anchored" data-anchor-id="branching-model">1. Branching Model</h2>
+<p>GitFlow primarily uses five branch types:</p>
+<ul>
+<li><strong>Main (master)</strong>: The stable branch reflecting the current production code. Only release and hotfix branches are merged into main, maintaining its stability.</li>
+<li><strong>Develop</strong>: This branch holds the latest accepted developments. New features and improvements are merged into develop, which serves as the basis for release branches.</li>
+<li><strong>Feature</strong>: Created from develop to work on new features or enhancements. Feature branches are short-lived and must be integrated back into develop after completion.</li>
+<li><strong>Release</strong>: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.</li>
+<li><strong>Hotfix</strong>: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.</li>
+</ul>
+<hr>
+</section>
+<section id="workflow-process" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-process">2. Workflow Process</h2>
+<ol type="1">
+<li><strong>Feature Development</strong>:
+<ul>
+<li>Start a feature branch from <code>develop</code> using a clear prefix like <code>feature/feature-name</code>.</li>
+<li>Implement the feature, commit changes, and push the branch if needed.</li>
+<li>Upon completion, merge the feature branch back into <code>develop</code> and delete it.</li>
+</ul></li>
+<li><strong>Preparing a Release</strong>:
+<ul>
+<li>When <code>develop</code> is stable and ready for a release, create a release branch (e.g., <code>release/1.0</code>).</li>
+<li>Finalize minor adjustments and version updates on the release branch.</li>
+<li>Once testing and fixes are complete, merge it into both <code>main</code> and <code>develop</code>. Tag this commit for reference.</li>
+</ul></li>
+<li><strong>Hotfixes</strong>:
+<ul>
+<li>Hotfixes are created directly from <code>main</code> for urgent production issues.</li>
+<li>After the fix, merge the hotfix branch into both <code>main</code> and <code>develop</code> to ensure the codebase remains consistent.</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="best-practices" class="level2">
+<h2 class="anchored" data-anchor-id="best-practices">3. Best Practices</h2>
+<p>To optimize GitFlow usage and maintain a smooth development process, consider the following practices:</p>
+<ul>
+<li><strong>Frequent Commits and Atomic Changes</strong>: Make small, focused commits to ease code reviews and bug tracking.</li>
+<li><strong>Clear Branch Naming Conventions</strong>: Use prefixes (<code>feature/</code>, <code>release/</code>, <code>hotfix/</code>) for clarity in identifying branch purposes.</li>
+<li><strong>Descriptive Commit Messages</strong>: Document each change with a concise message to aid in tracking and debugging.</li>
+<li><strong>Automate Testing and CI/CD</strong>: Run automated tests on all branches to catch issues early, ensuring only stable code reaches <code>main</code>.</li>
+<li><strong>Pull Requests for Merges</strong>: Use pull requests for merging to ensure code reviews and prevent conflicts.</li>
+</ul>
+<hr>
+</section>
+<section id="advantages-of-gitflow" class="level2">
+<h2 class="anchored" data-anchor-id="advantages-of-gitflow">4. Advantages of GitFlow</h2>
+<ul>
+<li><strong>Improved Collaboration</strong>: Clearly defined branches reduce merge conflicts and enhance teamwork.</li>
+<li><strong>Stable Main Branch</strong>: Maintains production stability, allowing hotfixes without disrupting ongoing development.</li>
+<li><strong>Enhanced Version Control</strong>: Organizes commits by type (feature, fix, release), helping trace development progress.</li>
+</ul>
+<hr>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>GitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.</p>
+<p>For more details on GitFlow and best practices, refer to <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Atlassian’s GitFlow Tutorial</a>, <a href="https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy">GitKraken’s Workflow Guide</a>, and <a href="https://stackademic.com/blog/git-workflow-best-practices-for-a-smooth-and-efficient-development-process">Stackademic’s Guide</a>. ```</p>
 
 
 </section>
@@ -1051,14 +873,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../flatsat/endurance.html" class="pagination-link" aria-label="Endurance Overview">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Endurance Overview</span>
+      <a href="../LearningMore/egse.html" class="pagination-link" aria-label="EGSE">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">EGSE</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../flatsat/flatsat.html" class="pagination-link" aria-label="Flatsat Overview">
-        <span class="nav-page-text">Flatsat Overview</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -1069,7 +888,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/flatsat/platform.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/LearningMore/swdev.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

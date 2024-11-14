@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Space Packets Protocols – FlatSat Introduction Presentation</title>
+<title>egse – FlatSat Introduction Presentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../flatsat/can.html" rel="next">
-<link href="../flatsat/flatsat.html" rel="prev">
+<link href="../LearningMore/swdev.html" rel="next">
+<link href="../LearningMore/redundancy.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,9 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -85,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../flatsat/endurance.html">Endurance Overview</a></li><li class="breadcrumb-item"><a href="../flatsat/spacepackets.html">Space Packets Protocols</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../LearningMore/platform.html">Ressources</a></li><li class="breadcrumb-item"><a href="../LearningMore/egse.html">EGSE</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -124,57 +121,80 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../flatsat/endurance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Endurance Overview</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Flatsat</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../flatsat/platform.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Rewind on Satellite platform and subsystems</span></a>
+  <a href="../flatsat/endurance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Endurance overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../flatsat/flatsat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Flatsat Overview</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../flatsat/spacepackets.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Space Packets Protocols</span></a>
+ <span class="menu-text">About the flatsat</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../flatsat/can.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">CAN protocols</span></a>
+ <span class="menu-text">Can protocols</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../flatsat/ccsdspackets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Space packets</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../flatsat/yamcs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About Yamcs</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../flatsat/swdev.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software development on the flatsat</span></a>
+ <span class="menu-text">yamcs interface and Endurance flatsat library</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Ressources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../learning-more.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Learning more</span></a>
+  <a href="../LearningMore/platform.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Satellite Platform and subsystems</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LearningMore/redundancy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Redundancy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LearningMore/egse.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">EGSE</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LearningMore/swdev.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git Hub workflow</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -185,198 +205,97 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ccsds-space-communication-protocols" id="toc-ccsds-space-communication-protocols" class="nav-link active" data-scroll-target="#ccsds-space-communication-protocols">CCSDS Space Communication Protocols</a>
+  <li><a href="#electrical-ground-support-equipment-egse" id="toc-electrical-ground-support-equipment-egse" class="nav-link active" data-scroll-target="#electrical-ground-support-equipment-egse">Electrical Ground Support Equipment (EGSE)</a>
   <ul class="collapse">
-  <li><a href="#space-packet-protocol-spp" id="toc-space-packet-protocol-spp" class="nav-link" data-scroll-target="#space-packet-protocol-spp">Space Packet Protocol (SPP)</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#purpose-of-egse" id="toc-purpose-of-egse" class="nav-link" data-scroll-target="#purpose-of-egse">Purpose of EGSE</a></li>
+  <li><a href="#key-functions" id="toc-key-functions" class="nav-link" data-scroll-target="#key-functions">Key Functions</a>
   <ul class="collapse">
-  <li><a href="#spp-packet-structure" id="toc-spp-packet-structure" class="nav-link" data-scroll-target="#spp-packet-structure">SPP Packet Structure</a></li>
-  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
+  <li><a href="#simulation-of-space-conditions" id="toc-simulation-of-space-conditions" class="nav-link" data-scroll-target="#simulation-of-space-conditions">1. <strong>Simulation of Space Conditions</strong></a></li>
+  <li><a href="#power-supply-and-control" id="toc-power-supply-and-control" class="nav-link" data-scroll-target="#power-supply-and-control">2. <strong>Power Supply and Control</strong></a></li>
+  <li><a href="#communication-interface" id="toc-communication-interface" class="nav-link" data-scroll-target="#communication-interface">3. <strong>Communication Interface</strong></a></li>
+  <li><a href="#performance-testing-and-diagnostics" id="toc-performance-testing-and-diagnostics" class="nav-link" data-scroll-target="#performance-testing-and-diagnostics">4. <strong>Performance Testing and Diagnostics</strong></a></li>
+  <li><a href="#safety-and-reliability-verification" id="toc-safety-and-reliability-verification" class="nav-link" data-scroll-target="#safety-and-reliability-verification">5. <strong>Safety and Reliability Verification</strong></a></li>
   </ul></li>
-  <li><a href="#telecommand-tc-space-data-link-protocol" id="toc-telecommand-tc-space-data-link-protocol" class="nav-link" data-scroll-target="#telecommand-tc-space-data-link-protocol">Telecommand (TC) Space Data Link Protocol</a>
-  <ul class="collapse">
-  <li><a href="#tc-channel-hierarchy" id="toc-tc-channel-hierarchy" class="nav-link" data-scroll-target="#tc-channel-hierarchy">TC Channel Hierarchy</a></li>
-  <li><a href="#key-features-1" id="toc-key-features-1" class="nav-link" data-scroll-target="#key-features-1">Key Features</a></li>
-  </ul></li>
-  <li><a href="#telemetry-tm-space-data-link-protocol" id="toc-telemetry-tm-space-data-link-protocol" class="nav-link" data-scroll-target="#telemetry-tm-space-data-link-protocol">Telemetry (TM) Space Data Link Protocol</a>
-  <ul class="collapse">
-  <li><a href="#asynchronous-and-synchronous-service-model" id="toc-asynchronous-and-synchronous-service-model" class="nav-link" data-scroll-target="#asynchronous-and-synchronous-service-model">Asynchronous and Synchronous Service Model</a></li>
-  <li><a href="#key-features-2" id="toc-key-features-2" class="nav-link" data-scroll-target="#key-features-2">Key Features</a></li>
-  <li><a href="#protocol-comparison" id="toc-protocol-comparison" class="nav-link" data-scroll-target="#protocol-comparison">Protocol Comparison</a></li>
-  </ul></li>
+  <li><a href="#components-of-egse" id="toc-components-of-egse" class="nav-link" data-scroll-target="#components-of-egse">Components of EGSE</a></li>
+  <li><a href="#types-of-egse" id="toc-types-of-egse" class="nav-link" data-scroll-target="#types-of-egse">Types of EGSE</a></li>
+  <li><a href="#applications-of-egse" id="toc-applications-of-egse" class="nav-link" data-scroll-target="#applications-of-egse">Applications of EGSE</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/flatsat/spacepackets.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/LearningMore/egse.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../flatsat/endurance.html">Endurance Overview</a></li><li class="breadcrumb-item"><a href="../flatsat/spacepackets.html">Space Packets Protocols</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Space Packets Protocols</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="ccsds-space-communication-protocols" class="level1">
-<h1>CCSDS Space Communication Protocols</h1>
-<p>The CCSDS standards cover space communication protocols to ensure interoperability between agencies. These documents define three main protocols: - <strong>Space Packet Protocol (SPP)</strong>: for structuring and transporting space data in a generic way. - <strong>Telecommand (TC) Space Data Link Protocol</strong>: for sending commands from ground to a satellite. - <strong>Telemetry (TM) Space Data Link Protocol</strong>: for returning telemetry from a satellite to the ground.</p>
-<hr>
-<section id="space-packet-protocol-spp" class="level2">
-<h2 class="anchored" data-anchor-id="space-packet-protocol-spp">Space Packet Protocol (SPP)</h2>
-<p>The SPP (CCSDS 133.0-B-2) is an Application Layer protocol for structuring and transporting data in the form of “space packets.”</p>
-<section id="spp-packet-structure" class="level3">
-<h3 class="anchored" data-anchor-id="spp-packet-structure">SPP Packet Structure</h3>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    A[Packet Primary Header]
-    B[Packet Secondary Header]
-    C[Data Field]
-
-    A --&gt;|7 bytes| B
-    B --&gt;|variable| C
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
+<section id="electrical-ground-support-equipment-egse" class="level1">
+<h1>Electrical Ground Support Equipment (EGSE)</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Electrical Ground Support Equipment (EGSE) is essential for the testing and support of spacecraft systems before launch. It consists of specialized equipment used to test the spacecraft’s electrical systems, simulate space conditions, and ensure that all components function as expected. EGSE is employed during the final phases of spacecraft assembly, integration, and testing (AIT) on the ground.</p>
 </section>
-<section id="key-features" class="level3">
-<h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
+<section id="purpose-of-egse" class="level2">
+<h2 class="anchored" data-anchor-id="purpose-of-egse">Purpose of EGSE</h2>
+<p>The primary purpose of EGSE is to prepare spacecraft for space missions by verifying their performance and functionality under simulated space conditions. EGSE equipment provides power, signal interfacing, and system diagnostics, ensuring that all spacecraft subsystems are operational before launch. This is crucial for avoiding costly failures post-launch.</p>
+</section>
+<section id="key-functions" class="level2">
+<h2 class="anchored" data-anchor-id="key-functions">Key Functions</h2>
+<section id="simulation-of-space-conditions" class="level3">
+<h3 class="anchored" data-anchor-id="simulation-of-space-conditions">1. <strong>Simulation of Space Conditions</strong></h3>
+<p>EGSE systems simulate the space environment (e.g., power conditions, signal behaviors) to test spacecraft electronics and control systems. This allows engineers to check how the spacecraft’s systems react to various scenarios, ensuring that all operations will go smoothly in orbit.</p>
+</section>
+<section id="power-supply-and-control" class="level3">
+<h3 class="anchored" data-anchor-id="power-supply-and-control">2. <strong>Power Supply and Control</strong></h3>
+<p>EGSE supplies power to spacecraft components during testing. This includes providing various voltage levels, current, and regulation to simulate the spacecraft’s operational conditions while on Earth.</p>
+</section>
+<section id="communication-interface" class="level3">
+<h3 class="anchored" data-anchor-id="communication-interface">3. <strong>Communication Interface</strong></h3>
+<p>The equipment also ensures that the spacecraft’s communication systems work effectively by acting as an intermediary between spacecraft systems and testing equipment, facilitating proper data transmission and command signaling.</p>
+</section>
+<section id="performance-testing-and-diagnostics" class="level3">
+<h3 class="anchored" data-anchor-id="performance-testing-and-diagnostics">4. <strong>Performance Testing and Diagnostics</strong></h3>
+<p>EGSE is used to monitor spacecraft performance. Engineers can run diagnostic tests, check signal integrity, analyze power usage, and verify thermal and structural responses, helping to identify and resolve potential issues early in the testing process.</p>
+</section>
+<section id="safety-and-reliability-verification" class="level3">
+<h3 class="anchored" data-anchor-id="safety-and-reliability-verification">5. <strong>Safety and Reliability Verification</strong></h3>
+<p>The comprehensive testing EGSE provides reduces the risk of system failure during space missions. By simulating different scenarios, EGSE allows engineers to confirm that all systems are functioning correctly and that there are no hidden defects that could compromise the mission.</p>
+</section>
+</section>
+<section id="components-of-egse" class="level2">
+<h2 class="anchored" data-anchor-id="components-of-egse">Components of EGSE</h2>
+<p>EGSE is typically composed of the following main elements:</p>
 <ul>
-<li><strong>Application Identification</strong> through the APID (Application Process Identifier) field.</li>
-<li><strong>Data Flexibility</strong>: variable packet sizes for increased adaptability.</li>
-<li><strong>Independence from Lower Layers</strong>: can be used with different link protocols.</li>
+<li><strong>Power Systems:</strong> Provide the necessary electrical power for the spacecraft subsystems during testing.</li>
+<li><strong>Test Controllers:</strong> Devices that control and monitor the test scenarios, ensuring proper operations.</li>
+<li><strong>Simulation Systems:</strong> Equipment designed to simulate space environmental conditions such as radiation, temperature extremes, and vacuum.</li>
+<li><strong>Data Acquisition Systems:</strong> Monitor the data produced by spacecraft systems to evaluate their performance.</li>
+<li><strong>Communication Interfaces:</strong> Facilitate data exchange between the spacecraft and testing equipment.</li>
 </ul>
-<hr>
 </section>
+<section id="types-of-egse" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-egse">Types of EGSE</h2>
+<p>There are two main types of EGSE:</p>
+<ol type="1">
+<li><strong>Spacecraft EGSE (S-EGSE):</strong> Designed specifically for testing the spacecraft itself, this system is responsible for monitoring and testing the spacecraft’s hardware.</li>
+<li><strong>Launch EGSE (L-EGSE):</strong> Focused on ensuring that launch-related systems, such as fueling and integration with the launch vehicle, are functioning correctly.</li>
+</ol>
 </section>
-<section id="telecommand-tc-space-data-link-protocol" class="level2">
-<h2 class="anchored" data-anchor-id="telecommand-tc-space-data-link-protocol">Telecommand (TC) Space Data Link Protocol</h2>
-<p>The TC Space Data Link Protocol (CCSDS 232.0-B-4) manages command communication from ground to satellites. It operates at the Data Link Layer.</p>
-<section id="tc-channel-hierarchy" class="level3">
-<h3 class="anchored" data-anchor-id="tc-channel-hierarchy">TC Channel Hierarchy</h3>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    A[Master Channel]
-    B1[Virtual Channel 1]
-    B2[Virtual Channel 2]
-    C1[MAP Channel 1]
-    C2[MAP Channel 2]
-    C3[MAP Channel 3]
-
-    A --&gt; B1
-    A --&gt; B2
-    B1 --&gt; C1
-    B2 --&gt; C2
-    B2 --&gt; C3
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="key-features-1" class="level3">
-<h3 class="anchored" data-anchor-id="key-features-1">Key Features</h3>
+<section id="applications-of-egse" class="level2">
+<h2 class="anchored" data-anchor-id="applications-of-egse">Applications of EGSE</h2>
 <ul>
-<li><strong>Segmentation and Multiplexing</strong>: data is split into multiple virtual channels.</li>
-<li><strong>Communication Control</strong>: ensures reliable delivery and integrity checks for commands.</li>
-<li><strong>Security Support (SDLS)</strong> for protecting sensitive command data.</li>
+<li><strong>Spacecraft Integration and Testing:</strong> EGSE is used during spacecraft assembly to ensure all systems are correctly integrated and functioning.</li>
+<li><strong>Launch Operations:</strong> EGSE plays a crucial role in testing the spacecraft before and after it is integrated with the launch vehicle.</li>
+<li><strong>Post-launch Validation:</strong> Some EGSE systems are used to validate that spacecraft systems operate correctly after launch.</li>
 </ul>
-<hr>
 </section>
-</section>
-<section id="telemetry-tm-space-data-link-protocol" class="level2">
-<h2 class="anchored" data-anchor-id="telemetry-tm-space-data-link-protocol">Telemetry (TM) Space Data Link Protocol</h2>
-<p>The TM Space Data Link Protocol (CCSDS 132.0-B-3) is used to send telemetry data from a satellite to the ground, also operating at the Data Link Layer.</p>
-<section id="asynchronous-and-synchronous-service-model" class="level3">
-<h3 class="anchored" data-anchor-id="asynchronous-and-synchronous-service-model">Asynchronous and Synchronous Service Model</h3>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph LR
-    A[Satellite Data Source] -- Asynchronous Transmission --&gt; B[Virtual Channel]
-    B -- Synchronous Mode --&gt; C[Ground Reception]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="key-features-2" class="level3">
-<h3 class="anchored" data-anchor-id="key-features-2">Key Features</h3>
-<ul>
-<li><strong>Support for Virtual Channels</strong> to differentiate telemetry data streams.</li>
-<li><strong>Multiplexing/Demultiplexing</strong> of data into master and virtual channels.</li>
-<li><strong>SDLS Security Option</strong> to ensure the confidentiality and integrity of telemetry data.</li>
-</ul>
-<hr>
-</section>
-<section id="protocol-comparison" class="level3">
-<h3 class="anchored" data-anchor-id="protocol-comparison">Protocol Comparison</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 13%">
-<col style="width: 19%">
-<col style="width: 46%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Protocol</th>
-<th>OSI Layer</th>
-<th>Main Function</th>
-<th>Security</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SPP</td>
-<td>Application</td>
-<td>Transporting data as packets</td>
-<td>N/A</td>
-</tr>
-<tr class="even">
-<td>TC</td>
-<td>Data Link</td>
-<td>Sending commands</td>
-<td>SDLS Support</td>
-</tr>
-<tr class="odd">
-<td>TM</td>
-<td>Data Link</td>
-<td>Sending telemetry</td>
-<td>SDLS Support</td>
-</tr>
-</tbody>
-</table>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>EGSE is a vital part of the spacecraft testing process, ensuring that all systems function as required before they are sent into space. Its ability to simulate space conditions, provide power and data communication, and perform detailed diagnostics makes it indispensable for successful space missions. Without EGSE, the risk of mission failure would increase significantly, highlighting its importance in the aerospace industry.</p>
 
 
-</section>
 </section>
 </section>
 
@@ -947,13 +866,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../flatsat/flatsat.html" class="pagination-link" aria-label="Flatsat Overview">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Flatsat Overview</span>
+      <a href="../LearningMore/redundancy.html" class="pagination-link" aria-label="Redundancy">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Redundancy</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../flatsat/can.html" class="pagination-link" aria-label="CAN protocols">
-        <span class="nav-page-text">CAN protocols</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../LearningMore/swdev.html" class="pagination-link" aria-label="Git Hub workflow">
+        <span class="nav-page-text">Git Hub workflow</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -965,7 +884,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/flatsat/spacepackets.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/LearningMore/egse.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

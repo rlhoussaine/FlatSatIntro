@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Flatsat Overview – FlatSat Introduction Presentation</title>
+<title>Rewind on Satellite platform and subsystems – FlatSat Introduction Presentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../flatsat/can.html" rel="next">
-<link href="../flatsat/endurance.html" rel="prev">
+<link href="../LearningMore/redundancy.html" rel="next">
+<link href="../flatsat/yamcs.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,6 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -82,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../flatsat/endurance.html">Flatsat</a></li><li class="breadcrumb-item"><a href="../flatsat/flatsat.html">About the flatsat</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../LearningMore/platform.html">Ressources</a></li><li class="breadcrumb-item"><a href="../LearningMore/platform.html">Satellite Platform and subsystems</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -121,13 +124,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Flatsat</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../flatsat/endurance.html" class="sidebar-item-text sidebar-link">
@@ -136,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../flatsat/flatsat.html" class="sidebar-item-text sidebar-link active">
+  <a href="../flatsat/flatsat.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the flatsat</span></a>
   </div>
 </li>
@@ -162,16 +165,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Ressources</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../LearningMore/platform.html" class="sidebar-item-text sidebar-link">
+  <a href="../LearningMore/platform.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Satellite Platform and subsystems</span></a>
   </div>
 </li>
@@ -205,26 +208,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#flatsat-overview" id="toc-flatsat-overview" class="nav-link active" data-scroll-target="#flatsat-overview">FlatSat Overview</a>
+  <li><a href="#satellite-platform-and-subsystems" id="toc-satellite-platform-and-subsystems" class="nav-link active" data-scroll-target="#satellite-platform-and-subsystems">Satellite Platform and Subsystems</a>
   <ul class="collapse">
-  <li><a href="#purpose-and-use" id="toc-purpose-and-use" class="nav-link" data-scroll-target="#purpose-and-use">Purpose and Use</a></li>
-  <li><a href="#typical-components" id="toc-typical-components" class="nav-link" data-scroll-target="#typical-components">Typical Components</a></li>
-  <li><a href="#advantages" id="toc-advantages" class="nav-link" data-scroll-target="#advantages">Advantages</a></li>
-  <li><a href="#endurance-flatsat" id="toc-endurance-flatsat" class="nav-link" data-scroll-target="#endurance-flatsat">Endurance Flatsat</a>
-  <ul class="collapse">
-  <li><a href="#ressources" id="toc-ressources" class="nav-link" data-scroll-target="#ressources">Ressources</a></li>
-  <li><a href="#endurance-data-handling-architecture" id="toc-endurance-data-handling-architecture" class="nav-link" data-scroll-target="#endurance-data-handling-architecture">Endurance data handling architecture</a></li>
-  </ul></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#power-subsystem" id="toc-power-subsystem" class="nav-link" data-scroll-target="#power-subsystem">Power Subsystem</a></li>
+  <li><a href="#propulsion-subsystem" id="toc-propulsion-subsystem" class="nav-link" data-scroll-target="#propulsion-subsystem">Propulsion Subsystem</a></li>
+  <li><a href="#structure-subsystem" id="toc-structure-subsystem" class="nav-link" data-scroll-target="#structure-subsystem">Structure Subsystem</a></li>
+  <li><a href="#thermal-subsystem" id="toc-thermal-subsystem" class="nav-link" data-scroll-target="#thermal-subsystem">Thermal Subsystem</a></li>
+  <li><a href="#attitude-and-orbit-control-system-aocs" id="toc-attitude-and-orbit-control-system-aocs" class="nav-link" data-scroll-target="#attitude-and-orbit-control-system-aocs">Attitude and Orbit Control System (AOCS)</a></li>
+  <li><a href="#telemetry-and-telecommand-tmtc-subsystem" id="toc-telemetry-and-telecommand-tmtc-subsystem" class="nav-link" data-scroll-target="#telemetry-and-telecommand-tmtc-subsystem">Telemetry and Telecommand (TM/TC) Subsystem</a></li>
+  <li><a href="#onboard-computer-obc-subsystem" id="toc-onboard-computer-obc-subsystem" class="nav-link" data-scroll-target="#onboard-computer-obc-subsystem">Onboard Computer (OBC) Subsystem</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/flatsat/flatsat.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/LearningMore/platform.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../flatsat/endurance.html">Flatsat</a></li><li class="breadcrumb-item"><a href="../flatsat/flatsat.html">About the flatsat</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../LearningMore/platform.html">Ressources</a></li><li class="breadcrumb-item"><a href="../LearningMore/platform.html">Satellite Platform and subsystems</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Flatsat Overview</h1>
+<h1 class="title">Rewind on Satellite platform and subsystems</h1>
 </div>
 
 
@@ -241,65 +244,266 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Linkedin_banner_RESIZED.png" class="img-fluid figure-img"></p>
-<figcaption>Endurance banner</figcaption>
-</figure>
+<section id="satellite-platform-and-subsystems" class="level1">
+<h1>Satellite Platform and Subsystems</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    A[**Subsystems**]:::main
+    A --&gt; B[**Payload**]
+    A --&gt; C[**Power Subsystem**]
+    A --&gt; D[**Propulsion Subsystem**]
+    A --&gt; E[**Structure Subsystem**]
+    A --&gt; F[**Thermal Subsystem**]
+    A --&gt; G[**AOCS**&lt;br&gt;**Attitude and Orbit Control System**]
+    A --&gt; H[**TM/TC Subsystem**]
+    A --&gt; I[**OBC Subsystem**]
+
+    classDef main font-size:30px, font-weight:bold, color:#ffffff;
+    classDef payload fill:#a05a87, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef power fill:#5f8b95, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef propulsion fill:#999999, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef structure fill:#4a66a1, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef thermal fill:#c49d1d, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef aocs fill:#7f4f7f, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef tmtc fill:#a69d19, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+    classDef obc fill:#3b9cc4, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;
+
+    class B payload;
+    class C power;
+    class D propulsion;
+    class E structure;
+    class F thermal;
+    class G aocs;
+    class H tmtc;
+    class I obc;
+</pre>
 </div>
-<section id="flatsat-overview" class="level1">
-<h1>FlatSat Overview</h1>
-<p>A <strong>FlatSat</strong> is a ground-based, test-ready version of a satellite with all its components laid out on a table rather than in a compact structure. This configuration allows for direct access to each subsystem, facilitating testing and troubleshooting in a controlled lab environment.</p>
-<section id="purpose-and-use" class="level2">
-<h2 class="anchored" data-anchor-id="purpose-and-use">Purpose and Use</h2>
-<p>FlatSats are used primarily to test satellite systems and their interoperability before launch, ensuring each component functions correctly. This setup supports end-to-end operations as if in orbit, allowing for command and telemetry testing. For CubeSats, FlatSats provide a low-cost, modular test environment suitable for educational purposes, commercial applications, and experimental payloads.</p>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
-<section id="typical-components" class="level2">
-<h2 class="anchored" data-anchor-id="typical-components">Typical Components</h2>
-<p>A FlatSat for CubeSat might include: - <strong>On-Board Computer (OBC)</strong> - <strong>Power System</strong> - <strong>Telemetry and Radio System</strong> - <strong>Attitude and Orbit Control</strong> - <strong>Navigation Receiver</strong></p>
-<p>Additional slots are often available for custom hardware or experimental components, such as AI-based detection algorithms or radiation monitoring payloads.</p>
-</section>
-<section id="advantages" class="level2">
-<h2 class="anchored" data-anchor-id="advantages">Advantages</h2>
-<ol type="1">
-<li><strong>Accessibility</strong>: Subsystems are physically separated, making them accessible for individual testing and replacement.</li>
-<li><strong>Operational Simulation</strong>: Commands can be sent via a simulated ground station, with telemetry received for analysis.</li>
-<li><strong>Flexibility</strong>: Engineers can easily swap or modify components, an asset for educational and fast-paced commercial projects.</li>
-<li><strong>Testing New Technologies</strong>: Allows for validation of new components like radiation-tolerant microcontrollers in a representative environment.</li>
-</ol>
-</section>
-<section id="endurance-flatsat" class="level2">
-<h2 class="anchored" data-anchor-id="endurance-flatsat">Endurance Flatsat</h2>
-<section id="ressources" class="level3">
-<h3 class="anchored" data-anchor-id="ressources">Ressources</h3>
+<section id="power-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="power-subsystem">Power Subsystem</h2>
 <ul>
-<li><a href="https://docs.google.com/document/d/1-258bORFvqcAcdje3dtHqEp3SzGdBD3c9GgvU-LWN3k/edit?tab=t.0#heading=h.gjdgxs">Endurance software spec</a></li>
+<li><strong>Components:</strong>
+<ul>
+<li><strong>Solar Panels:</strong> Generate electrical power by converting solar energy.</li>
+<li><strong>Batteries:</strong> Store energy for use when the satellite is in Earth’s shadow.</li>
+</ul></li>
+<li><strong>Purpose:</strong> Provides and regulates power for all satellite subsystems.</li>
+<li><strong>Power Output:</strong> Typically between 10 and 20 kW, depending on satellite design and mission requirements.</li>
 </ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    A[Power Subsystem] --&gt; B[Solar Panels]
+    A --&gt; C[Batteries]
+    B --&gt; D[Generate Power]
+    C --&gt; E[Store Power]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
-<section id="endurance-data-handling-architecture" class="level3">
-<h3 class="anchored" data-anchor-id="endurance-data-handling-architecture">Endurance data handling architecture</h3>
-<p>To describe the different components of the <em>flatsat</em> planned for Endurance, I’m using the DHS view, which allows me to outline the communication protocols between the various systems.</p>
-<p><img src="images/dhs.png" class="img-fluid"></p>
-<p>The flatsat includes:</p>
+<section id="propulsion-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="propulsion-subsystem">Propulsion Subsystem</h2>
 <ul>
-<li>Flight software</li>
-<li>Two mission onboard computers (OBCs) in <a href="../LearningMore/redundancy.html">warm redundancy</a> to manage AOCS (orbit), PU, Com, Th, and equipment</li>
-<li>Ground segment software (<a href="https://yamcs.org/">Yamcs</a>) for communication with the OBC</li>
-<li><a href="../LearningMore/egse.html">EGSE</a> for pre-launch spacecraft testing and simulation</li>
-<li>Flatsat computer</li>
-<li><a href="https://github.com/asynchronics/asynchronix">Simulation software</a></li>
-<li>Power supply</li>
-</ul>
-<p><strong>Note</strong>: Mission OBCs differ from guidance, navigation, and control (<a href="https://indico.esa.int/event/181/contributions/1436/attachments/1385/1610/ESA_GNC_Technologies_and_Test_Beds_for_ADR_and_Space_Tug_Applications.pdf">GNC</a>) OBCs (Rendezvous &amp; Grippers) and attitude (ADCS) OBCs, which are also in warm redundancy pairs.</p>
-<p>Three communication protocols are used:</p>
+<li><strong>Functions:</strong>
 <ul>
-<li><strong>Ethernet</strong></li>
-<li><strong>CAN-TS</strong></li>
-<li><strong>CAN-Open</strong></li>
+<li><strong>Positioning (Initial Orbit Insertion):</strong> Places the satellite in its intended geostationary orbit.</li>
+<li><strong>Station Keeping:</strong> Maintains satellite’s position against gravitational forces.</li>
+<li><strong>Deorbiting:</strong> Ensures controlled descent at the end of the mission, removing the satellite from orbit.</li>
+</ul></li>
+<li><strong>Types of Propulsion:</strong>
+<ul>
+<li><strong>Chemical Propulsion:</strong> Provides high thrust for orbit changes.</li>
+<li><strong>Electric Propulsion:</strong> Efficient for station-keeping maneuvers, using less fuel over time.</li>
+</ul></li>
 </ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    F[Propulsion Subsystem] --&gt; G[Positioning]
+    F --&gt; H[Station Keeping]
+    F --&gt; I[Deorbiting]
+    G --&gt; J[Chemical Propulsion]
+    H --&gt; K[Electric Propulsion]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="structure-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="structure-subsystem">Structure Subsystem</h2>
+<ul>
+<li><strong>Purpose:</strong> Provides mechanical integrity, ensuring satellite withstands the physical stresses during launch and operation.</li>
+<li><strong>Stress Factors:</strong>
+<ul>
+<li><strong>Acceleration:</strong> Up to 4.5 g during launch.</li>
+<li><strong>Acoustic Pressure:</strong> Up to 140 dB due to intense launch sounds.</li>
+</ul></li>
+<li><strong>Components:</strong> Reinforced frame and materials designed for durability in the harsh space environment.</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    L[Structure Subsystem] --&gt; M[Handles Launch Stresses]
+    M --&gt; N[Acceleration: up to 4.5 g]
+    M --&gt; O[Acoustic Pressure: up to 140 dB]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="thermal-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="thermal-subsystem">Thermal Subsystem</h2>
+<ul>
+<li><strong>Function:</strong> Manages satellite temperature, preventing overheating or freezing of sensitive components.</li>
+<li><strong>Challenges:</strong>
+<ul>
+<li><strong>Space Temperature Variability:</strong> -120°C to +150°C.</li>
+</ul></li>
+<li><strong>Optimal Temperature Ranges:</strong>
+<ul>
+<li><strong>Batteries:</strong> 0°C to +10°C.</li>
+<li><strong>Electronics:</strong> 10°C to +45°C.</li>
+<li><strong>Antennas:</strong> -150°C to +80°C.</li>
+</ul></li>
+<li><strong>Thermal Control Techniques:</strong>
+<ul>
+<li><strong>Radiators and Heat Pipes:</strong> Dissipate excess heat.</li>
+<li><strong>Insulation:</strong> Protects against extreme cold.</li>
+</ul></li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    P[Thermal Subsystem] --&gt; Q[Temperature Management]
+    Q --&gt; R[Space Temperature: -120 to +150 degrees celsius]
+    Q --&gt; S[Controlled Ranges]
+    S --&gt; T[Batteries: 0  to +10 degrees celsius]
+    S --&gt; U[Electronics: 10  to +45 degrees celsius]
+    S --&gt; V[Antennas: -150 to +80 degrees celsius]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="attitude-and-orbit-control-system-aocs" class="level2">
+<h2 class="anchored" data-anchor-id="attitude-and-orbit-control-system-aocs">Attitude and Orbit Control System (AOCS)</h2>
+<ul>
+<li><strong>Purpose:</strong> Maintains the satellite’s orientation and ensures it remains in its designated orbital position.</li>
+<li><strong>Components:</strong>
+<ul>
+<li><strong>Gyroscopes:</strong> Measure orientation.</li>
+<li><strong>Reaction Wheels:</strong> Control attitude without expending fuel.</li>
+<li><strong>Thrusters:</strong> Adjust orbit as needed for station keeping.</li>
+</ul></li>
+<li><strong>Positioning Requirements:</strong> Accuracy within a few kilometers, with specific orientations for antenna alignment and solar panel exposure.</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    W[Attitude and Orbit Control System AOCS]
+    W --&gt; X[Maintains Orientation]
+    W --&gt; Y[Controls Orbital Position]
+    X --&gt; Z[Gyroscopes &amp; Reaction Wheels]
+    Y --&gt; AA[Thrusters]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="telemetry-and-telecommand-tmtc-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="telemetry-and-telecommand-tmtc-subsystem">Telemetry and Telecommand (TM/TC) Subsystem</h2>
+<ul>
+<li><strong>Telemetry (TM):</strong> Continuously monitors satellite status and transmits data to ground control.</li>
+<li><strong>Telecommand (TC):</strong> Receives commands from ground control to execute operational tasks.</li>
+<li><strong>Example Operations:</strong> Power adjustments, orbit corrections, and data collection from sensors.</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    AB[Telemetry &amp; Telecommand Subsystem TM/TC]
+    AB --&gt; AC[Telemetry]
+    AB --&gt; AD[Telecommand]
+    AC --&gt; AE[Sends Data to Ground]
+    AD --&gt; AF[Receives Commands from Ground]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="onboard-computer-obc-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="onboard-computer-obc-subsystem">Onboard Computer (OBC) Subsystem</h2>
+<ul>
+<li><strong>Role:</strong> Acts as the satellite’s central processing unit, managing operations and coordinating responses to commands.</li>
+<li><strong>Functions:</strong>
+<ul>
+<li>Processes data from sensors and telemetry.</li>
+<li>Executes control commands to other subsystems.</li>
+<li>Stores critical mission data.</li>
+</ul></li>
+<li><strong>Example:</strong> The OBC on ESA’s BepiColombo mission, which provides autonomous operations for deep space.</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    AG[Onboard Computer OBC Subsystem]
+    AG --&gt; AH[Processes Data]
+    AG --&gt; AI[Executes Commands]
+    AG --&gt; AJ[Stores Mission Data]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>Source of Illustrations:</strong> Diagrams inspired by ESA and CNES for satellite subsystems and visualizations of Insat 3A, an Indian telecommunications satellite. ```</p>
+<p>This expanded Markdown file provides a thorough breakdown of each subsystem, accompanied by Mermaid diagrams to illustrate their components and functions. Let me know if you would like to add further details or additional diagrams.</p>
 
 
-</section>
 </section>
 </section>
 
@@ -870,13 +1074,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../flatsat/endurance.html" class="pagination-link" aria-label="Endurance overview">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Endurance overview</span>
+      <a href="../flatsat/yamcs.html" class="pagination-link" aria-label="yamcs interface and Endurance flatsat library">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">yamcs interface and Endurance flatsat library</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../flatsat/can.html" class="pagination-link" aria-label="Can protocols">
-        <span class="nav-page-text">Can protocols</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../LearningMore/redundancy.html" class="pagination-link" aria-label="Redundancy">
+        <span class="nav-page-text">Redundancy</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -888,7 +1092,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/flatsat/flatsat.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rlhoussaine/FlatSatIntro/edit/main/LearningMore/platform.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rlhoussaine/FlatSatIntro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
