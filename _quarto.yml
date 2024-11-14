@@ -34,16 +34,36 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
-      - section: flatsat/endurance.qmd
-        contents: 
-          - flatsat/platform.qmd
-          - flatsat/flatsat.qmd
-          - flatsat/spacepackets.qmd
-          - flatsat/can.qmd
-          - flatsat/yamcs.qmd
-          - flatsat/swdev.qmd
-      - learning-more.qmd
+      - section: "Flatsat"
+        contents:
+          - href: flatsat/endurance.qmd 
+            text: Endurance overview
 
+          - href: flatsat/flatsat.qmd
+            text: About the flatsat
+
+          - href: flatsat/can.qmd
+            text: Can protocols
+
+          - href: flatsat/ccsdspackets.qmd
+            text: Space packets
+
+          - href: flatsat/yamcs.qmd
+            text: yamcs interface and Endurance flatsat library
+
+      - section: "Ressources"
+        contents:
+          - href: LearningMore/platform.qmd
+            text: Satellite Platform and subsystems
+
+          - href: LearningMore/redundancy.qmd
+            text: Redundancy
+
+          - href: LearningMore/egse.qmd
+            text: EGSE
+
+          - href: LearningMore/swdev.qmd
+            text: Git Hub workflow
 
 format:
   html:

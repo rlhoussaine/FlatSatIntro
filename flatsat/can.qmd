@@ -1,46 +1,118 @@
 ---
-title: CAN protocols
+title: Space Packets Protocols
+---
+Voici une version avec une mise en forme améliorée :
+
 ---
 
-```markdown
 # CAN-TS and CANopen Protocols for Embedded Applications
 
 ## Overview
-The CAN-TS (CAN Telemetry Standard) protocol and CANopen are two communication protocols widely used in embedded systems, particularly for systems with constrained resources. While both protocols serve communication needs, each has unique features and is suited to different application environments.
+The CAN-TS (CAN Telemetry Standard) protocol and CANopen are widely used in embedded systems, particularly in resource-constrained environments. Each serves specific communication needs, suited to different applications.
 
 ---
 
 ## CAN-TS Protocol
 
 ### Purpose
-CAN-TS is designed specifically for applications with limited memory, such as embedded systems in aerospace. It provides a streamlined communication method, prioritizing low memory usage while still offering critical functionalities.
+Designed for applications with limited memory, such as aerospace systems, CAN-TS provides streamlined communication prioritizing low memory usage.
 
 ### Key Features
-- **Lightweight Design**: Optimized for 8/16-bit architecture, minimizing memory overhead.
+- **Lightweight Design**: Optimized for 8/16-bit architectures, minimizing memory overhead.
 - **Basic Communication Services**: Includes telemetry, telecommand, time synchronization, and bus redundancy management.
-- **Open Source**: Available for free on GitHub, facilitating easy adoption and integration.
-  
+- **Open Source**: Available on GitHub for easy adoption.
+
 ### Advantages
 - **Memory Efficiency**: Ideal for memory-constrained systems.
-- **Robustness**: Engineered for reliability in mission-critical applications like aerospace.
-- **Low Resource Consumption**: Efficiently operates with minimal computational requirements, making it a practical choice for simple devices.
+- **Robustness**: Reliable for mission-critical aerospace applications.
+- **Low Resource Consumption**: Operates efficiently with minimal computational requirements.
+
+### CAN-TS Frame
+- Utilizes CAN2.0B extended frame
+  - Encapsulates address, transfer type, and command ID in a 29-bit identifier.
+- **Origin Validation**: Message acceptance validated by source address.
+- **Efficiency**: Uses full 8 bytes of data field for protocol services with software-based acknowledgment and reliability over bus utilization.
+
+![CAN-TS Frame](images/frame.png)
+
+### CAN-TS Transfer Types
+
+CAN-TS supports six application layer services:
+
+1. **Telecommand**
+   - Acknowledged transfer (request/acknowledge).
+   - Up to 8 bytes of payload data per response.
+   - Up to 256 telecommands per device.
+
+   ![Telecommand](images/telecommand.png)
+
+2. **Telemetry**
+   - Acknowledged transfer (request/acknowledge).
+   - Up to 8 bytes of payload data per request.
+   - Up to 256 telemetry messages per device.
+
+   ![Telemetry](images/telemetry.png)
+
+3. **Unsolicited Telemetry**
+   - Sends telemetry directly without a request.
+   - Supports periodic or event-driven transfers, with up to 8 bytes of payload data.
+
+   ![Unsolicited Telemetry](images/unsolicitedTM.png)
+
+4. **Time Synchronization**
+   - Time distribution via a broadcast message from the time master (highest priority).
+
+   ![Time Synchronization](images/timesync.png)
+
+Voici la mise en forme améliorée de cette partie :
+
+---
+
+5. **Set Block** (multi-message transfer)  
+   - For large data exchanges (up to 512 bytes).
+   - Includes retransmission and timeout features.
+   - Address ranges from 8 to 64 bits.
+
+   ![Set Block](images/setblock.png)
+
+   **Command Field Subfields**:
+   - **Request, Acknowledge** – Bits 9-7. Table 6 presents all possible values for this subfield.  
+
+![Set Block Table](images/setblocktable.png){width=95%}
+
+   - **No. of Blocks** – Bits 5-0 of the Command field in the Set Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.
+   - **Sequence** – Bits 5-0 of the Command field in the Set Block Transfer frame represent the index of the transferred block. The first block has index 0.
+   - **Done** – Bit 6 of the Command field in the Set Block Report frame indicates if the whole block was successfully received and processed. If additional time is needed for processing, this bit is set to 0.
+
+6. **Get Block** (multi-message transfer)  
+   - Large data transfers from sink to source with error management.
+
+![Get Block](images/getblock.png){width=95%}
+
+   **Command Field Subfields**:
+   - **Request, Acknowledge** – Bits 9-7. Table 7 presents all possible values for this subfield.  
+
+![Get Block Table](images/getblocktable.png){width=95%}
+
+   - **No. of Blocks** – Bits 5-0 of the Command field in the Get Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.
+   - **Sequence** – Bits 5-0 of the Command field in the Get Block Transfer frame represent the index of the transferred block. The first block has index 0.
 
 ---
 
 ## CANopen Protocol
 
 ### Purpose
-CANopen is a more comprehensive and flexible protocol, commonly used in industrial applications requiring detailed and extensive communication capabilities. 
+CANopen is a flexible protocol for industrial applications that require detailed communication capabilities.
 
 ### Key Features
-- **Device Profiles**: Standardized profiles for various device types (e.g., motion control, sensors).
-- **Communication Objects**: Supports multiple types of data transfer, such as PDO (Process Data Objects) and SDO (Service Data Objects).
-- **Scalability**: Suitable for both simple and complex network structures.
-  
+- **Device Profiles**: Standardized for various device types (e.g., motion control, sensors).
+- **Communication Objects**: Supports PDO (Process Data Objects) and SDO (Service Data Objects) transfers.
+- **Scalability**: Suitable for both simple and complex networks.
+
 ### Advantages
-- **Wide Applicability**: Used in many industries, including automotive and automation.
-- **Enhanced Functionality**: Offers advanced features like diagnostic services and network management.
-- **Customization**: Flexible configuration options to meet specific needs.
+- **Wide Applicability**: Used across industries, including automotive and automation.
+- **Enhanced Functionality**: Offers advanced features like diagnostics and network management.
+- **Customization**: Flexible configuration options.
 
 ---
 
@@ -50,13 +122,7 @@ CANopen is a more comprehensive and flexible protocol, commonly used in industri
 |------------------------|-----------------------------------------|----------------------------------------|
 | **Memory Usage**       | Low, optimized for constrained devices | Higher, requires more memory           |
 | **Typical Use Case**   | Aerospace, simple devices              | Industrial automation, robotics        |
-| **Complexity**         | Lower, easier to implement             | Higher, with more extensive features   |
+| **Complexity**         | Lower, easier to implement             | Higher, with extensive features        |
 | **Availability**       | Open-source, free                      | Often requires licensing               |
 
 ---
-
-## Conclusion
-Both CAN-TS and CANopen serve important roles in the field of embedded systems, each fitting distinct needs. CAN-TS is ideal for memory-limited applications in aerospace, while CANopen provides extensive support for complex industrial setups.
-
-For more detailed information, see the full document on the [ESA website](https://indico.esa.int/event/276/contributions/4535/attachments/3482/4593/W32_-_CAN-TS_protocol_for_memory_constrained_embedded_application.pdf).
-```

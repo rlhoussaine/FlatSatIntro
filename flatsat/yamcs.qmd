@@ -1,25 +1,23 @@
----
-title: About Yamcs
----
 
 # Yamcs Overview
 
-[Yamcs](https://yamcs.org/) is an open-source software for real-time mission control, providing tools for managing spacecraft and ground systems operations. 
+[Yamcs](https://yamcs.org/) is an open-source software for real-time mission control, providing tools for spacecraft and ground system operations.
 
 ## Key Features
-- **Telemetry Processing**: Receives and processes telemetry data in real-time.
-- **Telecommands**: Allows sending commands to satellites or spacecraft.
-- **Alarms & Notifications**: Generates alarms based on configurable thresholds.
-- **Data Replay**: Enables users to replay mission data.
-- **Standards Compliance**: Supports standards like CCSDS, CFDP, and XTCE.
+- **Telemetry Processing**: Real-time telemetry data processing.
+- **Telecommands**: Command satellites or spacecraft.
+- **Alarms & Notifications**: Configurable alarms based on thresholds.
+- **Data Replay**: Allows mission data replay.
+- **Standards Compliance**: Supports CCSDS, CFDP, and XTCE standards.
 
 ## Getting Started
-To set up Yamcs, follow the [Getting Started Guide](https://yamcs.org/getting-started). It covers installation, configuration, and basic usage, ideal for new users.
+To set up Yamcs, follow the [Getting Started Guide](https://yamcs.org/getting-started) covering installation, configuration, and basic usage.
 
 ## Python Client
-The [Python Yamcs Client](https://docs.yamcs.org/python-yamcs-client/) allows integration with Yamcs via Python, supporting telemetry retrieval, commanding, and historical data access, making it suitable for custom mission applications.
+The [Python Yamcs Client](https://docs.yamcs.org/python-yamcs-client/) supports telemetry retrieval, commanding, and historical data access via Python for custom mission applications.
 
 ## Extensions and Support
 Yamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training.
+```
 
----
+This revised version improves readability and structure by enhancing header hierarchy, separating sections clearly, and refining table alignment. The use of consistent bullet points and simplified phrasing also aids clarity.

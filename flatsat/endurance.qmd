@@ -1,11 +1,15 @@
 ---
 title: Endurance Overview
 ---
+![](images/Linkedin_Banner.png){width=95%}
 
-# Endurance - Office Inauguration
+# Endurance
+
+Infinite Orbits' Endurance project is a technical solution for extending satellite lifespans in geostationary orbit. The 750 kg servicer is equipped with Rendezvous and Proximity Operations (RPO) technology, enabling it to autonomously dock with and stabilize aging satellites. It takes over station-keeping, prolonging satellite functionality by five years and managing end-of-life disposal to a "graveyard" orbit. Designed for compatibility with most geostationary satellites, Endurance is slated for its first mission in 2026, targeting high-efficiency, on-orbit service and satellite life extension.
 
 ## 1. Overview of Endurance Services
 
+::: {layout-ncol="2"}
 ### In Geostationary Orbit (GEO):
 - **Stationkeeping**: 
   - Service duration of up to 5 years
@@ -16,9 +20,12 @@ title: Endurance Overview
 - **End-of-Life (EOL) Disposal**: 
   - Transfer to a GEO graveyard orbit at the end of operations
 
+![](images/end_dock.png)
+:::
 ---
 
 ## 2. Project Achievements and Future Goals
+
 
 - **Life Extension Start**: Planned for 2026, marking Endurance as the first French company to achieve Life Extension.
 - **Development Phases**:
@@ -43,15 +50,15 @@ title: Endurance Overview
 
 ## 3. Endurance Summary
 
-| Parameter               | Specification                                           |
-|-------------------------|---------------------------------------------------------|
-| **Mass**                | 310 kg (dry), 500 kg (wet)                              |
-| **Volume**              | 1 x 1 x 1.2 m³                                          |
-| **Launcher Compatibility** | Ariane 6 / SpaceX Falcon 9 (rideshare passenger) |
-| **Power**               | Two tracking solar wings                                |
-| **Architecture**        | Dual string (core avionics)                             |
-| **Propulsion (PROP)**   | Four EP thrusters (Krypton propellant), eight RCS thrusters |
-| **Communications**      | Deployable antennas                                     |
+| Parameter                  | Specification                                               |
+| -------------------------- | ----------------------------------------------------------- |
+| **Mass**                   | 310 kg (dry), 800 kg (wet)                                  |
+| **Volume**                 | 1 x 1 x 1.2 m³                                              |
+| **Launcher Compatibility** | Ariane 6 / SpaceX Falcon 9 (rideshare passenger)            |
+| **Power**                  | Two tracking solar wings                                    |
+| **Architecture**           | Dual string (core avionics)                                 |
+| **Propulsion (PROP)**      | Four EP thrusters (Krypton propellant), eight RCS thrusters |
+| **Communications**         | Deployable antennas                                         |
 
 ---
 
@@ -69,14 +76,20 @@ title: Endurance Overview
 - **Reaction Wheels**: Three large reaction wheels for stabilization
 - **Thruster Steering Mechanism**: Two degrees of freedom for precise maneuvering
 
+
+![](images/end_desc.png)
+
+
 ---
 
 ## 5. External Features of Endurance
 
+::: {layout-ncol="2"}
 - **Solar Arrays**: Two wings capable of generating up to 2.2 kW
 - **Antenna Deployables**: Two antennas for ground communication while docked
 - **Customizable Docking System**: Adaptable for docking with most GEO satellites
 
----
+![](images/end_overall.png)
+:::
 
-This outline provides a structured markdown version of your presentation content, ready to use for slides or documentation. Let me know if you need more details on any section!
+To learn more about general organisation in a satellite platform/payload, see [Platform](../LearningMore/platform.qmd)

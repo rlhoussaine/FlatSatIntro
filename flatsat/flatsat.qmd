@@ -1,6 +1,7 @@
 ---
 title: Flatsat Overview
 ---
+![Endurance banner](images/Linkedin_banner_RESIZED.png)
 
 # FlatSat Overview
 
@@ -28,12 +29,33 @@ Additional slots are often available for custom hardware or experimental compone
 3. **Flexibility**: Engineers can easily swap or modify components, an asset for educational and fast-paced commercial projects.
 4. **Testing New Technologies**: Allows for validation of new components like radiation-tolerant microcontrollers in a representative environment.
 
-## Applications in Industry and Research
+## Endurance Flatsat
 
-ESA, NASA, and other space organizations use FlatSats extensively to develop and validate CubeSat technologies, streamline component interoperability, and prepare hardware for space missions.
+### Ressources 
 
-For more details, refer to the [ESA page](https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Opened-out_FlatSat_for_CubeSat_testing) and [NASA's technical documentation](https://ntrs.nasa.gov/api/citations/20080040717/downloads/20080040717.pdf).
+- [Endurance software spec](https://docs.google.com/document/d/1-258bORFvqcAcdje3dtHqEp3SzGdBD3c9GgvU-LWN3k/edit?tab=t.0#heading=h.gjdgxs)
 
---- 
+### Endurance data handling architecture
 
-Let me know if you need further specifics or if there's a particular section you'd like expanded!
+To describe the different components of the _flatsat_ planned for Endurance, I’m using the DHS view, which allows me to outline the communication protocols between the various systems.
+
+![](images/dhs.png)
+
+The flatsat includes:
+
+- Flight software
+- Two mission onboard computers (OBCs) in [warm redundancy](../LearningMore/redundancy.qmd) to manage AOCS (orbit), PU, Com, Th, and equipment
+- Ground segment software ([Yamcs](https://yamcs.org/)) for communication with the OBC
+- [EGSE](../LearningMore/egse.qmd) for pre-launch spacecraft testing and simulation
+- Flatsat computer
+- [Simulation software](https://github.com/asynchronics/asynchronix)
+- Power supply
+
+**Note**: Mission OBCs differ from guidance, navigation, and control ([GNC](https://indico.esa.int/event/181/contributions/1436/attachments/1385/1610/ESA_GNC_Technologies_and_Test_Beds_for_ADR_and_Space_Tug_Applications.pdf)) OBCs (Rendezvous & Grippers) and attitude (ADCS) OBCs, which are also in warm redundancy pairs.
+
+Three communication protocols are used:
+
+- **Ethernet**
+- **CAN-TS**
+- **CAN-Open**
+

@@ -1,6 +1,6 @@
 ---
-title: "End-to-End FlatSat Service Overview"
-subtitle: "From Comprehensive Hardware Integration to Seamless Software Validation"
+title: End-to-End FlatSat Service Overview
+subtitle: From Comprehensive Hardware Integration to Seamless Software Validation
 ---
 
 ## Welcome {#welcome}

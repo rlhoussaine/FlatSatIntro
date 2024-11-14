@@ -1,0 +1,51 @@
+# Hot, Warm, and Cold Redundant Systems
+
+**Sources**: 
+
+- [*Reliability Engineering 2 (1981), G. N. Sharma, Space Applications Centre, India*](https://www.sciencedirect.com/science/article/abs/pii/0143817481900123?via%3Dihub)
+
+- [*Cold, warm and hot redundancy: determining how much you need*](https://www.automationit.com/blog/79-cold-warm-and-hot-redundancy-determining-how-much-you-need)
+
+
+![](images/redundancy.jpg){width=120%}
+
+## Abstract
+Unplanned failures in spaceborne and ground systems are minimized with redundancy, either active (hot), standby (cold), or intermediate (warm). This paper examines both types in detail to optimize reliability.
+
+## Notation
+- **[R]hs**: Reliability of hot redundant system
+- **[R]cs**: Reliability of cold redundant system
+- **MTBF**: Mean Time Between Failures
+- **r**: Reliability of a single unit
+
+## Introduction
+Reliability for critical systems can be achieved through different redundancy strategies:
+
+- **Hot Redundancy**: All units operate simultaneously, allowing for instant failover.
+
+- **Cold Redundancy**: Only one unit is operational, with standby units activated if needed.
+
+- **Warm Redundancy** (per Automation IT): Used in processes requiring rapid response but tolerating brief outages; it engages secondary processors quickly without seamless transition.
+
+## Hot Redundant Systems
+Hot redundancy enhances reliability by maintaining constant operation across components. It suits critical processes where interruptions are unacceptable.
+
+### Mean Time Between Failures (MTBF)
+The MTBF for n exponential units in parallel extends as additional units are added.
+
+## Cold Redundant Systems
+Cold redundancy suits non-critical systems where downtime is manageable. It relies on standby units to activate after primary failure.
+
+## Warm Redundant Systems
+A warm system allows standby units to synchronize periodically, suitable for processes that allow brief outages but require quick recovery.
+
+### Key Observations
+1. **First Redundant Unit** in hot redundancy increases reliability ~1.6x with MTBF mission time.
+2. **Cold Redundancy** generally offers higher reliability when ideal switching is possible.
+3. **Warm Redundancy** minimizes system restart time, providing an intermediate solution for systems needing balance.
+
+### MTBF Comparison
+Cold redundancy provides a higher MTBF than hot or warm redundancy when extra units are added.
+
+## Conclusion
+Cold and warm redundancies offer distinct benefits in reliability and MTBF, each appropriate to specific system requirements..

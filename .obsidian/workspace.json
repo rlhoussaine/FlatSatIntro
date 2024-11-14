@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "a7334ff7fe3f84bc",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce950e617e4f527d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bdbe27e596921cb8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "flatsat/can.qmd",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "can"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "efcf38c8884f467a",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5d3eb6aecf45e1f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ef16a22efdbcbea",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorateur de fichiers"
+            }
+          },
+          {
+            "id": "c5dccfad3691b9b2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Rechercher"
+            }
+          },
+          {
+            "id": "05d67d2157aadbe0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Signet"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3b07421d384ebd0c",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe6fa627b6c967fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c55baafbc51f84ba",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "flatsat/can.qmd",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rétrolien pour can"
+            }
+          },
+          {
+            "id": "f64f775c8dc5d9a6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "flatsat/can.qmd",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Liens sortants de can"
+            }
+          },
+          {
+            "id": "cfbc8932a385014f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Mots-clés"
+            }
+          },
+          {
+            "id": "4935f6718e90a80e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "flatsat/can.qmd"
+              },
+              "icon": "lucide-list",
+              "title": "Plan de can"
+            }
+          },
+          {
+            "id": "7a155e38f3435ac0",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-kanban:Create new board": false
+    }
+  },
+  "active": "bdbe27e596921cb8",
+  "lastOpenFiles": [
+    "LearningMore/platform.html",
+    "LearningMore/platform_files/mediabag",
+    "LearningMore/platform_files",
+    "site_libs/quarto-diagram/mermaid.css",
+    "site_libs/quarto-diagram/mermaid-init.js",
+    "site_libs/quarto-diagram/mermaid.min.js",
+    "site_libs/quarto-diagram",
+    "LearningMore/egse.html",
+    "LearningMore/egse_files/mediabag",
+    "LearningMore/egse_files",
+    "LearningMore/swdev.html",
+    "site_libs/bootstrap/images/render-commit-push.png",
+    "site_libs/bootstrap/images/pull.png",
+    "_site/LearningMore/images/redundancy.jpg",
+    "_site/flatsat/images/unsolicitedTM.png",
+    "_site/flatsat/images/timesync.png",
+    "_site/flatsat/images/telemetry.png",
+    "_site/flatsat/images/telecommand.png",
+    "_site/flatsat/images/setblock.png",
+    "_site/flatsat/images/frame.png",
+    "_site/flatsat/images/end_overall.png",
+    "flatsat/yamcs.md",
+    "flatsat/ccsdspackets.md",
+    "LearningMore/egse.md",
+    "LearningMore/redundancy.md",
+    "README.md"
+  ]
+}

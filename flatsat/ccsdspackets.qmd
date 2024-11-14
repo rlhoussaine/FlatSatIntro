@@ -1,0 +1,97 @@
+
+# CCSDS Space Communication Protocols
+
+CCSDS standards ensure interoperability in space communications, defining three main protocols:
+- **Space Packet Protocol (SPP)**: Structures and transports space data.
+- **Telecommand (TC) Protocol**: Sends commands from ground to a satellite.
+- **Telemetry (TM) Protocol**: Returns satellite telemetry to the ground.
+
+---
+
+## Space Packet Protocol (SPP)
+
+SPP (CCSDS 133.0-B-2) structures and transports data in "space packets."
+
+### SPP Packet Structure
+
+```mermaid
+graph TD
+    A[Packet Primary Header]
+    B[Packet Secondary Header]
+    C[Data Field]
+
+    A -->|7 bytes| B
+    B -->|variable| C
+```
+
+### Key Features
+- **Application Identification**: Uses the APID (Application Process Identifier) field.
+- **Data Flexibility**: Variable packet sizes for adaptability.
+- **Layer Independence**: Compatible with various link protocols.
+
+---
+
+## Telecommand (TC) Space Data Link Protocol
+
+The TC protocol (CCSDS 232.0-B-4) manages ground-to-satellite commands at the Data Link Layer.
+
+### TC Channel Hierarchy
+
+```mermaid
+graph TD
+    A[Master Channel]
+    B1[Virtual Channel 1]
+    B2[Virtual Channel 2]
+    C1[MAP Channel 1]
+    C2[MAP Channel 2]
+    C3[MAP Channel 3]
+
+    A --> B1
+    A --> B2
+    B1 --> C1
+    B2 --> C2
+    B2 --> C3
+```
+
+### Key Features
+- **Segmentation and Multiplexing**: Data split across virtual channels.
+- **Communication Control**: Ensures reliable command delivery and integrity checks.
+- **Security Support (SDLS)**: Protects sensitive command data.
+
+---
+
+## Telemetry (TM) Space Data Link Protocol
+
+The TM protocol (CCSDS 132.0-B-3) sends telemetry data from satellite to ground, also at the Data Link Layer.
+
+### Asynchronous and Synchronous Service Model
+
+```mermaid
+graph LR
+    A[Satellite Data Source] -- Asynchronous Transmission --> B[Virtual Channel]
+    B -- Synchronous Mode --> C[Ground Reception]
+```
+
+### Key Features
+- **Virtual Channels**: Differentiates telemetry data streams.
+- **Multiplexing/Demultiplexing**: Splits data into master and virtual channels.
+- **SDLS Security Option**: Ensures confidentiality and integrity of telemetry.
+
+---
+
+### Protocol Comparison
+
+| Protocol | OSI Layer    | Main Function                    | Security      |
+|----------|--------------|----------------------------------|---------------|
+| SPP      | Application  | Transports data as packets       | N/A           |
+| TC       | Data Link    | Sends commands                   | SDLS Support  |
+| TM       | Data Link    | Sends telemetry                  | SDLS Support  |
+
+---
+
+## Conclusion
+Both CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.
+
+For more details, see the full document on the [ESA website](https://indico.esa.int/event/276/contributions/4535/attachments/3482/4593/W32_-_CAN-TS_protocol_for_memory_constrained_embedded_application.pdf).
+
+---
