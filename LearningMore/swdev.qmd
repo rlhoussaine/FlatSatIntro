@@ -18,6 +18,8 @@ GitFlow primarily uses five branch types:
 - **Release**: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.
 - **Hotfix**: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.
 
+![](images/basic.png)
+
 ---
 
 ## 2. Workflow Process
@@ -27,14 +29,22 @@ GitFlow primarily uses five branch types:
    - Implement the feature, commit changes, and push the branch if needed.
    - Upon completion, merge the feature branch back into `develop` and delete it.
 
+![](images/feature.png)
+
+
 2. **Preparing a Release**:
    - When `develop` is stable and ready for a release, create a release branch (e.g., `release/1.0`).
    - Finalize minor adjustments and version updates on the release branch.
    - Once testing and fixes are complete, merge it into both `main` and `develop`. Tag this commit for reference.
 
+![](images/release.png)
+
+
 3. **Hotfixes**:
    - Hotfixes are created directly from `main` for urgent production issues.
    - After the fix, merge the hotfix branch into both `main` and `develop` to ensure the codebase remains consistent.
+
+![](images/hotfix.png)
 
 ---
 
@@ -63,4 +73,3 @@ To optimize GitFlow usage and maintain a smooth development process, consider th
 GitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.
 
 For more details on GitFlow and best practices, refer to [Atlassian’s GitFlow Tutorial](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), [GitKraken’s Workflow Guide](https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy), and [Stackademic's Guide](https://stackademic.com/blog/git-workflow-best-practices-for-a-smooth-and-efficient-development-process).
-```
