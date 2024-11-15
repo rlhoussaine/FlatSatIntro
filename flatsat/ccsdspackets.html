@@ -29,7 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../flatsat/yamcs.html" rel="next">
+<link href="../flatsat/pus.html" rel="next">
 <link href="../flatsat/can.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -150,6 +150,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../flatsat/ccsdspackets.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Space packets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../flatsat/pus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pus services</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -275,7 +281,13 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="packet-primary-header" class="level3">
 <h3 class="anchored" data-anchor-id="packet-primary-header">Packet primary header</h3>
-<p>The Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence: - Packet Version Number (3 bits, mandatory); - Packet Identification Field (13 bits, mandatory); - Packet Sequence Control Field (16 bits, mandatory); - Packet Data Length (16 bits, mandatory).</p>
+<p>The Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence:</p>
+<ul>
+<li>Packet Version Number (3 bits, mandatory);</li>
+<li>Packet Identification Field (13 bits, mandatory);</li>
+<li>Packet Sequence Control Field (16 bits, mandatory);</li>
+<li>Packet Data Length (16 bits, mandatory).</li>
+</ul>
 <p><img src="images/primary.png" class="img-fluid"></p>
 </section>
 <section id="packet-secondary-header" class="level3">
@@ -290,7 +302,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="tc-transfert-frame" class="level2">
 <h2 class="anchored" data-anchor-id="tc-transfert-frame">TC transfert frame</h2>
-<p>A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence: 1. Transfer Frame Header (5 octets, mandatory); 2. Transfer Frame Data Field (up to 1019 or 1017 octets, mandatory); 3. Frame Error Control Field (2 octets, optional).</p>
+<p>A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:</p>
+<ol type="1">
+<li>Transfer Frame Header (5 octets, mandatory);</li>
+<li>Transfer Frame Data Field (up to 1019 or 1017 octets, mandatory);</li>
+<li>Frame Error Control Field (2 octets, optional).</li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/TCframe.png" class="img-fluid figure-img"></p>
@@ -1011,8 +1028,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../flatsat/yamcs.html" class="pagination-link" aria-label="yamcs interface and Endurance flatsat library">
-        <span class="nav-page-text">yamcs interface and Endurance flatsat library</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../flatsat/pus.html" class="pagination-link" aria-label="Pus services">
+        <span class="nav-page-text">Pus services</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

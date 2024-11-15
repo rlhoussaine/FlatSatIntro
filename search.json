@@ -236,113 +236,80 @@
     ]
   },
   {
-    "objectID": "flatsat/ccsdspackets.html",
-    "href": "flatsat/ccsdspackets.html",
-    "title": "CCSDS Space Communication Protocols",
+    "objectID": "flatsat/pus.html",
+    "href": "flatsat/pus.html",
+    "title": "FlatSat Introduction Presentation",
     "section": "",
-    "text": "CCSDS standards ensure interoperability in space communications, defining three main protocols:\n\nSpace Packet Protocol (SPP): Structures and transports space data.\nTelecommand (TC) Protocol: Sends commands from ground to a satellite.\nTelemetry (TM) Protocol: Returns satellite telemetry to the ground.\n\n\n\n\nSPP (CCSDS 133.0-B-2) structures and transports data in “space packets.”\n\n\nA Space Packet shall include the defined fields, positioned contiguously, in the following sequence: 1. Packet Primary Header (6 octets, mandatory); 2. Packet Data Field (from 1 to 65536 octets, mandatory).\nA Space Packet shall consist of at least 7 and at most 65542 octets.\n\n\n\nSpace Packet Structural Components\n\n\n\n\n\n\nApplication Identification: Uses the APID (Application Process Identifier) field.\nData Flexibility: Variable packet sizes for adaptability.\nLayer Independence: Compatible with various link protocols.\n\n\n\n\nThe Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence: - Packet Version Number (3 bits, mandatory); - Packet Identification Field (13 bits, mandatory); - Packet Sequence Control Field (16 bits, mandatory); - Packet Data Length (16 bits, mandatory).\n\n\n\n\n\nThe purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.\nSecondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space\n\n\n\n\n\n\n\nA TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence: 1. Transfer Frame Header (5 octets, mandatory); 2. Transfer Frame Data Field (up to 1019 or 1017 octets, mandatory); 3. Frame Error Control Field (2 octets, optional).\n\n\n\nTC Transfer Frame Structural Components\n\n\nNOTES :\n\nThe TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.\nThe maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.\nThe structural components of the TC Transfer Frame are shown in figure.\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Version Number (2 bits, mandatory);\nBypass Flag (1 bit, mandatory);\nControl Command Flag (1 bit, mandatory);\nReserved Spare (2 bits, mandatory);\nSpacecraft Identifier (10 bits, mandatory);\nVirtual Channel Identifier (6 bits, mandatory);\nFrame Length (10 bits, mandatory);\nFrame Sequence Number (8 bits, mandatory).\nNOTE – The format of the Transfer Frame Primary Header is shown in figure.\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\n\n\nA TM Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Primary Header (6 octets, mandatory);\nTransfer Frame Secondary Header (up to 64 octets, optional);\nTransfer Frame Data Field (integral number of octets, mandatory);\nOperational Control Field (4 octets, optional);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTM Transfer Frame Structural Components\n\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of six fields, positioned contiguously, in the following sequence:\n\nMaster Channel Identifier (12 bits, mandatory);\nVirtual Channel Identifier (3 bits, mandatory);\nOperational Control Field Flag (1 bit, mandatory);\nMaster Channel Frame Count (1 octet, mandatory);\nVirtual Channel Frame Count (1 octet, mandatory);\nTransfer Frame Data Field Status (2 octets, mandatory).\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\nBits 32–47 of the Transfer Frame Primary Header shall contain the Transfer Frame Data Field Status.\nThis 16-bit field shall be sub-divided into five sub-fields, as follows:\n\nTransfer Frame Secondary Header Flag (1 bit, mandatory);\nSynchronization Flag (1 bit, mandatory);\nPacket Order Flag (1 bit, mandatory);\nSegment Length Identifier (2 bits, mandatory);\nFirst Header Pointer (11 bits, mandatory).\n\n\n\n\n\nIf present, the Transfer Frame Secondary Header shall follow, without gap, the Transfer Frame Primary Header.\nThe Transfer Frame Secondary Header shall consist of an integral number of octets as follows:\n\nTransfer Frame Secondary Header Identification Field (1 octet, mandatory);\nTransfer Frame Secondary Header Data Field (1 to 63 octets, mandatory).\n\n\n\n\nTransfer Frame Secondary Header\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransports data as packets\nN/A\n\n\nTC\nData Link\nSends commands\nSDLS Support\n\n\nTM\nData Link\nSends telemetry\nSDLS Support\n\n\n\n\n\n\n\n\nBoth CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.",
+    "text": "PUS Service ## Space Packet Structure",
     "crumbs": [
       "Flatsat",
-      "Space packets"
+      "Pus services"
     ]
   },
   {
-    "objectID": "flatsat/ccsdspackets.html#space-packet-protocol-spp",
-    "href": "flatsat/ccsdspackets.html#space-packet-protocol-spp",
-    "title": "CCSDS Space Communication Protocols",
+    "objectID": "flatsat/pus.html#comprehensive-overview-of-the-packet-utilization-standard-pus",
+    "href": "flatsat/pus.html#comprehensive-overview-of-the-packet-utilization-standard-pus",
+    "title": "FlatSat Introduction Presentation",
+    "section": "Comprehensive Overview of the Packet Utilization Standard (PUS)",
+    "text": "Comprehensive Overview of the Packet Utilization Standard (PUS)\n\nIntroduction\nThe Packet Utilization Standard (PUS), part of the ECSS standards, defines a framework for using telemetry and telecommand packets to monitor and control spacecraft subsystems and payloads. Initially developed by ESA in the 1990s, PUS has become a widely adopted standard for spacecraft operations, reducing mission complexity and enhancing interoperability.\n\n\nPurpose\nPUS establishes a unified structure for spacecraft communication, enabling: - Remote Monitoring: Observing spacecraft status and health. - Command Execution: Controlling onboard systems and payloads. - Operational Consistency: Standardizing processes across missions.\n\n\nKey Features\n\nModular Services: Provides predefined services for common spacecraft operations.\nTailorability: Allows customization for mission-specific needs.\nInteroperability: Facilitates seamless interaction between ground stations and spacecraft.\n\n\n\nStandardized Services\nPUS defines various services, each targeting a specific operational aspect. Below is a list of core services:\n\n\n\nNo.\nService Name\n\n\n\n\n1\nTelecommand Verification\n\n\n2\nDevice Command Distribution\n\n\n3\nHousekeeping and Diagnostic Data Reporting\n\n\n4\nParameter Statistics Reporting\n\n\n5\nEvent Reporting\n\n\n6\nMemory Management\n\n\n8\nFunction Management\n\n\n9\nTime Management\n\n\n11\nOn-board Operations Scheduling\n\n\n12\nOn-board Monitoring\n\n\n13\nLarge Data Transfer\n\n\n14\nPacket Forwarding Control\n\n\n15\nOn-board Storage and Retrieval\n\n\n17\nTest\n\n\n18\nOn-board Operations Procedure\n\n\n19\nEvent-Action\n\n\n\n\n\nBenefits\n\nReduced Complexity: By standardizing telemetry and telecommand operations, PUS simplifies spacecraft design and development.\nFlexibility: Missions can select and implement only the services they require.\nReliability: Standardized procedures enhance robustness and minimize operational errors.\n\n\n\nTailoring for Missions\nEach mission can adapt PUS to its unique requirements by selecting relevant services, adjusting parameters, and defining custom extensions when necessary. The process involves: - Assigning specific Application Process Identifiers (APIDs). - Configuring service capabilities, such as memory management areas or telemetry event thresholds. - Documenting these decisions in a Space-to-Ground Interface Control Document (ICD).\n\n\nApplications\nPUS is a cornerstone of ESA missions, including Rosetta, Envisat, and Integral. It is also suitable for missions with diverse architectures, from centralized systems to distributed networks onboard spacecraft.",
+    "crumbs": [
+      "Flatsat",
+      "Pus services"
+    ]
+  },
+  {
+    "objectID": "flatsat/can.html",
+    "href": "flatsat/can.html",
+    "title": "Space Packets Protocols",
     "section": "",
-    "text": "SPP (CCSDS 133.0-B-2) structures and transports data in “space packets.”\n\n\nA Space Packet shall include the defined fields, positioned contiguously, in the following sequence: 1. Packet Primary Header (6 octets, mandatory); 2. Packet Data Field (from 1 to 65536 octets, mandatory).\nA Space Packet shall consist of at least 7 and at most 65542 octets.\n\n\n\nSpace Packet Structural Components\n\n\n\n\n\n\nApplication Identification: Uses the APID (Application Process Identifier) field.\nData Flexibility: Variable packet sizes for adaptability.\nLayer Independence: Compatible with various link protocols.\n\n\n\n\nThe Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence: - Packet Version Number (3 bits, mandatory); - Packet Identification Field (13 bits, mandatory); - Packet Sequence Control Field (16 bits, mandatory); - Packet Data Length (16 bits, mandatory).\n\n\n\n\n\nThe purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.\nSecondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space",
+    "text": "The CAN-TS (CAN Telemetry Standard) protocol and CANopen are widely used in embedded systems, particularly in resource-constrained environments. Each serves specific communication needs, suited to different applications.\n\n\n\n\n\n\nDesigned for applications with limited memory, such as aerospace systems, CAN-TS provides streamlined communication prioritizing low memory usage.\n\n\n\n\nLightweight Design: Optimized for 8/16-bit architectures, minimizing memory overhead.\nBasic Communication Services: Includes telemetry, telecommand, time synchronization, and bus redundancy management.\nOpen Source: Available on GitHub for easy adoption.\n\n\n\n\n\nMemory Efficiency: Ideal for memory-constrained systems.\nRobustness: Reliable for mission-critical aerospace applications.\nLow Resource Consumption: Operates efficiently with minimal computational requirements.\n\n\n\n\n\nUtilizes CAN2.0B extended frame\n\nEncapsulates address, transfer type, and command ID in a 29-bit identifier.\n\nOrigin Validation: Message acceptance validated by source address.\nEfficiency: Uses full 8 bytes of data field for protocol services with software-based acknowledgment and reliability over bus utilization.\n\n\n\n\nCAN-TS Frame\n\n\n\n\n\nCAN-TS supports six application layer services:\n\nTelecommand\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per response.\nUp to 256 telecommands per device.\n\n\n\n\nTelecommand\n\n\nTelemetry\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per request.\nUp to 256 telemetry messages per device.\n\n\n\n\nTelemetry\n\n\nUnsolicited Telemetry\n\nSends telemetry directly without a request.\nSupports periodic or event-driven transfers, with up to 8 bytes of payload data.\n\n\n\n\nUnsolicited Telemetry\n\n\nTime Synchronization\n\nTime distribution via a broadcast message from the time master (highest priority).\n\n\n\n\nTime Synchronization\n\n\n\nVoici la mise en forme améliorée de cette partie :\n\n\nSet Block (multi-message transfer)\n\nFor large data exchanges (up to 512 bytes).\nIncludes retransmission and timeout features.\nAddress ranges from 8 to 64 bits.\n\n\n\n\nSet Block\n\n\nCommand Field Subfields:\n\nRequest, Acknowledge – Bits 9-7. Table 6 presents all possible values for this subfield.\n\n\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\nSet Block Request\n000\n\n\nSB Acknowledge\n010\n\n\nSB Negative Acknowledge\n100\n\n\nTransfer\n001\n\n\nAbort\n011\n\n\nStatus Request\n110\n\n\nReport\n111\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Set Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Set Block Transfer frame represent the index of the transferred block. The first block has index 0.\nDone – Bit 6 of the Command field in the Set Block Report frame indicates if the whole block was successfully received and processed. If additional time is needed for processing, this bit is set to 0.\n\n\nGet Block (multi-message transfer)\n\nLarge data transfers from sink to source with error management.\n\n\n\n\n\nGet Block\n\n\nCommand Field Subfields: - Request, Acknowledge – Bits 9-7. Table 7 presents all possible values for this subfield.\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\nGet Block Request\n000\n\n\nGB Acknowledge\n010\n\n\nGB Negative Acknowledge\n100\n\n\nAbort\n011\n\n\nStart\n110\n\n\nTransfer\n111\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Get Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Get Block Transfer frame represent the index of the transferred block. The first block has index 0.\n\n\n\n\n\n\n\n\nCANopen is a flexible protocol for industrial applications that require detailed communication capabilities.\n\n\n\n\nDevice Profiles: Standardized for various device types (e.g., motion control, sensors).\nCommunication Objects: Supports PDO (Process Data Objects) and SDO (Service Data Objects) transfers.\nScalability: Suitable for both simple and complex networks.\n\n\n\n\n\nWide Applicability: Used across industries, including automotive and automation.\nEnhanced Functionality: Offers advanced features like diagnostics and network management.\nCustomization: Flexible configuration options.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nCAN-TS\nCANopen\n\n\n\n\nMemory Usage\nLow, optimized for constrained devices\nHigher, requires more memory\n\n\nTypical Use Case\nAerospace, simple devices\nIndustrial automation, robotics\n\n\nComplexity\nLower, easier to implement\nHigher, with extensive features\n\n\nAvailability\nOpen-source, free\nOften requires licensing",
     "crumbs": [
       "Flatsat",
-      "Space packets"
+      "Can protocols"
     ]
   },
   {
-    "objectID": "flatsat/ccsdspackets.html#tc-transfert-frame",
-    "href": "flatsat/ccsdspackets.html#tc-transfert-frame",
-    "title": "CCSDS Space Communication Protocols",
+    "objectID": "flatsat/can.html#overview",
+    "href": "flatsat/can.html#overview",
+    "title": "Space Packets Protocols",
     "section": "",
-    "text": "A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence: 1. Transfer Frame Header (5 octets, mandatory); 2. Transfer Frame Data Field (up to 1019 or 1017 octets, mandatory); 3. Frame Error Control Field (2 octets, optional).\n\n\n\nTC Transfer Frame Structural Components\n\n\nNOTES :\n\nThe TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.\nThe maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.\nThe structural components of the TC Transfer Frame are shown in figure.\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Version Number (2 bits, mandatory);\nBypass Flag (1 bit, mandatory);\nControl Command Flag (1 bit, mandatory);\nReserved Spare (2 bits, mandatory);\nSpacecraft Identifier (10 bits, mandatory);\nVirtual Channel Identifier (6 bits, mandatory);\nFrame Length (10 bits, mandatory);\nFrame Sequence Number (8 bits, mandatory).\nNOTE – The format of the Transfer Frame Primary Header is shown in figure.\n\n\n\n\nTransfer Frame Primary Header",
+    "text": "The CAN-TS (CAN Telemetry Standard) protocol and CANopen are widely used in embedded systems, particularly in resource-constrained environments. Each serves specific communication needs, suited to different applications.",
     "crumbs": [
       "Flatsat",
-      "Space packets"
+      "Can protocols"
     ]
   },
   {
-    "objectID": "flatsat/ccsdspackets.html#tm-transfert-frame",
-    "href": "flatsat/ccsdspackets.html#tm-transfert-frame",
-    "title": "CCSDS Space Communication Protocols",
+    "objectID": "flatsat/can.html#can-ts-protocol",
+    "href": "flatsat/can.html#can-ts-protocol",
+    "title": "Space Packets Protocols",
     "section": "",
-    "text": "A TM Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Primary Header (6 octets, mandatory);\nTransfer Frame Secondary Header (up to 64 octets, optional);\nTransfer Frame Data Field (integral number of octets, mandatory);\nOperational Control Field (4 octets, optional);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTM Transfer Frame Structural Components\n\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of six fields, positioned contiguously, in the following sequence:\n\nMaster Channel Identifier (12 bits, mandatory);\nVirtual Channel Identifier (3 bits, mandatory);\nOperational Control Field Flag (1 bit, mandatory);\nMaster Channel Frame Count (1 octet, mandatory);\nVirtual Channel Frame Count (1 octet, mandatory);\nTransfer Frame Data Field Status (2 octets, mandatory).\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\nBits 32–47 of the Transfer Frame Primary Header shall contain the Transfer Frame Data Field Status.\nThis 16-bit field shall be sub-divided into five sub-fields, as follows:\n\nTransfer Frame Secondary Header Flag (1 bit, mandatory);\nSynchronization Flag (1 bit, mandatory);\nPacket Order Flag (1 bit, mandatory);\nSegment Length Identifier (2 bits, mandatory);\nFirst Header Pointer (11 bits, mandatory).\n\n\n\n\n\nIf present, the Transfer Frame Secondary Header shall follow, without gap, the Transfer Frame Primary Header.\nThe Transfer Frame Secondary Header shall consist of an integral number of octets as follows:\n\nTransfer Frame Secondary Header Identification Field (1 octet, mandatory);\nTransfer Frame Secondary Header Data Field (1 to 63 octets, mandatory).\n\n\n\n\nTransfer Frame Secondary Header\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransports data as packets\nN/A\n\n\nTC\nData Link\nSends commands\nSDLS Support\n\n\nTM\nData Link\nSends telemetry\nSDLS Support",
+    "text": "Designed for applications with limited memory, such as aerospace systems, CAN-TS provides streamlined communication prioritizing low memory usage.\n\n\n\n\nLightweight Design: Optimized for 8/16-bit architectures, minimizing memory overhead.\nBasic Communication Services: Includes telemetry, telecommand, time synchronization, and bus redundancy management.\nOpen Source: Available on GitHub for easy adoption.\n\n\n\n\n\nMemory Efficiency: Ideal for memory-constrained systems.\nRobustness: Reliable for mission-critical aerospace applications.\nLow Resource Consumption: Operates efficiently with minimal computational requirements.\n\n\n\n\n\nUtilizes CAN2.0B extended frame\n\nEncapsulates address, transfer type, and command ID in a 29-bit identifier.\n\nOrigin Validation: Message acceptance validated by source address.\nEfficiency: Uses full 8 bytes of data field for protocol services with software-based acknowledgment and reliability over bus utilization.\n\n\n\n\nCAN-TS Frame\n\n\n\n\n\nCAN-TS supports six application layer services:\n\nTelecommand\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per response.\nUp to 256 telecommands per device.\n\n\n\n\nTelecommand\n\n\nTelemetry\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per request.\nUp to 256 telemetry messages per device.\n\n\n\n\nTelemetry\n\n\nUnsolicited Telemetry\n\nSends telemetry directly without a request.\nSupports periodic or event-driven transfers, with up to 8 bytes of payload data.\n\n\n\n\nUnsolicited Telemetry\n\n\nTime Synchronization\n\nTime distribution via a broadcast message from the time master (highest priority).\n\n\n\n\nTime Synchronization\n\n\n\nVoici la mise en forme améliorée de cette partie :\n\n\nSet Block (multi-message transfer)\n\nFor large data exchanges (up to 512 bytes).\nIncludes retransmission and timeout features.\nAddress ranges from 8 to 64 bits.\n\n\n\n\nSet Block\n\n\nCommand Field Subfields:\n\nRequest, Acknowledge – Bits 9-7. Table 6 presents all possible values for this subfield.\n\n\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\nSet Block Request\n000\n\n\nSB Acknowledge\n010\n\n\nSB Negative Acknowledge\n100\n\n\nTransfer\n001\n\n\nAbort\n011\n\n\nStatus Request\n110\n\n\nReport\n111\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Set Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Set Block Transfer frame represent the index of the transferred block. The first block has index 0.\nDone – Bit 6 of the Command field in the Set Block Report frame indicates if the whole block was successfully received and processed. If additional time is needed for processing, this bit is set to 0.\n\n\nGet Block (multi-message transfer)\n\nLarge data transfers from sink to source with error management.\n\n\n\n\n\nGet Block\n\n\nCommand Field Subfields: - Request, Acknowledge – Bits 9-7. Table 7 presents all possible values for this subfield.\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\nGet Block Request\n000\n\n\nGB Acknowledge\n010\n\n\nGB Negative Acknowledge\n100\n\n\nAbort\n011\n\n\nStart\n110\n\n\nTransfer\n111\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Get Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Get Block Transfer frame represent the index of the transferred block. The first block has index 0.",
     "crumbs": [
       "Flatsat",
-      "Space packets"
+      "Can protocols"
     ]
   },
   {
-    "objectID": "flatsat/ccsdspackets.html#conclusion",
-    "href": "flatsat/ccsdspackets.html#conclusion",
-    "title": "CCSDS Space Communication Protocols",
+    "objectID": "flatsat/can.html#canopen-protocol",
+    "href": "flatsat/can.html#canopen-protocol",
+    "title": "Space Packets Protocols",
     "section": "",
-    "text": "Both CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.",
+    "text": "CANopen is a flexible protocol for industrial applications that require detailed communication capabilities.\n\n\n\n\nDevice Profiles: Standardized for various device types (e.g., motion control, sensors).\nCommunication Objects: Supports PDO (Process Data Objects) and SDO (Service Data Objects) transfers.\nScalability: Suitable for both simple and complex networks.\n\n\n\n\n\nWide Applicability: Used across industries, including automotive and automation.\nEnhanced Functionality: Offers advanced features like diagnostics and network management.\nCustomization: Flexible configuration options.",
     "crumbs": [
       "Flatsat",
-      "Space packets"
+      "Can protocols"
     ]
   },
   {
-    "objectID": "flatsat/flatsat.html",
-    "href": "flatsat/flatsat.html",
-    "title": "Flatsat Overview",
+    "objectID": "flatsat/can.html#comparison",
+    "href": "flatsat/can.html#comparison",
+    "title": "Space Packets Protocols",
     "section": "",
-    "text": "Endurance banner",
+    "text": "Feature\nCAN-TS\nCANopen\n\n\n\n\nMemory Usage\nLow, optimized for constrained devices\nHigher, requires more memory\n\n\nTypical Use Case\nAerospace, simple devices\nIndustrial automation, robotics\n\n\nComplexity\nLower, easier to implement\nHigher, with extensive features\n\n\nAvailability\nOpen-source, free\nOften requires licensing",
     "crumbs": [
       "Flatsat",
-      "About the flatsat"
-    ]
-  },
-  {
-    "objectID": "flatsat/flatsat.html#purpose-and-use",
-    "href": "flatsat/flatsat.html#purpose-and-use",
-    "title": "Flatsat Overview",
-    "section": "Purpose and Use",
-    "text": "Purpose and Use\nFlatSats are used primarily to test satellite systems and their interoperability before launch, ensuring each component functions correctly. This setup supports end-to-end operations as if in orbit, allowing for command and telemetry testing. For CubeSats, FlatSats provide a low-cost, modular test environment suitable for educational purposes, commercial applications, and experimental payloads.",
-    "crumbs": [
-      "Flatsat",
-      "About the flatsat"
-    ]
-  },
-  {
-    "objectID": "flatsat/flatsat.html#typical-components",
-    "href": "flatsat/flatsat.html#typical-components",
-    "title": "Flatsat Overview",
-    "section": "Typical Components",
-    "text": "Typical Components\nA FlatSat for CubeSat might include: - On-Board Computer (OBC) - Power System - Telemetry and Radio System - Attitude and Orbit Control - Navigation Receiver\nAdditional slots are often available for custom hardware or experimental components, such as AI-based detection algorithms or radiation monitoring payloads.",
-    "crumbs": [
-      "Flatsat",
-      "About the flatsat"
-    ]
-  },
-  {
-    "objectID": "flatsat/flatsat.html#advantages",
-    "href": "flatsat/flatsat.html#advantages",
-    "title": "Flatsat Overview",
-    "section": "Advantages",
-    "text": "Advantages\n\nAccessibility: Subsystems are physically separated, making them accessible for individual testing and replacement.\nOperational Simulation: Commands can be sent via a simulated ground station, with telemetry received for analysis.\nFlexibility: Engineers can easily swap or modify components, an asset for educational and fast-paced commercial projects.\nTesting New Technologies: Allows for validation of new components like radiation-tolerant microcontrollers in a representative environment.",
-    "crumbs": [
-      "Flatsat",
-      "About the flatsat"
-    ]
-  },
-  {
-    "objectID": "flatsat/flatsat.html#endurance-flatsat",
-    "href": "flatsat/flatsat.html#endurance-flatsat",
-    "title": "Flatsat Overview",
-    "section": "Endurance Flatsat",
-    "text": "Endurance Flatsat\n\nRessources\n\nEndurance software spec\n\n\n\nEndurance data handling architecture\nTo describe the different components of the flatsat planned for Endurance, I’m using the DHS view, which allows me to outline the communication protocols between the various systems.\n\nThe flatsat includes:\n\nFlight software\nTwo mission onboard computers (OBCs) in warm redundancy to manage AOCS (orbit), PU, Com, Th, and equipment\nGround segment software (Yamcs) for communication with the OBC\nEGSE for pre-launch spacecraft testing and simulation\nFlatsat computer\nSimulation software\nPower supply\n\nNote: Mission OBCs differ from guidance, navigation, and control (GNC) OBCs (Rendezvous & Grippers) and attitude (ADCS) OBCs, which are also in warm redundancy pairs.\nThree communication protocols are used:\n\nEthernet\nCAN-TS\nCAN-Open",
-    "crumbs": [
-      "Flatsat",
-      "About the flatsat"
+      "Can protocols"
     ]
   },
   {
@@ -423,58 +390,113 @@
     ]
   },
   {
-    "objectID": "flatsat/can.html",
-    "href": "flatsat/can.html",
-    "title": "Space Packets Protocols",
+    "objectID": "flatsat/flatsat.html",
+    "href": "flatsat/flatsat.html",
+    "title": "Flatsat Overview",
     "section": "",
-    "text": "The CAN-TS (CAN Telemetry Standard) protocol and CANopen are widely used in embedded systems, particularly in resource-constrained environments. Each serves specific communication needs, suited to different applications.\n\n\n\n\n\n\nDesigned for applications with limited memory, such as aerospace systems, CAN-TS provides streamlined communication prioritizing low memory usage.\n\n\n\n\nLightweight Design: Optimized for 8/16-bit architectures, minimizing memory overhead.\nBasic Communication Services: Includes telemetry, telecommand, time synchronization, and bus redundancy management.\nOpen Source: Available on GitHub for easy adoption.\n\n\n\n\n\nMemory Efficiency: Ideal for memory-constrained systems.\nRobustness: Reliable for mission-critical aerospace applications.\nLow Resource Consumption: Operates efficiently with minimal computational requirements.\n\n\n\n\n\nUtilizes CAN2.0B extended frame\n\nEncapsulates address, transfer type, and command ID in a 29-bit identifier.\n\nOrigin Validation: Message acceptance validated by source address.\nEfficiency: Uses full 8 bytes of data field for protocol services with software-based acknowledgment and reliability over bus utilization.\n\n\n\n\nCAN-TS Frame\n\n\n\n\n\nCAN-TS supports six application layer services:\n\nTelecommand\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per response.\nUp to 256 telecommands per device.\n\n\n\n\nTelecommand\n\n\nTelemetry\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per request.\nUp to 256 telemetry messages per device.\n\n\n\n\nTelemetry\n\n\nUnsolicited Telemetry\n\nSends telemetry directly without a request.\nSupports periodic or event-driven transfers, with up to 8 bytes of payload data.\n\n\n\n\nUnsolicited Telemetry\n\n\nTime Synchronization\n\nTime distribution via a broadcast message from the time master (highest priority).\n\n\n\n\nTime Synchronization\n\n\n\nVoici la mise en forme améliorée de cette partie :\n\n\nSet Block (multi-message transfer)\n\nFor large data exchanges (up to 512 bytes).\nIncludes retransmission and timeout features.\nAddress ranges from 8 to 64 bits.\n\n\n\n\nSet Block\n\n\nCommand Field Subfields:\n\nRequest, Acknowledge – Bits 9-7. Table 6 presents all possible values for this subfield.\n\n\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\nSet Block Request\n000\n\n\nSB Acknowledge\n010\n\n\nSB Negative Acknowledge\n100\n\n\nTransfer\n001\n\n\nAbort\n011\n\n\nStatus Request\n110\n\n\nReport\n111\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Set Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Set Block Transfer frame represent the index of the transferred block. The first block has index 0.\nDone – Bit 6 of the Command field in the Set Block Report frame indicates if the whole block was successfully received and processed. If additional time is needed for processing, this bit is set to 0.\n\n\nGet Block (multi-message transfer)\n\nLarge data transfers from sink to source with error management.\n\n\n\n\n\nGet Block\n\n\nCommand Field Subfields: - Request, Acknowledge – Bits 9-7. Table 7 presents all possible values for this subfield.\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\nGet Block Request\n000\n\n\nGB Acknowledge\n010\n\n\nGB Negative Acknowledge\n100\n\n\nAbort\n011\n\n\nStart\n110\n\n\nTransfer\n111\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Get Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Get Block Transfer frame represent the index of the transferred block. The first block has index 0.\n\n\n\n\n\n\n\n\nCANopen is a flexible protocol for industrial applications that require detailed communication capabilities.\n\n\n\n\nDevice Profiles: Standardized for various device types (e.g., motion control, sensors).\nCommunication Objects: Supports PDO (Process Data Objects) and SDO (Service Data Objects) transfers.\nScalability: Suitable for both simple and complex networks.\n\n\n\n\n\nWide Applicability: Used across industries, including automotive and automation.\nEnhanced Functionality: Offers advanced features like diagnostics and network management.\nCustomization: Flexible configuration options.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nCAN-TS\nCANopen\n\n\n\n\nMemory Usage\nLow, optimized for constrained devices\nHigher, requires more memory\n\n\nTypical Use Case\nAerospace, simple devices\nIndustrial automation, robotics\n\n\nComplexity\nLower, easier to implement\nHigher, with extensive features\n\n\nAvailability\nOpen-source, free\nOften requires licensing",
+    "text": "Endurance banner",
     "crumbs": [
       "Flatsat",
-      "Can protocols"
+      "About the flatsat"
     ]
   },
   {
-    "objectID": "flatsat/can.html#overview",
-    "href": "flatsat/can.html#overview",
-    "title": "Space Packets Protocols",
-    "section": "",
-    "text": "The CAN-TS (CAN Telemetry Standard) protocol and CANopen are widely used in embedded systems, particularly in resource-constrained environments. Each serves specific communication needs, suited to different applications.",
+    "objectID": "flatsat/flatsat.html#purpose-and-use",
+    "href": "flatsat/flatsat.html#purpose-and-use",
+    "title": "Flatsat Overview",
+    "section": "Purpose and Use",
+    "text": "Purpose and Use\nFlatSats are used primarily to test satellite systems and their interoperability before launch, ensuring each component functions correctly. This setup supports end-to-end operations as if in orbit, allowing for command and telemetry testing. For CubeSats, FlatSats provide a low-cost, modular test environment suitable for educational purposes, commercial applications, and experimental payloads.",
     "crumbs": [
       "Flatsat",
-      "Can protocols"
+      "About the flatsat"
     ]
   },
   {
-    "objectID": "flatsat/can.html#can-ts-protocol",
-    "href": "flatsat/can.html#can-ts-protocol",
-    "title": "Space Packets Protocols",
-    "section": "",
-    "text": "Designed for applications with limited memory, such as aerospace systems, CAN-TS provides streamlined communication prioritizing low memory usage.\n\n\n\n\nLightweight Design: Optimized for 8/16-bit architectures, minimizing memory overhead.\nBasic Communication Services: Includes telemetry, telecommand, time synchronization, and bus redundancy management.\nOpen Source: Available on GitHub for easy adoption.\n\n\n\n\n\nMemory Efficiency: Ideal for memory-constrained systems.\nRobustness: Reliable for mission-critical aerospace applications.\nLow Resource Consumption: Operates efficiently with minimal computational requirements.\n\n\n\n\n\nUtilizes CAN2.0B extended frame\n\nEncapsulates address, transfer type, and command ID in a 29-bit identifier.\n\nOrigin Validation: Message acceptance validated by source address.\nEfficiency: Uses full 8 bytes of data field for protocol services with software-based acknowledgment and reliability over bus utilization.\n\n\n\n\nCAN-TS Frame\n\n\n\n\n\nCAN-TS supports six application layer services:\n\nTelecommand\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per response.\nUp to 256 telecommands per device.\n\n\n\n\nTelecommand\n\n\nTelemetry\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per request.\nUp to 256 telemetry messages per device.\n\n\n\n\nTelemetry\n\n\nUnsolicited Telemetry\n\nSends telemetry directly without a request.\nSupports periodic or event-driven transfers, with up to 8 bytes of payload data.\n\n\n\n\nUnsolicited Telemetry\n\n\nTime Synchronization\n\nTime distribution via a broadcast message from the time master (highest priority).\n\n\n\n\nTime Synchronization\n\n\n\nVoici la mise en forme améliorée de cette partie :\n\n\nSet Block (multi-message transfer)\n\nFor large data exchanges (up to 512 bytes).\nIncludes retransmission and timeout features.\nAddress ranges from 8 to 64 bits.\n\n\n\n\nSet Block\n\n\nCommand Field Subfields:\n\nRequest, Acknowledge – Bits 9-7. Table 6 presents all possible values for this subfield.\n\n\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\nSet Block Request\n000\n\n\nSB Acknowledge\n010\n\n\nSB Negative Acknowledge\n100\n\n\nTransfer\n001\n\n\nAbort\n011\n\n\nStatus Request\n110\n\n\nReport\n111\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Set Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Set Block Transfer frame represent the index of the transferred block. The first block has index 0.\nDone – Bit 6 of the Command field in the Set Block Report frame indicates if the whole block was successfully received and processed. If additional time is needed for processing, this bit is set to 0.\n\n\nGet Block (multi-message transfer)\n\nLarge data transfers from sink to source with error management.\n\n\n\n\n\nGet Block\n\n\nCommand Field Subfields: - Request, Acknowledge – Bits 9-7. Table 7 presents all possible values for this subfield.\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\nGet Block Request\n000\n\n\nGB Acknowledge\n010\n\n\nGB Negative Acknowledge\n100\n\n\nAbort\n011\n\n\nStart\n110\n\n\nTransfer\n111\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Get Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Get Block Transfer frame represent the index of the transferred block. The first block has index 0.",
+    "objectID": "flatsat/flatsat.html#typical-components",
+    "href": "flatsat/flatsat.html#typical-components",
+    "title": "Flatsat Overview",
+    "section": "Typical Components",
+    "text": "Typical Components\nA FlatSat for CubeSat might include: - On-Board Computer (OBC) - Power System - Telemetry and Radio System - Attitude and Orbit Control - Navigation Receiver\nAdditional slots are often available for custom hardware or experimental components, such as AI-based detection algorithms or radiation monitoring payloads.",
     "crumbs": [
       "Flatsat",
-      "Can protocols"
+      "About the flatsat"
     ]
   },
   {
-    "objectID": "flatsat/can.html#canopen-protocol",
-    "href": "flatsat/can.html#canopen-protocol",
-    "title": "Space Packets Protocols",
-    "section": "",
-    "text": "CANopen is a flexible protocol for industrial applications that require detailed communication capabilities.\n\n\n\n\nDevice Profiles: Standardized for various device types (e.g., motion control, sensors).\nCommunication Objects: Supports PDO (Process Data Objects) and SDO (Service Data Objects) transfers.\nScalability: Suitable for both simple and complex networks.\n\n\n\n\n\nWide Applicability: Used across industries, including automotive and automation.\nEnhanced Functionality: Offers advanced features like diagnostics and network management.\nCustomization: Flexible configuration options.",
+    "objectID": "flatsat/flatsat.html#advantages",
+    "href": "flatsat/flatsat.html#advantages",
+    "title": "Flatsat Overview",
+    "section": "Advantages",
+    "text": "Advantages\n\nAccessibility: Subsystems are physically separated, making them accessible for individual testing and replacement.\nOperational Simulation: Commands can be sent via a simulated ground station, with telemetry received for analysis.\nFlexibility: Engineers can easily swap or modify components, an asset for educational and fast-paced commercial projects.\nTesting New Technologies: Allows for validation of new components like radiation-tolerant microcontrollers in a representative environment.",
     "crumbs": [
       "Flatsat",
-      "Can protocols"
+      "About the flatsat"
     ]
   },
   {
-    "objectID": "flatsat/can.html#comparison",
-    "href": "flatsat/can.html#comparison",
-    "title": "Space Packets Protocols",
-    "section": "",
-    "text": "Feature\nCAN-TS\nCANopen\n\n\n\n\nMemory Usage\nLow, optimized for constrained devices\nHigher, requires more memory\n\n\nTypical Use Case\nAerospace, simple devices\nIndustrial automation, robotics\n\n\nComplexity\nLower, easier to implement\nHigher, with extensive features\n\n\nAvailability\nOpen-source, free\nOften requires licensing",
+    "objectID": "flatsat/flatsat.html#endurance-flatsat",
+    "href": "flatsat/flatsat.html#endurance-flatsat",
+    "title": "Flatsat Overview",
+    "section": "Endurance Flatsat",
+    "text": "Endurance Flatsat\n\nRessources\n\nEndurance software spec\n\n\n\nEndurance data handling architecture\nTo describe the different components of the flatsat planned for Endurance, I’m using the DHS view, which allows me to outline the communication protocols between the various systems.\n\nThe flatsat includes:\n\nFlight software\nTwo mission onboard computers (OBCs) in warm redundancy to manage AOCS (orbit), PU, Com, Th, and equipment\nGround segment software (Yamcs) for communication with the OBC\nEGSE for pre-launch spacecraft testing and simulation\nFlatsat computer\nSimulation software\nPower supply\n\nNote: Mission OBCs differ from guidance, navigation, and control (GNC) OBCs (Rendezvous & Grippers) and attitude (ADCS) OBCs, which are also in warm redundancy pairs.\nThree communication protocols are used:\n\nEthernet\nCAN-TS\nCAN-Open",
     "crumbs": [
       "Flatsat",
-      "Can protocols"
+      "About the flatsat"
+    ]
+  },
+  {
+    "objectID": "flatsat/ccsdspackets.html",
+    "href": "flatsat/ccsdspackets.html",
+    "title": "CCSDS Space Communication Protocols",
+    "section": "",
+    "text": "CCSDS standards ensure interoperability in space communications, defining three main protocols:\n\nSpace Packet Protocol (SPP): Structures and transports space data.\nTelecommand (TC) Protocol: Sends commands from ground to a satellite.\nTelemetry (TM) Protocol: Returns satellite telemetry to the ground.\n\n\n\n\nSPP (CCSDS 133.0-B-2) structures and transports data in “space packets.”\n\n\nA Space Packet shall include the defined fields, positioned contiguously, in the following sequence: 1. Packet Primary Header (6 octets, mandatory); 2. Packet Data Field (from 1 to 65536 octets, mandatory).\nA Space Packet shall consist of at least 7 and at most 65542 octets.\n\n\n\nSpace Packet Structural Components\n\n\n\n\n\n\nApplication Identification: Uses the APID (Application Process Identifier) field.\nData Flexibility: Variable packet sizes for adaptability.\nLayer Independence: Compatible with various link protocols.\n\n\n\n\nThe Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence:\n\nPacket Version Number (3 bits, mandatory);\nPacket Identification Field (13 bits, mandatory);\nPacket Sequence Control Field (16 bits, mandatory);\nPacket Data Length (16 bits, mandatory).\n\n\n\n\n\n\nThe purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.\nSecondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space\n\n\n\n\n\n\n\nA TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Header (5 octets, mandatory);\nTransfer Frame Data Field (up to 1019 or 1017 octets, mandatory);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTC Transfer Frame Structural Components\n\n\nNOTES :\n\nThe TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.\nThe maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.\nThe structural components of the TC Transfer Frame are shown in figure.\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Version Number (2 bits, mandatory);\nBypass Flag (1 bit, mandatory);\nControl Command Flag (1 bit, mandatory);\nReserved Spare (2 bits, mandatory);\nSpacecraft Identifier (10 bits, mandatory);\nVirtual Channel Identifier (6 bits, mandatory);\nFrame Length (10 bits, mandatory);\nFrame Sequence Number (8 bits, mandatory).\nNOTE – The format of the Transfer Frame Primary Header is shown in figure.\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\n\n\nA TM Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Primary Header (6 octets, mandatory);\nTransfer Frame Secondary Header (up to 64 octets, optional);\nTransfer Frame Data Field (integral number of octets, mandatory);\nOperational Control Field (4 octets, optional);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTM Transfer Frame Structural Components\n\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of six fields, positioned contiguously, in the following sequence:\n\nMaster Channel Identifier (12 bits, mandatory);\nVirtual Channel Identifier (3 bits, mandatory);\nOperational Control Field Flag (1 bit, mandatory);\nMaster Channel Frame Count (1 octet, mandatory);\nVirtual Channel Frame Count (1 octet, mandatory);\nTransfer Frame Data Field Status (2 octets, mandatory).\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\nBits 32–47 of the Transfer Frame Primary Header shall contain the Transfer Frame Data Field Status.\nThis 16-bit field shall be sub-divided into five sub-fields, as follows:\n\nTransfer Frame Secondary Header Flag (1 bit, mandatory);\nSynchronization Flag (1 bit, mandatory);\nPacket Order Flag (1 bit, mandatory);\nSegment Length Identifier (2 bits, mandatory);\nFirst Header Pointer (11 bits, mandatory).\n\n\n\n\n\nIf present, the Transfer Frame Secondary Header shall follow, without gap, the Transfer Frame Primary Header.\nThe Transfer Frame Secondary Header shall consist of an integral number of octets as follows:\n\nTransfer Frame Secondary Header Identification Field (1 octet, mandatory);\nTransfer Frame Secondary Header Data Field (1 to 63 octets, mandatory).\n\n\n\n\nTransfer Frame Secondary Header\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransports data as packets\nN/A\n\n\nTC\nData Link\nSends commands\nSDLS Support\n\n\nTM\nData Link\nSends telemetry\nSDLS Support\n\n\n\n\n\n\n\n\nBoth CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.",
+    "crumbs": [
+      "Flatsat",
+      "Space packets"
+    ]
+  },
+  {
+    "objectID": "flatsat/ccsdspackets.html#space-packet-protocol-spp",
+    "href": "flatsat/ccsdspackets.html#space-packet-protocol-spp",
+    "title": "CCSDS Space Communication Protocols",
+    "section": "",
+    "text": "SPP (CCSDS 133.0-B-2) structures and transports data in “space packets.”\n\n\nA Space Packet shall include the defined fields, positioned contiguously, in the following sequence: 1. Packet Primary Header (6 octets, mandatory); 2. Packet Data Field (from 1 to 65536 octets, mandatory).\nA Space Packet shall consist of at least 7 and at most 65542 octets.\n\n\n\nSpace Packet Structural Components\n\n\n\n\n\n\nApplication Identification: Uses the APID (Application Process Identifier) field.\nData Flexibility: Variable packet sizes for adaptability.\nLayer Independence: Compatible with various link protocols.\n\n\n\n\nThe Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence:\n\nPacket Version Number (3 bits, mandatory);\nPacket Identification Field (13 bits, mandatory);\nPacket Sequence Control Field (16 bits, mandatory);\nPacket Data Length (16 bits, mandatory).\n\n\n\n\n\n\nThe purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.\nSecondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space",
+    "crumbs": [
+      "Flatsat",
+      "Space packets"
+    ]
+  },
+  {
+    "objectID": "flatsat/ccsdspackets.html#tc-transfert-frame",
+    "href": "flatsat/ccsdspackets.html#tc-transfert-frame",
+    "title": "CCSDS Space Communication Protocols",
+    "section": "",
+    "text": "A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Header (5 octets, mandatory);\nTransfer Frame Data Field (up to 1019 or 1017 octets, mandatory);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTC Transfer Frame Structural Components\n\n\nNOTES :\n\nThe TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.\nThe maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.\nThe structural components of the TC Transfer Frame are shown in figure.\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Version Number (2 bits, mandatory);\nBypass Flag (1 bit, mandatory);\nControl Command Flag (1 bit, mandatory);\nReserved Spare (2 bits, mandatory);\nSpacecraft Identifier (10 bits, mandatory);\nVirtual Channel Identifier (6 bits, mandatory);\nFrame Length (10 bits, mandatory);\nFrame Sequence Number (8 bits, mandatory).\nNOTE – The format of the Transfer Frame Primary Header is shown in figure.\n\n\n\n\nTransfer Frame Primary Header",
+    "crumbs": [
+      "Flatsat",
+      "Space packets"
+    ]
+  },
+  {
+    "objectID": "flatsat/ccsdspackets.html#tm-transfert-frame",
+    "href": "flatsat/ccsdspackets.html#tm-transfert-frame",
+    "title": "CCSDS Space Communication Protocols",
+    "section": "",
+    "text": "A TM Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Primary Header (6 octets, mandatory);\nTransfer Frame Secondary Header (up to 64 octets, optional);\nTransfer Frame Data Field (integral number of octets, mandatory);\nOperational Control Field (4 octets, optional);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTM Transfer Frame Structural Components\n\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of six fields, positioned contiguously, in the following sequence:\n\nMaster Channel Identifier (12 bits, mandatory);\nVirtual Channel Identifier (3 bits, mandatory);\nOperational Control Field Flag (1 bit, mandatory);\nMaster Channel Frame Count (1 octet, mandatory);\nVirtual Channel Frame Count (1 octet, mandatory);\nTransfer Frame Data Field Status (2 octets, mandatory).\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\nBits 32–47 of the Transfer Frame Primary Header shall contain the Transfer Frame Data Field Status.\nThis 16-bit field shall be sub-divided into five sub-fields, as follows:\n\nTransfer Frame Secondary Header Flag (1 bit, mandatory);\nSynchronization Flag (1 bit, mandatory);\nPacket Order Flag (1 bit, mandatory);\nSegment Length Identifier (2 bits, mandatory);\nFirst Header Pointer (11 bits, mandatory).\n\n\n\n\n\nIf present, the Transfer Frame Secondary Header shall follow, without gap, the Transfer Frame Primary Header.\nThe Transfer Frame Secondary Header shall consist of an integral number of octets as follows:\n\nTransfer Frame Secondary Header Identification Field (1 octet, mandatory);\nTransfer Frame Secondary Header Data Field (1 to 63 octets, mandatory).\n\n\n\n\nTransfer Frame Secondary Header\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransports data as packets\nN/A\n\n\nTC\nData Link\nSends commands\nSDLS Support\n\n\nTM\nData Link\nSends telemetry\nSDLS Support",
+    "crumbs": [
+      "Flatsat",
+      "Space packets"
+    ]
+  },
+  {
+    "objectID": "flatsat/ccsdspackets.html#conclusion",
+    "href": "flatsat/ccsdspackets.html#conclusion",
+    "title": "CCSDS Space Communication Protocols",
+    "section": "",
+    "text": "Both CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.",
+    "crumbs": [
+      "Flatsat",
+      "Space packets"
     ]
   },
   {
