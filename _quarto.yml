@@ -1,23 +1,23 @@
-project: 
+project:
   type: website
-  
-website: 
+
+website:
   page-navigation: true
-  title: "FlatSat Introduction Presentation" 
-  site-url: "https://rlhoussaine.github.io/FlatSatIntro/" 
-  
-  repo-url: https://github.com/rlhoussaine/FlatSatIntro 
+  title: "FlatSat Introduction Presentation"
+  site-url: "https://rlhoussaine.github.io/FlatSatIntro/"
+
+  repo-url: https://github.com/rlhoussaine/FlatSatIntro
   repo-actions: [edit, issue]
-  
+
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
     left: "&copy; CC-By Openscapes, 2024"
-    
+
   sidebar:
     logo: "images/bsvg.png"
     pinned: true
     align: center
-    tools: 
+    tools:
       - icon: globe
         href: https://www.infiniteorbits.io/
         text: "infiniteorbits.io"
@@ -26,7 +26,7 @@ website:
         text: "Infinite Orbits github"
       - icon: instagram
         href: https://www.instagram.com/infinite_orbits/?hl=en
-        text: "IO Instagram"         
+        text: "IO Instagram"
 
     style: "docked"
     search: true
@@ -36,7 +36,7 @@ website:
         text: Welcome
       - section: "Flatsat"
         contents:
-          - href: flatsat/endurance.qmd 
+          - href: flatsat/endurance.qmd
             text: Endurance overview
 
           - href: flatsat/flatsat.qmd
@@ -47,6 +47,9 @@ website:
 
           - href: flatsat/ccsdspackets.qmd
             text: Space packets
+
+          - href: flatsat/pus.qmd
+            text: Pus services
 
           - href: flatsat/yamcs.qmd
             text: yamcs interface and Endurance flatsat library
@@ -81,5 +84,3 @@ format:
 filters:
   - include-files.lua
   - quarto
-
-  

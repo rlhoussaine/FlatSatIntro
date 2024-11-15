@@ -20,30 +20,6 @@
               "icon": "lucide-file",
               "title": "ccsdspackets"
             }
-          },
-          {
-            "id": "c8ca0d77ae25eb55",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "flatsat/images/TMdfs.png"
-              },
-              "icon": "lucide-image",
-              "title": "TMdfs"
-            }
-          },
-          {
-            "id": "c9cf286edb13018b",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "flatsat/images/TMsh.png"
-              },
-              "icon": "lucide-image",
-              "title": "TMsh"
-            }
           }
         ]
       }
@@ -195,16 +171,24 @@
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
       "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "bdbe27e596921cb8",
   "lastOpenFiles": [
+    "flatsat/images/TMdfs.png",
+    "flatsat/images/pustc.png",
+    "flatsat/images/pustm.png",
+    "flatsat/pus.md",
     "flatsat/can.qmd",
+    "flatsat/images/puframe.png",
     "flatsat/ccsdspackets.qmd",
+    "flatsat/flatsat.qmd",
+    "flatsat/endurance.qmd",
+    "flatsat/images/TMsh.png",
     "index.qmd",
     "LearningMore/swdev.qmd",
     "LearningMore/images/release.png",
@@ -212,18 +196,10 @@
     "LearningMore/images/Capture d’écran du 2024-11-15 11-35-46.png",
     "LearningMore/images/basic.png",
     "LearningMore/images/hotfix.png",
-    "LearningMore/images/Capture d’écran du 2024-11-15 11-29-57.png",
-    "LearningMore/images/Capture d’écran du 2024-11-15 11-30-50.png",
-    "LearningMore/images/Capture d’écran du 2024-11-15 11-31-01.png",
     "flatsat/yamcs.qmd",
     "LearningMore/yamcsbasesetup.qmd",
     "_site/search.json",
     "_site/robots.txt",
-    "_site/sitemap.xml",
-    "_site/flatsat/images/yamcs.png",
-    "_site/flatsat/images/unsolicitedTM.png",
-    "_site/flatsat/images",
-    "_site/LearningMore/images",
     "LearningMore/yamcsbasesetup.md",
     "().md",
     "flatsat/yamcs.md",

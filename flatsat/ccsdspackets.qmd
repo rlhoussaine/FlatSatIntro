@@ -34,6 +34,7 @@ following sequence:
 
 The Packet Primary Header is mandatory and shall consist of four fields, positioned
 contiguously, in the following sequence:
+
 - Packet Version Number (3 bits, mandatory);
 - Packet Identification Field (13 bits, mandatory);
 - Packet Sequence Control Field (16 bits, mandatory);
@@ -54,6 +55,7 @@ contiguously, in the following sequence:
 ## TC transfert frame
 
 A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:
+
 1. Transfer Frame Header (5 octets, mandatory);
 2. Transfer Frame Data Field (up to 1019 or 1017 octets, mandatory);
 3. Frame Error Control Field (2 octets, optional).
