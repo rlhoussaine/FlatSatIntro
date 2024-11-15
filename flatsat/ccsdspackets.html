@@ -211,16 +211,12 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#spp-packet-structure" id="toc-spp-packet-structure" class="nav-link" data-scroll-target="#spp-packet-structure">SPP Packet Structure</a></li>
   <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
+  <li><a href="#packet-primary-header" id="toc-packet-primary-header" class="nav-link" data-scroll-target="#packet-primary-header">Packet primary header</a></li>
+  <li><a href="#packet-secondary-header" id="toc-packet-secondary-header" class="nav-link" data-scroll-target="#packet-secondary-header">Packet secondary header</a></li>
   </ul></li>
-  <li><a href="#telecommand-tc-space-data-link-protocol" id="toc-telecommand-tc-space-data-link-protocol" class="nav-link" data-scroll-target="#telecommand-tc-space-data-link-protocol">Telecommand (TC) Space Data Link Protocol</a>
+  <li><a href="#tc-transfer-frame" id="toc-tc-transfer-frame" class="nav-link" data-scroll-target="#tc-transfer-frame">TC TRANSFER FRAME</a>
   <ul class="collapse">
-  <li><a href="#tc-channel-hierarchy" id="toc-tc-channel-hierarchy" class="nav-link" data-scroll-target="#tc-channel-hierarchy">TC Channel Hierarchy</a></li>
-  <li><a href="#key-features-1" id="toc-key-features-1" class="nav-link" data-scroll-target="#key-features-1">Key Features</a></li>
-  </ul></li>
-  <li><a href="#telemetry-tm-space-data-link-protocol" id="toc-telemetry-tm-space-data-link-protocol" class="nav-link" data-scroll-target="#telemetry-tm-space-data-link-protocol">Telemetry (TM) Space Data Link Protocol</a>
-  <ul class="collapse">
-  <li><a href="#asynchronous-and-synchronous-service-model" id="toc-asynchronous-and-synchronous-service-model" class="nav-link" data-scroll-target="#asynchronous-and-synchronous-service-model">Asynchronous and Synchronous Service Model</a></li>
-  <li><a href="#key-features-2" id="toc-key-features-2" class="nav-link" data-scroll-target="#key-features-2">Key Features</a></li>
+  <li><a href="#tranfer-frame-primary-header" id="toc-tranfer-frame-primary-header" class="nav-link" data-scroll-target="#tranfer-frame-primary-header">Tranfer frame primary header</a></li>
   <li><a href="#protocol-comparison" id="toc-protocol-comparison" class="nav-link" data-scroll-target="#protocol-comparison">Protocol Comparison</a></li>
   </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
@@ -243,13 +239,14 @@ ul.task-list li input[type="checkbox"] {
 <p>SPP (CCSDS 133.0-B-2) structures and transports data in “space packets.”</p>
 <section id="spp-packet-structure" class="level3">
 <h3 class="anchored" data-anchor-id="spp-packet-structure">SPP Packet Structure</h3>
-<pre class="mermaid"><code>graph TD
-    A[Packet Primary Header]
-    B[Packet Secondary Header]
-    C[Data Field]
-
-    A --&gt;|7 bytes| B
-    B --&gt;|variable| C</code></pre>
+<p>A Space Packet shall include the defined fields, positioned contiguously, in the following sequence: 1. Packet Primary Header (6 octets, mandatory); 2. Packet Data Field (from 1 to 65536 octets, mandatory).</p>
+<p><em>A Space Packet shall consist of at least 7 and at most 65542 octets.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/spacepacket.png" class="img-fluid figure-img"></p>
+<figcaption>Space Packet Structural Components</figcaption>
+</figure>
+</div>
 </section>
 <section id="key-features" class="level3">
 <h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
@@ -258,54 +255,35 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Data Flexibility</strong>: Variable packet sizes for adaptability.</li>
 <li><strong>Layer Independence</strong>: Compatible with various link protocols.</li>
 </ul>
+</section>
+<section id="packet-primary-header" class="level3">
+<h3 class="anchored" data-anchor-id="packet-primary-header">Packet primary header</h3>
+<p>The Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence: - Packet Version Number (3 bits, mandatory); - Packet Identification Field (13 bits, mandatory); - Packet Sequence Control Field (16 bits, mandatory); - Packet Data Length (16 bits, mandatory).</p>
+<p><img src="images/primary.png" class="img-fluid"></p>
+</section>
+<section id="packet-secondary-header" class="level3">
+<h3 class="anchored" data-anchor-id="packet-secondary-header">Packet secondary header</h3>
+<ol type="1">
+<li><p>The purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.</p></li>
+<li><p>Secondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space</p></li>
+</ol>
 <hr>
 </section>
 </section>
-<section id="telecommand-tc-space-data-link-protocol" class="level2">
-<h2 class="anchored" data-anchor-id="telecommand-tc-space-data-link-protocol">Telecommand (TC) Space Data Link Protocol</h2>
-<p>The TC protocol (CCSDS 232.0-B-4) manages ground-to-satellite commands at the Data Link Layer.</p>
-<section id="tc-channel-hierarchy" class="level3">
-<h3 class="anchored" data-anchor-id="tc-channel-hierarchy">TC Channel Hierarchy</h3>
-<pre class="mermaid"><code>graph TD
-    A[Master Channel]
-    B1[Virtual Channel 1]
-    B2[Virtual Channel 2]
-    C1[MAP Channel 1]
-    C2[MAP Channel 2]
-    C3[MAP Channel 3]
-
-    A --&gt; B1
-    A --&gt; B2
-    B1 --&gt; C1
-    B2 --&gt; C2
-    B2 --&gt; C3</code></pre>
-</section>
-<section id="key-features-1" class="level3">
-<h3 class="anchored" data-anchor-id="key-features-1">Key Features</h3>
-<ul>
-<li><strong>Segmentation and Multiplexing</strong>: Data split across virtual channels.</li>
-<li><strong>Communication Control</strong>: Ensures reliable command delivery and integrity checks.</li>
-<li><strong>Security Support (SDLS)</strong>: Protects sensitive command data.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="telemetry-tm-space-data-link-protocol" class="level2">
-<h2 class="anchored" data-anchor-id="telemetry-tm-space-data-link-protocol">Telemetry (TM) Space Data Link Protocol</h2>
-<p>The TM protocol (CCSDS 132.0-B-3) sends telemetry data from satellite to ground, also at the Data Link Layer.</p>
-<section id="asynchronous-and-synchronous-service-model" class="level3">
-<h3 class="anchored" data-anchor-id="asynchronous-and-synchronous-service-model">Asynchronous and Synchronous Service Model</h3>
-<pre class="mermaid"><code>graph LR
-    A[Satellite Data Source] -- Asynchronous Transmission --&gt; B[Virtual Channel]
-    B -- Synchronous Mode --&gt; C[Ground Reception]</code></pre>
-</section>
-<section id="key-features-2" class="level3">
-<h3 class="anchored" data-anchor-id="key-features-2">Key Features</h3>
-<ul>
-<li><strong>Virtual Channels</strong>: Differentiates telemetry data streams.</li>
-<li><strong>Multiplexing/Demultiplexing</strong>: Splits data into master and virtual channels.</li>
-<li><strong>SDLS Security Option</strong>: Ensures confidentiality and integrity of telemetry.</li>
-</ul>
+<section id="tc-transfer-frame" class="level2">
+<h2 class="anchored" data-anchor-id="tc-transfer-frame">TC TRANSFER FRAME</h2>
+<p>A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence: 1. Transfer Frame Header (5 octets, mandatory); 2. Transfer Frame Data Field (up to 1019 or 1017 octets, mandatory); 3. Frame Error Control Field (2 octets, optional).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/TCframe.png" class="img-fluid figure-img"></p>
+<figcaption>TC Transfer Frame Structural Components</figcaption>
+</figure>
+</div>
+<p>NOTES : - The TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity. - The maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here. - The structural components of the TC Transfer Frame are shown in figure.</p>
+<section id="tranfer-frame-primary-header" class="level3">
+<h3 class="anchored" data-anchor-id="tranfer-frame-primary-header">Tranfer frame primary header</h3>
+<p>The Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence: - Transfer Frame Version Number (2 bits, mandatory); - Bypass Flag (1 bit, mandatory); - Control Command Flag (1 bit, mandatory); - Reserved Spare (2 bits, mandatory); - Spacecraft Identifier (10 bits, mandatory); - Virtual Channel Identifier (6 bits, mandatory); - Frame Length (10 bits, mandatory); - Frame Sequence Number (8 bits, mandatory). - NOTE – The format of the Transfer Frame Primary Header is shown in figure.</p>
+<p><img src="images/TCprimary.png" class="img-fluid" alt="Transfer Frame Primary Header"> - - -</p>
 <hr>
 </section>
 <section id="protocol-comparison" class="level3">

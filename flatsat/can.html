@@ -367,12 +367,44 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Request, Acknowledge</strong> – Bits 9-7. Table 6 presents all possible values for this subfield.</li>
 </ul></li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/setblocktable.png" class="img-fluid figure-img" style="width:95.0%"></p>
-<figcaption>Set Block Table</figcaption>
-</figure>
-</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Frame Type <br></th>
+<th>Value in Binary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Set Block Request</td>
+<td>000</td>
+</tr>
+<tr class="even">
+<td>SB Acknowledge</td>
+<td>010</td>
+</tr>
+<tr class="odd">
+<td>SB Negative Acknowledge</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>Transfer</td>
+<td>001</td>
+</tr>
+<tr class="odd">
+<td>Abort</td>
+<td>011</td>
+</tr>
+<tr class="even">
+<td>Status Request</td>
+<td>110</td>
+</tr>
+<tr class="odd">
+<td>Report</td>
+<td>111</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li><strong>No.&nbsp;of Blocks</strong> – Bits 5-0 of the Command field in the Set Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.</li>
 <li><strong>Sequence</strong> – Bits 5-0 of the Command field in the Set Block Transfer frame represent the index of the transferred block. The first block has index 0.</li>
@@ -386,17 +418,45 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/getblock.png" class="img-fluid figure-img" style="width:95.0%"></p>
+<p><img src="images/getblock.png" class="img-fluid figure-img"></p>
 <figcaption>Get Block</figcaption>
 </figure>
 </div>
 <p><strong>Command Field Subfields</strong>: - <strong>Request, Acknowledge</strong> – Bits 9-7. Table 7 presents all possible values for this subfield.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/getblocktable.png" class="img-fluid figure-img" style="width:95.0%"></p>
-<figcaption>Get Block Table</figcaption>
-</figure>
-</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Frame Type <br></th>
+<th>Value in Binary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Get Block Request</td>
+<td>000</td>
+</tr>
+<tr class="even">
+<td>GB Acknowledge</td>
+<td>010</td>
+</tr>
+<tr class="odd">
+<td>GB Negative Acknowledge</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>Abort</td>
+<td>011</td>
+</tr>
+<tr class="odd">
+<td>Start</td>
+<td>110</td>
+</tr>
+<tr class="even">
+<td>Transfer</td>
+<td>111</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li><strong>No.&nbsp;of Blocks</strong> – Bits 5-0 of the Command field in the Get Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.</li>
 <li><strong>Sequence</strong> – Bits 5-0 of the Command field in the Get Block Transfer frame represent the index of the transferred block. The first block has index 0.</li>
