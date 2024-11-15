@@ -1,10 +1,6 @@
 ---
 title: Space Packets Protocols
 ---
-Voici une version avec une mise en forme améliorée :
-
----
-
 # CAN-TS and CANopen Protocols for Embedded Applications
 
 ## Overview

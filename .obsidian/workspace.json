@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LearningMore/swdev.qmd",
+                "file": "flatsat/ccsdspackets.qmd",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "swdev"
+              "title": "ccsdspackets"
             }
           },
           {
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LearningMore/swdev.qmd",
+                "file": "flatsat/ccsdspackets.qmd",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour swdev"
+              "title": "Rétrolien pour ccsdspackets"
             }
           },
           {
@@ -136,12 +136,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LearningMore/swdev.qmd",
+                "file": "flatsat/ccsdspackets.qmd",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Liens sortants de swdev"
+              "title": "Liens sortants de ccsdspackets"
             }
           },
           {
@@ -163,10 +163,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LearningMore/swdev.qmd"
+                "file": "flatsat/ccsdspackets.qmd"
               },
               "icon": "lucide-list",
-              "title": "Plan de swdev"
+              "title": "Plan de ccsdspackets"
             }
           },
           {
@@ -203,10 +203,13 @@
   },
   "active": "bdbe27e596921cb8",
   "lastOpenFiles": [
+    "flatsat/can.qmd",
+    "flatsat/ccsdspackets.qmd",
+    "index.qmd",
+    "LearningMore/swdev.qmd",
     "LearningMore/images/release.png",
     "LearningMore/images/feature.png",
     "LearningMore/images/Capture d’écran du 2024-11-15 11-35-46.png",
-    "LearningMore/swdev.qmd",
     "LearningMore/images/basic.png",
     "LearningMore/images/hotfix.png",
     "LearningMore/images/Capture d’écran du 2024-11-15 11-29-57.png",
@@ -214,16 +217,13 @@
     "LearningMore/images/Capture d’écran du 2024-11-15 11-31-01.png",
     "flatsat/yamcs.qmd",
     "LearningMore/yamcsbasesetup.qmd",
-    "flatsat/ccsdspackets.qmd",
     "_site/search.json",
     "_site/robots.txt",
     "_site/sitemap.xml",
     "_site/flatsat/images/yamcs.png",
     "_site/flatsat/images/unsolicitedTM.png",
-    "_site/flatsat/images/timesync.png",
     "_site/flatsat/images",
     "_site/LearningMore/images",
-    "_site/images",
     "LearningMore/yamcsbasesetup.md",
     "().md",
     "flatsat/yamcs.md",
