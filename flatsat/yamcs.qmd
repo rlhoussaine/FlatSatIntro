@@ -1,6 +1,9 @@
 
 # Yamcs Overview
 
+
+## Introduction
+
 [Yamcs](https://yamcs.org/) is an open-source software for real-time mission control, providing tools for spacecraft and ground system operations.
 
 ## Key Features
@@ -18,6 +21,13 @@ The [Python Yamcs Client](https://docs.yamcs.org/python-yamcs-client/) supports 
 
 ## Extensions and Support
 Yamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training.
-```
 
-This revised version improves readability and structure by enhancing header hierarchy, separating sections clearly, and refining table alignment. The use of consistent bullet points and simplified phrasing also aids clarity.
+## Flatsat set up
+
+The current FlatSat setup is progressively integrating direct CAN messaging with YAMCS, including the capability to transmit commands via the radio link.  
+
+![](images/yamcs.png)
+
+YAMCS, as the ground software, generates CAN-TCs to be delivered over the CAN bus. This process requires a mission database to define PUS services, which in our case is structured using the [SCOS-2000](https://redmine.oas.inaf.it/attachments/download/595/egos-mcs-s2k-icd-0001-version67DraftA%20mib.pdf) format.  
+
+Simultaneously, a library is being developed based on the [YAMCS Python client](https://docs.yamcs.org/python-yamcs-client/). This library aims to provide a more user-friendly interface for developing test scripts.

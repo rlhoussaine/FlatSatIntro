@@ -45,9 +45,11 @@ contiguously, in the following sequence:
 
 2. Secondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space
 
+![](images/psh.png)
+
 ---
 
-## TC TRANSFER FRAME
+## TC transfert frame
 
 A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:
 1. Transfer Frame Header (5 octets, mandatory);
@@ -57,6 +59,7 @@ A TC Transfer Frame shall encompass the major fields, positioned contiguously, i
 ![TC Transfer Frame Structural Components](images/TCframe.png)
 
 NOTES :
+
 - The TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.
 - The maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.
 - The structural components of the TC Transfer Frame are shown in figure.
@@ -65,6 +68,7 @@ NOTES :
 
 
 The Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:
+
 - Transfer Frame Version Number (2 bits, mandatory);
 - Bypass Flag (1 bit, mandatory);
 - Control Command Flag (1 bit, mandatory);
@@ -77,7 +81,63 @@ The Transfer Frame Primary Header is mandatory and shall consist of eight fields
 NOTE – The format of the Transfer Frame Primary Header is shown in figure.
 
 ![Transfer Frame Primary Header](images/TCprimary.png)
+
 - - -
+
+## TM transfert frame
+
+A TM Transfer Frame shall encompass the major fields, positioned contiguously, in
+the following sequence:
+
+- Transfer Frame Primary Header (6 octets, mandatory);
+- Transfer Frame Secondary Header (up to 64 octets, optional);
+- Transfer Frame Data Field (integral number of octets, mandatory);
+- Operational Control Field (4 octets, optional);
+- Frame Error Control Field (2 octets, optional).
+
+![TM Transfer Frame Structural Components](images/TMframe.png)
+
+### Transfer frame primary header
+
+The Transfer Frame Primary Header is mandatory and shall consist of six fields, positioned contiguously, in the following sequence:
+
+- Master Channel Identifier (12 bits, mandatory);
+- Virtual Channel Identifier (3 bits, mandatory);
+- Operational Control Field Flag (1 bit, mandatory);
+- Master Channel Frame Count (1 octet, mandatory);
+- Virtual Channel Frame Count (1 octet, mandatory);
+- Transfer Frame Data Field Status (2 octets, mandatory).
+
+
+![Transfer Frame Primary Header](images/TMph.png)
+
+### Transfer frame data field status
+
+Bits 32–47 of the Transfer Frame Primary Header shall contain the Transfer
+Frame Data Field Status.
+
+This 16-bit field shall be sub-divided into five sub-fields, as follows:
+
+- Transfer Frame Secondary Header Flag (1 bit, mandatory);
+- Synchronization Flag (1 bit, mandatory);
+- Packet Order Flag (1 bit, mandatory);
+- Segment Length Identifier (2 bits, mandatory);
+- First Header Pointer (11 bits, mandatory).
+
+![](images/TMdfs.png)
+
+### Transfer frame secondary header
+
+If present, the Transfer Frame Secondary Header shall follow, without gap, the
+Transfer Frame Primary Header.
+
+The Transfer Frame Secondary Header shall consist of an integral number of
+octets as follows:
+
+- Transfer Frame Secondary Header Identification Field (1 octet, mandatory);
+- Transfer Frame Secondary Header Data Field (1 to 63 octets, mandatory).
+
+![Transfer Frame Secondary Header](images/TMsh.png)
 
 
 ---
@@ -94,7 +154,5 @@ NOTE – The format of the Transfer Frame Primary Header is shown in figure.
 
 ## Conclusion
 Both CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.
-
-For more details, see the full document on the [ESA website](https://indico.esa.int/event/276/contributions/4535/attachments/3482/4593/W32_-_CAN-TS_protocol_for_memory_constrained_embedded_application.pdf).
 
 ---

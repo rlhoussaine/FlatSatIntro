@@ -65,6 +65,9 @@ website:
           - href: LearningMore/swdev.qmd
             text: Git Hub workflow
 
+          - href: LearningMore/yamcsbasesetup.qmd
+            text: Set up a basic yamcs with a custom scos2000 MiB
+
 format:
   html:
     theme:

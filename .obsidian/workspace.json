@@ -13,12 +13,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "flatsat/ccsdspackets.qmd",
+                "file": "LearningMore/yamcsbasesetup.qmd",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ccsdspackets"
+              "title": "yamcsbasesetup"
+            }
+          },
+          {
+            "id": "c8ca0d77ae25eb55",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "flatsat/images/TMdfs.png"
+              },
+              "icon": "lucide-image",
+              "title": "TMdfs"
+            }
+          },
+          {
+            "id": "c9cf286edb13018b",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "flatsat/images/TMsh.png"
+              },
+              "icon": "lucide-image",
+              "title": "TMsh"
             }
           }
         ]
@@ -93,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "flatsat/ccsdspackets.qmd",
+                "file": "LearningMore/yamcsbasesetup.qmd",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +127,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour ccsdspackets"
+              "title": "Rétrolien pour yamcsbasesetup"
             }
           },
           {
@@ -112,12 +136,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "flatsat/ccsdspackets.qmd",
+                "file": "LearningMore/yamcsbasesetup.qmd",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Liens sortants de ccsdspackets"
+              "title": "Liens sortants de yamcsbasesetup"
             }
           },
           {
@@ -139,10 +163,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "flatsat/ccsdspackets.qmd"
+                "file": "LearningMore/yamcsbasesetup.qmd"
               },
               "icon": "lucide-list",
-              "title": "Plan de ccsdspackets"
+              "title": "Plan de yamcsbasesetup"
             }
           },
           {
@@ -179,27 +203,29 @@
   },
   "active": "bdbe27e596921cb8",
   "lastOpenFiles": [
-    "flatsat/images/TCprimary.png",
-    "flatsat/images/TCframe.png",
-    "flatsat/images/Capture d’écran du 2024-11-14 16-28-54.png",
-    "flatsat/images/Capture d’écran du 2024-11-14 16-29-15.png",
-    "flatsat/can.qmd",
-    "LearningMore/platform.html",
-    "LearningMore/platform_files/mediabag",
-    "LearningMore/platform_files",
-    "site_libs/quarto-diagram/mermaid.min.js",
-    "site_libs/quarto-diagram/mermaid.css",
-    "site_libs/quarto-diagram/mermaid-init.js",
-    "site_libs/quarto-diagram",
-    "LearningMore/egse.html",
-    "LearningMore/egse_files/mediabag",
-    "site_libs/bootstrap/images/render-commit-push.png",
-    "site_libs/bootstrap/images/pull.png",
-    "flatsat/images/spacepacket.png",
-    "flatsat/images/primary.png",
-    "flatsat/images/secondary.png",
-    "_site/LearningMore/images/redundancy.jpg",
+    "flatsat/ccsdspackets.qmd",
+    "_site/search.json",
+    "_site/robots.txt",
+    "_site/sitemap.xml",
+    "_site/flatsat/images/yamcs.png",
     "_site/flatsat/images/unsolicitedTM.png",
+    "_site/flatsat/images/timesync.png",
+    "_site/flatsat/images/telemetry.png",
+    "_site/flatsat/images/telecommand.png",
+    "_site/flatsat/images/spacepacket.png",
+    "_site/flatsat/images/setblock.png",
+    "_site/flatsat/images/psh.png",
+    "_site/flatsat/images/primary.png",
+    "_site/flatsat/images/getblock.png",
+    "_site/flatsat/images",
+    "_site/LearningMore/images",
+    "_site/images",
+    "_site/site_libs/quarto-search/quarto-search.js",
+    "_site/site_libs/quarto-search/fuse.min.js",
+    "_site/site_libs/quarto-search/autocomplete.umd.js",
+    "_site/site_libs/quarto-html/tippy.umd.min.js",
+    "LearningMore/yamcsbasesetup.md",
+    "().md",
     "flatsat/yamcs.md",
     "flatsat/ccsdspackets.md",
     "LearningMore/egse.md",
