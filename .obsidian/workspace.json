@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "flatsat/can.qmd",
+                "file": "flatsat/ccsdspackets.qmd",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "can"
+              "title": "ccsdspackets"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "flatsat/can.qmd",
+                "file": "flatsat/ccsdspackets.qmd",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour can"
+              "title": "Rétrolien pour ccsdspackets"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "flatsat/can.qmd",
+                "file": "flatsat/ccsdspackets.qmd",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Liens sortants de can"
+              "title": "Liens sortants de ccsdspackets"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "flatsat/can.qmd"
+                "file": "flatsat/ccsdspackets.qmd"
               },
               "icon": "lucide-list",
-              "title": "Plan de can"
+              "title": "Plan de ccsdspackets"
             }
           },
           {
@@ -179,27 +179,27 @@
   },
   "active": "bdbe27e596921cb8",
   "lastOpenFiles": [
+    "flatsat/images/TCprimary.png",
+    "flatsat/images/TCframe.png",
+    "flatsat/images/Capture d’écran du 2024-11-14 16-28-54.png",
+    "flatsat/images/Capture d’écran du 2024-11-14 16-29-15.png",
+    "flatsat/can.qmd",
     "LearningMore/platform.html",
     "LearningMore/platform_files/mediabag",
     "LearningMore/platform_files",
+    "site_libs/quarto-diagram/mermaid.min.js",
     "site_libs/quarto-diagram/mermaid.css",
     "site_libs/quarto-diagram/mermaid-init.js",
-    "site_libs/quarto-diagram/mermaid.min.js",
     "site_libs/quarto-diagram",
     "LearningMore/egse.html",
     "LearningMore/egse_files/mediabag",
-    "LearningMore/egse_files",
-    "LearningMore/swdev.html",
     "site_libs/bootstrap/images/render-commit-push.png",
     "site_libs/bootstrap/images/pull.png",
+    "flatsat/images/spacepacket.png",
+    "flatsat/images/primary.png",
+    "flatsat/images/secondary.png",
     "_site/LearningMore/images/redundancy.jpg",
     "_site/flatsat/images/unsolicitedTM.png",
-    "_site/flatsat/images/timesync.png",
-    "_site/flatsat/images/telemetry.png",
-    "_site/flatsat/images/telecommand.png",
-    "_site/flatsat/images/setblock.png",
-    "_site/flatsat/images/frame.png",
-    "_site/flatsat/images/end_overall.png",
     "flatsat/yamcs.md",
     "flatsat/ccsdspackets.md",
     "LearningMore/egse.md",

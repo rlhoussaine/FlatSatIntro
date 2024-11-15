@@ -78,7 +78,16 @@ Voici la mise en forme améliorée de cette partie :
    **Command Field Subfields**:
    - **Request, Acknowledge** – Bits 9-7. Table 6 presents all possible values for this subfield.  
 
-![Set Block Table](images/setblocktable.png){width=95%}
+| Frame Type <br>         | Value in Binary |
+| ----------------------- | --------------- |
+| Set Block Request       | 000             |
+| SB Acknowledge          | 010             |
+| SB Negative Acknowledge | 100             |
+| Transfer                | 001             |
+| Abort                   | 011             |
+| Status Request          | 110             |
+| Report                  | 111             |
+
 
    - **No. of Blocks** – Bits 5-0 of the Command field in the Set Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.
    - **Sequence** – Bits 5-0 of the Command field in the Set Block Transfer frame represent the index of the transferred block. The first block has index 0.
@@ -87,13 +96,19 @@ Voici la mise en forme améliorée de cette partie :
 6. **Get Block** (multi-message transfer)  
    - Large data transfers from sink to source with error management.
 
-![Get Block](images/getblock.png){width=95%}
+![Get Block](images/getblock.png)
 
    **Command Field Subfields**:
    - **Request, Acknowledge** – Bits 9-7. Table 7 presents all possible values for this subfield.  
 
-![Get Block Table](images/getblocktable.png){width=95%}
-
+| Frame Type <br>         | Value in Binary |
+| ----------------------- | --------------- |
+| Get Block Request       | 000             |
+| GB Acknowledge          | 010             |
+| GB Negative Acknowledge | 100             |
+| Abort                   | 011             |
+| Start                   | 110             |
+| Transfer                | 111             |
    - **No. of Blocks** – Bits 5-0 of the Command field in the Get Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.
    - **Sequence** – Bits 5-0 of the Command field in the Get Block Transfer frame represent the index of the transferred block. The first block has index 0.
 

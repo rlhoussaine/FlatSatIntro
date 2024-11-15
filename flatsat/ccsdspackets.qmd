@@ -14,68 +14,71 @@ SPP (CCSDS 133.0-B-2) structures and transports data in "space packets."
 
 ### SPP Packet Structure
 
-```mermaid
-graph TD
-    A[Packet Primary Header]
-    B[Packet Secondary Header]
-    C[Data Field]
+A Space Packet shall include the defined fields, positioned contiguously, in the
+following sequence:
+1. Packet Primary Header (6 octets, mandatory);
+2. Packet Data Field (from 1 to 65536 octets, mandatory).
 
-    A -->|7 bytes| B
-    B -->|variable| C
-```
+*A Space Packet shall consist of at least 7 and at most 65542 octets.*
+
+![Space Packet Structural Components](images/spacepacket.png)
 
 ### Key Features
 - **Application Identification**: Uses the APID (Application Process Identifier) field.
 - **Data Flexibility**: Variable packet sizes for adaptability.
 - **Layer Independence**: Compatible with various link protocols.
 
----
+### Packet primary header
 
-## Telecommand (TC) Space Data Link Protocol
+The Packet Primary Header is mandatory and shall consist of four fields, positioned
+contiguously, in the following sequence:
+- Packet Version Number (3 bits, mandatory);
+- Packet Identification Field (13 bits, mandatory);
+- Packet Sequence Control Field (16 bits, mandatory);
+- Packet Data Length (16 bits, mandatory).
 
-The TC protocol (CCSDS 232.0-B-4) manages ground-to-satellite commands at the Data Link Layer.
+![](images/primary.png)
 
-### TC Channel Hierarchy
+### Packet secondary header
 
-```mermaid
-graph TD
-    A[Master Channel]
-    B1[Virtual Channel 1]
-    B2[Virtual Channel 2]
-    C1[MAP Channel 1]
-    C2[MAP Channel 2]
-    C3[MAP Channel 3]
+1. The purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.
 
-    A --> B1
-    A --> B2
-    B1 --> C1
-    B2 --> C2
-    B2 --> C3
-```
-
-### Key Features
-- **Segmentation and Multiplexing**: Data split across virtual channels.
-- **Communication Control**: Ensures reliable command delivery and integrity checks.
-- **Security Support (SDLS)**: Protects sensitive command data.
+2. Secondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space
 
 ---
 
-## Telemetry (TM) Space Data Link Protocol
+## TC TRANSFER FRAME
 
-The TM protocol (CCSDS 132.0-B-3) sends telemetry data from satellite to ground, also at the Data Link Layer.
+A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:
+1. Transfer Frame Header (5 octets, mandatory);
+2. Transfer Frame Data Field (up to 1019 or 1017 octets, mandatory);
+3. Frame Error Control Field (2 octets, optional).
 
-### Asynchronous and Synchronous Service Model
+![TC Transfer Frame Structural Components](images/TCframe.png)
 
-```mermaid
-graph LR
-    A[Satellite Data Source] -- Asynchronous Transmission --> B[Virtual Channel]
-    B -- Synchronous Mode --> C[Ground Reception]
-```
+NOTES :
+- The TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.
+- The maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.
+- The structural components of the TC Transfer Frame are shown in figure.
 
-### Key Features
-- **Virtual Channels**: Differentiates telemetry data streams.
-- **Multiplexing/Demultiplexing**: Splits data into master and virtual channels.
-- **SDLS Security Option**: Ensures confidentiality and integrity of telemetry.
+### Tranfer frame primary header
+
+
+The Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:
+- Transfer Frame Version Number (2 bits, mandatory);
+- Bypass Flag (1 bit, mandatory);
+- Control Command Flag (1 bit, mandatory);
+- Reserved Spare (2 bits, mandatory);
+- Spacecraft Identifier (10 bits, mandatory);
+- Virtual Channel Identifier (6 bits, mandatory);
+- Frame Length (10 bits, mandatory);
+- Frame Sequence Number (8 bits, mandatory).
+- 
+NOTE – The format of the Transfer Frame Primary Header is shown in figure.
+
+![Transfer Frame Primary Header](images/TCprimary.png)
+- - -
+
 
 ---
 
