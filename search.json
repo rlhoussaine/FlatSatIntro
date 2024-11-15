@@ -60,168 +60,179 @@
     ]
   },
   {
-    "objectID": "LearningMore/platform.html",
-    "href": "LearningMore/platform.html",
-    "title": "Rewind on Satellite platform and subsystems",
+    "objectID": "LearningMore/egse.html",
+    "href": "LearningMore/egse.html",
+    "title": "Electrical Ground Support Equipment (EGSE)",
     "section": "",
-    "text": "graph TD\n    A[**Subsystems**]:::main\n    A --&gt; B[**Payload**]\n    A --&gt; C[**Power Subsystem**]\n    A --&gt; D[**Propulsion Subsystem**]\n    A --&gt; E[**Structure Subsystem**]\n    A --&gt; F[**Thermal Subsystem**]\n    A --&gt; G[**AOCS**&lt;br&gt;**Attitude and Orbit Control System**]\n    A --&gt; H[**TM/TC Subsystem**]\n    A --&gt; I[**OBC Subsystem**]\n\n    classDef main font-size:30px, font-weight:bold, color:#ffffff;\n    classDef payload fill:#a05a87, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef power fill:#5f8b95, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef propulsion fill:#999999, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef structure fill:#4a66a1, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef thermal fill:#c49d1d, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef aocs fill:#7f4f7f, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef tmtc fill:#a69d19, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef obc fill:#3b9cc4, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n\n    class B payload;\n    class C power;\n    class D propulsion;\n    class E structure;\n    class F thermal;\n    class G aocs;\n    class H tmtc;\n    class I obc;\n\n\n\n\n\n\n\n\n\n\nComponents:\n\nSolar Panels: Generate electrical power by converting solar energy.\nBatteries: Store energy for use when the satellite is in Earth’s shadow.\n\nPurpose: Provides and regulates power for all satellite subsystems.\nPower Output: Typically between 10 and 20 kW, depending on satellite design and mission requirements.\n\n\n\n\n\n\ngraph TD\n    A[Power Subsystem] --&gt; B[Solar Panels]\n    A --&gt; C[Batteries]\n    B --&gt; D[Generate Power]\n    C --&gt; E[Store Power]\n\n\n\n\n\n\n\n\n\n\nFunctions:\n\nPositioning (Initial Orbit Insertion): Places the satellite in its intended geostationary orbit.\nStation Keeping: Maintains satellite’s position against gravitational forces.\nDeorbiting: Ensures controlled descent at the end of the mission, removing the satellite from orbit.\n\nTypes of Propulsion:\n\nChemical Propulsion: Provides high thrust for orbit changes.\nElectric Propulsion: Efficient for station-keeping maneuvers, using less fuel over time.\n\n\n\n\n\n\n\ngraph TD\n    F[Propulsion Subsystem] --&gt; G[Positioning]\n    F --&gt; H[Station Keeping]\n    F --&gt; I[Deorbiting]\n    G --&gt; J[Chemical Propulsion]\n    H --&gt; K[Electric Propulsion]\n\n\n\n\n\n\n\n\n\n\nPurpose: Provides mechanical integrity, ensuring satellite withstands the physical stresses during launch and operation.\nStress Factors:\n\nAcceleration: Up to 4.5 g during launch.\nAcoustic Pressure: Up to 140 dB due to intense launch sounds.\n\nComponents: Reinforced frame and materials designed for durability in the harsh space environment.\n\n\n\n\n\n\ngraph TD\n    L[Structure Subsystem] --&gt; M[Handles Launch Stresses]\n    M --&gt; N[Acceleration: up to 4.5 g]\n    M --&gt; O[Acoustic Pressure: up to 140 dB]\n\n\n\n\n\n\n\n\n\n\nFunction: Manages satellite temperature, preventing overheating or freezing of sensitive components.\nChallenges:\n\nSpace Temperature Variability: -120°C to +150°C.\n\nOptimal Temperature Ranges:\n\nBatteries: 0°C to +10°C.\nElectronics: 10°C to +45°C.\nAntennas: -150°C to +80°C.\n\nThermal Control Techniques:\n\nRadiators and Heat Pipes: Dissipate excess heat.\nInsulation: Protects against extreme cold.\n\n\n\n\n\n\n\ngraph TD\n    P[Thermal Subsystem] --&gt; Q[Temperature Management]\n    Q --&gt; R[Space Temperature: -120 to +150 degrees celsius]\n    Q --&gt; S[Controlled Ranges]\n    S --&gt; T[Batteries: 0  to +10 degrees celsius]\n    S --&gt; U[Electronics: 10  to +45 degrees celsius]\n    S --&gt; V[Antennas: -150 to +80 degrees celsius]\n\n\n\n\n\n\n\n\n\n\nPurpose: Maintains the satellite’s orientation and ensures it remains in its designated orbital position.\nComponents:\n\nGyroscopes: Measure orientation.\nReaction Wheels: Control attitude without expending fuel.\nThrusters: Adjust orbit as needed for station keeping.\n\nPositioning Requirements: Accuracy within a few kilometers, with specific orientations for antenna alignment and solar panel exposure.\n\n\n\n\n\n\ngraph TD\n    W[Attitude and Orbit Control System AOCS]\n    W --&gt; X[Maintains Orientation]\n    W --&gt; Y[Controls Orbital Position]\n    X --&gt; Z[Gyroscopes & Reaction Wheels]\n    Y --&gt; AA[Thrusters]\n\n\n\n\n\n\n\n\n\n\nTelemetry (TM): Continuously monitors satellite status and transmits data to ground control.\nTelecommand (TC): Receives commands from ground control to execute operational tasks.\nExample Operations: Power adjustments, orbit corrections, and data collection from sensors.\n\n\n\n\n\n\ngraph TD\n    AB[Telemetry & Telecommand Subsystem TM/TC]\n    AB --&gt; AC[Telemetry]\n    AB --&gt; AD[Telecommand]\n    AC --&gt; AE[Sends Data to Ground]\n    AD --&gt; AF[Receives Commands from Ground]\n\n\n\n\n\n\n\n\n\n\nRole: Acts as the satellite’s central processing unit, managing operations and coordinating responses to commands.\nFunctions:\n\nProcesses data from sensors and telemetry.\nExecutes control commands to other subsystems.\nStores critical mission data.\n\nExample: The OBC on ESA’s BepiColombo mission, which provides autonomous operations for deep space.\n\n\n\n\n\n\ngraph TD\n    AG[Onboard Computer OBC Subsystem]\n    AG --&gt; AH[Processes Data]\n    AG --&gt; AI[Executes Commands]\n    AG --&gt; AJ[Stores Mission Data]\n\n\n\n\n\n\n\nSource of Illustrations: Diagrams inspired by ESA and CNES for satellite subsystems and visualizations of Insat 3A, an Indian telecommunications satellite. ```\nThis expanded Markdown file provides a thorough breakdown of each subsystem, accompanied by Mermaid diagrams to illustrate their components and functions. Let me know if you would like to add further details or additional diagrams.",
+    "text": "Electrical Ground Support Equipment (EGSE) is essential for the testing and support of spacecraft systems before launch. It consists of specialized equipment used to test the spacecraft’s electrical systems, simulate space conditions, and ensure that all components function as expected. EGSE is employed during the final phases of spacecraft assembly, integration, and testing (AIT) on the ground.\n\n\n\nThe primary purpose of EGSE is to prepare spacecraft for space missions by verifying their performance and functionality under simulated space conditions. EGSE equipment provides power, signal interfacing, and system diagnostics, ensuring that all spacecraft subsystems are operational before launch. This is crucial for avoiding costly failures post-launch.\n\n\n\n\n\nEGSE systems simulate the space environment (e.g., power conditions, signal behaviors) to test spacecraft electronics and control systems. This allows engineers to check how the spacecraft’s systems react to various scenarios, ensuring that all operations will go smoothly in orbit.\n\n\n\nEGSE supplies power to spacecraft components during testing. This includes providing various voltage levels, current, and regulation to simulate the spacecraft’s operational conditions while on Earth.\n\n\n\nThe equipment also ensures that the spacecraft’s communication systems work effectively by acting as an intermediary between spacecraft systems and testing equipment, facilitating proper data transmission and command signaling.\n\n\n\nEGSE is used to monitor spacecraft performance. Engineers can run diagnostic tests, check signal integrity, analyze power usage, and verify thermal and structural responses, helping to identify and resolve potential issues early in the testing process.\n\n\n\nThe comprehensive testing EGSE provides reduces the risk of system failure during space missions. By simulating different scenarios, EGSE allows engineers to confirm that all systems are functioning correctly and that there are no hidden defects that could compromise the mission.\n\n\n\n\nEGSE is typically composed of the following main elements:\n\nPower Systems: Provide the necessary electrical power for the spacecraft subsystems during testing.\nTest Controllers: Devices that control and monitor the test scenarios, ensuring proper operations.\nSimulation Systems: Equipment designed to simulate space environmental conditions such as radiation, temperature extremes, and vacuum.\nData Acquisition Systems: Monitor the data produced by spacecraft systems to evaluate their performance.\nCommunication Interfaces: Facilitate data exchange between the spacecraft and testing equipment.\n\n\n\n\nThere are two main types of EGSE:\n\nSpacecraft EGSE (S-EGSE): Designed specifically for testing the spacecraft itself, this system is responsible for monitoring and testing the spacecraft’s hardware.\nLaunch EGSE (L-EGSE): Focused on ensuring that launch-related systems, such as fueling and integration with the launch vehicle, are functioning correctly.\n\n\n\n\n\nSpacecraft Integration and Testing: EGSE is used during spacecraft assembly to ensure all systems are correctly integrated and functioning.\nLaunch Operations: EGSE plays a crucial role in testing the spacecraft before and after it is integrated with the launch vehicle.\nPost-launch Validation: Some EGSE systems are used to validate that spacecraft systems operate correctly after launch.\n\n\n\n\nEGSE is a vital part of the spacecraft testing process, ensuring that all systems function as required before they are sent into space. Its ability to simulate space conditions, provide power and data communication, and perform detailed diagnostics makes it indispensable for successful space missions. Without EGSE, the risk of mission failure would increase significantly, highlighting its importance in the aerospace industry.",
     "crumbs": [
       "Ressources",
-      "Satellite Platform and subsystems"
+      "EGSE"
     ]
   },
   {
-    "objectID": "LearningMore/platform.html#overview",
-    "href": "LearningMore/platform.html#overview",
-    "title": "Rewind on Satellite platform and subsystems",
+    "objectID": "LearningMore/egse.html#introduction",
+    "href": "LearningMore/egse.html#introduction",
+    "title": "Electrical Ground Support Equipment (EGSE)",
     "section": "",
-    "text": "graph TD\n    A[**Subsystems**]:::main\n    A --&gt; B[**Payload**]\n    A --&gt; C[**Power Subsystem**]\n    A --&gt; D[**Propulsion Subsystem**]\n    A --&gt; E[**Structure Subsystem**]\n    A --&gt; F[**Thermal Subsystem**]\n    A --&gt; G[**AOCS**&lt;br&gt;**Attitude and Orbit Control System**]\n    A --&gt; H[**TM/TC Subsystem**]\n    A --&gt; I[**OBC Subsystem**]\n\n    classDef main font-size:30px, font-weight:bold, color:#ffffff;\n    classDef payload fill:#a05a87, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef power fill:#5f8b95, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef propulsion fill:#999999, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef structure fill:#4a66a1, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef thermal fill:#c49d1d, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef aocs fill:#7f4f7f, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef tmtc fill:#a69d19, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef obc fill:#3b9cc4, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n\n    class B payload;\n    class C power;\n    class D propulsion;\n    class E structure;\n    class F thermal;\n    class G aocs;\n    class H tmtc;\n    class I obc;",
+    "text": "Electrical Ground Support Equipment (EGSE) is essential for the testing and support of spacecraft systems before launch. It consists of specialized equipment used to test the spacecraft’s electrical systems, simulate space conditions, and ensure that all components function as expected. EGSE is employed during the final phases of spacecraft assembly, integration, and testing (AIT) on the ground.",
     "crumbs": [
       "Ressources",
-      "Satellite Platform and subsystems"
+      "EGSE"
     ]
   },
   {
-    "objectID": "LearningMore/platform.html#power-subsystem",
-    "href": "LearningMore/platform.html#power-subsystem",
-    "title": "Rewind on Satellite platform and subsystems",
+    "objectID": "LearningMore/egse.html#purpose-of-egse",
+    "href": "LearningMore/egse.html#purpose-of-egse",
+    "title": "Electrical Ground Support Equipment (EGSE)",
     "section": "",
-    "text": "Components:\n\nSolar Panels: Generate electrical power by converting solar energy.\nBatteries: Store energy for use when the satellite is in Earth’s shadow.\n\nPurpose: Provides and regulates power for all satellite subsystems.\nPower Output: Typically between 10 and 20 kW, depending on satellite design and mission requirements.\n\n\n\n\n\n\ngraph TD\n    A[Power Subsystem] --&gt; B[Solar Panels]\n    A --&gt; C[Batteries]\n    B --&gt; D[Generate Power]\n    C --&gt; E[Store Power]",
+    "text": "The primary purpose of EGSE is to prepare spacecraft for space missions by verifying their performance and functionality under simulated space conditions. EGSE equipment provides power, signal interfacing, and system diagnostics, ensuring that all spacecraft subsystems are operational before launch. This is crucial for avoiding costly failures post-launch.",
     "crumbs": [
       "Ressources",
-      "Satellite Platform and subsystems"
+      "EGSE"
     ]
   },
   {
-    "objectID": "LearningMore/platform.html#propulsion-subsystem",
-    "href": "LearningMore/platform.html#propulsion-subsystem",
-    "title": "Rewind on Satellite platform and subsystems",
+    "objectID": "LearningMore/egse.html#key-functions",
+    "href": "LearningMore/egse.html#key-functions",
+    "title": "Electrical Ground Support Equipment (EGSE)",
     "section": "",
-    "text": "Functions:\n\nPositioning (Initial Orbit Insertion): Places the satellite in its intended geostationary orbit.\nStation Keeping: Maintains satellite’s position against gravitational forces.\nDeorbiting: Ensures controlled descent at the end of the mission, removing the satellite from orbit.\n\nTypes of Propulsion:\n\nChemical Propulsion: Provides high thrust for orbit changes.\nElectric Propulsion: Efficient for station-keeping maneuvers, using less fuel over time.\n\n\n\n\n\n\n\ngraph TD\n    F[Propulsion Subsystem] --&gt; G[Positioning]\n    F --&gt; H[Station Keeping]\n    F --&gt; I[Deorbiting]\n    G --&gt; J[Chemical Propulsion]\n    H --&gt; K[Electric Propulsion]",
+    "text": "EGSE systems simulate the space environment (e.g., power conditions, signal behaviors) to test spacecraft electronics and control systems. This allows engineers to check how the spacecraft’s systems react to various scenarios, ensuring that all operations will go smoothly in orbit.\n\n\n\nEGSE supplies power to spacecraft components during testing. This includes providing various voltage levels, current, and regulation to simulate the spacecraft’s operational conditions while on Earth.\n\n\n\nThe equipment also ensures that the spacecraft’s communication systems work effectively by acting as an intermediary between spacecraft systems and testing equipment, facilitating proper data transmission and command signaling.\n\n\n\nEGSE is used to monitor spacecraft performance. Engineers can run diagnostic tests, check signal integrity, analyze power usage, and verify thermal and structural responses, helping to identify and resolve potential issues early in the testing process.\n\n\n\nThe comprehensive testing EGSE provides reduces the risk of system failure during space missions. By simulating different scenarios, EGSE allows engineers to confirm that all systems are functioning correctly and that there are no hidden defects that could compromise the mission.",
     "crumbs": [
       "Ressources",
-      "Satellite Platform and subsystems"
+      "EGSE"
     ]
   },
   {
-    "objectID": "LearningMore/platform.html#structure-subsystem",
-    "href": "LearningMore/platform.html#structure-subsystem",
-    "title": "Rewind on Satellite platform and subsystems",
+    "objectID": "LearningMore/egse.html#components-of-egse",
+    "href": "LearningMore/egse.html#components-of-egse",
+    "title": "Electrical Ground Support Equipment (EGSE)",
     "section": "",
-    "text": "Purpose: Provides mechanical integrity, ensuring satellite withstands the physical stresses during launch and operation.\nStress Factors:\n\nAcceleration: Up to 4.5 g during launch.\nAcoustic Pressure: Up to 140 dB due to intense launch sounds.\n\nComponents: Reinforced frame and materials designed for durability in the harsh space environment.\n\n\n\n\n\n\ngraph TD\n    L[Structure Subsystem] --&gt; M[Handles Launch Stresses]\n    M --&gt; N[Acceleration: up to 4.5 g]\n    M --&gt; O[Acoustic Pressure: up to 140 dB]",
+    "text": "EGSE is typically composed of the following main elements:\n\nPower Systems: Provide the necessary electrical power for the spacecraft subsystems during testing.\nTest Controllers: Devices that control and monitor the test scenarios, ensuring proper operations.\nSimulation Systems: Equipment designed to simulate space environmental conditions such as radiation, temperature extremes, and vacuum.\nData Acquisition Systems: Monitor the data produced by spacecraft systems to evaluate their performance.\nCommunication Interfaces: Facilitate data exchange between the spacecraft and testing equipment.",
     "crumbs": [
       "Ressources",
-      "Satellite Platform and subsystems"
+      "EGSE"
     ]
   },
   {
-    "objectID": "LearningMore/platform.html#thermal-subsystem",
-    "href": "LearningMore/platform.html#thermal-subsystem",
-    "title": "Rewind on Satellite platform and subsystems",
+    "objectID": "LearningMore/egse.html#types-of-egse",
+    "href": "LearningMore/egse.html#types-of-egse",
+    "title": "Electrical Ground Support Equipment (EGSE)",
     "section": "",
-    "text": "Function: Manages satellite temperature, preventing overheating or freezing of sensitive components.\nChallenges:\n\nSpace Temperature Variability: -120°C to +150°C.\n\nOptimal Temperature Ranges:\n\nBatteries: 0°C to +10°C.\nElectronics: 10°C to +45°C.\nAntennas: -150°C to +80°C.\n\nThermal Control Techniques:\n\nRadiators and Heat Pipes: Dissipate excess heat.\nInsulation: Protects against extreme cold.\n\n\n\n\n\n\n\ngraph TD\n    P[Thermal Subsystem] --&gt; Q[Temperature Management]\n    Q --&gt; R[Space Temperature: -120 to +150 degrees celsius]\n    Q --&gt; S[Controlled Ranges]\n    S --&gt; T[Batteries: 0  to +10 degrees celsius]\n    S --&gt; U[Electronics: 10  to +45 degrees celsius]\n    S --&gt; V[Antennas: -150 to +80 degrees celsius]",
+    "text": "There are two main types of EGSE:\n\nSpacecraft EGSE (S-EGSE): Designed specifically for testing the spacecraft itself, this system is responsible for monitoring and testing the spacecraft’s hardware.\nLaunch EGSE (L-EGSE): Focused on ensuring that launch-related systems, such as fueling and integration with the launch vehicle, are functioning correctly.",
     "crumbs": [
       "Ressources",
-      "Satellite Platform and subsystems"
+      "EGSE"
     ]
   },
   {
-    "objectID": "LearningMore/platform.html#attitude-and-orbit-control-system-aocs",
-    "href": "LearningMore/platform.html#attitude-and-orbit-control-system-aocs",
-    "title": "Rewind on Satellite platform and subsystems",
+    "objectID": "LearningMore/egse.html#applications-of-egse",
+    "href": "LearningMore/egse.html#applications-of-egse",
+    "title": "Electrical Ground Support Equipment (EGSE)",
     "section": "",
-    "text": "Purpose: Maintains the satellite’s orientation and ensures it remains in its designated orbital position.\nComponents:\n\nGyroscopes: Measure orientation.\nReaction Wheels: Control attitude without expending fuel.\nThrusters: Adjust orbit as needed for station keeping.\n\nPositioning Requirements: Accuracy within a few kilometers, with specific orientations for antenna alignment and solar panel exposure.\n\n\n\n\n\n\ngraph TD\n    W[Attitude and Orbit Control System AOCS]\n    W --&gt; X[Maintains Orientation]\n    W --&gt; Y[Controls Orbital Position]\n    X --&gt; Z[Gyroscopes & Reaction Wheels]\n    Y --&gt; AA[Thrusters]",
+    "text": "Spacecraft Integration and Testing: EGSE is used during spacecraft assembly to ensure all systems are correctly integrated and functioning.\nLaunch Operations: EGSE plays a crucial role in testing the spacecraft before and after it is integrated with the launch vehicle.\nPost-launch Validation: Some EGSE systems are used to validate that spacecraft systems operate correctly after launch.",
     "crumbs": [
       "Ressources",
-      "Satellite Platform and subsystems"
+      "EGSE"
     ]
   },
   {
-    "objectID": "LearningMore/platform.html#telemetry-and-telecommand-tmtc-subsystem",
-    "href": "LearningMore/platform.html#telemetry-and-telecommand-tmtc-subsystem",
-    "title": "Rewind on Satellite platform and subsystems",
+    "objectID": "LearningMore/egse.html#conclusion",
+    "href": "LearningMore/egse.html#conclusion",
+    "title": "Electrical Ground Support Equipment (EGSE)",
     "section": "",
-    "text": "Telemetry (TM): Continuously monitors satellite status and transmits data to ground control.\nTelecommand (TC): Receives commands from ground control to execute operational tasks.\nExample Operations: Power adjustments, orbit corrections, and data collection from sensors.\n\n\n\n\n\n\ngraph TD\n    AB[Telemetry & Telecommand Subsystem TM/TC]\n    AB --&gt; AC[Telemetry]\n    AB --&gt; AD[Telecommand]\n    AC --&gt; AE[Sends Data to Ground]\n    AD --&gt; AF[Receives Commands from Ground]",
+    "text": "EGSE is a vital part of the spacecraft testing process, ensuring that all systems function as required before they are sent into space. Its ability to simulate space conditions, provide power and data communication, and perform detailed diagnostics makes it indispensable for successful space missions. Without EGSE, the risk of mission failure would increase significantly, highlighting its importance in the aerospace industry.",
     "crumbs": [
       "Ressources",
-      "Satellite Platform and subsystems"
+      "EGSE"
     ]
   },
   {
-    "objectID": "LearningMore/platform.html#onboard-computer-obc-subsystem",
-    "href": "LearningMore/platform.html#onboard-computer-obc-subsystem",
-    "title": "Rewind on Satellite platform and subsystems",
+    "objectID": "LearningMore/redundancy.html",
+    "href": "LearningMore/redundancy.html",
+    "title": "Hot, Warm, and Cold Redundant Systems",
     "section": "",
-    "text": "Role: Acts as the satellite’s central processing unit, managing operations and coordinating responses to commands.\nFunctions:\n\nProcesses data from sensors and telemetry.\nExecutes control commands to other subsystems.\nStores critical mission data.\n\nExample: The OBC on ESA’s BepiColombo mission, which provides autonomous operations for deep space.\n\n\n\n\n\n\ngraph TD\n    AG[Onboard Computer OBC Subsystem]\n    AG --&gt; AH[Processes Data]\n    AG --&gt; AI[Executes Commands]\n    AG --&gt; AJ[Stores Mission Data]\n\n\n\n\n\n\n\nSource of Illustrations: Diagrams inspired by ESA and CNES for satellite subsystems and visualizations of Insat 3A, an Indian telecommunications satellite. ```\nThis expanded Markdown file provides a thorough breakdown of each subsystem, accompanied by Mermaid diagrams to illustrate their components and functions. Let me know if you would like to add further details or additional diagrams.",
+    "text": "Sources:\n\nReliability Engineering 2 (1981), G. N. Sharma, Space Applications Centre, India\nCold, warm and hot redundancy: determining how much you need\n\n\n\n\nUnplanned failures in spaceborne and ground systems are minimized with redundancy, either active (hot), standby (cold), or intermediate (warm). This paper examines both types in detail to optimize reliability.\n\n\n\n\n[R]hs: Reliability of hot redundant system\n[R]cs: Reliability of cold redundant system\nMTBF: Mean Time Between Failures\nr: Reliability of a single unit\n\n\n\n\nReliability for critical systems can be achieved through different redundancy strategies:\n\nHot Redundancy: All units operate simultaneously, allowing for instant failover.\nCold Redundancy: Only one unit is operational, with standby units activated if needed.\nWarm Redundancy (per Automation IT): Used in processes requiring rapid response but tolerating brief outages; it engages secondary processors quickly without seamless transition.\n\n\n\n\nHot redundancy enhances reliability by maintaining constant operation across components. It suits critical processes where interruptions are unacceptable.\n\n\nThe MTBF for n exponential units in parallel extends as additional units are added.\n\n\n\n\nCold redundancy suits non-critical systems where downtime is manageable. It relies on standby units to activate after primary failure.\n\n\n\nA warm system allows standby units to synchronize periodically, suitable for processes that allow brief outages but require quick recovery.\n\n\n\nFirst Redundant Unit in hot redundancy increases reliability ~1.6x with MTBF mission time.\nCold Redundancy generally offers higher reliability when ideal switching is possible.\nWarm Redundancy minimizes system restart time, providing an intermediate solution for systems needing balance.\n\n\n\n\nCold redundancy provides a higher MTBF than hot or warm redundancy when extra units are added.\n\n\n\n\nCold and warm redundancies offer distinct benefits in reliability and MTBF, each appropriate to specific system requirements..",
     "crumbs": [
       "Ressources",
-      "Satellite Platform and subsystems"
+      "Redundancy"
     ]
   },
   {
-    "objectID": "LearningMore/swdev.html",
-    "href": "LearningMore/swdev.html",
-    "title": "Software development on the flatsat",
+    "objectID": "LearningMore/redundancy.html#abstract",
+    "href": "LearningMore/redundancy.html#abstract",
+    "title": "Hot, Warm, and Cold Redundant Systems",
     "section": "",
-    "text": "GitFlow is a branching strategy designed to streamline development, testing, and deployment processes in larger projects. It defines structured branches and workflows for managing features, releases, and urgent fixes in a way that maintains a stable codebase and enables continuous development.\n\n\n\nGitFlow primarily uses five branch types:\n\nMain (master): The stable branch reflecting the current production code. Only release and hotfix branches are merged into main, maintaining its stability.\nDevelop: This branch holds the latest accepted developments. New features and improvements are merged into develop, which serves as the basis for release branches.\nFeature: Created from develop to work on new features or enhancements. Feature branches are short-lived and must be integrated back into develop after completion.\nRelease: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.\nHotfix: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.\n\n\n\n\n\n\nFeature Development:\n\nStart a feature branch from develop using a clear prefix like feature/feature-name.\nImplement the feature, commit changes, and push the branch if needed.\nUpon completion, merge the feature branch back into develop and delete it.\n\nPreparing a Release:\n\nWhen develop is stable and ready for a release, create a release branch (e.g., release/1.0).\nFinalize minor adjustments and version updates on the release branch.\nOnce testing and fixes are complete, merge it into both main and develop. Tag this commit for reference.\n\nHotfixes:\n\nHotfixes are created directly from main for urgent production issues.\nAfter the fix, merge the hotfix branch into both main and develop to ensure the codebase remains consistent.\n\n\n\n\n\n\nTo optimize GitFlow usage and maintain a smooth development process, consider the following practices:\n\nFrequent Commits and Atomic Changes: Make small, focused commits to ease code reviews and bug tracking.\nClear Branch Naming Conventions: Use prefixes (feature/, release/, hotfix/) for clarity in identifying branch purposes.\nDescriptive Commit Messages: Document each change with a concise message to aid in tracking and debugging.\nAutomate Testing and CI/CD: Run automated tests on all branches to catch issues early, ensuring only stable code reaches main.\nPull Requests for Merges: Use pull requests for merging to ensure code reviews and prevent conflicts.\n\n\n\n\n\n\nImproved Collaboration: Clearly defined branches reduce merge conflicts and enhance teamwork.\nStable Main Branch: Maintains production stability, allowing hotfixes without disrupting ongoing development.\nEnhanced Version Control: Organizes commits by type (feature, fix, release), helping trace development progress.\n\n\n\n\n\nGitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.\nFor more details on GitFlow and best practices, refer to Atlassian’s GitFlow Tutorial, GitKraken’s Workflow Guide, and Stackademic’s Guide. ```",
+    "text": "Unplanned failures in spaceborne and ground systems are minimized with redundancy, either active (hot), standby (cold), or intermediate (warm). This paper examines both types in detail to optimize reliability.",
     "crumbs": [
       "Ressources",
-      "Git Hub workflow"
+      "Redundancy"
     ]
   },
   {
-    "objectID": "LearningMore/swdev.html#branching-model",
-    "href": "LearningMore/swdev.html#branching-model",
-    "title": "Software development on the flatsat",
+    "objectID": "LearningMore/redundancy.html#notation",
+    "href": "LearningMore/redundancy.html#notation",
+    "title": "Hot, Warm, and Cold Redundant Systems",
     "section": "",
-    "text": "GitFlow primarily uses five branch types:\n\nMain (master): The stable branch reflecting the current production code. Only release and hotfix branches are merged into main, maintaining its stability.\nDevelop: This branch holds the latest accepted developments. New features and improvements are merged into develop, which serves as the basis for release branches.\nFeature: Created from develop to work on new features or enhancements. Feature branches are short-lived and must be integrated back into develop after completion.\nRelease: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.\nHotfix: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.",
+    "text": "[R]hs: Reliability of hot redundant system\n[R]cs: Reliability of cold redundant system\nMTBF: Mean Time Between Failures\nr: Reliability of a single unit",
     "crumbs": [
       "Ressources",
-      "Git Hub workflow"
+      "Redundancy"
     ]
   },
   {
-    "objectID": "LearningMore/swdev.html#workflow-process",
-    "href": "LearningMore/swdev.html#workflow-process",
-    "title": "Software development on the flatsat",
+    "objectID": "LearningMore/redundancy.html#introduction",
+    "href": "LearningMore/redundancy.html#introduction",
+    "title": "Hot, Warm, and Cold Redundant Systems",
     "section": "",
-    "text": "Feature Development:\n\nStart a feature branch from develop using a clear prefix like feature/feature-name.\nImplement the feature, commit changes, and push the branch if needed.\nUpon completion, merge the feature branch back into develop and delete it.\n\nPreparing a Release:\n\nWhen develop is stable and ready for a release, create a release branch (e.g., release/1.0).\nFinalize minor adjustments and version updates on the release branch.\nOnce testing and fixes are complete, merge it into both main and develop. Tag this commit for reference.\n\nHotfixes:\n\nHotfixes are created directly from main for urgent production issues.\nAfter the fix, merge the hotfix branch into both main and develop to ensure the codebase remains consistent.",
+    "text": "Reliability for critical systems can be achieved through different redundancy strategies:\n\nHot Redundancy: All units operate simultaneously, allowing for instant failover.\nCold Redundancy: Only one unit is operational, with standby units activated if needed.\nWarm Redundancy (per Automation IT): Used in processes requiring rapid response but tolerating brief outages; it engages secondary processors quickly without seamless transition.",
     "crumbs": [
       "Ressources",
-      "Git Hub workflow"
+      "Redundancy"
     ]
   },
   {
-    "objectID": "LearningMore/swdev.html#best-practices",
-    "href": "LearningMore/swdev.html#best-practices",
-    "title": "Software development on the flatsat",
+    "objectID": "LearningMore/redundancy.html#hot-redundant-systems",
+    "href": "LearningMore/redundancy.html#hot-redundant-systems",
+    "title": "Hot, Warm, and Cold Redundant Systems",
     "section": "",
-    "text": "To optimize GitFlow usage and maintain a smooth development process, consider the following practices:\n\nFrequent Commits and Atomic Changes: Make small, focused commits to ease code reviews and bug tracking.\nClear Branch Naming Conventions: Use prefixes (feature/, release/, hotfix/) for clarity in identifying branch purposes.\nDescriptive Commit Messages: Document each change with a concise message to aid in tracking and debugging.\nAutomate Testing and CI/CD: Run automated tests on all branches to catch issues early, ensuring only stable code reaches main.\nPull Requests for Merges: Use pull requests for merging to ensure code reviews and prevent conflicts.",
+    "text": "Hot redundancy enhances reliability by maintaining constant operation across components. It suits critical processes where interruptions are unacceptable.\n\n\nThe MTBF for n exponential units in parallel extends as additional units are added.",
     "crumbs": [
       "Ressources",
-      "Git Hub workflow"
+      "Redundancy"
     ]
   },
   {
-    "objectID": "LearningMore/swdev.html#advantages-of-gitflow",
-    "href": "LearningMore/swdev.html#advantages-of-gitflow",
-    "title": "Software development on the flatsat",
+    "objectID": "LearningMore/redundancy.html#cold-redundant-systems",
+    "href": "LearningMore/redundancy.html#cold-redundant-systems",
+    "title": "Hot, Warm, and Cold Redundant Systems",
     "section": "",
-    "text": "Improved Collaboration: Clearly defined branches reduce merge conflicts and enhance teamwork.\nStable Main Branch: Maintains production stability, allowing hotfixes without disrupting ongoing development.\nEnhanced Version Control: Organizes commits by type (feature, fix, release), helping trace development progress.",
+    "text": "Cold redundancy suits non-critical systems where downtime is manageable. It relies on standby units to activate after primary failure.",
     "crumbs": [
       "Ressources",
-      "Git Hub workflow"
+      "Redundancy"
     ]
   },
   {
-    "objectID": "LearningMore/swdev.html#conclusion",
-    "href": "LearningMore/swdev.html#conclusion",
-    "title": "Software development on the flatsat",
+    "objectID": "LearningMore/redundancy.html#warm-redundant-systems",
+    "href": "LearningMore/redundancy.html#warm-redundant-systems",
+    "title": "Hot, Warm, and Cold Redundant Systems",
     "section": "",
-    "text": "GitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.\nFor more details on GitFlow and best practices, refer to Atlassian’s GitFlow Tutorial, GitKraken’s Workflow Guide, and Stackademic’s Guide. ```",
+    "text": "A warm system allows standby units to synchronize periodically, suitable for processes that allow brief outages but require quick recovery.\n\n\n\nFirst Redundant Unit in hot redundancy increases reliability ~1.6x with MTBF mission time.\nCold Redundancy generally offers higher reliability when ideal switching is possible.\nWarm Redundancy minimizes system restart time, providing an intermediate solution for systems needing balance.\n\n\n\n\nCold redundancy provides a higher MTBF than hot or warm redundancy when extra units are added.",
     "crumbs": [
       "Ressources",
-      "Git Hub workflow"
+      "Redundancy"
+    ]
+  },
+  {
+    "objectID": "LearningMore/redundancy.html#conclusion",
+    "href": "LearningMore/redundancy.html#conclusion",
+    "title": "Hot, Warm, and Cold Redundant Systems",
+    "section": "",
+    "text": "Cold and warm redundancies offer distinct benefits in reliability and MTBF, each appropriate to specific system requirements..",
+    "crumbs": [
+      "Ressources",
+      "Redundancy"
     ]
   },
   {
@@ -229,7 +240,7 @@
     "href": "flatsat/ccsdspackets.html",
     "title": "CCSDS Space Communication Protocols",
     "section": "",
-    "text": "CCSDS standards ensure interoperability in space communications, defining three main protocols: - Space Packet Protocol (SPP): Structures and transports space data. - Telecommand (TC) Protocol: Sends commands from ground to a satellite. - Telemetry (TM) Protocol: Returns satellite telemetry to the ground.\n\n\n\nSPP (CCSDS 133.0-B-2) structures and transports data in “space packets.”\n\n\nA Space Packet shall include the defined fields, positioned contiguously, in the following sequence: 1. Packet Primary Header (6 octets, mandatory); 2. Packet Data Field (from 1 to 65536 octets, mandatory).\nA Space Packet shall consist of at least 7 and at most 65542 octets.\n\n\n\nSpace Packet Structural Components\n\n\n\n\n\n\nApplication Identification: Uses the APID (Application Process Identifier) field.\nData Flexibility: Variable packet sizes for adaptability.\nLayer Independence: Compatible with various link protocols.\n\n\n\n\nThe Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence: - Packet Version Number (3 bits, mandatory); - Packet Identification Field (13 bits, mandatory); - Packet Sequence Control Field (16 bits, mandatory); - Packet Data Length (16 bits, mandatory).\n\n\n\n\n\nThe purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.\nSecondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space\n\n\n\n\n\n\nA TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence: 1. Transfer Frame Header (5 octets, mandatory); 2. Transfer Frame Data Field (up to 1019 or 1017 octets, mandatory); 3. Frame Error Control Field (2 octets, optional).\n\n\n\nTC Transfer Frame Structural Components\n\n\nNOTES : - The TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity. - The maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here. - The structural components of the TC Transfer Frame are shown in figure.\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence: - Transfer Frame Version Number (2 bits, mandatory); - Bypass Flag (1 bit, mandatory); - Control Command Flag (1 bit, mandatory); - Reserved Spare (2 bits, mandatory); - Spacecraft Identifier (10 bits, mandatory); - Virtual Channel Identifier (6 bits, mandatory); - Frame Length (10 bits, mandatory); - Frame Sequence Number (8 bits, mandatory). - NOTE – The format of the Transfer Frame Primary Header is shown in figure.\n - - -\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransports data as packets\nN/A\n\n\nTC\nData Link\nSends commands\nSDLS Support\n\n\nTM\nData Link\nSends telemetry\nSDLS Support\n\n\n\n\n\n\n\n\nBoth CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.\nFor more details, see the full document on the ESA website.",
+    "text": "CCSDS standards ensure interoperability in space communications, defining three main protocols: - Space Packet Protocol (SPP): Structures and transports space data. - Telecommand (TC) Protocol: Sends commands from ground to a satellite. - Telemetry (TM) Protocol: Returns satellite telemetry to the ground.\n\n\n\nSPP (CCSDS 133.0-B-2) structures and transports data in “space packets.”\n\n\nA Space Packet shall include the defined fields, positioned contiguously, in the following sequence: 1. Packet Primary Header (6 octets, mandatory); 2. Packet Data Field (from 1 to 65536 octets, mandatory).\nA Space Packet shall consist of at least 7 and at most 65542 octets.\n\n\n\nSpace Packet Structural Components\n\n\n\n\n\n\nApplication Identification: Uses the APID (Application Process Identifier) field.\nData Flexibility: Variable packet sizes for adaptability.\nLayer Independence: Compatible with various link protocols.\n\n\n\n\nThe Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence: - Packet Version Number (3 bits, mandatory); - Packet Identification Field (13 bits, mandatory); - Packet Sequence Control Field (16 bits, mandatory); - Packet Data Length (16 bits, mandatory).\n\n\n\n\n\nThe purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.\nSecondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space\n\n\n\n\n\n\n\nA TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence: 1. Transfer Frame Header (5 octets, mandatory); 2. Transfer Frame Data Field (up to 1019 or 1017 octets, mandatory); 3. Frame Error Control Field (2 octets, optional).\n\n\n\nTC Transfer Frame Structural Components\n\n\nNOTES :\n\nThe TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.\nThe maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.\nThe structural components of the TC Transfer Frame are shown in figure.\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Version Number (2 bits, mandatory);\nBypass Flag (1 bit, mandatory);\nControl Command Flag (1 bit, mandatory);\nReserved Spare (2 bits, mandatory);\nSpacecraft Identifier (10 bits, mandatory);\nVirtual Channel Identifier (6 bits, mandatory);\nFrame Length (10 bits, mandatory);\nFrame Sequence Number (8 bits, mandatory).\nNOTE – The format of the Transfer Frame Primary Header is shown in figure.\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\n\n\nA TM Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Primary Header (6 octets, mandatory);\nTransfer Frame Secondary Header (up to 64 octets, optional);\nTransfer Frame Data Field (integral number of octets, mandatory);\nOperational Control Field (4 octets, optional);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTM Transfer Frame Structural Components\n\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of six fields, positioned contiguously, in the following sequence:\n\nMaster Channel Identifier (12 bits, mandatory);\nVirtual Channel Identifier (3 bits, mandatory);\nOperational Control Field Flag (1 bit, mandatory);\nMaster Channel Frame Count (1 octet, mandatory);\nVirtual Channel Frame Count (1 octet, mandatory);\nTransfer Frame Data Field Status (2 octets, mandatory).\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\nBits 32–47 of the Transfer Frame Primary Header shall contain the Transfer Frame Data Field Status.\nThis 16-bit field shall be sub-divided into five sub-fields, as follows:\n\nTransfer Frame Secondary Header Flag (1 bit, mandatory);\nSynchronization Flag (1 bit, mandatory);\nPacket Order Flag (1 bit, mandatory);\nSegment Length Identifier (2 bits, mandatory);\nFirst Header Pointer (11 bits, mandatory).\n\n\n\n\n\nIf present, the Transfer Frame Secondary Header shall follow, without gap, the Transfer Frame Primary Header.\nThe Transfer Frame Secondary Header shall consist of an integral number of octets as follows:\n\nTransfer Frame Secondary Header Identification Field (1 octet, mandatory);\nTransfer Frame Secondary Header Data Field (1 to 63 octets, mandatory).\n\n\n\n\nTransfer Frame Secondary Header\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransports data as packets\nN/A\n\n\nTC\nData Link\nSends commands\nSDLS Support\n\n\nTM\nData Link\nSends telemetry\nSDLS Support\n\n\n\n\n\n\n\n\nBoth CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.",
     "crumbs": [
       "Flatsat",
       "Space packets"
@@ -247,11 +258,22 @@
     ]
   },
   {
-    "objectID": "flatsat/ccsdspackets.html#tc-transfer-frame",
-    "href": "flatsat/ccsdspackets.html#tc-transfer-frame",
+    "objectID": "flatsat/ccsdspackets.html#tc-transfert-frame",
+    "href": "flatsat/ccsdspackets.html#tc-transfert-frame",
     "title": "CCSDS Space Communication Protocols",
     "section": "",
-    "text": "A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence: 1. Transfer Frame Header (5 octets, mandatory); 2. Transfer Frame Data Field (up to 1019 or 1017 octets, mandatory); 3. Frame Error Control Field (2 octets, optional).\n\n\n\nTC Transfer Frame Structural Components\n\n\nNOTES : - The TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity. - The maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here. - The structural components of the TC Transfer Frame are shown in figure.\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence: - Transfer Frame Version Number (2 bits, mandatory); - Bypass Flag (1 bit, mandatory); - Control Command Flag (1 bit, mandatory); - Reserved Spare (2 bits, mandatory); - Spacecraft Identifier (10 bits, mandatory); - Virtual Channel Identifier (6 bits, mandatory); - Frame Length (10 bits, mandatory); - Frame Sequence Number (8 bits, mandatory). - NOTE – The format of the Transfer Frame Primary Header is shown in figure.\n - - -\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransports data as packets\nN/A\n\n\nTC\nData Link\nSends commands\nSDLS Support\n\n\nTM\nData Link\nSends telemetry\nSDLS Support",
+    "text": "A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence: 1. Transfer Frame Header (5 octets, mandatory); 2. Transfer Frame Data Field (up to 1019 or 1017 octets, mandatory); 3. Frame Error Control Field (2 octets, optional).\n\n\n\nTC Transfer Frame Structural Components\n\n\nNOTES :\n\nThe TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.\nThe maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.\nThe structural components of the TC Transfer Frame are shown in figure.\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Version Number (2 bits, mandatory);\nBypass Flag (1 bit, mandatory);\nControl Command Flag (1 bit, mandatory);\nReserved Spare (2 bits, mandatory);\nSpacecraft Identifier (10 bits, mandatory);\nVirtual Channel Identifier (6 bits, mandatory);\nFrame Length (10 bits, mandatory);\nFrame Sequence Number (8 bits, mandatory).\nNOTE – The format of the Transfer Frame Primary Header is shown in figure.\n\n\n\n\nTransfer Frame Primary Header",
+    "crumbs": [
+      "Flatsat",
+      "Space packets"
+    ]
+  },
+  {
+    "objectID": "flatsat/ccsdspackets.html#tm-transfert-frame",
+    "href": "flatsat/ccsdspackets.html#tm-transfert-frame",
+    "title": "CCSDS Space Communication Protocols",
+    "section": "",
+    "text": "A TM Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Primary Header (6 octets, mandatory);\nTransfer Frame Secondary Header (up to 64 octets, optional);\nTransfer Frame Data Field (integral number of octets, mandatory);\nOperational Control Field (4 octets, optional);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTM Transfer Frame Structural Components\n\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of six fields, positioned contiguously, in the following sequence:\n\nMaster Channel Identifier (12 bits, mandatory);\nVirtual Channel Identifier (3 bits, mandatory);\nOperational Control Field Flag (1 bit, mandatory);\nMaster Channel Frame Count (1 octet, mandatory);\nVirtual Channel Frame Count (1 octet, mandatory);\nTransfer Frame Data Field Status (2 octets, mandatory).\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\nBits 32–47 of the Transfer Frame Primary Header shall contain the Transfer Frame Data Field Status.\nThis 16-bit field shall be sub-divided into five sub-fields, as follows:\n\nTransfer Frame Secondary Header Flag (1 bit, mandatory);\nSynchronization Flag (1 bit, mandatory);\nPacket Order Flag (1 bit, mandatory);\nSegment Length Identifier (2 bits, mandatory);\nFirst Header Pointer (11 bits, mandatory).\n\n\n\n\n\nIf present, the Transfer Frame Secondary Header shall follow, without gap, the Transfer Frame Primary Header.\nThe Transfer Frame Secondary Header shall consist of an integral number of octets as follows:\n\nTransfer Frame Secondary Header Identification Field (1 octet, mandatory);\nTransfer Frame Secondary Header Data Field (1 to 63 octets, mandatory).\n\n\n\n\nTransfer Frame Secondary Header\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransports data as packets\nN/A\n\n\nTC\nData Link\nSends commands\nSDLS Support\n\n\nTM\nData Link\nSends telemetry\nSDLS Support",
     "crumbs": [
       "Flatsat",
       "Space packets"
@@ -262,7 +284,7 @@
     "href": "flatsat/ccsdspackets.html#conclusion",
     "title": "CCSDS Space Communication Protocols",
     "section": "",
-    "text": "Both CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.\nFor more details, see the full document on the ESA website.",
+    "text": "Both CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.",
     "crumbs": [
       "Flatsat",
       "Space packets"
@@ -328,7 +350,18 @@
     "href": "flatsat/yamcs.html",
     "title": "Yamcs Overview",
     "section": "",
-    "text": "Yamcs is an open-source software for real-time mission control, providing tools for spacecraft and ground system operations.\n\n\n\nTelemetry Processing: Real-time telemetry data processing.\nTelecommands: Command satellites or spacecraft.\nAlarms & Notifications: Configurable alarms based on thresholds.\nData Replay: Allows mission data replay.\nStandards Compliance: Supports CCSDS, CFDP, and XTCE standards.\n\n\n\n\nTo set up Yamcs, follow the Getting Started Guide covering installation, configuration, and basic usage.\n\n\n\nThe Python Yamcs Client supports telemetry retrieval, commanding, and historical data access via Python for custom mission applications.\n\n\n\nYamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training. ```\nThis revised version improves readability and structure by enhancing header hierarchy, separating sections clearly, and refining table alignment. The use of consistent bullet points and simplified phrasing also aids clarity.",
+    "text": "Yamcs is an open-source software for real-time mission control, providing tools for spacecraft and ground system operations.\n\n\n\n\nTelemetry Processing: Real-time telemetry data processing.\nTelecommands: Command satellites or spacecraft.\nAlarms & Notifications: Configurable alarms based on thresholds.\nData Replay: Allows mission data replay.\nStandards Compliance: Supports CCSDS, CFDP, and XTCE standards.\n\n\n\n\nTo set up Yamcs, follow the Getting Started Guide covering installation, configuration, and basic usage.\n\n\n\nThe Python Yamcs Client supports telemetry retrieval, commanding, and historical data access via Python for custom mission applications.\n\n\n\nYamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training.\n\n\n\nThe current FlatSat setup is progressively integrating direct CAN messaging with YAMCS, including the capability to transmit commands via the radio link.\n\nYAMCS, as the ground software, generates CAN-TCs to be delivered over the CAN bus. This process requires a mission database to define PUS services, which in our case is structured using the SCOS-2000 format.\nSimultaneously, a library is being developed based on the YAMCS Python client. This library aims to provide a more user-friendly interface for developing test scripts.",
+    "crumbs": [
+      "Flatsat",
+      "yamcs interface and Endurance flatsat library"
+    ]
+  },
+  {
+    "objectID": "flatsat/yamcs.html#introduction",
+    "href": "flatsat/yamcs.html#introduction",
+    "title": "Yamcs Overview",
+    "section": "",
+    "text": "Yamcs is an open-source software for real-time mission control, providing tools for spacecraft and ground system operations.",
     "crumbs": [
       "Flatsat",
       "yamcs interface and Endurance flatsat library"
@@ -372,7 +405,18 @@
     "href": "flatsat/yamcs.html#extensions-and-support",
     "title": "Yamcs Overview",
     "section": "",
-    "text": "Yamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training. ```\nThis revised version improves readability and structure by enhancing header hierarchy, separating sections clearly, and refining table alignment. The use of consistent bullet points and simplified phrasing also aids clarity.",
+    "text": "Yamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training.",
+    "crumbs": [
+      "Flatsat",
+      "yamcs interface and Endurance flatsat library"
+    ]
+  },
+  {
+    "objectID": "flatsat/yamcs.html#flatsat-set-up",
+    "href": "flatsat/yamcs.html#flatsat-set-up",
+    "title": "Yamcs Overview",
+    "section": "",
+    "text": "The current FlatSat setup is progressively integrating direct CAN messaging with YAMCS, including the capability to transmit commands via the radio link.\n\nYAMCS, as the ground software, generates CAN-TCs to be delivered over the CAN bus. This process requires a mission database to define PUS services, which in our case is structured using the SCOS-2000 format.\nSimultaneously, a library is being developed based on the YAMCS Python client. This library aims to provide a more user-friendly interface for developing test scripts.",
     "crumbs": [
       "Flatsat",
       "yamcs interface and Endurance flatsat library"
@@ -489,179 +533,201 @@
     ]
   },
   {
-    "objectID": "LearningMore/redundancy.html",
-    "href": "LearningMore/redundancy.html",
-    "title": "Hot, Warm, and Cold Redundant Systems",
+    "objectID": "LearningMore/swdev.html",
+    "href": "LearningMore/swdev.html",
+    "title": "Software development on the flatsat",
     "section": "",
-    "text": "Sources:\n\nReliability Engineering 2 (1981), G. N. Sharma, Space Applications Centre, India\nCold, warm and hot redundancy: determining how much you need\n\n\n\n\nUnplanned failures in spaceborne and ground systems are minimized with redundancy, either active (hot), standby (cold), or intermediate (warm). This paper examines both types in detail to optimize reliability.\n\n\n\n\n[R]hs: Reliability of hot redundant system\n[R]cs: Reliability of cold redundant system\nMTBF: Mean Time Between Failures\nr: Reliability of a single unit\n\n\n\n\nReliability for critical systems can be achieved through different redundancy strategies:\n\nHot Redundancy: All units operate simultaneously, allowing for instant failover.\nCold Redundancy: Only one unit is operational, with standby units activated if needed.\nWarm Redundancy (per Automation IT): Used in processes requiring rapid response but tolerating brief outages; it engages secondary processors quickly without seamless transition.\n\n\n\n\nHot redundancy enhances reliability by maintaining constant operation across components. It suits critical processes where interruptions are unacceptable.\n\n\nThe MTBF for n exponential units in parallel extends as additional units are added.\n\n\n\n\nCold redundancy suits non-critical systems where downtime is manageable. It relies on standby units to activate after primary failure.\n\n\n\nA warm system allows standby units to synchronize periodically, suitable for processes that allow brief outages but require quick recovery.\n\n\n\nFirst Redundant Unit in hot redundancy increases reliability ~1.6x with MTBF mission time.\nCold Redundancy generally offers higher reliability when ideal switching is possible.\nWarm Redundancy minimizes system restart time, providing an intermediate solution for systems needing balance.\n\n\n\n\nCold redundancy provides a higher MTBF than hot or warm redundancy when extra units are added.\n\n\n\n\nCold and warm redundancies offer distinct benefits in reliability and MTBF, each appropriate to specific system requirements..",
+    "text": "GitFlow is a branching strategy designed to streamline development, testing, and deployment processes in larger projects. It defines structured branches and workflows for managing features, releases, and urgent fixes in a way that maintains a stable codebase and enables continuous development.\n\n\n\nGitFlow primarily uses five branch types:\n\nMain (master): The stable branch reflecting the current production code. Only release and hotfix branches are merged into main, maintaining its stability.\nDevelop: This branch holds the latest accepted developments. New features and improvements are merged into develop, which serves as the basis for release branches.\nFeature: Created from develop to work on new features or enhancements. Feature branches are short-lived and must be integrated back into develop after completion.\nRelease: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.\nHotfix: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.\n\n\n\n\n\n\nFeature Development:\n\nStart a feature branch from develop using a clear prefix like feature/feature-name.\nImplement the feature, commit changes, and push the branch if needed.\nUpon completion, merge the feature branch back into develop and delete it.\n\nPreparing a Release:\n\nWhen develop is stable and ready for a release, create a release branch (e.g., release/1.0).\nFinalize minor adjustments and version updates on the release branch.\nOnce testing and fixes are complete, merge it into both main and develop. Tag this commit for reference.\n\nHotfixes:\n\nHotfixes are created directly from main for urgent production issues.\nAfter the fix, merge the hotfix branch into both main and develop to ensure the codebase remains consistent.\n\n\n\n\n\n\nTo optimize GitFlow usage and maintain a smooth development process, consider the following practices:\n\nFrequent Commits and Atomic Changes: Make small, focused commits to ease code reviews and bug tracking.\nClear Branch Naming Conventions: Use prefixes (feature/, release/, hotfix/) for clarity in identifying branch purposes.\nDescriptive Commit Messages: Document each change with a concise message to aid in tracking and debugging.\nAutomate Testing and CI/CD: Run automated tests on all branches to catch issues early, ensuring only stable code reaches main.\nPull Requests for Merges: Use pull requests for merging to ensure code reviews and prevent conflicts.\n\n\n\n\n\n\nImproved Collaboration: Clearly defined branches reduce merge conflicts and enhance teamwork.\nStable Main Branch: Maintains production stability, allowing hotfixes without disrupting ongoing development.\nEnhanced Version Control: Organizes commits by type (feature, fix, release), helping trace development progress.\n\n\n\n\n\nGitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.\nFor more details on GitFlow and best practices, refer to Atlassian’s GitFlow Tutorial, GitKraken’s Workflow Guide, and Stackademic’s Guide. ```",
     "crumbs": [
       "Ressources",
-      "Redundancy"
+      "Git Hub workflow"
     ]
   },
   {
-    "objectID": "LearningMore/redundancy.html#abstract",
-    "href": "LearningMore/redundancy.html#abstract",
-    "title": "Hot, Warm, and Cold Redundant Systems",
+    "objectID": "LearningMore/swdev.html#branching-model",
+    "href": "LearningMore/swdev.html#branching-model",
+    "title": "Software development on the flatsat",
     "section": "",
-    "text": "Unplanned failures in spaceborne and ground systems are minimized with redundancy, either active (hot), standby (cold), or intermediate (warm). This paper examines both types in detail to optimize reliability.",
+    "text": "GitFlow primarily uses five branch types:\n\nMain (master): The stable branch reflecting the current production code. Only release and hotfix branches are merged into main, maintaining its stability.\nDevelop: This branch holds the latest accepted developments. New features and improvements are merged into develop, which serves as the basis for release branches.\nFeature: Created from develop to work on new features or enhancements. Feature branches are short-lived and must be integrated back into develop after completion.\nRelease: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.\nHotfix: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.",
     "crumbs": [
       "Ressources",
-      "Redundancy"
+      "Git Hub workflow"
     ]
   },
   {
-    "objectID": "LearningMore/redundancy.html#notation",
-    "href": "LearningMore/redundancy.html#notation",
-    "title": "Hot, Warm, and Cold Redundant Systems",
+    "objectID": "LearningMore/swdev.html#workflow-process",
+    "href": "LearningMore/swdev.html#workflow-process",
+    "title": "Software development on the flatsat",
     "section": "",
-    "text": "[R]hs: Reliability of hot redundant system\n[R]cs: Reliability of cold redundant system\nMTBF: Mean Time Between Failures\nr: Reliability of a single unit",
+    "text": "Feature Development:\n\nStart a feature branch from develop using a clear prefix like feature/feature-name.\nImplement the feature, commit changes, and push the branch if needed.\nUpon completion, merge the feature branch back into develop and delete it.\n\nPreparing a Release:\n\nWhen develop is stable and ready for a release, create a release branch (e.g., release/1.0).\nFinalize minor adjustments and version updates on the release branch.\nOnce testing and fixes are complete, merge it into both main and develop. Tag this commit for reference.\n\nHotfixes:\n\nHotfixes are created directly from main for urgent production issues.\nAfter the fix, merge the hotfix branch into both main and develop to ensure the codebase remains consistent.",
     "crumbs": [
       "Ressources",
-      "Redundancy"
+      "Git Hub workflow"
     ]
   },
   {
-    "objectID": "LearningMore/redundancy.html#introduction",
-    "href": "LearningMore/redundancy.html#introduction",
-    "title": "Hot, Warm, and Cold Redundant Systems",
+    "objectID": "LearningMore/swdev.html#best-practices",
+    "href": "LearningMore/swdev.html#best-practices",
+    "title": "Software development on the flatsat",
     "section": "",
-    "text": "Reliability for critical systems can be achieved through different redundancy strategies:\n\nHot Redundancy: All units operate simultaneously, allowing for instant failover.\nCold Redundancy: Only one unit is operational, with standby units activated if needed.\nWarm Redundancy (per Automation IT): Used in processes requiring rapid response but tolerating brief outages; it engages secondary processors quickly without seamless transition.",
+    "text": "To optimize GitFlow usage and maintain a smooth development process, consider the following practices:\n\nFrequent Commits and Atomic Changes: Make small, focused commits to ease code reviews and bug tracking.\nClear Branch Naming Conventions: Use prefixes (feature/, release/, hotfix/) for clarity in identifying branch purposes.\nDescriptive Commit Messages: Document each change with a concise message to aid in tracking and debugging.\nAutomate Testing and CI/CD: Run automated tests on all branches to catch issues early, ensuring only stable code reaches main.\nPull Requests for Merges: Use pull requests for merging to ensure code reviews and prevent conflicts.",
     "crumbs": [
       "Ressources",
-      "Redundancy"
+      "Git Hub workflow"
     ]
   },
   {
-    "objectID": "LearningMore/redundancy.html#hot-redundant-systems",
-    "href": "LearningMore/redundancy.html#hot-redundant-systems",
-    "title": "Hot, Warm, and Cold Redundant Systems",
+    "objectID": "LearningMore/swdev.html#advantages-of-gitflow",
+    "href": "LearningMore/swdev.html#advantages-of-gitflow",
+    "title": "Software development on the flatsat",
     "section": "",
-    "text": "Hot redundancy enhances reliability by maintaining constant operation across components. It suits critical processes where interruptions are unacceptable.\n\n\nThe MTBF for n exponential units in parallel extends as additional units are added.",
+    "text": "Improved Collaboration: Clearly defined branches reduce merge conflicts and enhance teamwork.\nStable Main Branch: Maintains production stability, allowing hotfixes without disrupting ongoing development.\nEnhanced Version Control: Organizes commits by type (feature, fix, release), helping trace development progress.",
     "crumbs": [
       "Ressources",
-      "Redundancy"
+      "Git Hub workflow"
     ]
   },
   {
-    "objectID": "LearningMore/redundancy.html#cold-redundant-systems",
-    "href": "LearningMore/redundancy.html#cold-redundant-systems",
-    "title": "Hot, Warm, and Cold Redundant Systems",
+    "objectID": "LearningMore/swdev.html#conclusion",
+    "href": "LearningMore/swdev.html#conclusion",
+    "title": "Software development on the flatsat",
     "section": "",
-    "text": "Cold redundancy suits non-critical systems where downtime is manageable. It relies on standby units to activate after primary failure.",
+    "text": "GitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.\nFor more details on GitFlow and best practices, refer to Atlassian’s GitFlow Tutorial, GitKraken’s Workflow Guide, and Stackademic’s Guide. ```",
     "crumbs": [
       "Ressources",
-      "Redundancy"
+      "Git Hub workflow"
     ]
   },
   {
-    "objectID": "LearningMore/redundancy.html#warm-redundant-systems",
-    "href": "LearningMore/redundancy.html#warm-redundant-systems",
-    "title": "Hot, Warm, and Cold Redundant Systems",
+    "objectID": "LearningMore/platform.html",
+    "href": "LearningMore/platform.html",
+    "title": "Rewind on Satellite platform and subsystems",
     "section": "",
-    "text": "A warm system allows standby units to synchronize periodically, suitable for processes that allow brief outages but require quick recovery.\n\n\n\nFirst Redundant Unit in hot redundancy increases reliability ~1.6x with MTBF mission time.\nCold Redundancy generally offers higher reliability when ideal switching is possible.\nWarm Redundancy minimizes system restart time, providing an intermediate solution for systems needing balance.\n\n\n\n\nCold redundancy provides a higher MTBF than hot or warm redundancy when extra units are added.",
+    "text": "graph TD\n    A[**Subsystems**]:::main\n    A --&gt; B[**Payload**]\n    A --&gt; C[**Power Subsystem**]\n    A --&gt; D[**Propulsion Subsystem**]\n    A --&gt; E[**Structure Subsystem**]\n    A --&gt; F[**Thermal Subsystem**]\n    A --&gt; G[**AOCS**&lt;br&gt;**Attitude and Orbit Control System**]\n    A --&gt; H[**TM/TC Subsystem**]\n    A --&gt; I[**OBC Subsystem**]\n\n    classDef main font-size:30px, font-weight:bold, color:#ffffff;\n    classDef payload fill:#a05a87, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef power fill:#5f8b95, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef propulsion fill:#999999, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef structure fill:#4a66a1, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef thermal fill:#c49d1d, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef aocs fill:#7f4f7f, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef tmtc fill:#a69d19, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef obc fill:#3b9cc4, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n\n    class B payload;\n    class C power;\n    class D propulsion;\n    class E structure;\n    class F thermal;\n    class G aocs;\n    class H tmtc;\n    class I obc;\n\n\n\n\n\n\n\n\n\n\nComponents:\n\nSolar Panels: Generate electrical power by converting solar energy.\nBatteries: Store energy for use when the satellite is in Earth’s shadow.\n\nPurpose: Provides and regulates power for all satellite subsystems.\nPower Output: Typically between 10 and 20 kW, depending on satellite design and mission requirements.\n\n\n\n\n\n\ngraph TD\n    A[Power Subsystem] --&gt; B[Solar Panels]\n    A --&gt; C[Batteries]\n    B --&gt; D[Generate Power]\n    C --&gt; E[Store Power]\n\n\n\n\n\n\n\n\n\n\nFunctions:\n\nPositioning (Initial Orbit Insertion): Places the satellite in its intended geostationary orbit.\nStation Keeping: Maintains satellite’s position against gravitational forces.\nDeorbiting: Ensures controlled descent at the end of the mission, removing the satellite from orbit.\n\nTypes of Propulsion:\n\nChemical Propulsion: Provides high thrust for orbit changes.\nElectric Propulsion: Efficient for station-keeping maneuvers, using less fuel over time.\n\n\n\n\n\n\n\ngraph TD\n    F[Propulsion Subsystem] --&gt; G[Positioning]\n    F --&gt; H[Station Keeping]\n    F --&gt; I[Deorbiting]\n    G --&gt; J[Chemical Propulsion]\n    H --&gt; K[Electric Propulsion]\n\n\n\n\n\n\n\n\n\n\nPurpose: Provides mechanical integrity, ensuring satellite withstands the physical stresses during launch and operation.\nStress Factors:\n\nAcceleration: Up to 4.5 g during launch.\nAcoustic Pressure: Up to 140 dB due to intense launch sounds.\n\nComponents: Reinforced frame and materials designed for durability in the harsh space environment.\n\n\n\n\n\n\ngraph TD\n    L[Structure Subsystem] --&gt; M[Handles Launch Stresses]\n    M --&gt; N[Acceleration: up to 4.5 g]\n    M --&gt; O[Acoustic Pressure: up to 140 dB]\n\n\n\n\n\n\n\n\n\n\nFunction: Manages satellite temperature, preventing overheating or freezing of sensitive components.\nChallenges:\n\nSpace Temperature Variability: -120°C to +150°C.\n\nOptimal Temperature Ranges:\n\nBatteries: 0°C to +10°C.\nElectronics: 10°C to +45°C.\nAntennas: -150°C to +80°C.\n\nThermal Control Techniques:\n\nRadiators and Heat Pipes: Dissipate excess heat.\nInsulation: Protects against extreme cold.\n\n\n\n\n\n\n\ngraph TD\n    P[Thermal Subsystem] --&gt; Q[Temperature Management]\n    Q --&gt; R[Space Temperature: -120 to +150 degrees celsius]\n    Q --&gt; S[Controlled Ranges]\n    S --&gt; T[Batteries: 0  to +10 degrees celsius]\n    S --&gt; U[Electronics: 10  to +45 degrees celsius]\n    S --&gt; V[Antennas: -150 to +80 degrees celsius]\n\n\n\n\n\n\n\n\n\n\nPurpose: Maintains the satellite’s orientation and ensures it remains in its designated orbital position.\nComponents:\n\nGyroscopes: Measure orientation.\nReaction Wheels: Control attitude without expending fuel.\nThrusters: Adjust orbit as needed for station keeping.\n\nPositioning Requirements: Accuracy within a few kilometers, with specific orientations for antenna alignment and solar panel exposure.\n\n\n\n\n\n\ngraph TD\n    W[Attitude and Orbit Control System AOCS]\n    W --&gt; X[Maintains Orientation]\n    W --&gt; Y[Controls Orbital Position]\n    X --&gt; Z[Gyroscopes & Reaction Wheels]\n    Y --&gt; AA[Thrusters]\n\n\n\n\n\n\n\n\n\n\nTelemetry (TM): Continuously monitors satellite status and transmits data to ground control.\nTelecommand (TC): Receives commands from ground control to execute operational tasks.\nExample Operations: Power adjustments, orbit corrections, and data collection from sensors.\n\n\n\n\n\n\ngraph TD\n    AB[Telemetry & Telecommand Subsystem TM/TC]\n    AB --&gt; AC[Telemetry]\n    AB --&gt; AD[Telecommand]\n    AC --&gt; AE[Sends Data to Ground]\n    AD --&gt; AF[Receives Commands from Ground]\n\n\n\n\n\n\n\n\n\n\nRole: Acts as the satellite’s central processing unit, managing operations and coordinating responses to commands.\nFunctions:\n\nProcesses data from sensors and telemetry.\nExecutes control commands to other subsystems.\nStores critical mission data.\n\nExample: The OBC on ESA’s BepiColombo mission, which provides autonomous operations for deep space.\n\n\n\n\n\n\ngraph TD\n    AG[Onboard Computer OBC Subsystem]\n    AG --&gt; AH[Processes Data]\n    AG --&gt; AI[Executes Commands]\n    AG --&gt; AJ[Stores Mission Data]\n\n\n\n\n\n\n\nSource of Illustrations: Diagrams inspired by ESA and CNES for satellite subsystems and visualizations of Insat 3A, an Indian telecommunications satellite. ```\nThis expanded Markdown file provides a thorough breakdown of each subsystem, accompanied by Mermaid diagrams to illustrate their components and functions. Let me know if you would like to add further details or additional diagrams.",
     "crumbs": [
       "Ressources",
-      "Redundancy"
+      "Satellite Platform and subsystems"
     ]
   },
   {
-    "objectID": "LearningMore/redundancy.html#conclusion",
-    "href": "LearningMore/redundancy.html#conclusion",
-    "title": "Hot, Warm, and Cold Redundant Systems",
+    "objectID": "LearningMore/platform.html#overview",
+    "href": "LearningMore/platform.html#overview",
+    "title": "Rewind on Satellite platform and subsystems",
     "section": "",
-    "text": "Cold and warm redundancies offer distinct benefits in reliability and MTBF, each appropriate to specific system requirements..",
+    "text": "graph TD\n    A[**Subsystems**]:::main\n    A --&gt; B[**Payload**]\n    A --&gt; C[**Power Subsystem**]\n    A --&gt; D[**Propulsion Subsystem**]\n    A --&gt; E[**Structure Subsystem**]\n    A --&gt; F[**Thermal Subsystem**]\n    A --&gt; G[**AOCS**&lt;br&gt;**Attitude and Orbit Control System**]\n    A --&gt; H[**TM/TC Subsystem**]\n    A --&gt; I[**OBC Subsystem**]\n\n    classDef main font-size:30px, font-weight:bold, color:#ffffff;\n    classDef payload fill:#a05a87, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef power fill:#5f8b95, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef propulsion fill:#999999, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef structure fill:#4a66a1, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef thermal fill:#c49d1d, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef aocs fill:#7f4f7f, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef tmtc fill:#a69d19, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n    classDef obc fill:#3b9cc4, stroke:#000, stroke-width:1px, font-size:24px, color:#ffffff;\n\n    class B payload;\n    class C power;\n    class D propulsion;\n    class E structure;\n    class F thermal;\n    class G aocs;\n    class H tmtc;\n    class I obc;",
     "crumbs": [
       "Ressources",
-      "Redundancy"
+      "Satellite Platform and subsystems"
     ]
   },
   {
-    "objectID": "LearningMore/egse.html",
-    "href": "LearningMore/egse.html",
-    "title": "Electrical Ground Support Equipment (EGSE)",
+    "objectID": "LearningMore/platform.html#power-subsystem",
+    "href": "LearningMore/platform.html#power-subsystem",
+    "title": "Rewind on Satellite platform and subsystems",
     "section": "",
-    "text": "Electrical Ground Support Equipment (EGSE) is essential for the testing and support of spacecraft systems before launch. It consists of specialized equipment used to test the spacecraft’s electrical systems, simulate space conditions, and ensure that all components function as expected. EGSE is employed during the final phases of spacecraft assembly, integration, and testing (AIT) on the ground.\n\n\n\nThe primary purpose of EGSE is to prepare spacecraft for space missions by verifying their performance and functionality under simulated space conditions. EGSE equipment provides power, signal interfacing, and system diagnostics, ensuring that all spacecraft subsystems are operational before launch. This is crucial for avoiding costly failures post-launch.\n\n\n\n\n\nEGSE systems simulate the space environment (e.g., power conditions, signal behaviors) to test spacecraft electronics and control systems. This allows engineers to check how the spacecraft’s systems react to various scenarios, ensuring that all operations will go smoothly in orbit.\n\n\n\nEGSE supplies power to spacecraft components during testing. This includes providing various voltage levels, current, and regulation to simulate the spacecraft’s operational conditions while on Earth.\n\n\n\nThe equipment also ensures that the spacecraft’s communication systems work effectively by acting as an intermediary between spacecraft systems and testing equipment, facilitating proper data transmission and command signaling.\n\n\n\nEGSE is used to monitor spacecraft performance. Engineers can run diagnostic tests, check signal integrity, analyze power usage, and verify thermal and structural responses, helping to identify and resolve potential issues early in the testing process.\n\n\n\nThe comprehensive testing EGSE provides reduces the risk of system failure during space missions. By simulating different scenarios, EGSE allows engineers to confirm that all systems are functioning correctly and that there are no hidden defects that could compromise the mission.\n\n\n\n\nEGSE is typically composed of the following main elements:\n\nPower Systems: Provide the necessary electrical power for the spacecraft subsystems during testing.\nTest Controllers: Devices that control and monitor the test scenarios, ensuring proper operations.\nSimulation Systems: Equipment designed to simulate space environmental conditions such as radiation, temperature extremes, and vacuum.\nData Acquisition Systems: Monitor the data produced by spacecraft systems to evaluate their performance.\nCommunication Interfaces: Facilitate data exchange between the spacecraft and testing equipment.\n\n\n\n\nThere are two main types of EGSE:\n\nSpacecraft EGSE (S-EGSE): Designed specifically for testing the spacecraft itself, this system is responsible for monitoring and testing the spacecraft’s hardware.\nLaunch EGSE (L-EGSE): Focused on ensuring that launch-related systems, such as fueling and integration with the launch vehicle, are functioning correctly.\n\n\n\n\n\nSpacecraft Integration and Testing: EGSE is used during spacecraft assembly to ensure all systems are correctly integrated and functioning.\nLaunch Operations: EGSE plays a crucial role in testing the spacecraft before and after it is integrated with the launch vehicle.\nPost-launch Validation: Some EGSE systems are used to validate that spacecraft systems operate correctly after launch.\n\n\n\n\nEGSE is a vital part of the spacecraft testing process, ensuring that all systems function as required before they are sent into space. Its ability to simulate space conditions, provide power and data communication, and perform detailed diagnostics makes it indispensable for successful space missions. Without EGSE, the risk of mission failure would increase significantly, highlighting its importance in the aerospace industry.",
+    "text": "Components:\n\nSolar Panels: Generate electrical power by converting solar energy.\nBatteries: Store energy for use when the satellite is in Earth’s shadow.\n\nPurpose: Provides and regulates power for all satellite subsystems.\nPower Output: Typically between 10 and 20 kW, depending on satellite design and mission requirements.\n\n\n\n\n\n\ngraph TD\n    A[Power Subsystem] --&gt; B[Solar Panels]\n    A --&gt; C[Batteries]\n    B --&gt; D[Generate Power]\n    C --&gt; E[Store Power]",
     "crumbs": [
       "Ressources",
-      "EGSE"
+      "Satellite Platform and subsystems"
     ]
   },
   {
-    "objectID": "LearningMore/egse.html#introduction",
-    "href": "LearningMore/egse.html#introduction",
-    "title": "Electrical Ground Support Equipment (EGSE)",
+    "objectID": "LearningMore/platform.html#propulsion-subsystem",
+    "href": "LearningMore/platform.html#propulsion-subsystem",
+    "title": "Rewind on Satellite platform and subsystems",
     "section": "",
-    "text": "Electrical Ground Support Equipment (EGSE) is essential for the testing and support of spacecraft systems before launch. It consists of specialized equipment used to test the spacecraft’s electrical systems, simulate space conditions, and ensure that all components function as expected. EGSE is employed during the final phases of spacecraft assembly, integration, and testing (AIT) on the ground.",
+    "text": "Functions:\n\nPositioning (Initial Orbit Insertion): Places the satellite in its intended geostationary orbit.\nStation Keeping: Maintains satellite’s position against gravitational forces.\nDeorbiting: Ensures controlled descent at the end of the mission, removing the satellite from orbit.\n\nTypes of Propulsion:\n\nChemical Propulsion: Provides high thrust for orbit changes.\nElectric Propulsion: Efficient for station-keeping maneuvers, using less fuel over time.\n\n\n\n\n\n\n\ngraph TD\n    F[Propulsion Subsystem] --&gt; G[Positioning]\n    F --&gt; H[Station Keeping]\n    F --&gt; I[Deorbiting]\n    G --&gt; J[Chemical Propulsion]\n    H --&gt; K[Electric Propulsion]",
     "crumbs": [
       "Ressources",
-      "EGSE"
+      "Satellite Platform and subsystems"
     ]
   },
   {
-    "objectID": "LearningMore/egse.html#purpose-of-egse",
-    "href": "LearningMore/egse.html#purpose-of-egse",
-    "title": "Electrical Ground Support Equipment (EGSE)",
+    "objectID": "LearningMore/platform.html#structure-subsystem",
+    "href": "LearningMore/platform.html#structure-subsystem",
+    "title": "Rewind on Satellite platform and subsystems",
     "section": "",
-    "text": "The primary purpose of EGSE is to prepare spacecraft for space missions by verifying their performance and functionality under simulated space conditions. EGSE equipment provides power, signal interfacing, and system diagnostics, ensuring that all spacecraft subsystems are operational before launch. This is crucial for avoiding costly failures post-launch.",
+    "text": "Purpose: Provides mechanical integrity, ensuring satellite withstands the physical stresses during launch and operation.\nStress Factors:\n\nAcceleration: Up to 4.5 g during launch.\nAcoustic Pressure: Up to 140 dB due to intense launch sounds.\n\nComponents: Reinforced frame and materials designed for durability in the harsh space environment.\n\n\n\n\n\n\ngraph TD\n    L[Structure Subsystem] --&gt; M[Handles Launch Stresses]\n    M --&gt; N[Acceleration: up to 4.5 g]\n    M --&gt; O[Acoustic Pressure: up to 140 dB]",
     "crumbs": [
       "Ressources",
-      "EGSE"
+      "Satellite Platform and subsystems"
     ]
   },
   {
-    "objectID": "LearningMore/egse.html#key-functions",
-    "href": "LearningMore/egse.html#key-functions",
-    "title": "Electrical Ground Support Equipment (EGSE)",
+    "objectID": "LearningMore/platform.html#thermal-subsystem",
+    "href": "LearningMore/platform.html#thermal-subsystem",
+    "title": "Rewind on Satellite platform and subsystems",
     "section": "",
-    "text": "EGSE systems simulate the space environment (e.g., power conditions, signal behaviors) to test spacecraft electronics and control systems. This allows engineers to check how the spacecraft’s systems react to various scenarios, ensuring that all operations will go smoothly in orbit.\n\n\n\nEGSE supplies power to spacecraft components during testing. This includes providing various voltage levels, current, and regulation to simulate the spacecraft’s operational conditions while on Earth.\n\n\n\nThe equipment also ensures that the spacecraft’s communication systems work effectively by acting as an intermediary between spacecraft systems and testing equipment, facilitating proper data transmission and command signaling.\n\n\n\nEGSE is used to monitor spacecraft performance. Engineers can run diagnostic tests, check signal integrity, analyze power usage, and verify thermal and structural responses, helping to identify and resolve potential issues early in the testing process.\n\n\n\nThe comprehensive testing EGSE provides reduces the risk of system failure during space missions. By simulating different scenarios, EGSE allows engineers to confirm that all systems are functioning correctly and that there are no hidden defects that could compromise the mission.",
+    "text": "Function: Manages satellite temperature, preventing overheating or freezing of sensitive components.\nChallenges:\n\nSpace Temperature Variability: -120°C to +150°C.\n\nOptimal Temperature Ranges:\n\nBatteries: 0°C to +10°C.\nElectronics: 10°C to +45°C.\nAntennas: -150°C to +80°C.\n\nThermal Control Techniques:\n\nRadiators and Heat Pipes: Dissipate excess heat.\nInsulation: Protects against extreme cold.\n\n\n\n\n\n\n\ngraph TD\n    P[Thermal Subsystem] --&gt; Q[Temperature Management]\n    Q --&gt; R[Space Temperature: -120 to +150 degrees celsius]\n    Q --&gt; S[Controlled Ranges]\n    S --&gt; T[Batteries: 0  to +10 degrees celsius]\n    S --&gt; U[Electronics: 10  to +45 degrees celsius]\n    S --&gt; V[Antennas: -150 to +80 degrees celsius]",
     "crumbs": [
       "Ressources",
-      "EGSE"
+      "Satellite Platform and subsystems"
     ]
   },
   {
-    "objectID": "LearningMore/egse.html#components-of-egse",
-    "href": "LearningMore/egse.html#components-of-egse",
-    "title": "Electrical Ground Support Equipment (EGSE)",
+    "objectID": "LearningMore/platform.html#attitude-and-orbit-control-system-aocs",
+    "href": "LearningMore/platform.html#attitude-and-orbit-control-system-aocs",
+    "title": "Rewind on Satellite platform and subsystems",
     "section": "",
-    "text": "EGSE is typically composed of the following main elements:\n\nPower Systems: Provide the necessary electrical power for the spacecraft subsystems during testing.\nTest Controllers: Devices that control and monitor the test scenarios, ensuring proper operations.\nSimulation Systems: Equipment designed to simulate space environmental conditions such as radiation, temperature extremes, and vacuum.\nData Acquisition Systems: Monitor the data produced by spacecraft systems to evaluate their performance.\nCommunication Interfaces: Facilitate data exchange between the spacecraft and testing equipment.",
+    "text": "Purpose: Maintains the satellite’s orientation and ensures it remains in its designated orbital position.\nComponents:\n\nGyroscopes: Measure orientation.\nReaction Wheels: Control attitude without expending fuel.\nThrusters: Adjust orbit as needed for station keeping.\n\nPositioning Requirements: Accuracy within a few kilometers, with specific orientations for antenna alignment and solar panel exposure.\n\n\n\n\n\n\ngraph TD\n    W[Attitude and Orbit Control System AOCS]\n    W --&gt; X[Maintains Orientation]\n    W --&gt; Y[Controls Orbital Position]\n    X --&gt; Z[Gyroscopes & Reaction Wheels]\n    Y --&gt; AA[Thrusters]",
     "crumbs": [
       "Ressources",
-      "EGSE"
+      "Satellite Platform and subsystems"
     ]
   },
   {
-    "objectID": "LearningMore/egse.html#types-of-egse",
-    "href": "LearningMore/egse.html#types-of-egse",
-    "title": "Electrical Ground Support Equipment (EGSE)",
+    "objectID": "LearningMore/platform.html#telemetry-and-telecommand-tmtc-subsystem",
+    "href": "LearningMore/platform.html#telemetry-and-telecommand-tmtc-subsystem",
+    "title": "Rewind on Satellite platform and subsystems",
     "section": "",
-    "text": "There are two main types of EGSE:\n\nSpacecraft EGSE (S-EGSE): Designed specifically for testing the spacecraft itself, this system is responsible for monitoring and testing the spacecraft’s hardware.\nLaunch EGSE (L-EGSE): Focused on ensuring that launch-related systems, such as fueling and integration with the launch vehicle, are functioning correctly.",
+    "text": "Telemetry (TM): Continuously monitors satellite status and transmits data to ground control.\nTelecommand (TC): Receives commands from ground control to execute operational tasks.\nExample Operations: Power adjustments, orbit corrections, and data collection from sensors.\n\n\n\n\n\n\ngraph TD\n    AB[Telemetry & Telecommand Subsystem TM/TC]\n    AB --&gt; AC[Telemetry]\n    AB --&gt; AD[Telecommand]\n    AC --&gt; AE[Sends Data to Ground]\n    AD --&gt; AF[Receives Commands from Ground]",
     "crumbs": [
       "Ressources",
-      "EGSE"
+      "Satellite Platform and subsystems"
     ]
   },
   {
-    "objectID": "LearningMore/egse.html#applications-of-egse",
-    "href": "LearningMore/egse.html#applications-of-egse",
-    "title": "Electrical Ground Support Equipment (EGSE)",
+    "objectID": "LearningMore/platform.html#onboard-computer-obc-subsystem",
+    "href": "LearningMore/platform.html#onboard-computer-obc-subsystem",
+    "title": "Rewind on Satellite platform and subsystems",
     "section": "",
-    "text": "Spacecraft Integration and Testing: EGSE is used during spacecraft assembly to ensure all systems are correctly integrated and functioning.\nLaunch Operations: EGSE plays a crucial role in testing the spacecraft before and after it is integrated with the launch vehicle.\nPost-launch Validation: Some EGSE systems are used to validate that spacecraft systems operate correctly after launch.",
+    "text": "Role: Acts as the satellite’s central processing unit, managing operations and coordinating responses to commands.\nFunctions:\n\nProcesses data from sensors and telemetry.\nExecutes control commands to other subsystems.\nStores critical mission data.\n\nExample: The OBC on ESA’s BepiColombo mission, which provides autonomous operations for deep space.\n\n\n\n\n\n\ngraph TD\n    AG[Onboard Computer OBC Subsystem]\n    AG --&gt; AH[Processes Data]\n    AG --&gt; AI[Executes Commands]\n    AG --&gt; AJ[Stores Mission Data]\n\n\n\n\n\n\n\nSource of Illustrations: Diagrams inspired by ESA and CNES for satellite subsystems and visualizations of Insat 3A, an Indian telecommunications satellite. ```\nThis expanded Markdown file provides a thorough breakdown of each subsystem, accompanied by Mermaid diagrams to illustrate their components and functions. Let me know if you would like to add further details or additional diagrams.",
     "crumbs": [
       "Ressources",
-      "EGSE"
+      "Satellite Platform and subsystems"
     ]
   },
   {
-    "objectID": "LearningMore/egse.html#conclusion",
-    "href": "LearningMore/egse.html#conclusion",
-    "title": "Electrical Ground Support Equipment (EGSE)",
+    "objectID": "LearningMore/yamcsbasesetup.html",
+    "href": "LearningMore/yamcsbasesetup.html",
+    "title": "How to Set Up and Test a New MDB in Yamcs",
     "section": "",
-    "text": "EGSE is a vital part of the spacecraft testing process, ensuring that all systems function as required before they are sent into space. Its ability to simulate space conditions, provide power and data communication, and perform detailed diagnostics makes it indispensable for successful space missions. Without EGSE, the risk of mission failure would increase significantly, highlighting its importance in the aerospace industry.",
+    "text": "This guide will walk you through integrating SCOS2000-based Mission Database (MDB) files with Yamcs. For additional reference, see the SCOS2k manual.\n\n\n\n\n\nYamcs uses Maven for dependency management and to run the server. To install Maven, follow the instructions for your operating system:\n\nUbuntu/Debian:\nsudo apt update\nsudo apt install maven\nmacOS (with Homebrew):\nbrew install maven\nWindows: Download Maven, extract it, and add the bin directory to your PATH.\n\nVerify the installation: bash    mvn -version\n\n\n\nYou can install Java 17 with the following command: sudo apt install openjdk-17-jdk\nIf you have more than one Java version installed, you can pick the one you want to use with the following command: sudo update-alternatives --config java\n\n\n\n\n\nClone the Yamcs quick start repo” git clone https://github.com/yamcs/quickstart.git myproject\nFor more information, refer to the Yamcs Getting Started guide.\nMake sure your project has the following organization for smooth MDB integration with Yamcs:\nmyproject/\n|-- README.md\n|-- pom.xml\n|-- simulator.py\n|-- src\n|   `-- main\n|       |-- java\n|       |   `-- com\n|       |       `-- example\n|       |           `-- myproject\n|       |               |-- MyCommandPostprocessor.java\n|       |               `-- MyPacketPreprocessor.java\n|       `-- yamcs\n|           |-- etc\n|           |   |-- processor.yaml\n|           |   |-- yamcs.myproject.yaml\n|           |   `-- yamcs.yaml\n|           `-- mdb\n|               `-- xtce.xml\n`-- testdata.ccsds\n\n\n\n\nPlace the MDB Files\nCopy your MDB files into myproject/src/main/yamcs/mdb.\nConfigure Yamcs for MIB Loading\nEdit myproject/src/main/yamcs/etc/yamcs.myproject.yaml to specify the MIB loader in the mdb section:\nmdb:\n   - type: \"org.yamcs.scos2k.MibLoader\"\n     args:\n        path: \"mdb/Scos2k_v0_2\"\n        TM:\n          vblParamLengthBytes: 1\n          typeOffset: 7\n          subTypeOffset: 8\n          pus1DataOffset: 20\n        TC:\n          vblParamLengthBytes: 0\nAdd the Dependency\nIn myproject/pom.xml, add the SCOS2k dependency in the &lt;dependencies&gt; section:\n&lt;dependency&gt;\n   &lt;groupId&gt;org.yamcs&lt;/groupId&gt;\n   &lt;artifactId&gt;yamcs-scos2k&lt;/artifactId&gt;\n   &lt;version&gt;0.4.1&lt;/version&gt;\n&lt;/dependency&gt;\nRun Yamcs\nFrom your project directory, start Yamcs with Maven:\ncd myproject/\nmvn yamcs:run\n\nNow you can set up the candump command (from the librairy can utils) to see can packets going through the virtual CAN :\nsudo ip link add dev vcan0 type vcan\nsudo ip link set up vcan0\ncandump -i vcan0",
     "crumbs": [
       "Ressources",
-      "EGSE"
+      "Set up a basic yamcs with a custom scos2000 MiB"
+    ]
+  },
+  {
+    "objectID": "LearningMore/yamcsbasesetup.html#prerequisites",
+    "href": "LearningMore/yamcsbasesetup.html#prerequisites",
+    "title": "How to Set Up and Test a New MDB in Yamcs",
+    "section": "",
+    "text": "Yamcs uses Maven for dependency management and to run the server. To install Maven, follow the instructions for your operating system:\n\nUbuntu/Debian:\nsudo apt update\nsudo apt install maven\nmacOS (with Homebrew):\nbrew install maven\nWindows: Download Maven, extract it, and add the bin directory to your PATH.\n\nVerify the installation: bash    mvn -version\n\n\n\nYou can install Java 17 with the following command: sudo apt install openjdk-17-jdk\nIf you have more than one Java version installed, you can pick the one you want to use with the following command: sudo update-alternatives --config java",
+    "crumbs": [
+      "Ressources",
+      "Set up a basic yamcs with a custom scos2000 MiB"
+    ]
+  },
+  {
+    "objectID": "LearningMore/yamcsbasesetup.html#project-structure-for-mdb-integration",
+    "href": "LearningMore/yamcsbasesetup.html#project-structure-for-mdb-integration",
+    "title": "How to Set Up and Test a New MDB in Yamcs",
+    "section": "",
+    "text": "Clone the Yamcs quick start repo” git clone https://github.com/yamcs/quickstart.git myproject\nFor more information, refer to the Yamcs Getting Started guide.\nMake sure your project has the following organization for smooth MDB integration with Yamcs:\nmyproject/\n|-- README.md\n|-- pom.xml\n|-- simulator.py\n|-- src\n|   `-- main\n|       |-- java\n|       |   `-- com\n|       |       `-- example\n|       |           `-- myproject\n|       |               |-- MyCommandPostprocessor.java\n|       |               `-- MyPacketPreprocessor.java\n|       `-- yamcs\n|           |-- etc\n|           |   |-- processor.yaml\n|           |   |-- yamcs.myproject.yaml\n|           |   `-- yamcs.yaml\n|           `-- mdb\n|               `-- xtce.xml\n`-- testdata.ccsds\n\n\n\n\nPlace the MDB Files\nCopy your MDB files into myproject/src/main/yamcs/mdb.\nConfigure Yamcs for MIB Loading\nEdit myproject/src/main/yamcs/etc/yamcs.myproject.yaml to specify the MIB loader in the mdb section:\nmdb:\n   - type: \"org.yamcs.scos2k.MibLoader\"\n     args:\n        path: \"mdb/Scos2k_v0_2\"\n        TM:\n          vblParamLengthBytes: 1\n          typeOffset: 7\n          subTypeOffset: 8\n          pus1DataOffset: 20\n        TC:\n          vblParamLengthBytes: 0\nAdd the Dependency\nIn myproject/pom.xml, add the SCOS2k dependency in the &lt;dependencies&gt; section:\n&lt;dependency&gt;\n   &lt;groupId&gt;org.yamcs&lt;/groupId&gt;\n   &lt;artifactId&gt;yamcs-scos2k&lt;/artifactId&gt;\n   &lt;version&gt;0.4.1&lt;/version&gt;\n&lt;/dependency&gt;\nRun Yamcs\nFrom your project directory, start Yamcs with Maven:\ncd myproject/\nmvn yamcs:run\n\nNow you can set up the candump command (from the librairy can utils) to see can packets going through the virtual CAN :\nsudo ip link add dev vcan0 type vcan\nsudo ip link set up vcan0\ncandump -i vcan0",
+    "crumbs": [
+      "Ressources",
+      "Set up a basic yamcs with a custom scos2000 MiB"
     ]
   }
 ]

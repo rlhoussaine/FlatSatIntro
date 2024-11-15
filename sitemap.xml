@@ -2,42 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rlhoussaine.github.io/FlatSatIntro/index.html</loc>
-    <lastmod>2024-11-15T08:52:29.553Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rlhoussaine.github.io/FlatSatIntro/LearningMore/platform.html</loc>
-    <lastmod>2024-11-15T08:52:29.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rlhoussaine.github.io/FlatSatIntro/LearningMore/swdev.html</loc>
-    <lastmod>2024-11-15T08:52:29.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/ccsdspackets.html</loc>
-    <lastmod>2024-11-15T08:52:29.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/flatsat.html</loc>
-    <lastmod>2024-11-15T08:52:29.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/yamcs.html</loc>
-    <lastmod>2024-11-15T08:52:29.553Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/can.html</loc>
-    <lastmod>2024-11-15T08:52:29.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/endurance.html</loc>
-    <lastmod>2024-11-15T08:52:29.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rlhoussaine.github.io/FlatSatIntro/LearningMore/redundancy.html</loc>
-    <lastmod>2024-11-15T08:52:29.537Z</lastmod>
+    <lastmod>2024-11-15T10:25:55.707Z</lastmod>
   </url>
   <url>
     <loc>https://rlhoussaine.github.io/FlatSatIntro/LearningMore/egse.html</loc>
-    <lastmod>2024-11-15T08:52:29.537Z</lastmod>
+    <lastmod>2024-11-15T10:25:55.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/LearningMore/redundancy.html</loc>
+    <lastmod>2024-11-15T10:25:55.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/().html</loc>
+    <lastmod>2024-11-15T10:25:55.623Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/ccsdspackets.html</loc>
+    <lastmod>2024-11-15T10:25:55.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/flatsat.html</loc>
+    <lastmod>2024-11-15T10:25:55.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/yamcs.html</loc>
+    <lastmod>2024-11-15T10:25:55.703Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/can.html</loc>
+    <lastmod>2024-11-15T10:25:55.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/flatsat/endurance.html</loc>
+    <lastmod>2024-11-15T10:25:55.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/LearningMore/swdev.html</loc>
+    <lastmod>2024-11-15T10:25:55.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/LearningMore/platform.html</loc>
+    <lastmod>2024-11-15T10:25:55.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rlhoussaine.github.io/FlatSatIntro/LearningMore/yamcsbasesetup.html</loc>
+    <lastmod>2024-11-15T10:25:55.687Z</lastmod>
   </url>
 </urlset>

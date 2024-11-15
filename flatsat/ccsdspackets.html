@@ -193,6 +193,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Git Hub workflow</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LearningMore/yamcsbasesetup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Set up a basic yamcs with a custom scos2000 MiB</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -214,9 +220,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#packet-primary-header" id="toc-packet-primary-header" class="nav-link" data-scroll-target="#packet-primary-header">Packet primary header</a></li>
   <li><a href="#packet-secondary-header" id="toc-packet-secondary-header" class="nav-link" data-scroll-target="#packet-secondary-header">Packet secondary header</a></li>
   </ul></li>
-  <li><a href="#tc-transfer-frame" id="toc-tc-transfer-frame" class="nav-link" data-scroll-target="#tc-transfer-frame">TC TRANSFER FRAME</a>
+  <li><a href="#tc-transfert-frame" id="toc-tc-transfert-frame" class="nav-link" data-scroll-target="#tc-transfert-frame">TC transfert frame</a>
   <ul class="collapse">
   <li><a href="#tranfer-frame-primary-header" id="toc-tranfer-frame-primary-header" class="nav-link" data-scroll-target="#tranfer-frame-primary-header">Tranfer frame primary header</a></li>
+  </ul></li>
+  <li><a href="#tm-transfert-frame" id="toc-tm-transfert-frame" class="nav-link" data-scroll-target="#tm-transfert-frame">TM transfert frame</a>
+  <ul class="collapse">
+  <li><a href="#transfer-frame-primary-header" id="toc-transfer-frame-primary-header" class="nav-link" data-scroll-target="#transfer-frame-primary-header">Transfer frame primary header</a></li>
+  <li><a href="#transfer-frame-data-field-status" id="toc-transfer-frame-data-field-status" class="nav-link" data-scroll-target="#transfer-frame-data-field-status">Transfer frame data field status</a></li>
+  <li><a href="#transfer-frame-secondary-header" id="toc-transfer-frame-secondary-header" class="nav-link" data-scroll-target="#transfer-frame-secondary-header">Transfer frame secondary header</a></li>
   <li><a href="#protocol-comparison" id="toc-protocol-comparison" class="nav-link" data-scroll-target="#protocol-comparison">Protocol Comparison</a></li>
   </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
@@ -267,11 +279,12 @@ ul.task-list li input[type="checkbox"] {
 <li><p>The purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.</p></li>
 <li><p>Secondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space</p></li>
 </ol>
+<p><img src="images/psh.png" class="img-fluid"></p>
 <hr>
 </section>
 </section>
-<section id="tc-transfer-frame" class="level2">
-<h2 class="anchored" data-anchor-id="tc-transfer-frame">TC TRANSFER FRAME</h2>
+<section id="tc-transfert-frame" class="level2">
+<h2 class="anchored" data-anchor-id="tc-transfert-frame">TC transfert frame</h2>
 <p>A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence: 1. Transfer Frame Header (5 octets, mandatory); 2. Transfer Frame Data Field (up to 1019 or 1017 octets, mandatory); 3. Frame Error Control Field (2 octets, optional).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -279,11 +292,96 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>TC Transfer Frame Structural Components</figcaption>
 </figure>
 </div>
-<p>NOTES : - The TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity. - The maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here. - The structural components of the TC Transfer Frame are shown in figure.</p>
+<p>NOTES :</p>
+<ul>
+<li>The TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.</li>
+<li>The maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.</li>
+<li>The structural components of the TC Transfer Frame are shown in figure.</li>
+</ul>
 <section id="tranfer-frame-primary-header" class="level3">
 <h3 class="anchored" data-anchor-id="tranfer-frame-primary-header">Tranfer frame primary header</h3>
-<p>The Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence: - Transfer Frame Version Number (2 bits, mandatory); - Bypass Flag (1 bit, mandatory); - Control Command Flag (1 bit, mandatory); - Reserved Spare (2 bits, mandatory); - Spacecraft Identifier (10 bits, mandatory); - Virtual Channel Identifier (6 bits, mandatory); - Frame Length (10 bits, mandatory); - Frame Sequence Number (8 bits, mandatory). - NOTE – The format of the Transfer Frame Primary Header is shown in figure.</p>
-<p><img src="images/TCprimary.png" class="img-fluid" alt="Transfer Frame Primary Header"> - - -</p>
+<p>The Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:</p>
+<ul>
+<li>Transfer Frame Version Number (2 bits, mandatory);</li>
+<li>Bypass Flag (1 bit, mandatory);</li>
+<li>Control Command Flag (1 bit, mandatory);</li>
+<li>Reserved Spare (2 bits, mandatory);</li>
+<li>Spacecraft Identifier (10 bits, mandatory);</li>
+<li>Virtual Channel Identifier (6 bits, mandatory);</li>
+<li>Frame Length (10 bits, mandatory);</li>
+<li>Frame Sequence Number (8 bits, mandatory).</li>
+<li>NOTE – The format of the Transfer Frame Primary Header is shown in figure.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/TCprimary.png" class="img-fluid figure-img"></p>
+<figcaption>Transfer Frame Primary Header</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+</section>
+<section id="tm-transfert-frame" class="level2">
+<h2 class="anchored" data-anchor-id="tm-transfert-frame">TM transfert frame</h2>
+<p>A TM Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:</p>
+<ul>
+<li>Transfer Frame Primary Header (6 octets, mandatory);</li>
+<li>Transfer Frame Secondary Header (up to 64 octets, optional);</li>
+<li>Transfer Frame Data Field (integral number of octets, mandatory);</li>
+<li>Operational Control Field (4 octets, optional);</li>
+<li>Frame Error Control Field (2 octets, optional).</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/TMframe.png" class="img-fluid figure-img"></p>
+<figcaption>TM Transfer Frame Structural Components</figcaption>
+</figure>
+</div>
+<section id="transfer-frame-primary-header" class="level3">
+<h3 class="anchored" data-anchor-id="transfer-frame-primary-header">Transfer frame primary header</h3>
+<p>The Transfer Frame Primary Header is mandatory and shall consist of six fields, positioned contiguously, in the following sequence:</p>
+<ul>
+<li>Master Channel Identifier (12 bits, mandatory);</li>
+<li>Virtual Channel Identifier (3 bits, mandatory);</li>
+<li>Operational Control Field Flag (1 bit, mandatory);</li>
+<li>Master Channel Frame Count (1 octet, mandatory);</li>
+<li>Virtual Channel Frame Count (1 octet, mandatory);</li>
+<li>Transfer Frame Data Field Status (2 octets, mandatory).</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/TMph.png" class="img-fluid figure-img"></p>
+<figcaption>Transfer Frame Primary Header</figcaption>
+</figure>
+</div>
+</section>
+<section id="transfer-frame-data-field-status" class="level3">
+<h3 class="anchored" data-anchor-id="transfer-frame-data-field-status">Transfer frame data field status</h3>
+<p>Bits 32–47 of the Transfer Frame Primary Header shall contain the Transfer Frame Data Field Status.</p>
+<p>This 16-bit field shall be sub-divided into five sub-fields, as follows:</p>
+<ul>
+<li>Transfer Frame Secondary Header Flag (1 bit, mandatory);</li>
+<li>Synchronization Flag (1 bit, mandatory);</li>
+<li>Packet Order Flag (1 bit, mandatory);</li>
+<li>Segment Length Identifier (2 bits, mandatory);</li>
+<li>First Header Pointer (11 bits, mandatory).</li>
+</ul>
+<p><img src="images/TMdfs.png" class="img-fluid"></p>
+</section>
+<section id="transfer-frame-secondary-header" class="level3">
+<h3 class="anchored" data-anchor-id="transfer-frame-secondary-header">Transfer frame secondary header</h3>
+<p>If present, the Transfer Frame Secondary Header shall follow, without gap, the Transfer Frame Primary Header.</p>
+<p>The Transfer Frame Secondary Header shall consist of an integral number of octets as follows:</p>
+<ul>
+<li>Transfer Frame Secondary Header Identification Field (1 octet, mandatory);</li>
+<li>Transfer Frame Secondary Header Data Field (1 to 63 octets, mandatory).</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/TMsh.png" class="img-fluid figure-img"></p>
+<figcaption>Transfer Frame Secondary Header</figcaption>
+</figure>
+</div>
 <hr>
 </section>
 <section id="protocol-comparison" class="level3">
@@ -330,7 +428,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>Both CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.</p>
-<p>For more details, see the full document on the <a href="https://indico.esa.int/event/276/contributions/4535/attachments/3482/4593/W32_-_CAN-TS_protocol_for_memory_constrained_embedded_application.pdf">ESA website</a>.</p>
 <hr>
 
 
