@@ -258,6 +258,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Release</strong>: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.</li>
 <li><strong>Hotfix</strong>: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.</li>
 </ul>
+<p><img src="images/basic.png" class="img-fluid"></p>
 <hr>
 </section>
 <section id="workflow-process" class="level2">
@@ -269,18 +270,25 @@ ul.task-list li input[type="checkbox"] {
 <li>Implement the feature, commit changes, and push the branch if needed.</li>
 <li>Upon completion, merge the feature branch back into <code>develop</code> and delete it.</li>
 </ul></li>
+</ol>
+<p><img src="images/feature.png" class="img-fluid"></p>
+<ol start="2" type="1">
 <li><strong>Preparing a Release</strong>:
 <ul>
 <li>When <code>develop</code> is stable and ready for a release, create a release branch (e.g., <code>release/1.0</code>).</li>
 <li>Finalize minor adjustments and version updates on the release branch.</li>
 <li>Once testing and fixes are complete, merge it into both <code>main</code> and <code>develop</code>. Tag this commit for reference.</li>
 </ul></li>
+</ol>
+<p><img src="images/release.png" class="img-fluid"></p>
+<ol start="3" type="1">
 <li><strong>Hotfixes</strong>:
 <ul>
 <li>Hotfixes are created directly from <code>main</code> for urgent production issues.</li>
 <li>After the fix, merge the hotfix branch into both <code>main</code> and <code>develop</code> to ensure the codebase remains consistent.</li>
 </ul></li>
 </ol>
+<p><img src="images/hotfix.png" class="img-fluid"></p>
 <hr>
 </section>
 <section id="best-practices" class="level2">
@@ -307,7 +315,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>GitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.</p>
-<p>For more details on GitFlow and best practices, refer to <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Atlassian’s GitFlow Tutorial</a>, <a href="https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy">GitKraken’s Workflow Guide</a>, and <a href="https://stackademic.com/blog/git-workflow-best-practices-for-a-smooth-and-efficient-development-process">Stackademic’s Guide</a>. ```</p>
+<p>For more details on GitFlow and best practices, refer to <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Atlassian’s GitFlow Tutorial</a>, <a href="https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy">GitKraken’s Workflow Guide</a>, and <a href="https://stackademic.com/blog/git-workflow-best-practices-for-a-smooth-and-efficient-development-process">Stackademic’s Guide</a>.</p>
 
 
 </section>
