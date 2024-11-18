@@ -6,6 +6,8 @@ website:
   title: "FlatSat Introduction Presentation"
   site-url: "https://rlhoussaine.github.io/FlatSatIntro/"
 
+  favicon: images/wsl.png
+
   repo-url: https://github.com/rlhoussaine/FlatSatIntro
   repo-actions: [edit, issue]
 
