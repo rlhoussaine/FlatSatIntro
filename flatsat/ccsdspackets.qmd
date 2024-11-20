@@ -50,6 +50,16 @@ contiguously, in the following sequence:
 
 ![](images/psh.png)
 
+### SPP over CAN-TS
+
+When communicating between the ground and the OBC, the packets flow on the CAN bus with CAN-TS protocol and also on and of radio frequency through the intermediary of a radio. Essentially, the 
+packet remains untouched except for the primary header.
+When the radio receives a TC from the ground, it will send fragment it into 8 byte CAN packets. The first packet to be transmitted onto the bus is the Primary header of the SPP packet which needs to be acknowledged by the OBC in order for it to send the rest of the datafield. The primary header gets two modifications done to it:
+1. The addition of a 1 byte "prefix" byte (always 0x01) - the 6 byte header - a 7 bit counter - a 1 bit "first" flag
+2. To mitigate all possible confusion between CAN-TS packets and SPP packets, the primary header sends the bytes in reverse order.
+This is also applied for the TM. For the Radio to understand its an SPP packet, the OBC needs to send the primary header in reverse order.
+
+The rest of the datafield remains untouched.
 ---
 
 ## TC transfert frame
