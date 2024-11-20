@@ -16,7 +16,7 @@ Designed for applications with limited memory, such as aerospace systems, CAN-TS
 ### Key Features
 - **Lightweight Design**: Optimized for 8/16-bit architectures, minimizing memory overhead.
 - **Basic Communication Services**: Includes telemetry, telecommand, time synchronization, and bus redundancy management.
-- **Open Source**: Available on GitHub for easy adoption.
+- **Free to use**: Skylabs is the owner of the CAN-TS documentation but it can be requested for free
 
 ### Advantages
 - **Memory Efficiency**: Ideal for memory-constrained systems.
