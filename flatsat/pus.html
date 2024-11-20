@@ -226,6 +226,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#packet-sequence-count" id="toc-packet-sequence-count" class="nav-link" data-scroll-target="#packet-sequence-count">Packet Sequence Count</a></li>
   <li><a href="#packet-data-length-field" id="toc-packet-data-length-field" class="nav-link" data-scroll-target="#packet-data-length-field">Packet Data Length Field</a></li>
   <li><a href="#packet-data-field-structure" id="toc-packet-data-field-structure" class="nav-link" data-scroll-target="#packet-data-field-structure">Packet Data Field Structure</a></li>
+  <li><a href="#telecommand-packet-data-field" id="toc-telecommand-packet-data-field" class="nav-link" data-scroll-target="#telecommand-packet-data-field">Telecommand Packet Data Field</a></li>
   <li><a href="#comprehensive-overview-of-the-packet-utilization-standard-pus" id="toc-comprehensive-overview-of-the-packet-utilization-standard-pus" class="nav-link" data-scroll-target="#comprehensive-overview-of-the-packet-utilization-standard-pus">Comprehensive Overview of the Packet Utilization Standard (PUS)</a>
   <ul class="collapse">
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
@@ -325,56 +326,104 @@ ul.task-list li input[type="checkbox"] {
 <col style="width: 2%">
 <col style="width: 2%">
 </colgroup>
-<thead>
-<tr class="header">
-<th>##</th>
-<th>#</th>
-<th style="text-align: right;">Telemetry Packet Data Field</th>
-</tr>
-</thead>
 <tbody>
 <tr class="odd">
 <td>##</td>
 <td>#</td>
-<td style="text-align: right;">Telecommand Packet Data Field</td>
+<td>Telemetry Packet Data Field</td>
 </tr>
 <tr class="even">
 <td>##</td>
 <td>##</td>
-<td style="text-align: right;">Telecommand Packet Secondary Header</td>
+<td>Telemetry Packet Secondary Header</td>
 </tr>
 <tr class="odd">
 <td>![</td>
 <td>](</td>
-<td style="text-align: right;">images/pustc.png)</td>
+<td>images/pustm.png)</td>
 </tr>
 <tr class="even">
 <td>1.</td>
 <td>* -</td>
-<td style="text-align: right;">*Presence**: All telecommand packets include a secondary header, except for CPDU command packets.</td>
+<td>*Presence**: All telemetry packets, except spacecraft time packets, include a secondary header.</td>
 </tr>
 <tr class="odd">
 <td>2.</td>
 <td>* -</td>
-<td style="text-align: right;">*Structure<strong>: </strong>Fields<strong>: - </strong>Acknowledgement Flags<strong>: 4 bits, controls reporting of request states: - Bit 3: Successful acceptance by the destination application process. - Bit 2: Successful start of execution by the destination application process. - Bit 1: Progress reporting of execution. - Bit 0: Successful completion of execution. - </strong>PUS Version<strong>: 4 bits, set to </strong>2<strong>. - </strong>Message Type ID<strong>: 8 bits, enumerated. - </strong>Service Type ID<strong>: 8 bits, enumerated. - </strong>Message Subtype ID<strong>: 8 bits, enumerated. - </strong>Source ID<strong>: 16 bits, identifies the source application process. - </strong>Spare Field**: Optional, aligns header size to integral words.</td>
+<td>*Structure<strong>: </strong>Fields<strong>: - </strong>Spacecraft Time<strong>: Absolute, fixed-size. - </strong>PUS Version<strong>: 4 bits, set to </strong>2<strong>. - </strong>Reference Number<strong>: 4 bits, enumerated. - </strong>Message Type ID<strong>: 8 bits, enumerated. - </strong>Service Type ID<strong>: 8 bits, enumerated. - </strong>Message Subtype ID<strong>: 8 bits, enumerated. - </strong>Message Counter<strong>: 16 bits, unsigned integer. - </strong>Destination ID<strong>: Application process user identifier. - </strong>Spare Field**: Optional, used to align header size to integral words.</td>
 </tr>
 <tr class="even">
 <td>3.</td>
-<td>* - -</td>
-<td style="text-align: right;">*Request Metadata<strong>: </strong>Message Type ID<strong>: Set to the identifier of the request. </strong>Source ID**: Set to the source identifier of the issuing application process.</td>
+<td>* -</td>
+<td>*Time Reference<strong>: </strong>Status<strong>: - If capable, set to the status of the onboard time reference when tagging packets. - If not capable, set to </strong>0<strong>. </strong>Time Tag**: Stored in the time field of the header.</td>
 </tr>
 <tr class="odd">
 <td>4.</td>
-<td>* -</td>
-<td style="text-align: right;">*Declaration Requirements**: Presence and bit-size of the spare field must be declared for each application process.</td>
+<td>* - -</td>
+<td>*Message Metadata<strong>: </strong>Type ID<strong>: Set to the identifier of the report. </strong>Counter<strong>: - If capable, set to the count of messages of this type. - If not capable, set to </strong>0**.</td>
 </tr>
 <tr class="even">
-<td>## - - -</td>
-<td>## Th Ac Th</td>
-<td style="text-align: right;">Notes: e <strong>PUS Version</strong> reflects compliance with ECSS-E-ST-70-41C (version 2). knowledgement flags provide flexibility in managing state reporting for telecommand requests. e <strong>Spare Field</strong> ensures compatibility with system-specific requirements.</td>
+<td>5.</td>
+<td>* - -</td>
+<td>*Declaration Requirements**: Presence and bit-size of the spare field must be declared for each application process. Time field PFC (Packet Format Control) must align with the spacecraft’s time service.</td>
+</tr>
+<tr class="odd">
+<td>## - -</td>
+<td>## Th Th</td>
+<td>Notes: e <strong>PUS Version</strong> indicates compliance with ECSS-E-ST-70-41C (version 2). e <strong>Spare Field</strong> adjusts header length and is application-specific.</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="telecommand-packet-data-field" class="level3">
+<h3 class="anchored" data-anchor-id="telecommand-packet-data-field">Telecommand Packet Data Field</h3>
+<section id="telecommand-packet-secondary-header" class="level4">
+<h4 class="anchored" data-anchor-id="telecommand-packet-secondary-header">Telecommand Packet Secondary Header</h4>
+<p><img src="images/pustc.png" class="img-fluid"></p>
+<ol type="1">
+<li><strong>Presence</strong>:
+<ul>
+<li>All telecommand packets include a secondary header, except for CPDU command packets.</li>
+</ul></li>
+<li><strong>Structure</strong>:
+<ul>
+<li><strong>Fields</strong>:
+<ul>
+<li><strong>Acknowledgement Flags</strong>: 4 bits, controls reporting of request states:
+<ul>
+<li>Bit 3: Successful acceptance by the destination application process.</li>
+<li>Bit 2: Successful start of execution by the destination application process.</li>
+<li>Bit 1: Progress reporting of execution.</li>
+<li>Bit 0: Successful completion of execution.</li>
+</ul></li>
+<li><strong>PUS Version</strong>: 4 bits, set to <strong>2</strong>.</li>
+<li><strong>Message Type ID</strong>: 8 bits, enumerated.</li>
+<li><strong>Service Type ID</strong>: 8 bits, enumerated.</li>
+<li><strong>Message Subtype ID</strong>: 8 bits, enumerated.</li>
+<li><strong>Source ID</strong>: 16 bits, identifies the source application process.</li>
+<li><strong>Spare Field</strong>: Optional, aligns header size to integral words.</li>
+</ul></li>
+</ul></li>
+<li><strong>Request Metadata</strong>:
+<ul>
+<li><strong>Message Type ID</strong>: Set to the identifier of the request.</li>
+<li><strong>Source ID</strong>: Set to the source identifier of the issuing application process.</li>
+</ul></li>
+<li><strong>Declaration Requirements</strong>:
+<ul>
+<li>Presence and bit-size of the spare field must be declared for each application process.</li>
+</ul></li>
+</ol>
+</section>
+<section id="notes" class="level4">
+<h4 class="anchored" data-anchor-id="notes">Notes:</h4>
+<ul>
+<li>The <strong>PUS Version</strong> reflects compliance with ECSS-E-ST-70-41C (version 2).</li>
+<li>Acknowledgement flags provide flexibility in managing state reporting for telecommand requests.</li>
+<li>The <strong>Spare Field</strong> ensures compatibility with system-specific requirements.</li>
+</ul>
+<hr>
+</section>
 </section>
 <section id="comprehensive-overview-of-the-packet-utilization-standard-pus" class="level2">
 <h2 class="anchored" data-anchor-id="comprehensive-overview-of-the-packet-utilization-standard-pus">Comprehensive Overview of the Packet Utilization Standard (PUS)</h2>
