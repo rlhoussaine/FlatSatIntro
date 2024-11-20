@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "flatsat/pus.qmd",
+                "file": "flatsat/flatsat.qmd",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "pus"
+              "title": "flatsat"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "flatsat/pus.qmd"
+                "file": "flatsat/flatsat.qmd"
               },
               "icon": "lucide-list",
-              "title": "Plan de pus"
+              "title": "Plan de flatsat"
             }
           },
           {
@@ -194,9 +194,9 @@
   },
   "active": "b995b538f41a1a94",
   "lastOpenFiles": [
+    "flatsat/pus.qmd",
     "flatsat/can.qmd",
     "flatsat/ccsdspackets.qmd",
-    "flatsat/pus.qmd",
     "flatsat/images/startadress.png",
     "LearningMore/yamcsbasesetup.qmd",
     "flatsat/images/TMdfs.png",

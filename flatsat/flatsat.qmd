@@ -17,7 +17,7 @@ A FlatSat for CubeSat might include:
 - **On-Board Computer (OBC)**
 - **Power System**
 - **Telemetry and Radio System**
-- **Attitude and Orbit Control**
+- **Attitude Determination  and Control System** (**ADCS**)
 - **Navigation Receiver**
 
 Additional slots are often available for custom hardware or experimental components, such as AI-based detection algorithms or radiation monitoring payloads.
@@ -53,9 +53,10 @@ The flatsat includes:
 
 **Note**: Mission OBCs differ from guidance, navigation, and control ([GNC](https://indico.esa.int/event/181/contributions/1436/attachments/1385/1610/ESA_GNC_Technologies_and_Test_Beds_for_ADR_and_Space_Tug_Applications.pdf)) OBCs (Rendezvous & Grippers) and attitude (ADCS) OBCs, which are also in warm redundancy pairs.
 
-Three communication protocols are used:
+This architecture contains 3 main networks :
 
-- **Ethernet**
+- Best effort **Ethernet**
 - **CAN-TS**
 - **CAN-Open**
 
+It also contains point to point communications through LVDS and RS422
