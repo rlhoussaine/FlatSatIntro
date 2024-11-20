@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "flatsat/can.qmd",
+                "file": "flatsat/pus.qmd",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "can"
+              "title": "pus"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "flatsat/can.qmd"
+                "file": "flatsat/pus.qmd"
               },
               "icon": "lucide-list",
-              "title": "Plan de can"
+              "title": "Plan de pus"
             }
           },
           {
@@ -194,6 +194,7 @@
   },
   "active": "b995b538f41a1a94",
   "lastOpenFiles": [
+    "flatsat/can.qmd",
     "flatsat/ccsdspackets.qmd",
     "flatsat/pus.qmd",
     "flatsat/images/startadress.png",
@@ -202,7 +203,6 @@
     "flatsat/images/pustc.png",
     "flatsat/images/pustm.png",
     "flatsat/pus.md",
-    "flatsat/can.qmd",
     "flatsat/images/puframe.png",
     "flatsat/flatsat.qmd",
     "flatsat/endurance.qmd",
