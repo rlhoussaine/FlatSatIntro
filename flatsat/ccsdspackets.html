@@ -226,6 +226,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
   <li><a href="#packet-primary-header" id="toc-packet-primary-header" class="nav-link" data-scroll-target="#packet-primary-header">Packet primary header</a></li>
   <li><a href="#packet-secondary-header" id="toc-packet-secondary-header" class="nav-link" data-scroll-target="#packet-secondary-header">Packet secondary header</a></li>
+  <li><a href="#spp-over-can-ts" id="toc-spp-over-can-ts" class="nav-link" data-scroll-target="#spp-over-can-ts">SPP over CAN-TS</a></li>
   </ul></li>
   <li><a href="#tc-transfert-frame" id="toc-tc-transfert-frame" class="nav-link" data-scroll-target="#tc-transfert-frame">TC transfert frame</a>
   <ul class="collapse">
@@ -298,6 +299,11 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Secondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space</p></li>
 </ol>
 <p><img src="images/psh.png" class="img-fluid"></p>
+</section>
+<section id="spp-over-can-ts" class="level3">
+<h3 class="anchored" data-anchor-id="spp-over-can-ts">SPP over CAN-TS</h3>
+<p>When communicating between the ground and the OBC, the packets flow on the CAN bus with CAN-TS protocol and also on and of radio frequency through the intermediary of a radio. Essentially, the packet remains untouched except for the primary header. When the radio receives a TC from the ground, it will send fragment it into 8 byte CAN packets. The first packet to be transmitted onto the bus is the Primary header of the SPP packet which needs to be acknowledged by the OBC in order for it to send the rest of the datafield. The primary header gets two modifications done to it: 1. The addition of a 1 byte “prefix” byte (always 0x01) - the 6 byte header - a 7 bit counter - a 1 bit “first” flag 2. To mitigate all possible confusion between CAN-TS packets and SPP packets, the primary header sends the bytes in reverse order. This is also applied for the TM. For the Radio to understand its an SPP packet, the OBC needs to send the primary header in reverse order.</p>
+<p>The rest of the datafield remains untouched.</p>
 <hr>
 </section>
 </section>
