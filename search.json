@@ -372,7 +372,7 @@
     "href": "flatsat/flatsat.html#typical-components",
     "title": "Flatsat Overview",
     "section": "Typical Components",
-    "text": "Typical Components\nA FlatSat for CubeSat might include: - On-Board Computer (OBC) - Power System - Telemetry and Radio System - Attitude and Orbit Control - Navigation Receiver\nAdditional slots are often available for custom hardware or experimental components, such as AI-based detection algorithms or radiation monitoring payloads.",
+    "text": "Typical Components\nA FlatSat for CubeSat might include: - On-Board Computer (OBC) - Power System - Telemetry and Radio System - Attitude Determination and Control System (ADCS) - Navigation Receiver\nAdditional slots are often available for custom hardware or experimental components, such as AI-based detection algorithms or radiation monitoring payloads.",
     "crumbs": [
       "Flatsat",
       "About the flatsat"
@@ -394,7 +394,7 @@
     "href": "flatsat/flatsat.html#endurance-flatsat",
     "title": "Flatsat Overview",
     "section": "Endurance Flatsat",
-    "text": "Endurance Flatsat\n\nRessources\n\nEndurance software spec\n\n\n\nEndurance data handling architecture\nTo describe the different components of the flatsat planned for Endurance, I’m using the DHS view, which allows me to outline the communication protocols between the various systems.\n\nThe flatsat includes:\n\nFlight software\nTwo mission onboard computers (OBCs) in warm redundancy to manage AOCS (orbit), PU, Com, Th, and equipment\nGround segment software (Yamcs) for communication with the OBC\nEGSE for pre-launch spacecraft testing and simulation\nFlatsat computer\nSimulation software\nPower supply\n\nNote: Mission OBCs differ from guidance, navigation, and control (GNC) OBCs (Rendezvous & Grippers) and attitude (ADCS) OBCs, which are also in warm redundancy pairs.\nThree communication protocols are used:\n\nEthernet\nCAN-TS\nCAN-Open",
+    "text": "Endurance Flatsat\n\nRessources\n\nEndurance software spec\n\n\n\nEndurance data handling architecture\nTo describe the different components of the flatsat planned for Endurance, I’m using the DHS view, which allows me to outline the communication protocols between the various systems.\n\nThe flatsat includes:\n\nFlight software\nTwo mission onboard computers (OBCs) in warm redundancy to manage AOCS (orbit), PU, Com, Th, and equipment\nGround segment software (Yamcs) for communication with the OBC\nEGSE for pre-launch spacecraft testing and simulation\nFlatsat computer\nSimulation software\nPower supply\n\nNote: Mission OBCs differ from guidance, navigation, and control (GNC) OBCs (Rendezvous & Grippers) and attitude (ADCS) OBCs, which are also in warm redundancy pairs.\nThis architecture contains 3 main networks :\n\nBest effort Ethernet\nCAN-TS\nCAN-Open\n\nIt also contains point to point communications through LVDS and RS422",
     "crumbs": [
       "Flatsat",
       "About the flatsat"

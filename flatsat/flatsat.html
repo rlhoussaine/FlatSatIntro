@@ -269,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="typical-components" class="level2">
 <h2 class="anchored" data-anchor-id="typical-components">Typical Components</h2>
-<p>A FlatSat for CubeSat might include: - <strong>On-Board Computer (OBC)</strong> - <strong>Power System</strong> - <strong>Telemetry and Radio System</strong> - <strong>Attitude and Orbit Control</strong> - <strong>Navigation Receiver</strong></p>
+<p>A FlatSat for CubeSat might include: - <strong>On-Board Computer (OBC)</strong> - <strong>Power System</strong> - <strong>Telemetry and Radio System</strong> - <strong>Attitude Determination and Control System</strong> (<strong>ADCS</strong>) - <strong>Navigation Receiver</strong></p>
 <p>Additional slots are often available for custom hardware or experimental components, such as AI-based detection algorithms or radiation monitoring payloads.</p>
 </section>
 <section id="advantages" class="level2">
@@ -304,12 +304,13 @@ ul.task-list li input[type="checkbox"] {
 <li>Power supply</li>
 </ul>
 <p><strong>Note</strong>: Mission OBCs differ from guidance, navigation, and control (<a href="https://indico.esa.int/event/181/contributions/1436/attachments/1385/1610/ESA_GNC_Technologies_and_Test_Beds_for_ADR_and_Space_Tug_Applications.pdf">GNC</a>) OBCs (Rendezvous &amp; Grippers) and attitude (ADCS) OBCs, which are also in warm redundancy pairs.</p>
-<p>Three communication protocols are used:</p>
+<p>This architecture contains 3 main networks :</p>
 <ul>
-<li><strong>Ethernet</strong></li>
+<li>Best effort <strong>Ethernet</strong></li>
 <li><strong>CAN-TS</strong></li>
 <li><strong>CAN-Open</strong></li>
 </ul>
+<p>It also contains point to point communications through LVDS and RS422</p>
 
 
 </section>
