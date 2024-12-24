@@ -1,5 +1,5 @@
 ---
-title: Endurance Overview
+title: Endurance Overview.
 ---
 ![](images/Linkedin_Banner.png){width=95%}
 
