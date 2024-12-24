@@ -1,637 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "End-to-End FlatSat Service Overview",
-    "section": "",
-    "text": "Welcome to the Flatsat team! These upcoming pages serve as a supplement to the various meetings you’ll attend upon joining, rather than replacing them. Here, we won’t cover the company’s overall history, broader projects, or general onboarding, but will focus specifically on the activities tied to the Flatsat team and the Flatsat-related developments.\nIn summary, we’ll start with a brief introduction to the Endurance project to set the context, then discuss the purpose of developing a flatsat and its practical implementation within the project. Finally, we’ll explore the current testing phase regarding telecommunications between ground software and the flatsat components. We’ll begin with simple, direct communication over communication channels before advancing to a more complex setup that includes radio communication.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "End-to-End FlatSat Service Overview",
-    "section": "",
-    "text": "Welcome to the Flatsat team! These upcoming pages serve as a supplement to the various meetings you’ll attend upon joining, rather than replacing them. Here, we won’t cover the company’s overall history, broader projects, or general onboarding, but will focus specifically on the activities tied to the Flatsat team and the Flatsat-related developments.\nIn summary, we’ll start with a brief introduction to the Endurance project to set the context, then discuss the purpose of developing a flatsat and its practical implementation within the project. Finally, we’ll explore the current testing phase regarding telecommunications between ground software and the flatsat components. We’ll begin with simple, direct communication over communication channels before advancing to a more complex setup that includes radio communication.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#how-to-read-this-document",
-    "href": "index.html#how-to-read-this-document",
-    "title": "End-to-End FlatSat Service Overview",
-    "section": "How to Read This Document",
-    "text": "How to Read This Document\nThe goal of this document is to start with a quick overview of the Endurance project and gradually zoom in on the Flatsat’s implementation, leading to the current activities where new team members can find their starting point. By following each page in sequence, you should gain a deeper understanding of how and why we are developing the flatsat.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#whats-next",
-    "href": "index.html#whats-next",
-    "title": "End-to-End FlatSat Service Overview",
-    "section": "What’s Next?",
-    "text": "What’s Next?\nAfter reading these pages, we’ll proceed to practical work and code-related tasks. The practical aspects are grouped in a developing library called the Endurance FlatSat Library. We have started drafting usage guides for installing the necessary sub-services to manage specific parts or components of the flatsat. You can find the latest drafted documents here (non-validated): ReadTheDocs. Please use these guides as needed, but also make sure to raise tickets for any unclear or problematic steps.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#your-contribution-to-this-document",
-    "href": "index.html#your-contribution-to-this-document",
-    "title": "End-to-End FlatSat Service Overview",
-    "section": "Your Contribution to This Document",
-    "text": "Your Contribution to This Document\nThe aim is to keep evolving this document over time, beginning with feedback on areas that need correction or addition as you settle in. Later on, you’re encouraged to clone the repository and add new content. The overall goal of this document is to provide any new team member with all the technical information needed to understand the broader purpose of our activities and the functioning of systems and subsystems.\nAdditionally, I’ve included some basic methods for collaborative work on software development projects. As the team grows, it will be necessary to update or add elements so anyone can adhere to our standards for code quality, reviews, ticketing, or broader workflows.\nThis is also an opportunity to add, in a dedicated section, implemented software elements that may be beneficial to the entire company (e.g., how to create GitHub Actions).",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#about",
-    "href": "index.html#about",
-    "title": "End-to-End FlatSat Service Overview",
-    "section": "About",
-    "text": "About\nThis document was created with Quarto, an open-source publishing system that allows users to generate and maintain beautifully formatted documents, websites, blogs, and presentations directly from markdown and Jupyter notebooks. Quarto’s versatility in supporting scientific and technical communication makes it an excellent choice for documenting complex projects like Flatsat. It enables you to combine text, code, and outputs seamlessly, creating a comprehensive and interactive resource for our team.\nFor more information on Quarto and how to use it to enhance your documentation projects, visit Quarto’s website.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "LearningMore/egse.html",
-    "href": "LearningMore/egse.html",
-    "title": "Electrical Ground Support Equipment (EGSE)",
-    "section": "",
-    "text": "Electrical Ground Support Equipment (EGSE) is essential for the testing and support of spacecraft systems before launch. It consists of specialized equipment used to test the spacecraft’s electrical systems, simulate space conditions, and ensure that all components function as expected. EGSE is employed during the final phases of spacecraft assembly, integration, and testing (AIT) on the ground.\n\n\n\nThe primary purpose of EGSE is to prepare spacecraft for space missions by verifying their performance and functionality under simulated space conditions. EGSE equipment provides power, signal interfacing, and system diagnostics, ensuring that all spacecraft subsystems are operational before launch. This is crucial for avoiding costly failures post-launch.\n\n\n\n\n\nEGSE systems simulate the space environment (e.g., power conditions, signal behaviors) to test spacecraft electronics and control systems. This allows engineers to check how the spacecraft’s systems react to various scenarios, ensuring that all operations will go smoothly in orbit.\n\n\n\nEGSE supplies power to spacecraft components during testing. This includes providing various voltage levels, current, and regulation to simulate the spacecraft’s operational conditions while on Earth.\n\n\n\nThe equipment also ensures that the spacecraft’s communication systems work effectively by acting as an intermediary between spacecraft systems and testing equipment, facilitating proper data transmission and command signaling.\n\n\n\nEGSE is used to monitor spacecraft performance. Engineers can run diagnostic tests, check signal integrity, analyze power usage, and verify thermal and structural responses, helping to identify and resolve potential issues early in the testing process.\n\n\n\nThe comprehensive testing EGSE provides reduces the risk of system failure during space missions. By simulating different scenarios, EGSE allows engineers to confirm that all systems are functioning correctly and that there are no hidden defects that could compromise the mission.\n\n\n\n\nEGSE is typically composed of the following main elements:\n\nPower Systems: Provide the necessary electrical power for the spacecraft subsystems during testing.\nTest Controllers: Devices that control and monitor the test scenarios, ensuring proper operations.\nSimulation Systems: Equipment designed to simulate space environmental conditions such as radiation, temperature extremes, and vacuum.\nData Acquisition Systems: Monitor the data produced by spacecraft systems to evaluate their performance.\nCommunication Interfaces: Facilitate data exchange between the spacecraft and testing equipment.\n\n\n\n\nThere are two main types of EGSE:\n\nSpacecraft EGSE (S-EGSE): Designed specifically for testing the spacecraft itself, this system is responsible for monitoring and testing the spacecraft’s hardware.\nLaunch EGSE (L-EGSE): Focused on ensuring that launch-related systems, such as fueling and integration with the launch vehicle, are functioning correctly.\n\n\n\n\n\nSpacecraft Integration and Testing: EGSE is used during spacecraft assembly to ensure all systems are correctly integrated and functioning.\nLaunch Operations: EGSE plays a crucial role in testing the spacecraft before and after it is integrated with the launch vehicle.\nPost-launch Validation: Some EGSE systems are used to validate that spacecraft systems operate correctly after launch.\n\n\n\n\nEGSE is a vital part of the spacecraft testing process, ensuring that all systems function as required before they are sent into space. Its ability to simulate space conditions, provide power and data communication, and perform detailed diagnostics makes it indispensable for successful space missions. Without EGSE, the risk of mission failure would increase significantly, highlighting its importance in the aerospace industry.",
-    "crumbs": [
-      "Ressources",
-      "EGSE"
-    ]
-  },
-  {
-    "objectID": "LearningMore/egse.html#introduction",
-    "href": "LearningMore/egse.html#introduction",
-    "title": "Electrical Ground Support Equipment (EGSE)",
-    "section": "",
-    "text": "Electrical Ground Support Equipment (EGSE) is essential for the testing and support of spacecraft systems before launch. It consists of specialized equipment used to test the spacecraft’s electrical systems, simulate space conditions, and ensure that all components function as expected. EGSE is employed during the final phases of spacecraft assembly, integration, and testing (AIT) on the ground.",
-    "crumbs": [
-      "Ressources",
-      "EGSE"
-    ]
-  },
-  {
-    "objectID": "LearningMore/egse.html#purpose-of-egse",
-    "href": "LearningMore/egse.html#purpose-of-egse",
-    "title": "Electrical Ground Support Equipment (EGSE)",
-    "section": "",
-    "text": "The primary purpose of EGSE is to prepare spacecraft for space missions by verifying their performance and functionality under simulated space conditions. EGSE equipment provides power, signal interfacing, and system diagnostics, ensuring that all spacecraft subsystems are operational before launch. This is crucial for avoiding costly failures post-launch.",
-    "crumbs": [
-      "Ressources",
-      "EGSE"
-    ]
-  },
-  {
-    "objectID": "LearningMore/egse.html#key-functions",
-    "href": "LearningMore/egse.html#key-functions",
-    "title": "Electrical Ground Support Equipment (EGSE)",
-    "section": "",
-    "text": "EGSE systems simulate the space environment (e.g., power conditions, signal behaviors) to test spacecraft electronics and control systems. This allows engineers to check how the spacecraft’s systems react to various scenarios, ensuring that all operations will go smoothly in orbit.\n\n\n\nEGSE supplies power to spacecraft components during testing. This includes providing various voltage levels, current, and regulation to simulate the spacecraft’s operational conditions while on Earth.\n\n\n\nThe equipment also ensures that the spacecraft’s communication systems work effectively by acting as an intermediary between spacecraft systems and testing equipment, facilitating proper data transmission and command signaling.\n\n\n\nEGSE is used to monitor spacecraft performance. Engineers can run diagnostic tests, check signal integrity, analyze power usage, and verify thermal and structural responses, helping to identify and resolve potential issues early in the testing process.\n\n\n\nThe comprehensive testing EGSE provides reduces the risk of system failure during space missions. By simulating different scenarios, EGSE allows engineers to confirm that all systems are functioning correctly and that there are no hidden defects that could compromise the mission.",
-    "crumbs": [
-      "Ressources",
-      "EGSE"
-    ]
-  },
-  {
-    "objectID": "LearningMore/egse.html#components-of-egse",
-    "href": "LearningMore/egse.html#components-of-egse",
-    "title": "Electrical Ground Support Equipment (EGSE)",
-    "section": "",
-    "text": "EGSE is typically composed of the following main elements:\n\nPower Systems: Provide the necessary electrical power for the spacecraft subsystems during testing.\nTest Controllers: Devices that control and monitor the test scenarios, ensuring proper operations.\nSimulation Systems: Equipment designed to simulate space environmental conditions such as radiation, temperature extremes, and vacuum.\nData Acquisition Systems: Monitor the data produced by spacecraft systems to evaluate their performance.\nCommunication Interfaces: Facilitate data exchange between the spacecraft and testing equipment.",
-    "crumbs": [
-      "Ressources",
-      "EGSE"
-    ]
-  },
-  {
-    "objectID": "LearningMore/egse.html#types-of-egse",
-    "href": "LearningMore/egse.html#types-of-egse",
-    "title": "Electrical Ground Support Equipment (EGSE)",
-    "section": "",
-    "text": "There are two main types of EGSE:\n\nSpacecraft EGSE (S-EGSE): Designed specifically for testing the spacecraft itself, this system is responsible for monitoring and testing the spacecraft’s hardware.\nLaunch EGSE (L-EGSE): Focused on ensuring that launch-related systems, such as fueling and integration with the launch vehicle, are functioning correctly.",
-    "crumbs": [
-      "Ressources",
-      "EGSE"
-    ]
-  },
-  {
-    "objectID": "LearningMore/egse.html#applications-of-egse",
-    "href": "LearningMore/egse.html#applications-of-egse",
-    "title": "Electrical Ground Support Equipment (EGSE)",
-    "section": "",
-    "text": "Spacecraft Integration and Testing: EGSE is used during spacecraft assembly to ensure all systems are correctly integrated and functioning.\nLaunch Operations: EGSE plays a crucial role in testing the spacecraft before and after it is integrated with the launch vehicle.\nPost-launch Validation: Some EGSE systems are used to validate that spacecraft systems operate correctly after launch.",
-    "crumbs": [
-      "Ressources",
-      "EGSE"
-    ]
-  },
-  {
-    "objectID": "LearningMore/egse.html#conclusion",
-    "href": "LearningMore/egse.html#conclusion",
-    "title": "Electrical Ground Support Equipment (EGSE)",
-    "section": "",
-    "text": "EGSE is a vital part of the spacecraft testing process, ensuring that all systems function as required before they are sent into space. Its ability to simulate space conditions, provide power and data communication, and perform detailed diagnostics makes it indispensable for successful space missions. Without EGSE, the risk of mission failure would increase significantly, highlighting its importance in the aerospace industry.",
-    "crumbs": [
-      "Ressources",
-      "EGSE"
-    ]
-  },
-  {
-    "objectID": "LearningMore/redundancy.html",
-    "href": "LearningMore/redundancy.html",
-    "title": "Hot, Warm, and Cold Redundant Systems",
-    "section": "",
-    "text": "Sources:\n\nReliability Engineering 2 (1981), G. N. Sharma, Space Applications Centre, India\nCold, warm and hot redundancy: determining how much you need\n\n\n\n\nUnplanned failures in spaceborne and ground systems are minimized with redundancy, either active (hot), standby (cold), or intermediate (warm). This paper examines both types in detail to optimize reliability.\n\n\n\n\n[R]hs: Reliability of hot redundant system\n[R]cs: Reliability of cold redundant system\nMTBF: Mean Time Between Failures\nr: Reliability of a single unit\n\n\n\n\nReliability for critical systems can be achieved through different redundancy strategies:\n\nHot Redundancy: All units operate simultaneously, allowing for instant failover.\nCold Redundancy: Only one unit is operational, with standby units activated if needed.\nWarm Redundancy (per Automation IT): Used in processes requiring rapid response but tolerating brief outages; it engages secondary processors quickly without seamless transition.\n\n\n\n\nHot redundancy enhances reliability by maintaining constant operation across components. It suits critical processes where interruptions are unacceptable.\n\n\nThe MTBF for n exponential units in parallel extends as additional units are added.\n\n\n\n\nCold redundancy suits non-critical systems where downtime is manageable. It relies on standby units to activate after primary failure.\n\n\n\nA warm system allows standby units to synchronize periodically, suitable for processes that allow brief outages but require quick recovery.\n\n\n\nFirst Redundant Unit in hot redundancy increases reliability ~1.6x with MTBF mission time.\nCold Redundancy generally offers higher reliability when ideal switching is possible.\nWarm Redundancy minimizes system restart time, providing an intermediate solution for systems needing balance.\n\n\n\n\nCold redundancy provides a higher MTBF than hot or warm redundancy when extra units are added.\n\n\n\n\nCold and warm redundancies offer distinct benefits in reliability and MTBF, each appropriate to specific system requirements..",
-    "crumbs": [
-      "Ressources",
-      "Redundancy"
-    ]
-  },
-  {
-    "objectID": "LearningMore/redundancy.html#abstract",
-    "href": "LearningMore/redundancy.html#abstract",
-    "title": "Hot, Warm, and Cold Redundant Systems",
-    "section": "",
-    "text": "Unplanned failures in spaceborne and ground systems are minimized with redundancy, either active (hot), standby (cold), or intermediate (warm). This paper examines both types in detail to optimize reliability.",
-    "crumbs": [
-      "Ressources",
-      "Redundancy"
-    ]
-  },
-  {
-    "objectID": "LearningMore/redundancy.html#notation",
-    "href": "LearningMore/redundancy.html#notation",
-    "title": "Hot, Warm, and Cold Redundant Systems",
-    "section": "",
-    "text": "[R]hs: Reliability of hot redundant system\n[R]cs: Reliability of cold redundant system\nMTBF: Mean Time Between Failures\nr: Reliability of a single unit",
-    "crumbs": [
-      "Ressources",
-      "Redundancy"
-    ]
-  },
-  {
-    "objectID": "LearningMore/redundancy.html#introduction",
-    "href": "LearningMore/redundancy.html#introduction",
-    "title": "Hot, Warm, and Cold Redundant Systems",
-    "section": "",
-    "text": "Reliability for critical systems can be achieved through different redundancy strategies:\n\nHot Redundancy: All units operate simultaneously, allowing for instant failover.\nCold Redundancy: Only one unit is operational, with standby units activated if needed.\nWarm Redundancy (per Automation IT): Used in processes requiring rapid response but tolerating brief outages; it engages secondary processors quickly without seamless transition.",
-    "crumbs": [
-      "Ressources",
-      "Redundancy"
-    ]
-  },
-  {
-    "objectID": "LearningMore/redundancy.html#hot-redundant-systems",
-    "href": "LearningMore/redundancy.html#hot-redundant-systems",
-    "title": "Hot, Warm, and Cold Redundant Systems",
-    "section": "",
-    "text": "Hot redundancy enhances reliability by maintaining constant operation across components. It suits critical processes where interruptions are unacceptable.\n\n\nThe MTBF for n exponential units in parallel extends as additional units are added.",
-    "crumbs": [
-      "Ressources",
-      "Redundancy"
-    ]
-  },
-  {
-    "objectID": "LearningMore/redundancy.html#cold-redundant-systems",
-    "href": "LearningMore/redundancy.html#cold-redundant-systems",
-    "title": "Hot, Warm, and Cold Redundant Systems",
-    "section": "",
-    "text": "Cold redundancy suits non-critical systems where downtime is manageable. It relies on standby units to activate after primary failure.",
-    "crumbs": [
-      "Ressources",
-      "Redundancy"
-    ]
-  },
-  {
-    "objectID": "LearningMore/redundancy.html#warm-redundant-systems",
-    "href": "LearningMore/redundancy.html#warm-redundant-systems",
-    "title": "Hot, Warm, and Cold Redundant Systems",
-    "section": "",
-    "text": "A warm system allows standby units to synchronize periodically, suitable for processes that allow brief outages but require quick recovery.\n\n\n\nFirst Redundant Unit in hot redundancy increases reliability ~1.6x with MTBF mission time.\nCold Redundancy generally offers higher reliability when ideal switching is possible.\nWarm Redundancy minimizes system restart time, providing an intermediate solution for systems needing balance.\n\n\n\n\nCold redundancy provides a higher MTBF than hot or warm redundancy when extra units are added.",
-    "crumbs": [
-      "Ressources",
-      "Redundancy"
-    ]
-  },
-  {
-    "objectID": "LearningMore/redundancy.html#conclusion",
-    "href": "LearningMore/redundancy.html#conclusion",
-    "title": "Hot, Warm, and Cold Redundant Systems",
-    "section": "",
-    "text": "Cold and warm redundancies offer distinct benefits in reliability and MTBF, each appropriate to specific system requirements..",
-    "crumbs": [
-      "Ressources",
-      "Redundancy"
-    ]
-  },
-  {
-    "objectID": "flatsat/endurance.html#overview-of-endurance-services",
-    "href": "flatsat/endurance.html#overview-of-endurance-services",
-    "title": "Endurance Overview",
-    "section": "1. Overview of Endurance Services",
-    "text": "1. Overview of Endurance Services\n\n\n\n\n\n\nIn Geostationary Orbit (GEO):\n\nStationkeeping:\n\nService duration of up to 5 years\n\nOrbital Transfer:\n\nCapability to move the client to any GEO orbital slot or correct inclination\n\nAttitude Control:\n\nFine attitude control with an accuracy of up to 0.04 degrees\n\nEnd-of-Life (EOL) Disposal:\n\nTransfer to a GEO graveyard orbit at the end of operations",
-    "crumbs": [
-      "Flatsat",
-      "Endurance overview"
-    ]
-  },
-  {
-    "objectID": "flatsat/endurance.html#project-achievements-and-future-goals",
-    "href": "flatsat/endurance.html#project-achievements-and-future-goals",
-    "title": "Endurance Overview",
-    "section": "2. Project Achievements and Future Goals",
-    "text": "2. Project Achievements and Future Goals\n\nLife Extension Start: Planned for 2026, marking Endurance as the first French company to achieve Life Extension.\nDevelopment Phases:\n\nPhase A: Successfully completed in 2022\nPhase B:\n\nSystem Requirements Review (SRR) in Q4 2023\nPreliminary Design Review (PDR) in Q1 2024\nEstablishment of Industrial Consortium\nRendezvous (RdV) tests in progress\n\nPhase C:\n\nCritical Design Review (CDR) planned for Q4 2024\nPlatform manufacture and testing\nCompletion of RdV and Docking testing\n\nPhase D:\n\nFlight Model (FM) production and integration\nAcceptance testing\n\nPhase E:\n\nLaunch and commissioning in Q1 2026\nEOR, RdV, docking, and life-extension operations",
-    "crumbs": [
-      "Flatsat",
-      "Endurance overview"
-    ]
-  },
-  {
-    "objectID": "flatsat/endurance.html#endurance-summary",
-    "href": "flatsat/endurance.html#endurance-summary",
-    "title": "Endurance Overview",
-    "section": "3. Endurance Summary",
-    "text": "3. Endurance Summary\n\n\n\n\n\n\n\nParameter\nSpecification\n\n\n\n\nMass\n310 kg (dry), 800 kg (wet)\n\n\nVolume\n1 x 1 x 1.2 m³\n\n\nLauncher Compatibility\nAriane 6 / SpaceX Falcon 9 (rideshare passenger)\n\n\nPower\nTwo tracking solar wings\n\n\nArchitecture\nDual string (core avionics)\n\n\nPropulsion (PROP)\nFour EP thrusters (Krypton propellant), eight RCS thrusters\n\n\nCommunications\nDeployable antennas",
-    "crumbs": [
-      "Flatsat",
-      "Endurance overview"
-    ]
-  },
-  {
-    "objectID": "flatsat/endurance.html#detailed-system-overview",
-    "href": "flatsat/endurance.html#detailed-system-overview",
-    "title": "Endurance Overview",
-    "section": "4. Detailed System Overview",
-    "text": "4. Detailed System Overview\n\nPropulsion and Control\n\nReaction Control System (RCS): Eight thrusters for maneuvering\nStationkeeping: Two electric propulsion (EP) thrusters\nElectric Orbit Raising (EOR): Two EP thrusters\nFuel Tanks:\n\nOne Krypton tank with a capacity of 155 liters\nFour RCS tanks\n\n\n\n\nSteering and Orientation\n\nReaction Wheels: Three large reaction wheels for stabilization\nThruster Steering Mechanism: Two degrees of freedom for precise maneuvering",
-    "crumbs": [
-      "Flatsat",
-      "Endurance overview"
-    ]
-  },
-  {
-    "objectID": "flatsat/endurance.html#external-features-of-endurance",
-    "href": "flatsat/endurance.html#external-features-of-endurance",
-    "title": "Endurance Overview",
-    "section": "5. External Features of Endurance",
-    "text": "5. External Features of Endurance\n\n\n\n\n\n\n\nSolar Arrays: Two wings capable of generating up to 2.2 kW\nAntenna Deployables: Two antennas for ground communication while docked\nCustomizable Docking System: Adaptable for docking with most GEO satellites\n\n\n\n\n\n\n\nTo learn more about general organisation in a satellite platform/payload, see Platform",
-    "crumbs": [
-      "Flatsat",
-      "Endurance overview"
-    ]
-  },
-  {
-    "objectID": "flatsat/ccsdspackets.html",
-    "href": "flatsat/ccsdspackets.html",
-    "title": "CCSDS Space Communication Protocols",
-    "section": "",
-    "text": "CCSDS standards ensure interoperability in space communications, defining three main protocols:\n\nSpace Packet Protocol (SPP): Structures and transports space data.\nTelecommand (TC) Protocol: Sends commands from ground to a satellite.\nTelemetry (TM) Protocol: Returns satellite telemetry to the ground.\n\n\n\n\nSPP (CCSDS 133.0-B-2) structures and transports data in “space packets.”\n\n\nA Space Packet shall include the defined fields, positioned contiguously, in the following sequence: 1. Packet Primary Header (6 octets, mandatory); 2. Packet Data Field (from 1 to 65536 octets, mandatory).\nA Space Packet shall consist of at least 7 and at most 65542 octets.\n\n\n\nSpace Packet Structural Components\n\n\n\n\n\n\nApplication Identification: Uses the APID (Application Process Identifier) field.\nData Flexibility: Variable packet sizes for adaptability.\nLayer Independence: Compatible with various link protocols.\n\n\n\n\nThe Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence:\n\nPacket Version Number (3 bits, mandatory);\nPacket Identification Field (13 bits, mandatory);\nPacket Sequence Control Field (16 bits, mandatory);\nPacket Data Length (16 bits, mandatory).\n\n\n\n\n\n\nThe purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.\nSecondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space\n\n\n\n\n\nWhen communicating between the ground and the OBC, the packets flow on the CAN bus with CAN-TS protocol and also on and of radio frequency through the intermediary of a radio. Essentially, the packet remains untouched except for the primary header. When the radio receives a TC from the ground, it will send fragment it into 8 byte CAN packets. The first packet to be transmitted onto the bus is the Primary header of the SPP packet which needs to be acknowledged by the OBC in order for it to send the rest of the datafield. The primary header gets two modifications done to it: 1. The addition of a 1 byte “prefix” byte (always 0x01) - the 6 byte header - a 7 bit counter - a 1 bit “first” flag 2. To mitigate all possible confusion between CAN-TS packets and SPP packets, the primary header sends the bytes in reverse order. This is also applied for the TM. For the Radio to understand its an SPP packet, the OBC needs to send the primary header in reverse order.\nThe rest of the datafield remains untouched.\n\n\n\n\n\nA TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Header (5 octets, mandatory);\nTransfer Frame Data Field (up to 1019 or 1017 octets, mandatory);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTC Transfer Frame Structural Components\n\n\nNOTES :\n\nThe TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.\nThe maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.\nThe structural components of the TC Transfer Frame are shown in figure.\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Version Number (2 bits, mandatory);\nBypass Flag (1 bit, mandatory);\nControl Command Flag (1 bit, mandatory);\nReserved Spare (2 bits, mandatory);\nSpacecraft Identifier (10 bits, mandatory);\nVirtual Channel Identifier (6 bits, mandatory);\nFrame Length (10 bits, mandatory);\nFrame Sequence Number (8 bits, mandatory).\nNOTE – The format of the Transfer Frame Primary Header is shown in figure.\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\n\n\nA TM Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Primary Header (6 octets, mandatory);\nTransfer Frame Secondary Header (up to 64 octets, optional);\nTransfer Frame Data Field (integral number of octets, mandatory);\nOperational Control Field (4 octets, optional);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTM Transfer Frame Structural Components\n\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of six fields, positioned contiguously, in the following sequence:\n\nMaster Channel Identifier (12 bits, mandatory);\nVirtual Channel Identifier (3 bits, mandatory);\nOperational Control Field Flag (1 bit, mandatory);\nMaster Channel Frame Count (1 octet, mandatory);\nVirtual Channel Frame Count (1 octet, mandatory);\nTransfer Frame Data Field Status (2 octets, mandatory).\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\nBits 32–47 of the Transfer Frame Primary Header shall contain the Transfer Frame Data Field Status.\nThis 16-bit field shall be sub-divided into five sub-fields, as follows:\n\nTransfer Frame Secondary Header Flag (1 bit, mandatory);\nSynchronization Flag (1 bit, mandatory);\nPacket Order Flag (1 bit, mandatory);\nSegment Length Identifier (2 bits, mandatory);\nFirst Header Pointer (11 bits, mandatory).\n\n\n\n\n\nIf present, the Transfer Frame Secondary Header shall follow, without gap, the Transfer Frame Primary Header.\nThe Transfer Frame Secondary Header shall consist of an integral number of octets as follows:\n\nTransfer Frame Secondary Header Identification Field (1 octet, mandatory);\nTransfer Frame Secondary Header Data Field (1 to 63 octets, mandatory).\n\n\n\n\nTransfer Frame Secondary Header\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransports data as packets\nN/A\n\n\nTC\nData Link\nSends commands\nSDLS Support\n\n\nTM\nData Link\nSends telemetry\nSDLS Support\n\n\n\n\n\n\n\n\nBoth CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.",
-    "crumbs": [
-      "Flatsat",
-      "Space packets"
-    ]
-  },
-  {
-    "objectID": "flatsat/ccsdspackets.html#space-packet-protocol-spp",
-    "href": "flatsat/ccsdspackets.html#space-packet-protocol-spp",
-    "title": "CCSDS Space Communication Protocols",
-    "section": "",
-    "text": "SPP (CCSDS 133.0-B-2) structures and transports data in “space packets.”\n\n\nA Space Packet shall include the defined fields, positioned contiguously, in the following sequence: 1. Packet Primary Header (6 octets, mandatory); 2. Packet Data Field (from 1 to 65536 octets, mandatory).\nA Space Packet shall consist of at least 7 and at most 65542 octets.\n\n\n\nSpace Packet Structural Components\n\n\n\n\n\n\nApplication Identification: Uses the APID (Application Process Identifier) field.\nData Flexibility: Variable packet sizes for adaptability.\nLayer Independence: Compatible with various link protocols.\n\n\n\n\nThe Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence:\n\nPacket Version Number (3 bits, mandatory);\nPacket Identification Field (13 bits, mandatory);\nPacket Sequence Control Field (16 bits, mandatory);\nPacket Data Length (16 bits, mandatory).\n\n\n\n\n\n\nThe purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.\nSecondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space\n\n\n\n\n\nWhen communicating between the ground and the OBC, the packets flow on the CAN bus with CAN-TS protocol and also on and of radio frequency through the intermediary of a radio. Essentially, the packet remains untouched except for the primary header. When the radio receives a TC from the ground, it will send fragment it into 8 byte CAN packets. The first packet to be transmitted onto the bus is the Primary header of the SPP packet which needs to be acknowledged by the OBC in order for it to send the rest of the datafield. The primary header gets two modifications done to it: 1. The addition of a 1 byte “prefix” byte (always 0x01) - the 6 byte header - a 7 bit counter - a 1 bit “first” flag 2. To mitigate all possible confusion between CAN-TS packets and SPP packets, the primary header sends the bytes in reverse order. This is also applied for the TM. For the Radio to understand its an SPP packet, the OBC needs to send the primary header in reverse order.\nThe rest of the datafield remains untouched.",
-    "crumbs": [
-      "Flatsat",
-      "Space packets"
-    ]
-  },
-  {
-    "objectID": "flatsat/ccsdspackets.html#tc-transfert-frame",
-    "href": "flatsat/ccsdspackets.html#tc-transfert-frame",
-    "title": "CCSDS Space Communication Protocols",
-    "section": "",
-    "text": "A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Header (5 octets, mandatory);\nTransfer Frame Data Field (up to 1019 or 1017 octets, mandatory);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTC Transfer Frame Structural Components\n\n\nNOTES :\n\nThe TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.\nThe maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.\nThe structural components of the TC Transfer Frame are shown in figure.\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Version Number (2 bits, mandatory);\nBypass Flag (1 bit, mandatory);\nControl Command Flag (1 bit, mandatory);\nReserved Spare (2 bits, mandatory);\nSpacecraft Identifier (10 bits, mandatory);\nVirtual Channel Identifier (6 bits, mandatory);\nFrame Length (10 bits, mandatory);\nFrame Sequence Number (8 bits, mandatory).\nNOTE – The format of the Transfer Frame Primary Header is shown in figure.\n\n\n\n\nTransfer Frame Primary Header",
-    "crumbs": [
-      "Flatsat",
-      "Space packets"
-    ]
-  },
-  {
-    "objectID": "flatsat/ccsdspackets.html#tm-transfert-frame",
-    "href": "flatsat/ccsdspackets.html#tm-transfert-frame",
-    "title": "CCSDS Space Communication Protocols",
-    "section": "",
-    "text": "A TM Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Primary Header (6 octets, mandatory);\nTransfer Frame Secondary Header (up to 64 octets, optional);\nTransfer Frame Data Field (integral number of octets, mandatory);\nOperational Control Field (4 octets, optional);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTM Transfer Frame Structural Components\n\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of six fields, positioned contiguously, in the following sequence:\n\nMaster Channel Identifier (12 bits, mandatory);\nVirtual Channel Identifier (3 bits, mandatory);\nOperational Control Field Flag (1 bit, mandatory);\nMaster Channel Frame Count (1 octet, mandatory);\nVirtual Channel Frame Count (1 octet, mandatory);\nTransfer Frame Data Field Status (2 octets, mandatory).\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\nBits 32–47 of the Transfer Frame Primary Header shall contain the Transfer Frame Data Field Status.\nThis 16-bit field shall be sub-divided into five sub-fields, as follows:\n\nTransfer Frame Secondary Header Flag (1 bit, mandatory);\nSynchronization Flag (1 bit, mandatory);\nPacket Order Flag (1 bit, mandatory);\nSegment Length Identifier (2 bits, mandatory);\nFirst Header Pointer (11 bits, mandatory).\n\n\n\n\n\nIf present, the Transfer Frame Secondary Header shall follow, without gap, the Transfer Frame Primary Header.\nThe Transfer Frame Secondary Header shall consist of an integral number of octets as follows:\n\nTransfer Frame Secondary Header Identification Field (1 octet, mandatory);\nTransfer Frame Secondary Header Data Field (1 to 63 octets, mandatory).\n\n\n\n\nTransfer Frame Secondary Header\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransports data as packets\nN/A\n\n\nTC\nData Link\nSends commands\nSDLS Support\n\n\nTM\nData Link\nSends telemetry\nSDLS Support",
-    "crumbs": [
-      "Flatsat",
-      "Space packets"
-    ]
-  },
-  {
-    "objectID": "flatsat/ccsdspackets.html#conclusion",
-    "href": "flatsat/ccsdspackets.html#conclusion",
-    "title": "CCSDS Space Communication Protocols",
-    "section": "",
-    "text": "Both CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.",
-    "crumbs": [
-      "Flatsat",
-      "Space packets"
-    ]
-  },
-  {
-    "objectID": "flatsat/flatsat.html",
-    "href": "flatsat/flatsat.html",
-    "title": "Flatsat Overview",
-    "section": "",
-    "text": "Endurance banner",
-    "crumbs": [
-      "Flatsat",
-      "About the flatsat"
-    ]
-  },
-  {
-    "objectID": "flatsat/flatsat.html#purpose-and-use",
-    "href": "flatsat/flatsat.html#purpose-and-use",
-    "title": "Flatsat Overview",
-    "section": "Purpose and Use",
-    "text": "Purpose and Use\nFlatSats are used primarily to test satellite systems and their interoperability before launch, ensuring each component functions correctly. This setup supports end-to-end operations as if in orbit, allowing for command and telemetry testing. For CubeSats, FlatSats provide a low-cost, modular test environment suitable for educational purposes, commercial applications, and experimental payloads.",
-    "crumbs": [
-      "Flatsat",
-      "About the flatsat"
-    ]
-  },
-  {
-    "objectID": "flatsat/flatsat.html#typical-components",
-    "href": "flatsat/flatsat.html#typical-components",
-    "title": "Flatsat Overview",
-    "section": "Typical Components",
-    "text": "Typical Components\nA FlatSat for CubeSat might include: - On-Board Computer (OBC) - Power System - Telemetry and Radio System - Attitude Determination and Control System (ADCS) - Navigation Receiver\nAdditional slots are often available for custom hardware or experimental components, such as AI-based detection algorithms or radiation monitoring payloads.",
-    "crumbs": [
-      "Flatsat",
-      "About the flatsat"
-    ]
-  },
-  {
-    "objectID": "flatsat/flatsat.html#advantages",
-    "href": "flatsat/flatsat.html#advantages",
-    "title": "Flatsat Overview",
-    "section": "Advantages",
-    "text": "Advantages\n\nAccessibility: Subsystems are physically separated, making them accessible for individual testing and replacement.\nOperational Simulation: Commands can be sent via a simulated ground station, with telemetry received for analysis.\nFlexibility: Engineers can easily swap or modify components, an asset for educational and fast-paced commercial projects.\nTesting New Technologies: Allows for validation of new components like radiation-tolerant microcontrollers in a representative environment.",
-    "crumbs": [
-      "Flatsat",
-      "About the flatsat"
-    ]
-  },
-  {
-    "objectID": "flatsat/flatsat.html#endurance-flatsat",
-    "href": "flatsat/flatsat.html#endurance-flatsat",
-    "title": "Flatsat Overview",
-    "section": "Endurance Flatsat",
-    "text": "Endurance Flatsat\n\nRessources\n\nEndurance software spec\n\n\n\nEndurance data handling architecture\nTo describe the different components of the flatsat planned for Endurance, I’m using the DHS view, which allows me to outline the communication protocols between the various systems.\n\nThe flatsat includes:\n\nFlight software\nTwo mission onboard computers (OBCs) in warm redundancy to manage AOCS (orbit), PU, Com, Th, and equipment\nGround segment software (Yamcs) for communication with the OBC\nEGSE for pre-launch spacecraft testing and simulation\nFlatsat computer\nSimulation software\nPower supply\n\nNote: Mission OBCs differ from guidance, navigation, and control (GNC) OBCs (Rendezvous & Grippers) and attitude (ADCS) OBCs, which are also in warm redundancy pairs.\nThis architecture contains 3 main networks :\n\nBest effort Ethernet\nCAN-TS\nCAN-Open\n\nIt also contains point to point communications through LVDS and RS422",
-    "crumbs": [
-      "Flatsat",
-      "About the flatsat"
-    ]
-  },
-  {
-    "objectID": "flatsat/yamcs.html",
-    "href": "flatsat/yamcs.html",
-    "title": "Yamcs Overview",
-    "section": "",
-    "text": "Yamcs is an open-source software for real-time mission control, providing tools for spacecraft and ground system operations.\n\n\n\n\nTelemetry Processing: Real-time telemetry data processing.\nTelecommands: Command satellites or spacecraft.\nAlarms & Notifications: Configurable alarms based on thresholds.\nData Replay: Allows mission data replay.\nStandards Compliance: Supports CCSDS, CFDP, and XTCE standards.\n\n\n\n\nTo set up Yamcs, follow the Getting Started Guide covering installation, configuration, and basic usage.\n\n\n\nThe Python Yamcs Client supports telemetry retrieval, commanding, and historical data access via Python for custom mission applications.\n\n\n\nYamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training.\n\n\n\nThe current FlatSat setup is progressively integrating direct CAN messaging with YAMCS, including the capability to transmit commands via the radio link.\n\nYAMCS, as the ground software, generates CAN-TCs to be delivered over the CAN bus. This process requires a mission database to define PUS services, which in our case is structured using the SCOS-2000 format.\nSimultaneously, a library is being developed based on the YAMCS Python client. This library aims to provide a more user-friendly interface for developing test scripts.",
-    "crumbs": [
-      "Flatsat",
-      "yamcs interface and Endurance flatsat library"
-    ]
-  },
-  {
-    "objectID": "flatsat/yamcs.html#introduction",
-    "href": "flatsat/yamcs.html#introduction",
-    "title": "Yamcs Overview",
-    "section": "",
-    "text": "Yamcs is an open-source software for real-time mission control, providing tools for spacecraft and ground system operations.",
-    "crumbs": [
-      "Flatsat",
-      "yamcs interface and Endurance flatsat library"
-    ]
-  },
-  {
-    "objectID": "flatsat/yamcs.html#key-features",
-    "href": "flatsat/yamcs.html#key-features",
-    "title": "Yamcs Overview",
-    "section": "",
-    "text": "Telemetry Processing: Real-time telemetry data processing.\nTelecommands: Command satellites or spacecraft.\nAlarms & Notifications: Configurable alarms based on thresholds.\nData Replay: Allows mission data replay.\nStandards Compliance: Supports CCSDS, CFDP, and XTCE standards.",
-    "crumbs": [
-      "Flatsat",
-      "yamcs interface and Endurance flatsat library"
-    ]
-  },
-  {
-    "objectID": "flatsat/yamcs.html#getting-started",
-    "href": "flatsat/yamcs.html#getting-started",
-    "title": "Yamcs Overview",
-    "section": "",
-    "text": "To set up Yamcs, follow the Getting Started Guide covering installation, configuration, and basic usage.",
-    "crumbs": [
-      "Flatsat",
-      "yamcs interface and Endurance flatsat library"
-    ]
-  },
-  {
-    "objectID": "flatsat/yamcs.html#python-client",
-    "href": "flatsat/yamcs.html#python-client",
-    "title": "Yamcs Overview",
-    "section": "",
-    "text": "The Python Yamcs Client supports telemetry retrieval, commanding, and historical data access via Python for custom mission applications.",
-    "crumbs": [
-      "Flatsat",
-      "yamcs interface and Endurance flatsat library"
-    ]
-  },
-  {
-    "objectID": "flatsat/yamcs.html#extensions-and-support",
-    "href": "flatsat/yamcs.html#extensions-and-support",
-    "title": "Yamcs Overview",
-    "section": "",
-    "text": "Yamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training.",
-    "crumbs": [
-      "Flatsat",
-      "yamcs interface and Endurance flatsat library"
-    ]
-  },
-  {
-    "objectID": "flatsat/yamcs.html#flatsat-set-up",
-    "href": "flatsat/yamcs.html#flatsat-set-up",
-    "title": "Yamcs Overview",
-    "section": "",
-    "text": "The current FlatSat setup is progressively integrating direct CAN messaging with YAMCS, including the capability to transmit commands via the radio link.\n\nYAMCS, as the ground software, generates CAN-TCs to be delivered over the CAN bus. This process requires a mission database to define PUS services, which in our case is structured using the SCOS-2000 format.\nSimultaneously, a library is being developed based on the YAMCS Python client. This library aims to provide a more user-friendly interface for developing test scripts.",
-    "crumbs": [
-      "Flatsat",
-      "yamcs interface and Endurance flatsat library"
-    ]
-  },
-  {
-    "objectID": "flatsat/can.html",
-    "href": "flatsat/can.html",
-    "title": "Space Packets Protocols",
-    "section": "",
-    "text": "The CAN-TS (CAN Telemetry Standard) protocol and CANopen are widely used in embedded systems, particularly in resource-constrained environments. Each serves specific communication needs, suited to different applications.\n\n\n\n\n\n\nDesigned for applications with limited memory, such as aerospace systems, CAN-TS provides streamlined communication prioritizing low memory usage.\n\n\n\n\nLightweight Design: Optimized for 8/16-bit architectures, minimizing memory overhead.\nBasic Communication Services: Includes telemetry, telecommand, time synchronization, and bus redundancy management.\nFree to use: Skylabs is the owner of the CAN-TS documentation but it can be requested for free\n\n\n\n\n\nMemory Efficiency: Ideal for memory-constrained systems.\nRobustness: Reliable for mission-critical aerospace applications.\nLow Resource Consumption: Operates efficiently with minimal computational requirements.\n\n\n\n\n\nUtilizes CAN2.0B extended frame\n\nEncapsulates address, transfer type, and command ID in a 29-bit identifier.\n\nOrigin Validation: Message acceptance validated by source address.\nEfficiency: Uses full 8 bytes of data field for protocol services with software-based acknowledgment and reliability over bus utilization.\n\n\n\n\nCAN-TS Frame\n\n\n\n\n\nCAN-TS supports six application layer services:\n\nTelecommand\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per response.\nUp to 256 telecommands per device.\n\n\n\n\nTelecommand\n\n\nTelemetry\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per request.\nUp to 256 telemetry messages per device.\n\n\n\n\nTelemetry\n\n\nUnsolicited Telemetry\n\nSends telemetry directly without a request.\nSupports periodic or event-driven transfers, with up to 8 bytes of payload data.\n\n\n\n\nUnsolicited Telemetry\n\n\nTime Synchronization\n\nTime distribution via a broadcast message from the time master (highest priority).\n\n\n\n\nTime Synchronization\n\n\n\nVoici la mise en forme améliorée de cette partie :\n\n\nSet Block (multi-message transfer)\n\nFor large data exchanges (up to 512 bytes).\nIncludes retransmission and timeout features.\nAddress ranges from 8 to 64 bits.\n\n\n\n\nSet Block\n\n\nCommand Field Subfields:\n\nStart adress :\n\n\n\n\nRequest, Acknowledge – Bits 9-7. Table 6 presents all possible values for this subfield.\n\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\n\nSet Block Request\n000\n\n\n\nSB Acknowledge\n010\n\n\n\nSB Negative Acknowledge\n100\n\n\n\nTransfer\n001\n\n\n\nAbort\n011\n\n\n\nStatus Request\n110\n\n\n\nReport\n111\n\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Set Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Set Block Transfer frame represent the index of the transferred block. The first block has index 0.\nDone – Bit 6 of the Command field in the Set Block Report frame indicates if the whole block was successfully received and processed. If additional time is needed for processing, this bit is set to 0.\n\n\nGet Block (multi-message transfer)\n\nLarge data transfers from sink to source with error management.\n\n\n\n\n\nGet Block\n\n\nCommand Field Subfields: - Request, Acknowledge – Bits 9-7. Table 7 presents all possible values for this subfield.\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\nGet Block Request\n000\n\n\nGB Acknowledge\n010\n\n\nGB Negative Acknowledge\n100\n\n\nAbort\n011\n\n\nStart\n110\n\n\nTransfer\n111\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Get Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Get Block Transfer frame represent the index of the transferred block. The first block has index 0.\n\n\n\n\n\n\n\n\nCANopen is a flexible protocol for industrial applications that require detailed communication capabilities.\n\n\n\n\nDevice Profiles: Standardized for various device types (e.g., motion control, sensors).\nCommunication Objects: Supports PDO (Process Data Objects) and SDO (Service Data Objects) transfers.\nScalability: Suitable for both simple and complex networks.\n\n\n\n\n\nWide Applicability: Used across industries, including automotive and automation.\nEnhanced Functionality: Offers advanced features like diagnostics and network management.\nCustomization: Flexible configuration options.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nCAN-TS\nCANopen\n\n\n\n\nMemory Usage\nLow, optimized for constrained devices\nHigher, requires more memory\n\n\nTypical Use Case\nAerospace, simple devices\nIndustrial automation, robotics\n\n\nComplexity\nLower, easier to implement\nHigher, with extensive features\n\n\nAvailability\nOpen-source, free\nOften requires licensing",
-    "crumbs": [
-      "Flatsat",
-      "Can protocols"
-    ]
-  },
-  {
-    "objectID": "flatsat/can.html#overview",
-    "href": "flatsat/can.html#overview",
-    "title": "Space Packets Protocols",
-    "section": "",
-    "text": "The CAN-TS (CAN Telemetry Standard) protocol and CANopen are widely used in embedded systems, particularly in resource-constrained environments. Each serves specific communication needs, suited to different applications.",
-    "crumbs": [
-      "Flatsat",
-      "Can protocols"
-    ]
-  },
-  {
-    "objectID": "flatsat/can.html#can-ts-protocol",
-    "href": "flatsat/can.html#can-ts-protocol",
-    "title": "Space Packets Protocols",
-    "section": "",
-    "text": "Designed for applications with limited memory, such as aerospace systems, CAN-TS provides streamlined communication prioritizing low memory usage.\n\n\n\n\nLightweight Design: Optimized for 8/16-bit architectures, minimizing memory overhead.\nBasic Communication Services: Includes telemetry, telecommand, time synchronization, and bus redundancy management.\nFree to use: Skylabs is the owner of the CAN-TS documentation but it can be requested for free\n\n\n\n\n\nMemory Efficiency: Ideal for memory-constrained systems.\nRobustness: Reliable for mission-critical aerospace applications.\nLow Resource Consumption: Operates efficiently with minimal computational requirements.\n\n\n\n\n\nUtilizes CAN2.0B extended frame\n\nEncapsulates address, transfer type, and command ID in a 29-bit identifier.\n\nOrigin Validation: Message acceptance validated by source address.\nEfficiency: Uses full 8 bytes of data field for protocol services with software-based acknowledgment and reliability over bus utilization.\n\n\n\n\nCAN-TS Frame\n\n\n\n\n\nCAN-TS supports six application layer services:\n\nTelecommand\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per response.\nUp to 256 telecommands per device.\n\n\n\n\nTelecommand\n\n\nTelemetry\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per request.\nUp to 256 telemetry messages per device.\n\n\n\n\nTelemetry\n\n\nUnsolicited Telemetry\n\nSends telemetry directly without a request.\nSupports periodic or event-driven transfers, with up to 8 bytes of payload data.\n\n\n\n\nUnsolicited Telemetry\n\n\nTime Synchronization\n\nTime distribution via a broadcast message from the time master (highest priority).\n\n\n\n\nTime Synchronization\n\n\n\nVoici la mise en forme améliorée de cette partie :\n\n\nSet Block (multi-message transfer)\n\nFor large data exchanges (up to 512 bytes).\nIncludes retransmission and timeout features.\nAddress ranges from 8 to 64 bits.\n\n\n\n\nSet Block\n\n\nCommand Field Subfields:\n\nStart adress :\n\n\n\n\nRequest, Acknowledge – Bits 9-7. Table 6 presents all possible values for this subfield.\n\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\n\nSet Block Request\n000\n\n\n\nSB Acknowledge\n010\n\n\n\nSB Negative Acknowledge\n100\n\n\n\nTransfer\n001\n\n\n\nAbort\n011\n\n\n\nStatus Request\n110\n\n\n\nReport\n111\n\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Set Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Set Block Transfer frame represent the index of the transferred block. The first block has index 0.\nDone – Bit 6 of the Command field in the Set Block Report frame indicates if the whole block was successfully received and processed. If additional time is needed for processing, this bit is set to 0.\n\n\nGet Block (multi-message transfer)\n\nLarge data transfers from sink to source with error management.\n\n\n\n\n\nGet Block\n\n\nCommand Field Subfields: - Request, Acknowledge – Bits 9-7. Table 7 presents all possible values for this subfield.\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\nGet Block Request\n000\n\n\nGB Acknowledge\n010\n\n\nGB Negative Acknowledge\n100\n\n\nAbort\n011\n\n\nStart\n110\n\n\nTransfer\n111\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Get Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Get Block Transfer frame represent the index of the transferred block. The first block has index 0.",
-    "crumbs": [
-      "Flatsat",
-      "Can protocols"
-    ]
-  },
-  {
-    "objectID": "flatsat/can.html#canopen-protocol",
-    "href": "flatsat/can.html#canopen-protocol",
-    "title": "Space Packets Protocols",
-    "section": "",
-    "text": "CANopen is a flexible protocol for industrial applications that require detailed communication capabilities.\n\n\n\n\nDevice Profiles: Standardized for various device types (e.g., motion control, sensors).\nCommunication Objects: Supports PDO (Process Data Objects) and SDO (Service Data Objects) transfers.\nScalability: Suitable for both simple and complex networks.\n\n\n\n\n\nWide Applicability: Used across industries, including automotive and automation.\nEnhanced Functionality: Offers advanced features like diagnostics and network management.\nCustomization: Flexible configuration options.",
-    "crumbs": [
-      "Flatsat",
-      "Can protocols"
-    ]
-  },
-  {
-    "objectID": "flatsat/can.html#comparison",
-    "href": "flatsat/can.html#comparison",
-    "title": "Space Packets Protocols",
-    "section": "",
-    "text": "Feature\nCAN-TS\nCANopen\n\n\n\n\nMemory Usage\nLow, optimized for constrained devices\nHigher, requires more memory\n\n\nTypical Use Case\nAerospace, simple devices\nIndustrial automation, robotics\n\n\nComplexity\nLower, easier to implement\nHigher, with extensive features\n\n\nAvailability\nOpen-source, free\nOften requires licensing",
-    "crumbs": [
-      "Flatsat",
-      "Can protocols"
-    ]
-  },
-  {
-    "objectID": "flatsat/pus.html",
-    "href": "flatsat/pus.html",
-    "title": "PUS Service",
-    "section": "",
-    "text": "Set to 0, identifying it as a space packet (version 1 CCSDS packet).\n\n\n\n\n\n0: Telemetry packets.\n1: Telecommand packets.\n\n\n\n\n\nIndicates the presence or absence of a secondary header:\n\nTelemetry packets: All include a secondary header, except spacecraft time packets.\nTelecommand packets: All include a secondary header, except CPDU command packets.\n\n\n\n\n\n\nUniquely identifies:\n\nThe source of telemetry packets.\nThe destination of telecommand packets.\n\nSome values are reserved by CCSDS and unavailable for PUS services.\n\n\n\n\n\nUnused by the protocol but set to “11” to indicate stand-alone packets.\nAll packets in this Standard are stand-alone packets.\n\n\n\n\n\nTelemetry packets: Incremented by 1 for each released packet and wraps at (2^{14} - 1).\nTelecommand packets: Use a sequence count or packet name to uniquely identify packets within a communication session.\n\n\n\n\n\nSpecifies the length of the packet data field:\n\nValue is one less than the number of octets in the data field.\nTotal packet length = Packet data field length + 6 octets (primary header).\n\n\n\n\n\n\nTelemetry Packets:\n\nSecondary header.\nUser data field.\n\nTelecommand Packets:\n\nSecondary header.\nUser data field.\n\n\n\n\n\n\n\n\n\n\nPresence:\n\nAll telemetry packets, except spacecraft time packets, include a secondary header.\n\nStructure:\n\nFields:\n\nSpacecraft Time: Absolute, fixed-size.\nPUS Version: 4 bits, set to 2.\nReference Number: 4 bits, enumerated.\nMessage Type ID: 8 bits, enumerated.\nService Type ID: 8 bits, enumerated.\nMessage Subtype ID: 8 bits, enumerated.\nMessage Counter: 16 bits, unsigned integer.\nDestination ID: Application process user identifier.\nSpare Field: Optional, used to align header size to integral words.\n\n\nTime Reference:\n\nStatus:\n\nIf capable, set to the status of the onboard time reference when tagging packets.\nIf not capable, set to 0.\n\nTime Tag: Stored in the time field of the header.\n\nMessage Metadata:\n\nType ID: Set to the identifier of the report.\nCounter:\n\nIf capable, set to the count of messages of this type.\nIf not capable, set to 0.\n\n\nDeclaration Requirements:\n\nPresence and bit-size of the spare field must be declared for each application process.\nTime field PFC (Packet Format Control) must align with the spacecraft’s time service.\n\n\n\n\n\n\nThe PUS Version indicates compliance with ECSS-E-ST-70-41C (version 2).\nThe Spare Field adjusts header length and is application-specific.\n\n\n\n\n\n\n\n\n\n\nPresence:\n\nAll telecommand packets include a secondary header, except for CPDU command packets.\n\nStructure:\n\nFields:\n\nAcknowledgement Flags: 4 bits, controls reporting of request states:\n\nBit 3: Successful acceptance by the destination application process.\nBit 2: Successful start of execution by the destination application process.\nBit 1: Progress reporting of execution.\nBit 0: Successful completion of execution.\n\nPUS Version: 4 bits, set to 2.\nMessage Type ID: 8 bits, enumerated.\nService Type ID: 8 bits, enumerated.\nMessage Subtype ID: 8 bits, enumerated.\nSource ID: 16 bits, identifies the source application process.\nSpare Field: Optional, aligns header size to integral words.\n\n\nRequest Metadata:\n\nMessage Type ID: Set to the identifier of the request.\nSource ID: Set to the source identifier of the issuing application process.\n\nDeclaration Requirements:\n\nPresence and bit-size of the spare field must be declared for each application process.\n\n\n\n\n\n\nThe PUS Version reflects compliance with ECSS-E-ST-70-41C (version 2).\nAcknowledgement flags provide flexibility in managing state reporting for telecommand requests.\nThe Spare Field ensures compatibility with system-specific requirements.\n\n\n\n\n\n\n\n\n\nThe Packet Utilization Standard (PUS), part of the ECSS standards, defines a framework for using telemetry and telecommand packets to monitor and control spacecraft subsystems and payloads. Initially developed by ESA in the 1990s, PUS has become a widely adopted standard for spacecraft operations, reducing mission complexity and enhancing interoperability.\n\n\n\nPUS establishes a unified structure for spacecraft communication, enabling: - Remote Monitoring: Observing spacecraft status and health. - Command Execution: Controlling onboard systems and payloads. - Operational Consistency: Standardizing processes across missions.\n\n\n\n\nModular Services: Provides predefined services for common spacecraft operations.\nTailorability: Allows customization for mission-specific needs.\nInteroperability: Facilitates seamless interaction between ground stations and spacecraft.\n\n\n\n\nPUS defines various services, each targeting a specific operational aspect. Below is a list of core services:\n\n\n\nNo.\nService Name\n\n\n\n\n1\nTelecommand Verification\n\n\n2\nDevice Command Distribution\n\n\n3\nHousekeeping and Diagnostic Data Reporting\n\n\n4\nParameter Statistics Reporting\n\n\n5\nEvent Reporting\n\n\n6\nMemory Management\n\n\n8\nFunction Management\n\n\n9\nTime Management\n\n\n11\nOn-board Operations Scheduling\n\n\n12\nOn-board Monitoring\n\n\n13\nLarge Data Transfer\n\n\n14\nPacket Forwarding Control\n\n\n15\nOn-board Storage and Retrieval\n\n\n17\nTest\n\n\n18\nOn-board Operations Procedure\n\n\n19\nEvent-Action\n\n\n\n\n\n\n\nReduced Complexity: By standardizing telemetry and telecommand operations, PUS simplifies spacecraft design and development.\nFlexibility: Missions can select and implement only the services they require.\nReliability: Standardized procedures enhance robustness and minimize operational errors.\n\n\n\n\nEach mission can adapt PUS to its unique requirements by selecting relevant services, adjusting parameters, and defining custom extensions when necessary. The process involves: - Assigning specific Application Process Identifiers (APIDs). - Configuring service capabilities, such as memory management areas or telemetry event thresholds. - Documenting these decisions in a Space-to-Ground Interface Control Document (ICD).\n\n\n\nPUS is a cornerstone of ESA missions, including Rosetta, Envisat, and Integral. It is also suitable for missions with diverse architectures, from centralized systems to distributed networks onboard spacecraft.",
-    "crumbs": [
-      "Flatsat",
-      "Pus services"
-    ]
-  },
-  {
-    "objectID": "flatsat/pus.html#space-packet-structure",
-    "href": "flatsat/pus.html#space-packet-structure",
-    "title": "PUS Service",
-    "section": "",
-    "text": "Set to 0, identifying it as a space packet (version 1 CCSDS packet).\n\n\n\n\n\n0: Telemetry packets.\n1: Telecommand packets.\n\n\n\n\n\nIndicates the presence or absence of a secondary header:\n\nTelemetry packets: All include a secondary header, except spacecraft time packets.\nTelecommand packets: All include a secondary header, except CPDU command packets.\n\n\n\n\n\n\nUniquely identifies:\n\nThe source of telemetry packets.\nThe destination of telecommand packets.\n\nSome values are reserved by CCSDS and unavailable for PUS services.\n\n\n\n\n\nUnused by the protocol but set to “11” to indicate stand-alone packets.\nAll packets in this Standard are stand-alone packets.\n\n\n\n\n\nTelemetry packets: Incremented by 1 for each released packet and wraps at (2^{14} - 1).\nTelecommand packets: Use a sequence count or packet name to uniquely identify packets within a communication session.\n\n\n\n\n\nSpecifies the length of the packet data field:\n\nValue is one less than the number of octets in the data field.\nTotal packet length = Packet data field length + 6 octets (primary header).\n\n\n\n\n\n\nTelemetry Packets:\n\nSecondary header.\nUser data field.\n\nTelecommand Packets:\n\nSecondary header.\nUser data field.\n\n\n\n\n\n\n\n\n\n\nPresence:\n\nAll telemetry packets, except spacecraft time packets, include a secondary header.\n\nStructure:\n\nFields:\n\nSpacecraft Time: Absolute, fixed-size.\nPUS Version: 4 bits, set to 2.\nReference Number: 4 bits, enumerated.\nMessage Type ID: 8 bits, enumerated.\nService Type ID: 8 bits, enumerated.\nMessage Subtype ID: 8 bits, enumerated.\nMessage Counter: 16 bits, unsigned integer.\nDestination ID: Application process user identifier.\nSpare Field: Optional, used to align header size to integral words.\n\n\nTime Reference:\n\nStatus:\n\nIf capable, set to the status of the onboard time reference when tagging packets.\nIf not capable, set to 0.\n\nTime Tag: Stored in the time field of the header.\n\nMessage Metadata:\n\nType ID: Set to the identifier of the report.\nCounter:\n\nIf capable, set to the count of messages of this type.\nIf not capable, set to 0.\n\n\nDeclaration Requirements:\n\nPresence and bit-size of the spare field must be declared for each application process.\nTime field PFC (Packet Format Control) must align with the spacecraft’s time service.\n\n\n\n\n\n\nThe PUS Version indicates compliance with ECSS-E-ST-70-41C (version 2).\nThe Spare Field adjusts header length and is application-specific.\n\n\n\n\n\n\n\n\n\n\nPresence:\n\nAll telecommand packets include a secondary header, except for CPDU command packets.\n\nStructure:\n\nFields:\n\nAcknowledgement Flags: 4 bits, controls reporting of request states:\n\nBit 3: Successful acceptance by the destination application process.\nBit 2: Successful start of execution by the destination application process.\nBit 1: Progress reporting of execution.\nBit 0: Successful completion of execution.\n\nPUS Version: 4 bits, set to 2.\nMessage Type ID: 8 bits, enumerated.\nService Type ID: 8 bits, enumerated.\nMessage Subtype ID: 8 bits, enumerated.\nSource ID: 16 bits, identifies the source application process.\nSpare Field: Optional, aligns header size to integral words.\n\n\nRequest Metadata:\n\nMessage Type ID: Set to the identifier of the request.\nSource ID: Set to the source identifier of the issuing application process.\n\nDeclaration Requirements:\n\nPresence and bit-size of the spare field must be declared for each application process.\n\n\n\n\n\n\nThe PUS Version reflects compliance with ECSS-E-ST-70-41C (version 2).\nAcknowledgement flags provide flexibility in managing state reporting for telecommand requests.\nThe Spare Field ensures compatibility with system-specific requirements.",
-    "crumbs": [
-      "Flatsat",
-      "Pus services"
-    ]
-  },
-  {
-    "objectID": "flatsat/pus.html#comprehensive-overview-of-the-packet-utilization-standard-pus",
-    "href": "flatsat/pus.html#comprehensive-overview-of-the-packet-utilization-standard-pus",
-    "title": "PUS Service",
-    "section": "",
-    "text": "The Packet Utilization Standard (PUS), part of the ECSS standards, defines a framework for using telemetry and telecommand packets to monitor and control spacecraft subsystems and payloads. Initially developed by ESA in the 1990s, PUS has become a widely adopted standard for spacecraft operations, reducing mission complexity and enhancing interoperability.\n\n\n\nPUS establishes a unified structure for spacecraft communication, enabling: - Remote Monitoring: Observing spacecraft status and health. - Command Execution: Controlling onboard systems and payloads. - Operational Consistency: Standardizing processes across missions.\n\n\n\n\nModular Services: Provides predefined services for common spacecraft operations.\nTailorability: Allows customization for mission-specific needs.\nInteroperability: Facilitates seamless interaction between ground stations and spacecraft.\n\n\n\n\nPUS defines various services, each targeting a specific operational aspect. Below is a list of core services:\n\n\n\nNo.\nService Name\n\n\n\n\n1\nTelecommand Verification\n\n\n2\nDevice Command Distribution\n\n\n3\nHousekeeping and Diagnostic Data Reporting\n\n\n4\nParameter Statistics Reporting\n\n\n5\nEvent Reporting\n\n\n6\nMemory Management\n\n\n8\nFunction Management\n\n\n9\nTime Management\n\n\n11\nOn-board Operations Scheduling\n\n\n12\nOn-board Monitoring\n\n\n13\nLarge Data Transfer\n\n\n14\nPacket Forwarding Control\n\n\n15\nOn-board Storage and Retrieval\n\n\n17\nTest\n\n\n18\nOn-board Operations Procedure\n\n\n19\nEvent-Action\n\n\n\n\n\n\n\nReduced Complexity: By standardizing telemetry and telecommand operations, PUS simplifies spacecraft design and development.\nFlexibility: Missions can select and implement only the services they require.\nReliability: Standardized procedures enhance robustness and minimize operational errors.\n\n\n\n\nEach mission can adapt PUS to its unique requirements by selecting relevant services, adjusting parameters, and defining custom extensions when necessary. The process involves: - Assigning specific Application Process Identifiers (APIDs). - Configuring service capabilities, such as memory management areas or telemetry event thresholds. - Documenting these decisions in a Space-to-Ground Interface Control Document (ICD).\n\n\n\nPUS is a cornerstone of ESA missions, including Rosetta, Envisat, and Integral. It is also suitable for missions with diverse architectures, from centralized systems to distributed networks onboard spacecraft.",
-    "crumbs": [
-      "Flatsat",
-      "Pus services"
-    ]
-  },
-  {
-    "objectID": "LearningMore/swdev.html",
-    "href": "LearningMore/swdev.html",
-    "title": "Software development on the flatsat",
-    "section": "",
-    "text": "GitFlow is a branching strategy designed to streamline development, testing, and deployment processes in larger projects. It defines structured branches and workflows for managing features, releases, and urgent fixes in a way that maintains a stable codebase and enables continuous development.\n\n\n\nGitFlow primarily uses five branch types:\n\nMain (master): The stable branch reflecting the current production code. Only release and hotfix branches are merged into main, maintaining its stability.\nDevelop: This branch holds the latest accepted developments. New features and improvements are merged into develop, which serves as the basis for release branches.\nFeature: Created from develop to work on new features or enhancements. Feature branches are short-lived and must be integrated back into develop after completion.\nRelease: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.\nHotfix: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.\n\n\n\n\n\n\n\nFeature Development:\n\nStart a feature branch from develop using a clear prefix like feature/feature-name.\nImplement the feature, commit changes, and push the branch if needed.\nUpon completion, merge the feature branch back into develop and delete it.\n\n\n\n\nPreparing a Release:\n\nWhen develop is stable and ready for a release, create a release branch (e.g., release/1.0).\nFinalize minor adjustments and version updates on the release branch.\nOnce testing and fixes are complete, merge it into both main and develop. Tag this commit for reference.\n\n\n\n\nHotfixes:\n\nHotfixes are created directly from main for urgent production issues.\nAfter the fix, merge the hotfix branch into both main and develop to ensure the codebase remains consistent.\n\n\n\n\n\n\n\nTo optimize GitFlow usage and maintain a smooth development process, consider the following practices:\n\nFrequent Commits and Atomic Changes: Make small, focused commits to ease code reviews and bug tracking.\nClear Branch Naming Conventions: Use prefixes (feature/, release/, hotfix/) for clarity in identifying branch purposes.\nDescriptive Commit Messages: Document each change with a concise message to aid in tracking and debugging.\nAutomate Testing and CI/CD: Run automated tests on all branches to catch issues early, ensuring only stable code reaches main.\nPull Requests for Merges: Use pull requests for merging to ensure code reviews and prevent conflicts.\n\n\n\n\n\n\nImproved Collaboration: Clearly defined branches reduce merge conflicts and enhance teamwork.\nStable Main Branch: Maintains production stability, allowing hotfixes without disrupting ongoing development.\nEnhanced Version Control: Organizes commits by type (feature, fix, release), helping trace development progress.\n\n\n\n\n\nGitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.\nFor more details on GitFlow and best practices, refer to Atlassian’s GitFlow Tutorial, GitKraken’s Workflow Guide, and Stackademic’s Guide.",
-    "crumbs": [
-      "Ressources",
-      "Git Hub workflow"
-    ]
-  },
-  {
-    "objectID": "LearningMore/swdev.html#branching-model",
-    "href": "LearningMore/swdev.html#branching-model",
-    "title": "Software development on the flatsat",
-    "section": "",
-    "text": "GitFlow primarily uses five branch types:\n\nMain (master): The stable branch reflecting the current production code. Only release and hotfix branches are merged into main, maintaining its stability.\nDevelop: This branch holds the latest accepted developments. New features and improvements are merged into develop, which serves as the basis for release branches.\nFeature: Created from develop to work on new features or enhancements. Feature branches are short-lived and must be integrated back into develop after completion.\nRelease: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.\nHotfix: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.",
-    "crumbs": [
-      "Ressources",
-      "Git Hub workflow"
-    ]
-  },
-  {
-    "objectID": "LearningMore/swdev.html#workflow-process",
-    "href": "LearningMore/swdev.html#workflow-process",
-    "title": "Software development on the flatsat",
-    "section": "",
-    "text": "Feature Development:\n\nStart a feature branch from develop using a clear prefix like feature/feature-name.\nImplement the feature, commit changes, and push the branch if needed.\nUpon completion, merge the feature branch back into develop and delete it.\n\n\n\n\nPreparing a Release:\n\nWhen develop is stable and ready for a release, create a release branch (e.g., release/1.0).\nFinalize minor adjustments and version updates on the release branch.\nOnce testing and fixes are complete, merge it into both main and develop. Tag this commit for reference.\n\n\n\n\nHotfixes:\n\nHotfixes are created directly from main for urgent production issues.\nAfter the fix, merge the hotfix branch into both main and develop to ensure the codebase remains consistent.",
-    "crumbs": [
-      "Ressources",
-      "Git Hub workflow"
-    ]
-  },
-  {
-    "objectID": "LearningMore/swdev.html#best-practices",
-    "href": "LearningMore/swdev.html#best-practices",
-    "title": "Software development on the flatsat",
-    "section": "",
-    "text": "To optimize GitFlow usage and maintain a smooth development process, consider the following practices:\n\nFrequent Commits and Atomic Changes: Make small, focused commits to ease code reviews and bug tracking.\nClear Branch Naming Conventions: Use prefixes (feature/, release/, hotfix/) for clarity in identifying branch purposes.\nDescriptive Commit Messages: Document each change with a concise message to aid in tracking and debugging.\nAutomate Testing and CI/CD: Run automated tests on all branches to catch issues early, ensuring only stable code reaches main.\nPull Requests for Merges: Use pull requests for merging to ensure code reviews and prevent conflicts.",
-    "crumbs": [
-      "Ressources",
-      "Git Hub workflow"
-    ]
-  },
-  {
-    "objectID": "LearningMore/swdev.html#advantages-of-gitflow",
-    "href": "LearningMore/swdev.html#advantages-of-gitflow",
-    "title": "Software development on the flatsat",
-    "section": "",
-    "text": "Improved Collaboration: Clearly defined branches reduce merge conflicts and enhance teamwork.\nStable Main Branch: Maintains production stability, allowing hotfixes without disrupting ongoing development.\nEnhanced Version Control: Organizes commits by type (feature, fix, release), helping trace development progress.",
-    "crumbs": [
-      "Ressources",
-      "Git Hub workflow"
-    ]
-  },
-  {
-    "objectID": "LearningMore/swdev.html#conclusion",
-    "href": "LearningMore/swdev.html#conclusion",
-    "title": "Software development on the flatsat",
-    "section": "",
-    "text": "GitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.\nFor more details on GitFlow and best practices, refer to Atlassian’s GitFlow Tutorial, GitKraken’s Workflow Guide, and Stackademic’s Guide.",
-    "crumbs": [
-      "Ressources",
-      "Git Hub workflow"
-    ]
-  },
-  {
     "objectID": "LearningMore/platform.html",
     "href": "LearningMore/platform.html",
     "title": "Rewind on Satellite platform and subsystems",
@@ -731,6 +99,94 @@
     ]
   },
   {
+    "objectID": "LearningMore/redundancy.html",
+    "href": "LearningMore/redundancy.html",
+    "title": "Hot, Warm, and Cold Redundant Systems",
+    "section": "",
+    "text": "Sources:\n\nReliability Engineering 2 (1981), G. N. Sharma, Space Applications Centre, India\nCold, warm and hot redundancy: determining how much you need\n\n\n\n\nUnplanned failures in spaceborne and ground systems are minimized with redundancy, either active (hot), standby (cold), or intermediate (warm). This paper examines both types in detail to optimize reliability.\n\n\n\n\n[R]hs: Reliability of hot redundant system\n[R]cs: Reliability of cold redundant system\nMTBF: Mean Time Between Failures\nr: Reliability of a single unit\n\n\n\n\nReliability for critical systems can be achieved through different redundancy strategies:\n\nHot Redundancy: All units operate simultaneously, allowing for instant failover.\nCold Redundancy: Only one unit is operational, with standby units activated if needed.\nWarm Redundancy (per Automation IT): Used in processes requiring rapid response but tolerating brief outages; it engages secondary processors quickly without seamless transition.\n\n\n\n\nHot redundancy enhances reliability by maintaining constant operation across components. It suits critical processes where interruptions are unacceptable.\n\n\nThe MTBF for n exponential units in parallel extends as additional units are added.\n\n\n\n\nCold redundancy suits non-critical systems where downtime is manageable. It relies on standby units to activate after primary failure.\n\n\n\nA warm system allows standby units to synchronize periodically, suitable for processes that allow brief outages but require quick recovery.\n\n\n\nFirst Redundant Unit in hot redundancy increases reliability ~1.6x with MTBF mission time.\nCold Redundancy generally offers higher reliability when ideal switching is possible.\nWarm Redundancy minimizes system restart time, providing an intermediate solution for systems needing balance.\n\n\n\n\nCold redundancy provides a higher MTBF than hot or warm redundancy when extra units are added.\n\n\n\n\nCold and warm redundancies offer distinct benefits in reliability and MTBF, each appropriate to specific system requirements..",
+    "crumbs": [
+      "Ressources",
+      "Redundancy"
+    ]
+  },
+  {
+    "objectID": "LearningMore/redundancy.html#abstract",
+    "href": "LearningMore/redundancy.html#abstract",
+    "title": "Hot, Warm, and Cold Redundant Systems",
+    "section": "",
+    "text": "Unplanned failures in spaceborne and ground systems are minimized with redundancy, either active (hot), standby (cold), or intermediate (warm). This paper examines both types in detail to optimize reliability.",
+    "crumbs": [
+      "Ressources",
+      "Redundancy"
+    ]
+  },
+  {
+    "objectID": "LearningMore/redundancy.html#notation",
+    "href": "LearningMore/redundancy.html#notation",
+    "title": "Hot, Warm, and Cold Redundant Systems",
+    "section": "",
+    "text": "[R]hs: Reliability of hot redundant system\n[R]cs: Reliability of cold redundant system\nMTBF: Mean Time Between Failures\nr: Reliability of a single unit",
+    "crumbs": [
+      "Ressources",
+      "Redundancy"
+    ]
+  },
+  {
+    "objectID": "LearningMore/redundancy.html#introduction",
+    "href": "LearningMore/redundancy.html#introduction",
+    "title": "Hot, Warm, and Cold Redundant Systems",
+    "section": "",
+    "text": "Reliability for critical systems can be achieved through different redundancy strategies:\n\nHot Redundancy: All units operate simultaneously, allowing for instant failover.\nCold Redundancy: Only one unit is operational, with standby units activated if needed.\nWarm Redundancy (per Automation IT): Used in processes requiring rapid response but tolerating brief outages; it engages secondary processors quickly without seamless transition.",
+    "crumbs": [
+      "Ressources",
+      "Redundancy"
+    ]
+  },
+  {
+    "objectID": "LearningMore/redundancy.html#hot-redundant-systems",
+    "href": "LearningMore/redundancy.html#hot-redundant-systems",
+    "title": "Hot, Warm, and Cold Redundant Systems",
+    "section": "",
+    "text": "Hot redundancy enhances reliability by maintaining constant operation across components. It suits critical processes where interruptions are unacceptable.\n\n\nThe MTBF for n exponential units in parallel extends as additional units are added.",
+    "crumbs": [
+      "Ressources",
+      "Redundancy"
+    ]
+  },
+  {
+    "objectID": "LearningMore/redundancy.html#cold-redundant-systems",
+    "href": "LearningMore/redundancy.html#cold-redundant-systems",
+    "title": "Hot, Warm, and Cold Redundant Systems",
+    "section": "",
+    "text": "Cold redundancy suits non-critical systems where downtime is manageable. It relies on standby units to activate after primary failure.",
+    "crumbs": [
+      "Ressources",
+      "Redundancy"
+    ]
+  },
+  {
+    "objectID": "LearningMore/redundancy.html#warm-redundant-systems",
+    "href": "LearningMore/redundancy.html#warm-redundant-systems",
+    "title": "Hot, Warm, and Cold Redundant Systems",
+    "section": "",
+    "text": "A warm system allows standby units to synchronize periodically, suitable for processes that allow brief outages but require quick recovery.\n\n\n\nFirst Redundant Unit in hot redundancy increases reliability ~1.6x with MTBF mission time.\nCold Redundancy generally offers higher reliability when ideal switching is possible.\nWarm Redundancy minimizes system restart time, providing an intermediate solution for systems needing balance.\n\n\n\n\nCold redundancy provides a higher MTBF than hot or warm redundancy when extra units are added.",
+    "crumbs": [
+      "Ressources",
+      "Redundancy"
+    ]
+  },
+  {
+    "objectID": "LearningMore/redundancy.html#conclusion",
+    "href": "LearningMore/redundancy.html#conclusion",
+    "title": "Hot, Warm, and Cold Redundant Systems",
+    "section": "",
+    "text": "Cold and warm redundancies offer distinct benefits in reliability and MTBF, each appropriate to specific system requirements..",
+    "crumbs": [
+      "Ressources",
+      "Redundancy"
+    ]
+  },
+  {
     "objectID": "LearningMore/yamcsbasesetup.html",
     "href": "LearningMore/yamcsbasesetup.html",
     "title": "How to Set Up and Test a New MDB in Yamcs",
@@ -761,6 +217,550 @@
     "crumbs": [
       "Ressources",
       "Set up a basic yamcs with a custom scos2000 MiB"
+    ]
+  },
+  {
+    "objectID": "flatsat/ccsdspackets.html",
+    "href": "flatsat/ccsdspackets.html",
+    "title": "CCSDS Space Communication Protocols",
+    "section": "",
+    "text": "CCSDS standards ensure interoperability in space communications, defining three main protocols:\n\nSpace Packet Protocol (SPP): Structures and transports space data.\nTelecommand (TC) Protocol: Sends commands from ground to a satellite.\nTelemetry (TM) Protocol: Returns satellite telemetry to the ground.\n\n\n\n\nSPP (CCSDS 133.0-B-2) structures and transports data in “space packets.”\n\n\nA Space Packet shall include the defined fields, positioned contiguously, in the following sequence: 1. Packet Primary Header (6 octets, mandatory); 2. Packet Data Field (from 1 to 65536 octets, mandatory).\nA Space Packet shall consist of at least 7 and at most 65542 octets.\n\n\n\nSpace Packet Structural Components\n\n\n\n\n\n\nApplication Identification: Uses the APID (Application Process Identifier) field.\nData Flexibility: Variable packet sizes for adaptability.\nLayer Independence: Compatible with various link protocols.\n\n\n\n\nThe Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence:\n\nPacket Version Number (3 bits, mandatory);\nPacket Identification Field (13 bits, mandatory);\nPacket Sequence Control Field (16 bits, mandatory);\nPacket Data Length (16 bits, mandatory).\n\n\n\n\n\n\nThe purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.\nSecondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space\n\n\n\n\n\nWhen communicating between the ground and the OBC, the packets flow on the CAN bus with CAN-TS protocol and also on and of radio frequency through the intermediary of a radio. Essentially, the packet remains untouched except for the primary header. When the radio receives a TC from the ground, it will send fragment it into 8 byte CAN packets. The first packet to be transmitted onto the bus is the Primary header of the SPP packet which needs to be acknowledged by the OBC in order for it to send the rest of the datafield. The primary header gets two modifications done to it: 1. The addition of a 1 byte “prefix” byte (always 0x01) - the 6 byte header - a 7 bit counter - a 1 bit “first” flag 2. To mitigate all possible confusion between CAN-TS packets and SPP packets, the primary header sends the bytes in reverse order. This is also applied for the TM. For the Radio to understand its an SPP packet, the OBC needs to send the primary header in reverse order.\nThe rest of the datafield remains untouched.\n\n\n\n\n\nA TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Header (5 octets, mandatory);\nTransfer Frame Data Field (up to 1019 or 1017 octets, mandatory);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTC Transfer Frame Structural Components\n\n\nNOTES :\n\nThe TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.\nThe maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.\nThe structural components of the TC Transfer Frame are shown in figure.\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Version Number (2 bits, mandatory);\nBypass Flag (1 bit, mandatory);\nControl Command Flag (1 bit, mandatory);\nReserved Spare (2 bits, mandatory);\nSpacecraft Identifier (10 bits, mandatory);\nVirtual Channel Identifier (6 bits, mandatory);\nFrame Length (10 bits, mandatory);\nFrame Sequence Number (8 bits, mandatory).\nNOTE – The format of the Transfer Frame Primary Header is shown in figure.\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\n\n\nA TM Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Primary Header (6 octets, mandatory);\nTransfer Frame Secondary Header (up to 64 octets, optional);\nTransfer Frame Data Field (integral number of octets, mandatory);\nOperational Control Field (4 octets, optional);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTM Transfer Frame Structural Components\n\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of six fields, positioned contiguously, in the following sequence:\n\nMaster Channel Identifier (12 bits, mandatory);\nVirtual Channel Identifier (3 bits, mandatory);\nOperational Control Field Flag (1 bit, mandatory);\nMaster Channel Frame Count (1 octet, mandatory);\nVirtual Channel Frame Count (1 octet, mandatory);\nTransfer Frame Data Field Status (2 octets, mandatory).\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\nBits 32–47 of the Transfer Frame Primary Header shall contain the Transfer Frame Data Field Status.\nThis 16-bit field shall be sub-divided into five sub-fields, as follows:\n\nTransfer Frame Secondary Header Flag (1 bit, mandatory);\nSynchronization Flag (1 bit, mandatory);\nPacket Order Flag (1 bit, mandatory);\nSegment Length Identifier (2 bits, mandatory);\nFirst Header Pointer (11 bits, mandatory).\n\n\n\n\n\nIf present, the Transfer Frame Secondary Header shall follow, without gap, the Transfer Frame Primary Header.\nThe Transfer Frame Secondary Header shall consist of an integral number of octets as follows:\n\nTransfer Frame Secondary Header Identification Field (1 octet, mandatory);\nTransfer Frame Secondary Header Data Field (1 to 63 octets, mandatory).\n\n\n\n\nTransfer Frame Secondary Header\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransports data as packets\nN/A\n\n\nTC\nData Link\nSends commands\nSDLS Support\n\n\nTM\nData Link\nSends telemetry\nSDLS Support\n\n\n\n\n\n\n\n\nBoth CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.",
+    "crumbs": [
+      "Flatsat",
+      "Space packets"
+    ]
+  },
+  {
+    "objectID": "flatsat/ccsdspackets.html#space-packet-protocol-spp",
+    "href": "flatsat/ccsdspackets.html#space-packet-protocol-spp",
+    "title": "CCSDS Space Communication Protocols",
+    "section": "",
+    "text": "SPP (CCSDS 133.0-B-2) structures and transports data in “space packets.”\n\n\nA Space Packet shall include the defined fields, positioned contiguously, in the following sequence: 1. Packet Primary Header (6 octets, mandatory); 2. Packet Data Field (from 1 to 65536 octets, mandatory).\nA Space Packet shall consist of at least 7 and at most 65542 octets.\n\n\n\nSpace Packet Structural Components\n\n\n\n\n\n\nApplication Identification: Uses the APID (Application Process Identifier) field.\nData Flexibility: Variable packet sizes for adaptability.\nLayer Independence: Compatible with various link protocols.\n\n\n\n\nThe Packet Primary Header is mandatory and shall consist of four fields, positioned contiguously, in the following sequence:\n\nPacket Version Number (3 bits, mandatory);\nPacket Identification Field (13 bits, mandatory);\nPacket Sequence Control Field (16 bits, mandatory);\nPacket Data Length (16 bits, mandatory).\n\n\n\n\n\n\nThe purpose of the Packet Secondary Header is to allow (but not require) a mission-specific means for consistently placing ancillary data (time, internal data field format,spacecraft position/attitude, etc.) in the same location within a Space Packet. Theformat of the secondary header, if present, is managed and mission specific.\nSecondary Header types are registered with SANA (reference [5]), and the actualcontents of the secondary header are ‘managed’ at the SPP service user interface. The service user of the SPP Packet Service provides the SPP service provider with a predefined space packet in the PACKET.request, while the service user of the SPP Octet String Service provides the SPP service provider with a predefined space\n\n\n\n\n\nWhen communicating between the ground and the OBC, the packets flow on the CAN bus with CAN-TS protocol and also on and of radio frequency through the intermediary of a radio. Essentially, the packet remains untouched except for the primary header. When the radio receives a TC from the ground, it will send fragment it into 8 byte CAN packets. The first packet to be transmitted onto the bus is the Primary header of the SPP packet which needs to be acknowledged by the OBC in order for it to send the rest of the datafield. The primary header gets two modifications done to it: 1. The addition of a 1 byte “prefix” byte (always 0x01) - the 6 byte header - a 7 bit counter - a 1 bit “first” flag 2. To mitigate all possible confusion between CAN-TS packets and SPP packets, the primary header sends the bytes in reverse order. This is also applied for the TM. For the Radio to understand its an SPP packet, the OBC needs to send the primary header in reverse order.\nThe rest of the datafield remains untouched.",
+    "crumbs": [
+      "Flatsat",
+      "Space packets"
+    ]
+  },
+  {
+    "objectID": "flatsat/ccsdspackets.html#tc-transfert-frame",
+    "href": "flatsat/ccsdspackets.html#tc-transfert-frame",
+    "title": "CCSDS Space Communication Protocols",
+    "section": "",
+    "text": "A TC Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Header (5 octets, mandatory);\nTransfer Frame Data Field (up to 1019 or 1017 octets, mandatory);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTC Transfer Frame Structural Components\n\n\nNOTES :\n\nThe TC Transfer Frame is the protocol data unit transmitted from the sending end tothe receiving end by the TC Space Data Link Protocol. In this Recommended Standard, the TC Transfer Frame is also called the Transfer Frame or Frame for simplicity.\nThe maximum Transfer Frame length allowed by a particular spacecraft or ground implementation on a particular Virtual Channel may be less than the maximum specified here.\nThe structural components of the TC Transfer Frame are shown in figure.\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of eight fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Version Number (2 bits, mandatory);\nBypass Flag (1 bit, mandatory);\nControl Command Flag (1 bit, mandatory);\nReserved Spare (2 bits, mandatory);\nSpacecraft Identifier (10 bits, mandatory);\nVirtual Channel Identifier (6 bits, mandatory);\nFrame Length (10 bits, mandatory);\nFrame Sequence Number (8 bits, mandatory).\nNOTE – The format of the Transfer Frame Primary Header is shown in figure.\n\n\n\n\nTransfer Frame Primary Header",
+    "crumbs": [
+      "Flatsat",
+      "Space packets"
+    ]
+  },
+  {
+    "objectID": "flatsat/ccsdspackets.html#tm-transfert-frame",
+    "href": "flatsat/ccsdspackets.html#tm-transfert-frame",
+    "title": "CCSDS Space Communication Protocols",
+    "section": "",
+    "text": "A TM Transfer Frame shall encompass the major fields, positioned contiguously, in the following sequence:\n\nTransfer Frame Primary Header (6 octets, mandatory);\nTransfer Frame Secondary Header (up to 64 octets, optional);\nTransfer Frame Data Field (integral number of octets, mandatory);\nOperational Control Field (4 octets, optional);\nFrame Error Control Field (2 octets, optional).\n\n\n\n\nTM Transfer Frame Structural Components\n\n\n\n\nThe Transfer Frame Primary Header is mandatory and shall consist of six fields, positioned contiguously, in the following sequence:\n\nMaster Channel Identifier (12 bits, mandatory);\nVirtual Channel Identifier (3 bits, mandatory);\nOperational Control Field Flag (1 bit, mandatory);\nMaster Channel Frame Count (1 octet, mandatory);\nVirtual Channel Frame Count (1 octet, mandatory);\nTransfer Frame Data Field Status (2 octets, mandatory).\n\n\n\n\nTransfer Frame Primary Header\n\n\n\n\n\nBits 32–47 of the Transfer Frame Primary Header shall contain the Transfer Frame Data Field Status.\nThis 16-bit field shall be sub-divided into five sub-fields, as follows:\n\nTransfer Frame Secondary Header Flag (1 bit, mandatory);\nSynchronization Flag (1 bit, mandatory);\nPacket Order Flag (1 bit, mandatory);\nSegment Length Identifier (2 bits, mandatory);\nFirst Header Pointer (11 bits, mandatory).\n\n\n\n\n\nIf present, the Transfer Frame Secondary Header shall follow, without gap, the Transfer Frame Primary Header.\nThe Transfer Frame Secondary Header shall consist of an integral number of octets as follows:\n\nTransfer Frame Secondary Header Identification Field (1 octet, mandatory);\nTransfer Frame Secondary Header Data Field (1 to 63 octets, mandatory).\n\n\n\n\nTransfer Frame Secondary Header\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol\nOSI Layer\nMain Function\nSecurity\n\n\n\n\nSPP\nApplication\nTransports data as packets\nN/A\n\n\nTC\nData Link\nSends commands\nSDLS Support\n\n\nTM\nData Link\nSends telemetry\nSDLS Support",
+    "crumbs": [
+      "Flatsat",
+      "Space packets"
+    ]
+  },
+  {
+    "objectID": "flatsat/ccsdspackets.html#conclusion",
+    "href": "flatsat/ccsdspackets.html#conclusion",
+    "title": "CCSDS Space Communication Protocols",
+    "section": "",
+    "text": "Both CAN-TS and CANopen have crucial roles in embedded systems, each suited for specific applications: CAN-TS for memory-limited aerospace applications, CANopen for complex industrial systems.",
+    "crumbs": [
+      "Flatsat",
+      "Space packets"
+    ]
+  },
+  {
+    "objectID": "flatsat/yamcs.html",
+    "href": "flatsat/yamcs.html",
+    "title": "Yamcs Overview",
+    "section": "",
+    "text": "Yamcs is an open-source software for real-time mission control, providing tools for spacecraft and ground system operations.\n\n\n\n\nTelemetry Processing: Real-time telemetry data processing.\nTelecommands: Command satellites or spacecraft.\nAlarms & Notifications: Configurable alarms based on thresholds.\nData Replay: Allows mission data replay.\nStandards Compliance: Supports CCSDS, CFDP, and XTCE standards.\n\n\n\n\nTo set up Yamcs, follow the Getting Started Guide covering installation, configuration, and basic usage.\n\n\n\nThe Python Yamcs Client supports telemetry retrieval, commanding, and historical data access via Python for custom mission applications.\n\n\n\nYamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training.\n\n\n\nThe current FlatSat setup is progressively integrating direct CAN messaging with YAMCS, including the capability to transmit commands via the radio link.\n\nYAMCS, as the ground software, generates CAN-TCs to be delivered over the CAN bus. This process requires a mission database to define PUS services, which in our case is structured using the SCOS-2000 format.\nSimultaneously, a library is being developed based on the YAMCS Python client. This library aims to provide a more user-friendly interface for developing test scripts.",
+    "crumbs": [
+      "Flatsat",
+      "yamcs interface and Endurance flatsat library"
+    ]
+  },
+  {
+    "objectID": "flatsat/yamcs.html#introduction",
+    "href": "flatsat/yamcs.html#introduction",
+    "title": "Yamcs Overview",
+    "section": "",
+    "text": "Yamcs is an open-source software for real-time mission control, providing tools for spacecraft and ground system operations.",
+    "crumbs": [
+      "Flatsat",
+      "yamcs interface and Endurance flatsat library"
+    ]
+  },
+  {
+    "objectID": "flatsat/yamcs.html#key-features",
+    "href": "flatsat/yamcs.html#key-features",
+    "title": "Yamcs Overview",
+    "section": "",
+    "text": "Telemetry Processing: Real-time telemetry data processing.\nTelecommands: Command satellites or spacecraft.\nAlarms & Notifications: Configurable alarms based on thresholds.\nData Replay: Allows mission data replay.\nStandards Compliance: Supports CCSDS, CFDP, and XTCE standards.",
+    "crumbs": [
+      "Flatsat",
+      "yamcs interface and Endurance flatsat library"
+    ]
+  },
+  {
+    "objectID": "flatsat/yamcs.html#getting-started",
+    "href": "flatsat/yamcs.html#getting-started",
+    "title": "Yamcs Overview",
+    "section": "",
+    "text": "To set up Yamcs, follow the Getting Started Guide covering installation, configuration, and basic usage.",
+    "crumbs": [
+      "Flatsat",
+      "yamcs interface and Endurance flatsat library"
+    ]
+  },
+  {
+    "objectID": "flatsat/yamcs.html#python-client",
+    "href": "flatsat/yamcs.html#python-client",
+    "title": "Yamcs Overview",
+    "section": "",
+    "text": "The Python Yamcs Client supports telemetry retrieval, commanding, and historical data access via Python for custom mission applications.",
+    "crumbs": [
+      "Flatsat",
+      "yamcs interface and Endurance flatsat library"
+    ]
+  },
+  {
+    "objectID": "flatsat/yamcs.html#extensions-and-support",
+    "href": "flatsat/yamcs.html#extensions-and-support",
+    "title": "Yamcs Overview",
+    "section": "",
+    "text": "Yamcs is Java-based and extendable. Space Applications Services offers professional support, custom development, and training.",
+    "crumbs": [
+      "Flatsat",
+      "yamcs interface and Endurance flatsat library"
+    ]
+  },
+  {
+    "objectID": "flatsat/yamcs.html#flatsat-set-up",
+    "href": "flatsat/yamcs.html#flatsat-set-up",
+    "title": "Yamcs Overview",
+    "section": "",
+    "text": "The current FlatSat setup is progressively integrating direct CAN messaging with YAMCS, including the capability to transmit commands via the radio link.\n\nYAMCS, as the ground software, generates CAN-TCs to be delivered over the CAN bus. This process requires a mission database to define PUS services, which in our case is structured using the SCOS-2000 format.\nSimultaneously, a library is being developed based on the YAMCS Python client. This library aims to provide a more user-friendly interface for developing test scripts.",
+    "crumbs": [
+      "Flatsat",
+      "yamcs interface and Endurance flatsat library"
+    ]
+  },
+  {
+    "objectID": "flatsat/endurance.html#overview-of-endurance-services",
+    "href": "flatsat/endurance.html#overview-of-endurance-services",
+    "title": "Endurance Overview.",
+    "section": "1. Overview of Endurance Services",
+    "text": "1. Overview of Endurance Services\n\n\n\n\n\n\nIn Geostationary Orbit (GEO):\n\nStationkeeping:\n\nService duration of up to 5 years\n\nOrbital Transfer:\n\nCapability to move the client to any GEO orbital slot or correct inclination\n\nAttitude Control:\n\nFine attitude control with an accuracy of up to 0.04 degrees\n\nEnd-of-Life (EOL) Disposal:\n\nTransfer to a GEO graveyard orbit at the end of operations",
+    "crumbs": [
+      "Flatsat",
+      "Endurance overview"
+    ]
+  },
+  {
+    "objectID": "flatsat/endurance.html#project-achievements-and-future-goals",
+    "href": "flatsat/endurance.html#project-achievements-and-future-goals",
+    "title": "Endurance Overview.",
+    "section": "2. Project Achievements and Future Goals",
+    "text": "2. Project Achievements and Future Goals\n\nLife Extension Start: Planned for 2026, marking Endurance as the first French company to achieve Life Extension.\nDevelopment Phases:\n\nPhase A: Successfully completed in 2022\nPhase B:\n\nSystem Requirements Review (SRR) in Q4 2023\nPreliminary Design Review (PDR) in Q1 2024\nEstablishment of Industrial Consortium\nRendezvous (RdV) tests in progress\n\nPhase C:\n\nCritical Design Review (CDR) planned for Q4 2024\nPlatform manufacture and testing\nCompletion of RdV and Docking testing\n\nPhase D:\n\nFlight Model (FM) production and integration\nAcceptance testing\n\nPhase E:\n\nLaunch and commissioning in Q1 2026\nEOR, RdV, docking, and life-extension operations",
+    "crumbs": [
+      "Flatsat",
+      "Endurance overview"
+    ]
+  },
+  {
+    "objectID": "flatsat/endurance.html#endurance-summary",
+    "href": "flatsat/endurance.html#endurance-summary",
+    "title": "Endurance Overview.",
+    "section": "3. Endurance Summary",
+    "text": "3. Endurance Summary\n\n\n\n\n\n\n\nParameter\nSpecification\n\n\n\n\nMass\n310 kg (dry), 800 kg (wet)\n\n\nVolume\n1 x 1 x 1.2 m³\n\n\nLauncher Compatibility\nAriane 6 / SpaceX Falcon 9 (rideshare passenger)\n\n\nPower\nTwo tracking solar wings\n\n\nArchitecture\nDual string (core avionics)\n\n\nPropulsion (PROP)\nFour EP thrusters (Krypton propellant), eight RCS thrusters\n\n\nCommunications\nDeployable antennas",
+    "crumbs": [
+      "Flatsat",
+      "Endurance overview"
+    ]
+  },
+  {
+    "objectID": "flatsat/endurance.html#detailed-system-overview",
+    "href": "flatsat/endurance.html#detailed-system-overview",
+    "title": "Endurance Overview.",
+    "section": "4. Detailed System Overview",
+    "text": "4. Detailed System Overview\n\nPropulsion and Control\n\nReaction Control System (RCS): Eight thrusters for maneuvering\nStationkeeping: Two electric propulsion (EP) thrusters\nElectric Orbit Raising (EOR): Two EP thrusters\nFuel Tanks:\n\nOne Krypton tank with a capacity of 155 liters\nFour RCS tanks\n\n\n\n\nSteering and Orientation\n\nReaction Wheels: Three large reaction wheels for stabilization\nThruster Steering Mechanism: Two degrees of freedom for precise maneuvering",
+    "crumbs": [
+      "Flatsat",
+      "Endurance overview"
+    ]
+  },
+  {
+    "objectID": "flatsat/endurance.html#external-features-of-endurance",
+    "href": "flatsat/endurance.html#external-features-of-endurance",
+    "title": "Endurance Overview.",
+    "section": "5. External Features of Endurance",
+    "text": "5. External Features of Endurance\n\n\n\n\n\n\n\nSolar Arrays: Two wings capable of generating up to 2.2 kW\nAntenna Deployables: Two antennas for ground communication while docked\nCustomizable Docking System: Adaptable for docking with most GEO satellites\n\n\n\n\n\n\n\nTo learn more about general organisation in a satellite platform/payload, see Platform",
+    "crumbs": [
+      "Flatsat",
+      "Endurance overview"
+    ]
+  },
+  {
+    "objectID": "flatsat/flatsat.html",
+    "href": "flatsat/flatsat.html",
+    "title": "Flatsat Overview",
+    "section": "",
+    "text": "Endurance banner",
+    "crumbs": [
+      "Flatsat",
+      "About the flatsat"
+    ]
+  },
+  {
+    "objectID": "flatsat/flatsat.html#purpose-and-use",
+    "href": "flatsat/flatsat.html#purpose-and-use",
+    "title": "Flatsat Overview",
+    "section": "Purpose and Use",
+    "text": "Purpose and Use\nFlatSats are used primarily to test satellite systems and their interoperability before launch, ensuring each component functions correctly. This setup supports end-to-end operations as if in orbit, allowing for command and telemetry testing. For CubeSats, FlatSats provide a low-cost, modular test environment suitable for educational purposes, commercial applications, and experimental payloads.",
+    "crumbs": [
+      "Flatsat",
+      "About the flatsat"
+    ]
+  },
+  {
+    "objectID": "flatsat/flatsat.html#typical-components",
+    "href": "flatsat/flatsat.html#typical-components",
+    "title": "Flatsat Overview",
+    "section": "Typical Components",
+    "text": "Typical Components\nA FlatSat for CubeSat might include: - On-Board Computer (OBC) - Power System - Telemetry and Radio System - Attitude Determination and Control System (ADCS) - Navigation Receiver\nAdditional slots are often available for custom hardware or experimental components, such as AI-based detection algorithms or radiation monitoring payloads.",
+    "crumbs": [
+      "Flatsat",
+      "About the flatsat"
+    ]
+  },
+  {
+    "objectID": "flatsat/flatsat.html#advantages",
+    "href": "flatsat/flatsat.html#advantages",
+    "title": "Flatsat Overview",
+    "section": "Advantages",
+    "text": "Advantages\n\nAccessibility: Subsystems are physically separated, making them accessible for individual testing and replacement.\nOperational Simulation: Commands can be sent via a simulated ground station, with telemetry received for analysis.\nFlexibility: Engineers can easily swap or modify components, an asset for educational and fast-paced commercial projects.\nTesting New Technologies: Allows for validation of new components like radiation-tolerant microcontrollers in a representative environment.",
+    "crumbs": [
+      "Flatsat",
+      "About the flatsat"
+    ]
+  },
+  {
+    "objectID": "flatsat/flatsat.html#endurance-flatsat",
+    "href": "flatsat/flatsat.html#endurance-flatsat",
+    "title": "Flatsat Overview",
+    "section": "Endurance Flatsat",
+    "text": "Endurance Flatsat\n\nRessources\n\nEndurance software spec\n\n\n\nEndurance data handling architecture\nTo describe the different components of the flatsat planned for Endurance, I’m using the DHS view, which allows me to outline the communication protocols between the various systems.\n\nThe flatsat includes:\n\nFlight software\nTwo mission onboard computers (OBCs) in warm redundancy to manage AOCS (orbit), PU, Com, Th, and equipment\nGround segment software (Yamcs) for communication with the OBC\nEGSE for pre-launch spacecraft testing and simulation\nFlatsat computer\nSimulation software\nPower supply\n\nNote: Mission OBCs differ from guidance, navigation, and control (GNC) OBCs (Rendezvous & Grippers) and attitude (ADCS) OBCs, which are also in warm redundancy pairs.\nThis architecture contains 3 main networks :\n\nBest effort Ethernet\nCAN-TS\nCAN-Open\n\nIt also contains point to point communications through LVDS and RS422",
+    "crumbs": [
+      "Flatsat",
+      "About the flatsat"
+    ]
+  },
+  {
+    "objectID": "flatsat/pus.html",
+    "href": "flatsat/pus.html",
+    "title": "PUS Service",
+    "section": "",
+    "text": "Set to 0, identifying it as a space packet (version 1 CCSDS packet).\n\n\n\n\n\n0: Telemetry packets.\n1: Telecommand packets.\n\n\n\n\n\nIndicates the presence or absence of a secondary header:\n\nTelemetry packets: All include a secondary header, except spacecraft time packets.\nTelecommand packets: All include a secondary header, except CPDU command packets.\n\n\n\n\n\n\nUniquely identifies:\n\nThe source of telemetry packets.\nThe destination of telecommand packets.\n\nSome values are reserved by CCSDS and unavailable for PUS services.\n\n\n\n\n\nUnused by the protocol but set to “11” to indicate stand-alone packets.\nAll packets in this Standard are stand-alone packets.\n\n\n\n\n\nTelemetry packets: Incremented by 1 for each released packet and wraps at (2^{14} - 1).\nTelecommand packets: Use a sequence count or packet name to uniquely identify packets within a communication session.\n\n\n\n\n\nSpecifies the length of the packet data field:\n\nValue is one less than the number of octets in the data field.\nTotal packet length = Packet data field length + 6 octets (primary header).\n\n\n\n\n\n\nTelemetry Packets:\n\nSecondary header.\nUser data field.\n\nTelecommand Packets:\n\nSecondary header.\nUser data field.\n\n\n\n\n\n\n\n\n\n\nPresence:\n\nAll telemetry packets, except spacecraft time packets, include a secondary header.\n\nStructure:\n\nFields:\n\nSpacecraft Time: Absolute, fixed-size.\nPUS Version: 4 bits, set to 2.\nReference Number: 4 bits, enumerated.\nMessage Type ID: 8 bits, enumerated.\nService Type ID: 8 bits, enumerated.\nMessage Subtype ID: 8 bits, enumerated.\nMessage Counter: 16 bits, unsigned integer.\nDestination ID: Application process user identifier.\nSpare Field: Optional, used to align header size to integral words.\n\n\nTime Reference:\n\nStatus:\n\nIf capable, set to the status of the onboard time reference when tagging packets.\nIf not capable, set to 0.\n\nTime Tag: Stored in the time field of the header.\n\nMessage Metadata:\n\nType ID: Set to the identifier of the report.\nCounter:\n\nIf capable, set to the count of messages of this type.\nIf not capable, set to 0.\n\n\nDeclaration Requirements:\n\nPresence and bit-size of the spare field must be declared for each application process.\nTime field PFC (Packet Format Control) must align with the spacecraft’s time service.\n\n\n\n\n\n\nThe PUS Version indicates compliance with ECSS-E-ST-70-41C (version 2).\nThe Spare Field adjusts header length and is application-specific.\n\n\n\n\n\n\n\n\n\n\nPresence:\n\nAll telecommand packets include a secondary header, except for CPDU command packets.\n\nStructure:\n\nFields:\n\nAcknowledgement Flags: 4 bits, controls reporting of request states:\n\nBit 3: Successful acceptance by the destination application process.\nBit 2: Successful start of execution by the destination application process.\nBit 1: Progress reporting of execution.\nBit 0: Successful completion of execution.\n\nPUS Version: 4 bits, set to 2.\nMessage Type ID: 8 bits, enumerated.\nService Type ID: 8 bits, enumerated.\nMessage Subtype ID: 8 bits, enumerated.\nSource ID: 16 bits, identifies the source application process.\nSpare Field: Optional, aligns header size to integral words.\n\n\nRequest Metadata:\n\nMessage Type ID: Set to the identifier of the request.\nSource ID: Set to the source identifier of the issuing application process.\n\nDeclaration Requirements:\n\nPresence and bit-size of the spare field must be declared for each application process.\n\n\n\n\n\n\nThe PUS Version reflects compliance with ECSS-E-ST-70-41C (version 2).\nAcknowledgement flags provide flexibility in managing state reporting for telecommand requests.\nThe Spare Field ensures compatibility with system-specific requirements.\n\n\n\n\n\n\n\n\n\nThe Packet Utilization Standard (PUS), part of the ECSS standards, defines a framework for using telemetry and telecommand packets to monitor and control spacecraft subsystems and payloads. Initially developed by ESA in the 1990s, PUS has become a widely adopted standard for spacecraft operations, reducing mission complexity and enhancing interoperability.\n\n\n\nPUS establishes a unified structure for spacecraft communication, enabling: - Remote Monitoring: Observing spacecraft status and health. - Command Execution: Controlling onboard systems and payloads. - Operational Consistency: Standardizing processes across missions.\n\n\n\n\nModular Services: Provides predefined services for common spacecraft operations.\nTailorability: Allows customization for mission-specific needs.\nInteroperability: Facilitates seamless interaction between ground stations and spacecraft.\n\n\n\n\nPUS defines various services, each targeting a specific operational aspect. Below is a list of core services:\n\n\n\nNo.\nService Name\n\n\n\n\n1\nTelecommand Verification\n\n\n2\nDevice Command Distribution\n\n\n3\nHousekeeping and Diagnostic Data Reporting\n\n\n4\nParameter Statistics Reporting\n\n\n5\nEvent Reporting\n\n\n6\nMemory Management\n\n\n8\nFunction Management\n\n\n9\nTime Management\n\n\n11\nOn-board Operations Scheduling\n\n\n12\nOn-board Monitoring\n\n\n13\nLarge Data Transfer\n\n\n14\nPacket Forwarding Control\n\n\n15\nOn-board Storage and Retrieval\n\n\n17\nTest\n\n\n18\nOn-board Operations Procedure\n\n\n19\nEvent-Action\n\n\n\n\n\n\n\nReduced Complexity: By standardizing telemetry and telecommand operations, PUS simplifies spacecraft design and development.\nFlexibility: Missions can select and implement only the services they require.\nReliability: Standardized procedures enhance robustness and minimize operational errors.\n\n\n\n\nEach mission can adapt PUS to its unique requirements by selecting relevant services, adjusting parameters, and defining custom extensions when necessary. The process involves: - Assigning specific Application Process Identifiers (APIDs). - Configuring service capabilities, such as memory management areas or telemetry event thresholds. - Documenting these decisions in a Space-to-Ground Interface Control Document (ICD).\n\n\n\nPUS is a cornerstone of ESA missions, including Rosetta, Envisat, and Integral. It is also suitable for missions with diverse architectures, from centralized systems to distributed networks onboard spacecraft.",
+    "crumbs": [
+      "Flatsat",
+      "Pus services"
+    ]
+  },
+  {
+    "objectID": "flatsat/pus.html#space-packet-structure",
+    "href": "flatsat/pus.html#space-packet-structure",
+    "title": "PUS Service",
+    "section": "",
+    "text": "Set to 0, identifying it as a space packet (version 1 CCSDS packet).\n\n\n\n\n\n0: Telemetry packets.\n1: Telecommand packets.\n\n\n\n\n\nIndicates the presence or absence of a secondary header:\n\nTelemetry packets: All include a secondary header, except spacecraft time packets.\nTelecommand packets: All include a secondary header, except CPDU command packets.\n\n\n\n\n\n\nUniquely identifies:\n\nThe source of telemetry packets.\nThe destination of telecommand packets.\n\nSome values are reserved by CCSDS and unavailable for PUS services.\n\n\n\n\n\nUnused by the protocol but set to “11” to indicate stand-alone packets.\nAll packets in this Standard are stand-alone packets.\n\n\n\n\n\nTelemetry packets: Incremented by 1 for each released packet and wraps at (2^{14} - 1).\nTelecommand packets: Use a sequence count or packet name to uniquely identify packets within a communication session.\n\n\n\n\n\nSpecifies the length of the packet data field:\n\nValue is one less than the number of octets in the data field.\nTotal packet length = Packet data field length + 6 octets (primary header).\n\n\n\n\n\n\nTelemetry Packets:\n\nSecondary header.\nUser data field.\n\nTelecommand Packets:\n\nSecondary header.\nUser data field.\n\n\n\n\n\n\n\n\n\n\nPresence:\n\nAll telemetry packets, except spacecraft time packets, include a secondary header.\n\nStructure:\n\nFields:\n\nSpacecraft Time: Absolute, fixed-size.\nPUS Version: 4 bits, set to 2.\nReference Number: 4 bits, enumerated.\nMessage Type ID: 8 bits, enumerated.\nService Type ID: 8 bits, enumerated.\nMessage Subtype ID: 8 bits, enumerated.\nMessage Counter: 16 bits, unsigned integer.\nDestination ID: Application process user identifier.\nSpare Field: Optional, used to align header size to integral words.\n\n\nTime Reference:\n\nStatus:\n\nIf capable, set to the status of the onboard time reference when tagging packets.\nIf not capable, set to 0.\n\nTime Tag: Stored in the time field of the header.\n\nMessage Metadata:\n\nType ID: Set to the identifier of the report.\nCounter:\n\nIf capable, set to the count of messages of this type.\nIf not capable, set to 0.\n\n\nDeclaration Requirements:\n\nPresence and bit-size of the spare field must be declared for each application process.\nTime field PFC (Packet Format Control) must align with the spacecraft’s time service.\n\n\n\n\n\n\nThe PUS Version indicates compliance with ECSS-E-ST-70-41C (version 2).\nThe Spare Field adjusts header length and is application-specific.\n\n\n\n\n\n\n\n\n\n\nPresence:\n\nAll telecommand packets include a secondary header, except for CPDU command packets.\n\nStructure:\n\nFields:\n\nAcknowledgement Flags: 4 bits, controls reporting of request states:\n\nBit 3: Successful acceptance by the destination application process.\nBit 2: Successful start of execution by the destination application process.\nBit 1: Progress reporting of execution.\nBit 0: Successful completion of execution.\n\nPUS Version: 4 bits, set to 2.\nMessage Type ID: 8 bits, enumerated.\nService Type ID: 8 bits, enumerated.\nMessage Subtype ID: 8 bits, enumerated.\nSource ID: 16 bits, identifies the source application process.\nSpare Field: Optional, aligns header size to integral words.\n\n\nRequest Metadata:\n\nMessage Type ID: Set to the identifier of the request.\nSource ID: Set to the source identifier of the issuing application process.\n\nDeclaration Requirements:\n\nPresence and bit-size of the spare field must be declared for each application process.\n\n\n\n\n\n\nThe PUS Version reflects compliance with ECSS-E-ST-70-41C (version 2).\nAcknowledgement flags provide flexibility in managing state reporting for telecommand requests.\nThe Spare Field ensures compatibility with system-specific requirements.",
+    "crumbs": [
+      "Flatsat",
+      "Pus services"
+    ]
+  },
+  {
+    "objectID": "flatsat/pus.html#comprehensive-overview-of-the-packet-utilization-standard-pus",
+    "href": "flatsat/pus.html#comprehensive-overview-of-the-packet-utilization-standard-pus",
+    "title": "PUS Service",
+    "section": "",
+    "text": "The Packet Utilization Standard (PUS), part of the ECSS standards, defines a framework for using telemetry and telecommand packets to monitor and control spacecraft subsystems and payloads. Initially developed by ESA in the 1990s, PUS has become a widely adopted standard for spacecraft operations, reducing mission complexity and enhancing interoperability.\n\n\n\nPUS establishes a unified structure for spacecraft communication, enabling: - Remote Monitoring: Observing spacecraft status and health. - Command Execution: Controlling onboard systems and payloads. - Operational Consistency: Standardizing processes across missions.\n\n\n\n\nModular Services: Provides predefined services for common spacecraft operations.\nTailorability: Allows customization for mission-specific needs.\nInteroperability: Facilitates seamless interaction between ground stations and spacecraft.\n\n\n\n\nPUS defines various services, each targeting a specific operational aspect. Below is a list of core services:\n\n\n\nNo.\nService Name\n\n\n\n\n1\nTelecommand Verification\n\n\n2\nDevice Command Distribution\n\n\n3\nHousekeeping and Diagnostic Data Reporting\n\n\n4\nParameter Statistics Reporting\n\n\n5\nEvent Reporting\n\n\n6\nMemory Management\n\n\n8\nFunction Management\n\n\n9\nTime Management\n\n\n11\nOn-board Operations Scheduling\n\n\n12\nOn-board Monitoring\n\n\n13\nLarge Data Transfer\n\n\n14\nPacket Forwarding Control\n\n\n15\nOn-board Storage and Retrieval\n\n\n17\nTest\n\n\n18\nOn-board Operations Procedure\n\n\n19\nEvent-Action\n\n\n\n\n\n\n\nReduced Complexity: By standardizing telemetry and telecommand operations, PUS simplifies spacecraft design and development.\nFlexibility: Missions can select and implement only the services they require.\nReliability: Standardized procedures enhance robustness and minimize operational errors.\n\n\n\n\nEach mission can adapt PUS to its unique requirements by selecting relevant services, adjusting parameters, and defining custom extensions when necessary. The process involves: - Assigning specific Application Process Identifiers (APIDs). - Configuring service capabilities, such as memory management areas or telemetry event thresholds. - Documenting these decisions in a Space-to-Ground Interface Control Document (ICD).\n\n\n\nPUS is a cornerstone of ESA missions, including Rosetta, Envisat, and Integral. It is also suitable for missions with diverse architectures, from centralized systems to distributed networks onboard spacecraft.",
+    "crumbs": [
+      "Flatsat",
+      "Pus services"
+    ]
+  },
+  {
+    "objectID": "flatsat/can.html",
+    "href": "flatsat/can.html",
+    "title": "Space Packets Protocols",
+    "section": "",
+    "text": "The CAN-TS (CAN Telemetry Standard) protocol and CANopen are widely used in embedded systems, particularly in resource-constrained environments. Each serves specific communication needs, suited to different applications.\n\n\n\n\n\n\nDesigned for applications with limited memory, such as aerospace systems, CAN-TS provides streamlined communication prioritizing low memory usage.\n\n\n\n\nLightweight Design: Optimized for 8/16-bit architectures, minimizing memory overhead.\nBasic Communication Services: Includes telemetry, telecommand, time synchronization, and bus redundancy management.\nFree to use: Skylabs is the owner of the CAN-TS documentation but it can be requested for free\n\n\n\n\n\nMemory Efficiency: Ideal for memory-constrained systems.\nRobustness: Reliable for mission-critical aerospace applications.\nLow Resource Consumption: Operates efficiently with minimal computational requirements.\n\n\n\n\n\nUtilizes CAN2.0B extended frame\n\nEncapsulates address, transfer type, and command ID in a 29-bit identifier.\n\nOrigin Validation: Message acceptance validated by source address.\nEfficiency: Uses full 8 bytes of data field for protocol services with software-based acknowledgment and reliability over bus utilization.\n\n\n\n\nCAN-TS Frame\n\n\n\n\n\nCAN-TS supports six application layer services:\n\nTelecommand\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per response.\nUp to 256 telecommands per device.\n\n\n\n\nTelecommand\n\n\nTelemetry\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per request.\nUp to 256 telemetry messages per device.\n\n\n\n\nTelemetry\n\n\nUnsolicited Telemetry\n\nSends telemetry directly without a request.\nSupports periodic or event-driven transfers, with up to 8 bytes of payload data.\n\n\n\n\nUnsolicited Telemetry\n\n\nTime Synchronization\n\nTime distribution via a broadcast message from the time master (highest priority).\n\n\n\n\nTime Synchronization\n\n\n\nVoici la mise en forme améliorée de cette partie :\n\n\nSet Block (multi-message transfer)\n\nFor large data exchanges (up to 512 bytes).\nIncludes retransmission and timeout features.\nAddress ranges from 8 to 64 bits.\n\n\n\n\nSet Block\n\n\nCommand Field Subfields:\n\nStart adress :\n\n\n\n\nRequest, Acknowledge – Bits 9-7. Table 6 presents all possible values for this subfield.\n\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\n\nSet Block Request\n000\n\n\n\nSB Acknowledge\n010\n\n\n\nSB Negative Acknowledge\n100\n\n\n\nTransfer\n001\n\n\n\nAbort\n011\n\n\n\nStatus Request\n110\n\n\n\nReport\n111\n\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Set Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Set Block Transfer frame represent the index of the transferred block. The first block has index 0.\nDone – Bit 6 of the Command field in the Set Block Report frame indicates if the whole block was successfully received and processed. If additional time is needed for processing, this bit is set to 0.\n\n\nGet Block (multi-message transfer)\n\nLarge data transfers from sink to source with error management.\n\n\n\n\n\nGet Block\n\n\nCommand Field Subfields: - Request, Acknowledge – Bits 9-7. Table 7 presents all possible values for this subfield.\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\nGet Block Request\n000\n\n\nGB Acknowledge\n010\n\n\nGB Negative Acknowledge\n100\n\n\nAbort\n011\n\n\nStart\n110\n\n\nTransfer\n111\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Get Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Get Block Transfer frame represent the index of the transferred block. The first block has index 0.\n\n\n\n\n\n\n\n\nCANopen is a flexible protocol for industrial applications that require detailed communication capabilities.\n\n\n\n\nDevice Profiles: Standardized for various device types (e.g., motion control, sensors).\nCommunication Objects: Supports PDO (Process Data Objects) and SDO (Service Data Objects) transfers.\nScalability: Suitable for both simple and complex networks.\n\n\n\n\n\nWide Applicability: Used across industries, including automotive and automation.\nEnhanced Functionality: Offers advanced features like diagnostics and network management.\nCustomization: Flexible configuration options.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nCAN-TS\nCANopen\n\n\n\n\nMemory Usage\nLow, optimized for constrained devices\nHigher, requires more memory\n\n\nTypical Use Case\nAerospace, simple devices\nIndustrial automation, robotics\n\n\nComplexity\nLower, easier to implement\nHigher, with extensive features\n\n\nAvailability\nOpen-source, free\nOften requires licensing",
+    "crumbs": [
+      "Flatsat",
+      "Can protocols"
+    ]
+  },
+  {
+    "objectID": "flatsat/can.html#overview",
+    "href": "flatsat/can.html#overview",
+    "title": "Space Packets Protocols",
+    "section": "",
+    "text": "The CAN-TS (CAN Telemetry Standard) protocol and CANopen are widely used in embedded systems, particularly in resource-constrained environments. Each serves specific communication needs, suited to different applications.",
+    "crumbs": [
+      "Flatsat",
+      "Can protocols"
+    ]
+  },
+  {
+    "objectID": "flatsat/can.html#can-ts-protocol",
+    "href": "flatsat/can.html#can-ts-protocol",
+    "title": "Space Packets Protocols",
+    "section": "",
+    "text": "Designed for applications with limited memory, such as aerospace systems, CAN-TS provides streamlined communication prioritizing low memory usage.\n\n\n\n\nLightweight Design: Optimized for 8/16-bit architectures, minimizing memory overhead.\nBasic Communication Services: Includes telemetry, telecommand, time synchronization, and bus redundancy management.\nFree to use: Skylabs is the owner of the CAN-TS documentation but it can be requested for free\n\n\n\n\n\nMemory Efficiency: Ideal for memory-constrained systems.\nRobustness: Reliable for mission-critical aerospace applications.\nLow Resource Consumption: Operates efficiently with minimal computational requirements.\n\n\n\n\n\nUtilizes CAN2.0B extended frame\n\nEncapsulates address, transfer type, and command ID in a 29-bit identifier.\n\nOrigin Validation: Message acceptance validated by source address.\nEfficiency: Uses full 8 bytes of data field for protocol services with software-based acknowledgment and reliability over bus utilization.\n\n\n\n\nCAN-TS Frame\n\n\n\n\n\nCAN-TS supports six application layer services:\n\nTelecommand\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per response.\nUp to 256 telecommands per device.\n\n\n\n\nTelecommand\n\n\nTelemetry\n\nAcknowledged transfer (request/acknowledge).\nUp to 8 bytes of payload data per request.\nUp to 256 telemetry messages per device.\n\n\n\n\nTelemetry\n\n\nUnsolicited Telemetry\n\nSends telemetry directly without a request.\nSupports periodic or event-driven transfers, with up to 8 bytes of payload data.\n\n\n\n\nUnsolicited Telemetry\n\n\nTime Synchronization\n\nTime distribution via a broadcast message from the time master (highest priority).\n\n\n\n\nTime Synchronization\n\n\n\nVoici la mise en forme améliorée de cette partie :\n\n\nSet Block (multi-message transfer)\n\nFor large data exchanges (up to 512 bytes).\nIncludes retransmission and timeout features.\nAddress ranges from 8 to 64 bits.\n\n\n\n\nSet Block\n\n\nCommand Field Subfields:\n\nStart adress :\n\n\n\n\nRequest, Acknowledge – Bits 9-7. Table 6 presents all possible values for this subfield.\n\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\n\nSet Block Request\n000\n\n\n\nSB Acknowledge\n010\n\n\n\nSB Negative Acknowledge\n100\n\n\n\nTransfer\n001\n\n\n\nAbort\n011\n\n\n\nStatus Request\n110\n\n\n\nReport\n111\n\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Set Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Set Block Transfer frame represent the index of the transferred block. The first block has index 0.\nDone – Bit 6 of the Command field in the Set Block Report frame indicates if the whole block was successfully received and processed. If additional time is needed for processing, this bit is set to 0.\n\n\nGet Block (multi-message transfer)\n\nLarge data transfers from sink to source with error management.\n\n\n\n\n\nGet Block\n\n\nCommand Field Subfields: - Request, Acknowledge – Bits 9-7. Table 7 presents all possible values for this subfield.\n\n\n\nFrame Type \nValue in Binary\n\n\n\n\nGet Block Request\n000\n\n\nGB Acknowledge\n010\n\n\nGB Negative Acknowledge\n100\n\n\nAbort\n011\n\n\nStart\n110\n\n\nTransfer\n111\n\n\n\n\nNo. of Blocks – Bits 5-0 of the Command field in the Get Block Request frame represent the number of blocks to be transferred minus one. For example, to transfer four blocks, set this value to three.\nSequence – Bits 5-0 of the Command field in the Get Block Transfer frame represent the index of the transferred block. The first block has index 0.",
+    "crumbs": [
+      "Flatsat",
+      "Can protocols"
+    ]
+  },
+  {
+    "objectID": "flatsat/can.html#canopen-protocol",
+    "href": "flatsat/can.html#canopen-protocol",
+    "title": "Space Packets Protocols",
+    "section": "",
+    "text": "CANopen is a flexible protocol for industrial applications that require detailed communication capabilities.\n\n\n\n\nDevice Profiles: Standardized for various device types (e.g., motion control, sensors).\nCommunication Objects: Supports PDO (Process Data Objects) and SDO (Service Data Objects) transfers.\nScalability: Suitable for both simple and complex networks.\n\n\n\n\n\nWide Applicability: Used across industries, including automotive and automation.\nEnhanced Functionality: Offers advanced features like diagnostics and network management.\nCustomization: Flexible configuration options.",
+    "crumbs": [
+      "Flatsat",
+      "Can protocols"
+    ]
+  },
+  {
+    "objectID": "flatsat/can.html#comparison",
+    "href": "flatsat/can.html#comparison",
+    "title": "Space Packets Protocols",
+    "section": "",
+    "text": "Feature\nCAN-TS\nCANopen\n\n\n\n\nMemory Usage\nLow, optimized for constrained devices\nHigher, requires more memory\n\n\nTypical Use Case\nAerospace, simple devices\nIndustrial automation, robotics\n\n\nComplexity\nLower, easier to implement\nHigher, with extensive features\n\n\nAvailability\nOpen-source, free\nOften requires licensing",
+    "crumbs": [
+      "Flatsat",
+      "Can protocols"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "End-to-End FlatSat Service Overview",
+    "section": "",
+    "text": "Welcome to the Flatsat team! These upcoming pages serve as a supplement to the various meetings you’ll attend upon joining, rather than replacing them. Here, we won’t cover the company’s overall history, broader projects, or general onboarding, but will focus specifically on the activities tied to the Flatsat team and the Flatsat-related developments.\nIn summary, we’ll start with a brief introduction to the Endurance project to set the context, then discuss the purpose of developing a flatsat and its practical implementation within the project. Finally, we’ll explore the current testing phase regarding telecommunications between ground software and the flatsat components. We’ll begin with simple, direct communication over communication channels before advancing to a more complex setup that includes radio communication.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "End-to-End FlatSat Service Overview",
+    "section": "",
+    "text": "Welcome to the Flatsat team! These upcoming pages serve as a supplement to the various meetings you’ll attend upon joining, rather than replacing them. Here, we won’t cover the company’s overall history, broader projects, or general onboarding, but will focus specifically on the activities tied to the Flatsat team and the Flatsat-related developments.\nIn summary, we’ll start with a brief introduction to the Endurance project to set the context, then discuss the purpose of developing a flatsat and its practical implementation within the project. Finally, we’ll explore the current testing phase regarding telecommunications between ground software and the flatsat components. We’ll begin with simple, direct communication over communication channels before advancing to a more complex setup that includes radio communication.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-read-this-document",
+    "href": "index.html#how-to-read-this-document",
+    "title": "End-to-End FlatSat Service Overview",
+    "section": "How to Read This Document",
+    "text": "How to Read This Document\nThe goal of this document is to start with a quick overview of the Endurance project and gradually zoom in on the Flatsat’s implementation, leading to the current activities where new team members can find their starting point. By following each page in sequence, you should gain a deeper understanding of how and why we are developing the flatsat.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#whats-next",
+    "href": "index.html#whats-next",
+    "title": "End-to-End FlatSat Service Overview",
+    "section": "What’s Next?",
+    "text": "What’s Next?\nAfter reading these pages, we’ll proceed to practical work and code-related tasks. The practical aspects are grouped in a developing library called the Endurance FlatSat Library. We have started drafting usage guides for installing the necessary sub-services to manage specific parts or components of the flatsat. You can find the latest drafted documents here (non-validated): ReadTheDocs. Please use these guides as needed, but also make sure to raise tickets for any unclear or problematic steps.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#your-contribution-to-this-document",
+    "href": "index.html#your-contribution-to-this-document",
+    "title": "End-to-End FlatSat Service Overview",
+    "section": "Your Contribution to This Document",
+    "text": "Your Contribution to This Document\nThe aim is to keep evolving this document over time, beginning with feedback on areas that need correction or addition as you settle in. Later on, you’re encouraged to clone the repository and add new content. The overall goal of this document is to provide any new team member with all the technical information needed to understand the broader purpose of our activities and the functioning of systems and subsystems.\nAdditionally, I’ve included some basic methods for collaborative work on software development projects. As the team grows, it will be necessary to update or add elements so anyone can adhere to our standards for code quality, reviews, ticketing, or broader workflows.\nThis is also an opportunity to add, in a dedicated section, implemented software elements that may be beneficial to the entire company (e.g., how to create GitHub Actions).",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "End-to-End FlatSat Service Overview",
+    "section": "About",
+    "text": "About\nThis document was created with Quarto, an open-source publishing system that allows users to generate and maintain beautifully formatted documents, websites, blogs, and presentations directly from markdown and Jupyter notebooks. Quarto’s versatility in supporting scientific and technical communication makes it an excellent choice for documenting complex projects like Flatsat. It enables you to combine text, code, and outputs seamlessly, creating a comprehensive and interactive resource for our team.\nFor more information on Quarto and how to use it to enhance your documentation projects, visit Quarto’s website.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "LearningMore/swdev.html",
+    "href": "LearningMore/swdev.html",
+    "title": "Software development on the flatsat",
+    "section": "",
+    "text": "GitFlow is a branching strategy designed to streamline development, testing, and deployment processes in larger projects. It defines structured branches and workflows for managing features, releases, and urgent fixes in a way that maintains a stable codebase and enables continuous development.\n\n\n\nGitFlow primarily uses five branch types:\n\nMain (master): The stable branch reflecting the current production code. Only release and hotfix branches are merged into main, maintaining its stability.\nDevelop: This branch holds the latest accepted developments. New features and improvements are merged into develop, which serves as the basis for release branches.\nFeature: Created from develop to work on new features or enhancements. Feature branches are short-lived and must be integrated back into develop after completion.\nRelease: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.\nHotfix: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.\n\n\n\n\n\n\n\nFeature Development:\n\nStart a feature branch from develop using a clear prefix like feature/feature-name.\nImplement the feature, commit changes, and push the branch if needed.\nUpon completion, merge the feature branch back into develop and delete it.\n\n\n\n\nPreparing a Release:\n\nWhen develop is stable and ready for a release, create a release branch (e.g., release/1.0).\nFinalize minor adjustments and version updates on the release branch.\nOnce testing and fixes are complete, merge it into both main and develop. Tag this commit for reference.\n\n\n\n\nHotfixes:\n\nHotfixes are created directly from main for urgent production issues.\nAfter the fix, merge the hotfix branch into both main and develop to ensure the codebase remains consistent.\n\n\n\n\n\n\n\nTo optimize GitFlow usage and maintain a smooth development process, consider the following practices:\n\nFrequent Commits and Atomic Changes: Make small, focused commits to ease code reviews and bug tracking.\nClear Branch Naming Conventions: Use prefixes (feature/, release/, hotfix/) for clarity in identifying branch purposes.\nDescriptive Commit Messages: Document each change with a concise message to aid in tracking and debugging.\nAutomate Testing and CI/CD: Run automated tests on all branches to catch issues early, ensuring only stable code reaches main.\nPull Requests for Merges: Use pull requests for merging to ensure code reviews and prevent conflicts.\n\n\n\n\n\n\nImproved Collaboration: Clearly defined branches reduce merge conflicts and enhance teamwork.\nStable Main Branch: Maintains production stability, allowing hotfixes without disrupting ongoing development.\nEnhanced Version Control: Organizes commits by type (feature, fix, release), helping trace development progress.\n\n\n\n\n\nGitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.\nFor more details on GitFlow and best practices, refer to Atlassian’s GitFlow Tutorial, GitKraken’s Workflow Guide, and Stackademic’s Guide.",
+    "crumbs": [
+      "Ressources",
+      "Git Hub workflow"
+    ]
+  },
+  {
+    "objectID": "LearningMore/swdev.html#branching-model",
+    "href": "LearningMore/swdev.html#branching-model",
+    "title": "Software development on the flatsat",
+    "section": "",
+    "text": "GitFlow primarily uses five branch types:\n\nMain (master): The stable branch reflecting the current production code. Only release and hotfix branches are merged into main, maintaining its stability.\nDevelop: This branch holds the latest accepted developments. New features and improvements are merged into develop, which serves as the basis for release branches.\nFeature: Created from develop to work on new features or enhancements. Feature branches are short-lived and must be integrated back into develop after completion.\nRelease: Created from develop when preparing for a new release. This branch allows final testing and bug fixes before merging into both main and develop.\nHotfix: Used for critical fixes that need to be deployed immediately. Hotfix branches are based on main and merged back into both main and develop upon completion.",
+    "crumbs": [
+      "Ressources",
+      "Git Hub workflow"
+    ]
+  },
+  {
+    "objectID": "LearningMore/swdev.html#workflow-process",
+    "href": "LearningMore/swdev.html#workflow-process",
+    "title": "Software development on the flatsat",
+    "section": "",
+    "text": "Feature Development:\n\nStart a feature branch from develop using a clear prefix like feature/feature-name.\nImplement the feature, commit changes, and push the branch if needed.\nUpon completion, merge the feature branch back into develop and delete it.\n\n\n\n\nPreparing a Release:\n\nWhen develop is stable and ready for a release, create a release branch (e.g., release/1.0).\nFinalize minor adjustments and version updates on the release branch.\nOnce testing and fixes are complete, merge it into both main and develop. Tag this commit for reference.\n\n\n\n\nHotfixes:\n\nHotfixes are created directly from main for urgent production issues.\nAfter the fix, merge the hotfix branch into both main and develop to ensure the codebase remains consistent.",
+    "crumbs": [
+      "Ressources",
+      "Git Hub workflow"
+    ]
+  },
+  {
+    "objectID": "LearningMore/swdev.html#best-practices",
+    "href": "LearningMore/swdev.html#best-practices",
+    "title": "Software development on the flatsat",
+    "section": "",
+    "text": "To optimize GitFlow usage and maintain a smooth development process, consider the following practices:\n\nFrequent Commits and Atomic Changes: Make small, focused commits to ease code reviews and bug tracking.\nClear Branch Naming Conventions: Use prefixes (feature/, release/, hotfix/) for clarity in identifying branch purposes.\nDescriptive Commit Messages: Document each change with a concise message to aid in tracking and debugging.\nAutomate Testing and CI/CD: Run automated tests on all branches to catch issues early, ensuring only stable code reaches main.\nPull Requests for Merges: Use pull requests for merging to ensure code reviews and prevent conflicts.",
+    "crumbs": [
+      "Ressources",
+      "Git Hub workflow"
+    ]
+  },
+  {
+    "objectID": "LearningMore/swdev.html#advantages-of-gitflow",
+    "href": "LearningMore/swdev.html#advantages-of-gitflow",
+    "title": "Software development on the flatsat",
+    "section": "",
+    "text": "Improved Collaboration: Clearly defined branches reduce merge conflicts and enhance teamwork.\nStable Main Branch: Maintains production stability, allowing hotfixes without disrupting ongoing development.\nEnhanced Version Control: Organizes commits by type (feature, fix, release), helping trace development progress.",
+    "crumbs": [
+      "Ressources",
+      "Git Hub workflow"
+    ]
+  },
+  {
+    "objectID": "LearningMore/swdev.html#conclusion",
+    "href": "LearningMore/swdev.html#conclusion",
+    "title": "Software development on the flatsat",
+    "section": "",
+    "text": "GitFlow is well-suited for projects with scheduled releases, complex development, and continuous deployment needs. By enforcing structure, GitFlow enables teams to maintain a stable production environment while fostering agile development.\nFor more details on GitFlow and best practices, refer to Atlassian’s GitFlow Tutorial, GitKraken’s Workflow Guide, and Stackademic’s Guide.",
+    "crumbs": [
+      "Ressources",
+      "Git Hub workflow"
+    ]
+  },
+  {
+    "objectID": "LearningMore/egse.html",
+    "href": "LearningMore/egse.html",
+    "title": "Electrical Ground Support Equipment (EGSE)",
+    "section": "",
+    "text": "Electrical Ground Support Equipment (EGSE) is essential for the testing and support of spacecraft systems before launch. It consists of specialized equipment used to test the spacecraft’s electrical systems, simulate space conditions, and ensure that all components function as expected. EGSE is employed during the final phases of spacecraft assembly, integration, and testing (AIT) on the ground.\n\n\n\nThe primary purpose of EGSE is to prepare spacecraft for space missions by verifying their performance and functionality under simulated space conditions. EGSE equipment provides power, signal interfacing, and system diagnostics, ensuring that all spacecraft subsystems are operational before launch. This is crucial for avoiding costly failures post-launch.\n\n\n\n\n\nEGSE systems simulate the space environment (e.g., power conditions, signal behaviors) to test spacecraft electronics and control systems. This allows engineers to check how the spacecraft’s systems react to various scenarios, ensuring that all operations will go smoothly in orbit.\n\n\n\nEGSE supplies power to spacecraft components during testing. This includes providing various voltage levels, current, and regulation to simulate the spacecraft’s operational conditions while on Earth.\n\n\n\nThe equipment also ensures that the spacecraft’s communication systems work effectively by acting as an intermediary between spacecraft systems and testing equipment, facilitating proper data transmission and command signaling.\n\n\n\nEGSE is used to monitor spacecraft performance. Engineers can run diagnostic tests, check signal integrity, analyze power usage, and verify thermal and structural responses, helping to identify and resolve potential issues early in the testing process.\n\n\n\nThe comprehensive testing EGSE provides reduces the risk of system failure during space missions. By simulating different scenarios, EGSE allows engineers to confirm that all systems are functioning correctly and that there are no hidden defects that could compromise the mission.\n\n\n\n\nEGSE is typically composed of the following main elements:\n\nPower Systems: Provide the necessary electrical power for the spacecraft subsystems during testing.\nTest Controllers: Devices that control and monitor the test scenarios, ensuring proper operations.\nSimulation Systems: Equipment designed to simulate space environmental conditions such as radiation, temperature extremes, and vacuum.\nData Acquisition Systems: Monitor the data produced by spacecraft systems to evaluate their performance.\nCommunication Interfaces: Facilitate data exchange between the spacecraft and testing equipment.\n\n\n\n\nThere are two main types of EGSE:\n\nSpacecraft EGSE (S-EGSE): Designed specifically for testing the spacecraft itself, this system is responsible for monitoring and testing the spacecraft’s hardware.\nLaunch EGSE (L-EGSE): Focused on ensuring that launch-related systems, such as fueling and integration with the launch vehicle, are functioning correctly.\n\n\n\n\n\nSpacecraft Integration and Testing: EGSE is used during spacecraft assembly to ensure all systems are correctly integrated and functioning.\nLaunch Operations: EGSE plays a crucial role in testing the spacecraft before and after it is integrated with the launch vehicle.\nPost-launch Validation: Some EGSE systems are used to validate that spacecraft systems operate correctly after launch.\n\n\n\n\nEGSE is a vital part of the spacecraft testing process, ensuring that all systems function as required before they are sent into space. Its ability to simulate space conditions, provide power and data communication, and perform detailed diagnostics makes it indispensable for successful space missions. Without EGSE, the risk of mission failure would increase significantly, highlighting its importance in the aerospace industry.",
+    "crumbs": [
+      "Ressources",
+      "EGSE"
+    ]
+  },
+  {
+    "objectID": "LearningMore/egse.html#introduction",
+    "href": "LearningMore/egse.html#introduction",
+    "title": "Electrical Ground Support Equipment (EGSE)",
+    "section": "",
+    "text": "Electrical Ground Support Equipment (EGSE) is essential for the testing and support of spacecraft systems before launch. It consists of specialized equipment used to test the spacecraft’s electrical systems, simulate space conditions, and ensure that all components function as expected. EGSE is employed during the final phases of spacecraft assembly, integration, and testing (AIT) on the ground.",
+    "crumbs": [
+      "Ressources",
+      "EGSE"
+    ]
+  },
+  {
+    "objectID": "LearningMore/egse.html#purpose-of-egse",
+    "href": "LearningMore/egse.html#purpose-of-egse",
+    "title": "Electrical Ground Support Equipment (EGSE)",
+    "section": "",
+    "text": "The primary purpose of EGSE is to prepare spacecraft for space missions by verifying their performance and functionality under simulated space conditions. EGSE equipment provides power, signal interfacing, and system diagnostics, ensuring that all spacecraft subsystems are operational before launch. This is crucial for avoiding costly failures post-launch.",
+    "crumbs": [
+      "Ressources",
+      "EGSE"
+    ]
+  },
+  {
+    "objectID": "LearningMore/egse.html#key-functions",
+    "href": "LearningMore/egse.html#key-functions",
+    "title": "Electrical Ground Support Equipment (EGSE)",
+    "section": "",
+    "text": "EGSE systems simulate the space environment (e.g., power conditions, signal behaviors) to test spacecraft electronics and control systems. This allows engineers to check how the spacecraft’s systems react to various scenarios, ensuring that all operations will go smoothly in orbit.\n\n\n\nEGSE supplies power to spacecraft components during testing. This includes providing various voltage levels, current, and regulation to simulate the spacecraft’s operational conditions while on Earth.\n\n\n\nThe equipment also ensures that the spacecraft’s communication systems work effectively by acting as an intermediary between spacecraft systems and testing equipment, facilitating proper data transmission and command signaling.\n\n\n\nEGSE is used to monitor spacecraft performance. Engineers can run diagnostic tests, check signal integrity, analyze power usage, and verify thermal and structural responses, helping to identify and resolve potential issues early in the testing process.\n\n\n\nThe comprehensive testing EGSE provides reduces the risk of system failure during space missions. By simulating different scenarios, EGSE allows engineers to confirm that all systems are functioning correctly and that there are no hidden defects that could compromise the mission.",
+    "crumbs": [
+      "Ressources",
+      "EGSE"
+    ]
+  },
+  {
+    "objectID": "LearningMore/egse.html#components-of-egse",
+    "href": "LearningMore/egse.html#components-of-egse",
+    "title": "Electrical Ground Support Equipment (EGSE)",
+    "section": "",
+    "text": "EGSE is typically composed of the following main elements:\n\nPower Systems: Provide the necessary electrical power for the spacecraft subsystems during testing.\nTest Controllers: Devices that control and monitor the test scenarios, ensuring proper operations.\nSimulation Systems: Equipment designed to simulate space environmental conditions such as radiation, temperature extremes, and vacuum.\nData Acquisition Systems: Monitor the data produced by spacecraft systems to evaluate their performance.\nCommunication Interfaces: Facilitate data exchange between the spacecraft and testing equipment.",
+    "crumbs": [
+      "Ressources",
+      "EGSE"
+    ]
+  },
+  {
+    "objectID": "LearningMore/egse.html#types-of-egse",
+    "href": "LearningMore/egse.html#types-of-egse",
+    "title": "Electrical Ground Support Equipment (EGSE)",
+    "section": "",
+    "text": "There are two main types of EGSE:\n\nSpacecraft EGSE (S-EGSE): Designed specifically for testing the spacecraft itself, this system is responsible for monitoring and testing the spacecraft’s hardware.\nLaunch EGSE (L-EGSE): Focused on ensuring that launch-related systems, such as fueling and integration with the launch vehicle, are functioning correctly.",
+    "crumbs": [
+      "Ressources",
+      "EGSE"
+    ]
+  },
+  {
+    "objectID": "LearningMore/egse.html#applications-of-egse",
+    "href": "LearningMore/egse.html#applications-of-egse",
+    "title": "Electrical Ground Support Equipment (EGSE)",
+    "section": "",
+    "text": "Spacecraft Integration and Testing: EGSE is used during spacecraft assembly to ensure all systems are correctly integrated and functioning.\nLaunch Operations: EGSE plays a crucial role in testing the spacecraft before and after it is integrated with the launch vehicle.\nPost-launch Validation: Some EGSE systems are used to validate that spacecraft systems operate correctly after launch.",
+    "crumbs": [
+      "Ressources",
+      "EGSE"
+    ]
+  },
+  {
+    "objectID": "LearningMore/egse.html#conclusion",
+    "href": "LearningMore/egse.html#conclusion",
+    "title": "Electrical Ground Support Equipment (EGSE)",
+    "section": "",
+    "text": "EGSE is a vital part of the spacecraft testing process, ensuring that all systems function as required before they are sent into space. Its ability to simulate space conditions, provide power and data communication, and perform detailed diagnostics makes it indispensable for successful space missions. Without EGSE, the risk of mission failure would increase significantly, highlighting its importance in the aerospace industry.",
+    "crumbs": [
+      "Ressources",
+      "EGSE"
     ]
   }
 ]
